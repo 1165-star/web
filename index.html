@@ -19,6 +19,23 @@
   <meta property="og:url" content="https://tya-kaihatsu.com">
   <meta property="og:image" content="https://tya-kaihatsu.com/assets/og-image.png">
   <meta name="twitter:card" content="summary">
+  <style>
+    /* 公開中バッジ(このページ専用。共通のsite.cssは他アプリと共有のため変更しない) */
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: 6px;
+      padding: 1px 8px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+    .store-badge svg { width: 14px; height: 14px; }
+  </style>
 </head>
 <body>
   <main>
@@ -58,7 +75,7 @@
         <a class="app-card" href="./sutamina-techo/">
           <img class="icon" src="./assets/icons/sutamina-techo.png" alt="">
           <div class="body">
-            <div class="name">スタミナ手帳</div>
+            <div class="name">スタミナ手帳 <span class="store-badge"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>公開中</span></div>
             <p class="desc">スマホゲームのスタミナ・リセット時刻、イベント等の開始と終了をまとめて管理できる手帳アプリ。</p>
           </div>
         </a>
