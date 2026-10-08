@@ -34,8 +34,8 @@
 
 <h2>3. 端末間の同期(PREMIUM)</h2>
 <ul>
-  <li>この機能はPREMIUMでご利用いただけます。<strong>同じ Wi-Fi 内の端末同士が直接通信</strong>して記録を同期し、当方のサーバーやインターネット上のサーバーは経由しません。端末同士の通信の中身は、すべて暗号化されます。</li>
-  <li>相手の端末を登録するために、相手の画面に表示されたQRコードを読み取るカメラへのアクセス、および同じ Wi-Fi 内の端末と通信するためのローカルネットワークへのアクセス(iOSの「ローカルネットワーク」、Android 13以降の「近くのWi-Fi端末」)を利用します。QRコードには、接続のための情報と共有の秘密が含まれ、短時間で期限切れになり、1回だけ使えます。</li>
+  <li>この機能はPREMIUMでご利用いただけます。<strong>インターネットを使わず、近くの端末同士が直接通信</strong>して記録を同期し、当方のサーバーやインターネット上のサーバーは経由しません。端末同士の通信の中身は、すべて暗号化されます。</li>
+  <li>相手の端末を登録するために、相手の画面に表示されたQRコードを読み取るカメラへのアクセスを利用します。また、近くの端末を探して通信するために、Androidの「近くのデバイス」(Bluetooth、近くのWi-Fi端末)と位置情報の許可を求めます。位置情報の許可は、Androidが近くの端末を探すために必要とするもので、本アプリ自身は位置情報を取得・保存・送信しません。QRコードには、接続のための情報と共有の秘密が含まれ、短時間で期限切れになり、1回だけ使えます。</li>
   <li>同期を行うと、登録した相手の端末に、ペットのプロフィール、記録、写真・動画が保存されます(削除した記録の中身は渡されません)。<strong>いったん相手の端末に渡ったデータは、当方では取り消せません。</strong>相手の端末側で削除していただく必要があります。</li>
   <li>相手の一覧や共有の秘密などの同期の情報は端末内に保存され、共有の秘密は端末の安全な保管場所に置かれます。共有の秘密はバックアップには含まれません。</li>
 </ul>
@@ -99,8 +99,8 @@
 
 <h2>3. Device sync (PREMIUM)</h2>
 <ul>
-  <li>This feature is available with PREMIUM. Devices on the <strong>same Wi-Fi network communicate directly</strong> to sync records; nothing passes through our servers or any server on the internet. The contents of the communication between devices are fully encrypted.</li>
-  <li>To register another device, the App uses the camera to scan the QR code shown on that device, and uses local network access to talk to devices on the same Wi-Fi (iOS "Local Network", Android 13+ "Nearby Wi-Fi devices"). The QR code contains connection details and a shared secret, expires after a short time, and works only once.</li>
+  <li>This feature is available with PREMIUM. Nearby devices <strong>communicate directly without using the internet</strong> to sync records; nothing passes through our servers or any server on the internet. The contents of the communication between devices are fully encrypted.</li>
+  <li>To register another device, the App uses the camera to scan the QR code shown on that device. To find and talk to nearby devices, it also asks for Android's "Nearby devices" permissions (Bluetooth, nearby Wi-Fi devices) and the location permission. The location permission is required by Android to discover nearby devices; the App itself does not read, store or send your location. The QR code contains connection details and a shared secret, expires after a short time, and works only once.</li>
   <li>When you sync, the pet profiles, records, photos and videos are stored on the device you registered (the contents of records you deleted are not sent). <strong>We cannot take back data once it has been sent to another device</strong>; it must be deleted on that device.</li>
   <li>Sync information such as the list of registered devices and shared secrets is stored on your device, and shared secrets are kept in the device's secure storage. Shared secrets are not included in backups.</li>
 </ul>
