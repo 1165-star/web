@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ゆびさすコンパス - ちゃ開発組</title>
+  <meta name="description" content="恵方・キブラ・推しの聖地など、好きな場所への方角と距離が一目でわかるコンパスアプリ。">
+  <link rel="canonical" href="https://tya-kaihatsu.com/houkaku-compass/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ゆびさすコンパス - ちゃ開発組">
+  <meta property="og:description" content="恵方・キブラ・推しの聖地など、好きな場所への方角と距離が一目でわかるコンパスアプリ。">
+  <meta property="og:url" content="https://tya-kaihatsu.com/houkaku-compass/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "ゆびさすコンパス",
+  "description": "恵方・キブラ・推しの聖地など、好きな場所への方角と距離が一目でわかるコンパスアプリ。",
+  "url": "https://tya-kaihatsu.com/houkaku-compass/",
+  "inLanguage": "ja",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ちゃ開発組",
+    "url": "https://tya-kaihatsu.com/"
+  },
+  "operatingSystem": "Android",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.houkakucompass.app"
+}
+  </script>
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    /* 共通のsite.cssは他アプリと共有のため変更せず、このページ専用のスタイルはここに閉じる */
+    .features {
+      text-align: left;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+    .features h2 {
+      font-size: 1rem;
+      text-align: center;
+      border-bottom: none;
+    }
+    .feature-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .feature-list .mark {
+      color: var(--accent);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+    .store-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      width: 160px;
+      margin: 0 auto 32px;
+      padding: 16px 12px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 14px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .store-link svg { width: 72px; height: 72px; }
+    .store-link small { color: inherit; opacity: 0.8; font-weight: 400; font-size: 0.75rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+
+    <div class="app-hero">
+      <img class="icon" src="../assets/icons/houkaku-compass.png" alt="ゆびさすコンパスのアイコン">
+      <h1>ゆびさすコンパス</h1>
+      <p class="desc">恵方・キブラ・推しの聖地など、好きな場所への方角と距離が一目でわかるコンパスアプリ。</p>
+    </div>
+
+    <a class="store-link" href="https://play.google.com/store/apps/details?id=com.houkakucompass.app" aria-label="Google Playで入手(Android)">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+      Google Playで入手
+      <small>Android</small>
+    </a>
+
+    <section class="features">
+      <h2>できること</h2>
+      <ul class="feature-list">
+        <li><span class="mark">✓</span>恵方(毎年自動計算)・キブラ・真北・伊勢神宮・出雲大社・明治神宮・厳島神社・富士山山頂など、あらかじめ用意された目的地への方角と距離がすぐわかる</li>
+        <li><span class="mark">✓</span>実家・推しの聖地・ライブ会場など好きな場所を住所検索(2文字入力で候補表示)ですぐ登録、複数タグで整理</li>
+        <li><span class="mark">✓</span>登録した場所ごとに「一回だけ/毎日/毎週/毎年」の通知を予約(1つの場所に複数スケジュールも可能)。通知タップでその場所を選択した状態でアプリが開く</li>
+        <li><span class="mark">✓</span>コンパスの針を4種類のかわいい指さしハンドイラスト、または自分で選んだ写真に変更(ピンチ・ドラッグ・回転で位置調整)。場所ごとに違う針を設定可能</li>
+        <li><span class="mark">✓</span>よく使う場所をお気に入り登録していつでもすぐアクセス、起動時に表示する場所も指定できる</li>
+        <li><span class="mark">✓</span>9種類のカラーテーマ(明るい系4種+暗い系4種+標準)と、9種類のフォント(きれい系/強め系/かわいい系の3カテゴリ×3書体)で見た目を自分好みに</li>
+        <li><span class="mark">✓</span>日本語・英語・簡体字中国語・繁体字中国語・韓国語・スペイン語・ポルトガル語・フランス語・ドイツ語・ロシア語・インドネシア語・イタリア語の12言語に対応、端末の言語設定に自動で追従</li>
+        <li><span class="mark">✓</span>登録した場所やコンパス針の画像を含め、バックアップとして書き出し・復元。機種変更時も安心</li>
+      </ul>
+    </section>
+
+    <div class="app-links">
+      <a href="./privacy-policy.html">プライバシーポリシー</a>
+      <a href="./release-notes.html">リリースノート</a>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> ちゃ開発組
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ちゃ開発組 - 開発者プロフィール</title>
+  <meta name="description" content="スマートフォン向けアプリの開発・公開を行っています。開発中・公開中のアプリ一覧を掲載しています。">
+
+  <link rel="canonical" href="https://tya-kaihatsu.com/">
+  <link rel="icon" href="./favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="./assets/site.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ちゃ開発組 - 開発者プロフィール">
+  <meta property="og:description" content="スマートフォン向けアプリの開発・公開を行っています。開発中・公開中のアプリ一覧を掲載しています。">
+  <meta property="og:url" content="https://tya-kaihatsu.com/">
+  <meta property="og:image" content="https://tya-kaihatsu.com/assets/header.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ちゃ開発組",
+  "url": "https://tya-kaihatsu.com/",
+  "inLanguage": "ja",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ちゃ開発組",
+    "url": "https://tya-kaihatsu.com/",
+    "logo": "https://tya-kaihatsu.com/assets/profile.jpg",
+    "sameAs": ["https://x.com/nxnyht"]
+  }
+}
+  </script>
+  <style>
+    /* 公開中バッジ(このページ専用。共通のsite.cssは他アプリと共有のため変更しない) */
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: 6px;
+      padding: 1px 8px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+    .store-badge svg { width: 14px; height: 14px; }
+    .hero {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+      border-radius: 12px;
+    }
+    .x-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: var(--card-bg);
+      color: var(--fg);
+    }
+    .x-link svg { width: 22px; height: 22px; }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="hero" src="./assets/header.jpg" width="1200" height="600" alt="ちゃ開発組のオフィスで働くフェレットたち">
+    <header>
+      <img class="avatar" src="./assets/profile.jpg" alt="ちゃ開発組のマスコット">
+      <div>
+        <h1>ちゃ開発組</h1>
+        <p class="subtitle">App Developer</p>
+      </div>
+      <a class="x-link" href="https://x.com/nxnyht" target="_blank" rel="noopener noreferrer" aria-label="X (@nxnyht)">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </header>
+
+    <section id="about">
+      <h2>プロフィール</h2>
+      <p>
+        スマートフォン向けアプリの開発・公開を行っています。
+        日々の記録や習慣化をサポートするアプリを中心に開発しています。
+      </p>
+    </section>
+
+    <section id="apps">
+      <h2>開発中・公開中のアプリ</h2>
+      <div class="apps">
+        <a class="app-card" href="./monosashi/">
+          <img class="icon" src="./assets/icons/monosashi.png" alt="">
+          <div class="body">
+            <div class="name">モノサシ <span class="store-badge"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>公開中</span></div>
+            <p class="desc">写真をスワイプするだけ。断捨離の必要・不要を、モノサシがゆっくり判定します。</p>
+          </div>
+        </a>
+        <a class="app-card" href="./blood-pressure-history/">
+          <img class="icon" src="./assets/icons/blood-pressure-history.png" alt="">
+          <div class="body">
+            <div class="name">血圧メモ <span class="store-badge"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>公開中</span></div>
+            <p class="desc">血圧と脈拍をサクッと記録。グラフやリマインダーで毎日の血圧管理をサポートします。</p>
+          </div>
+        </a>
+        <a class="app-card" href="./sutamina-techo/">
+          <img class="icon" src="./assets/icons/sutamina-techo.png" alt="">
+          <div class="body">
+            <div class="name">スタミナ手帳 <span class="store-badge"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>公開中</span></div>
+            <p class="desc">スマホゲームのスタミナ・リセット時刻、イベント等の開始と終了をまとめて管理できる手帳アプリ。</p>
+          </div>
+        </a>
+        <a class="app-card" href="./houkaku-compass/">
+          <img class="icon" src="./assets/icons/houkaku-compass.png" alt="">
+          <div class="body">
+            <div class="name">ゆびさすコンパス <span class="store-badge"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>公開中</span></div>
+            <p class="desc">恵方・キブラ・推しの聖地など、好きな場所への方角と距離が一目でわかるコンパスアプリ。</p>
+          </div>
+        </a>
+        <a class="app-card" href="./pet-health-management/">
+          <img class="icon" src="./assets/icons/pet-health-management.png" alt="">
+          <div class="body">
+            <div class="name">ぺっときろく</div>
+            <p class="desc">体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。</p>
+          </div>
+        </a>
+        <a class="app-card" href="./memonowa/">
+          <img class="icon" src="./memonowa/icon.png" alt="">
+          <div class="body">
+            <div class="name">めものわ <span class="store-badge"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>公開中</span></div>
+            <p class="desc">描く。書く。つながる。ひとりでも、みんなでも使える手書きキャンバス。</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> ちゃ開発組
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

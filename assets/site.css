@@ -1,0 +1,216 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #5a5a5a;
+  --accent: #2b6cb0;
+  --border: #e2e2e2;
+  --card-bg: #f7f7f8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --fg: #eaeaea;
+    --muted: #a0a0a0;
+    --accent: #6fa8dc;
+    --border: #2a2d33;
+    --card-bg: #1c1f24;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.7;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+header {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+h1 {
+  font-size: 1.6rem;
+  margin: 0 0 8px;
+}
+.subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+section {
+  margin-bottom: 40px;
+}
+h2 {
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+.apps {
+  display: grid;
+  gap: 12px;
+}
+.app-card {
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+.app-card .icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.app-card .body {
+  min-width: 0;
+  flex: 1;
+}
+.app-card .name {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--fg);
+}
+.app-card .desc {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.5;
+}
+.contact a {
+  color: var(--accent);
+}
+footer {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-top: 60px;
+}
+
+/* アプリ個別トップページ */
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.app-hero {
+  text-align: center;
+  padding: 24px 0 8px;
+}
+.app-hero .icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+.app-hero h1 {
+  margin: 20px 0 8px;
+}
+.app-hero .desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  max-width: 480px;
+  margin: 0 auto 20px;
+}
+.badge {
+  display: inline-block;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+.app-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.app-links a {
+  display: block;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* プライバシーポリシー・リリースノートなどの文書ページ */
+body.doc main {
+  max-width: 760px;
+}
+body.doc h1 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+body.doc h2 {
+  font-size: 1.1rem;
+  border-bottom: none;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+  padding-bottom: 0;
+  margin-top: 2.2em;
+  margin-bottom: 0.8em;
+}
+body.doc ul {
+  padding-left: 1.4em;
+}
+body.doc li {
+  margin-bottom: 0.5em;
+}
+body.doc a {
+  color: var(--accent);
+}
+body.doc .updated,
+body.doc .date,
+body.doc .empty {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 2em;
+}
+body.doc .version {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+body.doc .lang-divider {
+  margin: 3.5em 0;
+  border: none;
+  border-top: 2px solid var(--border);
+}
+body.doc .contact {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-top: 1em;
+}
