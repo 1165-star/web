@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>縦長スクショ - ちゃ開発組</title>
+  <meta name="description" content="スクロールする画面を、自動でスクロールしながら撮影して、1枚の縦長の画像につなげて保存するアプリ。">
+  <link rel="canonical" href="https://tya-kaihatsu.com/scroll-capture/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="縦長スクショ - ちゃ開発組">
+  <meta property="og:description" content="スクロールする画面を、自動でスクロールしながら撮影して、1枚の縦長の画像につなげて保存するアプリ。">
+  <meta property="og:url" content="https://tya-kaihatsu.com/scroll-capture/">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "縦長スクショ",
+  "alternateName": "Long Shot",
+  "description": "スクロールする画面を、自動でスクロールしながら撮影して、1枚の縦長の画像につなげて保存するアプリ。",
+  "url": "https://tya-kaihatsu.com/scroll-capture/",
+  "inLanguage": "ja",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ちゃ開発組",
+    "url": "https://tya-kaihatsu.com/"
+  },
+  "operatingSystem": "Android"
+}
+  </script>
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    /* 共通のsite.cssは他アプリと共有のため変更せず、このページ専用のスタイルはここに閉じる */
+    .features {
+      text-align: left;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+    .features h2 {
+      font-size: 1rem;
+      text-align: center;
+      border-bottom: none;
+    }
+    .feature-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .feature-list .mark {
+      color: var(--accent);
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+    .store-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      width: 160px;
+      margin: 0 auto 32px;
+      padding: 16px 12px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 14px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .store-link svg { width: 72px; height: 72px; }
+    .store-link small { color: inherit; opacity: 0.8; font-weight: 400; font-size: 0.75rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+
+    <div class="app-hero">
+      <img class="icon" src="../assets/icons/scroll-capture.png" alt="縦長スクショのアイコン">
+      <h1>縦長スクショ</h1>
+      <p class="desc">スクロールする画面を、自動でスクロールしながら撮影して、1枚の縦長の画像につなげて保存するアプリ。</p>
+    </div>
+
+    <section class="features">
+      <h2>できること</h2>
+      <ul class="feature-list">
+        <li><span class="mark">✓</span>長いWebページやチャットなど、スクロールする画面を、自動でスクロールしながら撮影して、1枚の縦長の画像につなげる</li>
+        <li><span class="mark">✓</span>撮影は、フローティングボタンから「撮影開始」を押したときだけ。撮影中はいつでもキャンセルできる</li>
+        <li><span class="mark">✓</span>保存の前にプレビューで確認して、保存かキャンセルを選べる。保存先は端末の Pictures/ScrollCapture</li>
+        <li><span class="mark">✓</span>撮影した画像は、端末の中だけで処理する。外部へ送信しない</li>
+        <li><span class="mark">✓</span>ライト・ダークのテーマと、日本語・英語・簡体字中国語・繁体字中国語・韓国語・スペイン語・ポルトガル語・フランス語・ドイツ語・ロシア語・インドネシア語・イタリア語の12言語に対応</li>
+        <li><span class="mark">✓</span>無料で使える(広告が表示されます)。月額・年額のPREMIUMに登録すると、広告が表示されなくなる</li>
+      </ul>
+    </section>
+
+    <section class="features">
+      <h2>ユーザー補助サービスについて</h2>
+      <ul class="feature-list">
+        <li><span class="mark">・</span>このアプリは、AndroidのAccessibilityService(ユーザー補助サービス)を使います。目的は、スクロールする画面を縦長の1枚の画像にすることだけです。</li>
+        <li><span class="mark">・</span>サービスで行うのは、「撮影開始」を押したときのスクリーンショットの取得と、画面をスクロールするための上方向のスワイプです。画面の文字や部品は読み取りません。</li>
+        <li><span class="mark">・</span>許可を求める前に、アプリの中で利用目的と取得するデータを説明し、同意を確認します。サービスは、端末の設定からいつでも停止できます。</li>
+        <li><span class="mark">・</span>他のアプリが画面の撮影を禁止している場合は、撮影できません。</li>
+      </ul>
+    </section>
+
+    <section class="features">
+      <h2>対応環境</h2>
+      <ul class="feature-list">
+        <li><span class="mark">・</span>Android 11 以降</li>
+      </ul>
+    </section>
+
+    <div class="app-links">
+      <a href="./privacy-policy.html">プライバシーポリシー</a>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> ちゃ開発組
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
