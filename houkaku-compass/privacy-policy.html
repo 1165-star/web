@@ -13,7 +13,7 @@
 <a class="back-link" href="./">&larr; アプリのページへ / Back to app page</a>
 
 <h1>プライバシーポリシー(ゆびさすコンパス)</h1>
-<p class="updated">最終更新日: 2026年10月5日</p>
+<p class="updated">最終更新日: 2026年11月3日</p>
 
 <p>「ゆびさすコンパス」(以下「本アプリ」)は、開発者(以下「当方」)が提供するiOS/Android向けアプリです。本ポリシーは、本アプリが取得する情報とその取り扱いについて説明します。</p>
 
@@ -37,8 +37,10 @@
   <li>通知機能の利用には、端末側での通知許可が必要です。許可しない場合でも、通知機能以外の機能は通常どおりご利用いただけます。</li>
 </ul>
 
-<h2>4. 位置情報・住所とOpenStreetMap Nominatim</h2>
+<h2>4. 地図(Google Maps)・位置情報・住所とOpenStreetMap Nominatim</h2>
 <ul>
+  <li>場所の登録画面の地図表示には Google Maps SDK for Android を利用しています。地図を表示する際、地図データの取得のために、端末のIPアドレス、端末・OSの情報、表示している地図の範囲などが Google に送信されます。これらは Google のプライバシーポリシーに従って取り扱われ、当方は取得しません。詳細は <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a>をご確認ください。</li>
+  <li>地図上にピンを置いて場所を登録する場合、ピンの緯度経度を住所に変換するため、下記のとおり端末のOSの位置情報変換サービス(Androidでは Google 等が提供)へ送信され、結果が得られないときは Nominatim へ送信される場合があります。</li>
   <li>住所・地名の緯度経度への変換や現在地の国の判定には、まずお使いの端末のOSが提供する位置情報変換サービス(Androidでは Google 等が提供)が利用される場合があり、その際、入力した住所・地名や緯度経度が当該サービスの提供元に送信されることがあります。結果が得られない場合に、以下のとおり Nominatim へ送信されます。</li>
   <li>場所を登録する際に入力した住所・地名の文字列は、緯度経度に変換するために OpenStreetMap の Nominatim ジオコーディングサービスへ送信されます。</li>
   <li>上記「1. 位置情報(現在地)」のとおり、現在地の緯度経度も、その地点が属する国を判定するために同じ Nominatim サービスへ送信される場合があります(逆ジオコーディング)。</li>
@@ -61,7 +63,7 @@
 </ul>
 
 <h2>7. 第三者への情報提供</h2>
-<p>上記(OpenStreetMap Nominatim、Google AdMob、RevenueCat/Google Play・App Store の決済処理)以外の目的で、取得した情報を第三者に提供・販売することはありません。</p>
+<p>上記(Google Maps、OpenStreetMap Nominatim、Google AdMob、RevenueCat/Google Play・App Store の決済処理)以外の目的で、取得した情報を第三者に提供・販売することはありません。</p>
 
 <h2>8. お子様のご利用について</h2>
 <p>本アプリは子供を主な対象としたアプリではありません。</p>
@@ -79,7 +81,7 @@
 <hr class="lang-divider">
 
 <h1>Privacy Policy (Point Compass)</h1>
-<p class="updated">Last updated: October 5, 2026</p>
+<p class="updated">Last updated: November 3, 2026</p>
 
 <p>"Point Compass" ("the App") is provided for iOS/Android by the developer ("we", "us"). This policy explains what information the App collects and how it is handled.</p>
 
@@ -103,8 +105,10 @@
   <li>Using this feature requires you to grant notification permission on your device. If you don't grant it, every other feature of the App still works normally.</li>
 </ul>
 
-<h2>4. Location, address search, and OpenStreetMap Nominatim</h2>
+<h2>4. Maps (Google Maps), location, address search, and OpenStreetMap Nominatim</h2>
 <ul>
+  <li>The map on the place registration screen uses the Google Maps SDK for Android. When a map is displayed, information such as your device's IP address, device/OS information and the visible map area is sent to Google to load map data. This is handled under Google's privacy policy and is not collected by us. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> for details.</li>
+  <li>When you register a place by dropping a pin on the map, the pin's coordinates may be sent to your device's operating system geocoding service (on Android, provided by Google and others) to obtain an address, and to Nominatim as described below if no result is obtained.</li>
   <li>To convert an address or place name into coordinates, or to determine your home country from your current position, the App may first use the geocoding service provided by your device's operating system (on Android, provided by Google and others); in that case the text you typed or your coordinates may be sent to that service's provider. If no result is obtained, they are sent to Nominatim as described below.</li>
   <li>When you register a place, the address or place name you type is sent to OpenStreetMap's Nominatim geocoding service to convert it into coordinates.</li>
   <li>As noted in "1. Location (current position)" above, your current coordinates may also be sent to the same Nominatim service to determine which country they fall within (reverse geocoding).</li>
@@ -127,7 +131,7 @@
 </ul>
 
 <h2>7. Third-party sharing</h2>
-<p>We do not share or sell collected information to third parties other than as described above (OpenStreetMap Nominatim, Google AdMob, RevenueCat / Google Play &amp; App Store billing).</p>
+<p>We do not share or sell collected information to third parties other than as described above (Google Maps, OpenStreetMap Nominatim, Google AdMob, RevenueCat / Google Play &amp; App Store billing).</p>
 
 <h2>8. Children</h2>
 <p>The App is not directed at children.</p>
