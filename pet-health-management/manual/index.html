@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ぺっときろく 取扱説明書（使い方ガイド）— ペットの体重・健康・お世話管理</title>
-<meta name="description" content="複数のペット（犬・猫・フェレット・小動物・鳥・爬虫類など）の体重・ごはん・体調記録・お世話通知・予定カレンダーをまとめて管理できるアプリ「ぺっときろく」の公式取扱説明書です。やりたいことや機能別に使い方をわかりやすく解説します。">
+<meta name="description" content="複数のペット（犬・猫・フェレット・小動物・鳥・爬虫類など）の体重・ごはん・体調記録・お世話通知・予定カレンダーをまとめて管理できるアプリ「ぺっときろく」の公式取扱説明書トップページです。">
 <link rel="canonical" href="https://tya-kaihatsu.com/pet-health-management/manual/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ぺっときろく 取扱説明書（使い方ガイド）">
-<meta property="og:description" content="ペットのプロフィール登録、お世話記録設定、独自項目の作成、複数ペットの比較・カレンダー、お世話通知の使い方を画像付きで解説します。">
+<meta property="og:title" content="ぺっときろく 取扱説明書（使い方ガイド）— ペットの体重・健康・お世話管理">
+<meta property="og:description" content="複数のペット（犬・猫・フェレット・小動物・鳥・爬虫類など）の体重・ごはん・体調記録・お世話通知・予定カレンダーをまとめて管理できるアプリ「ぺっときろく」の公式取扱説明書トップページです。">
 <meta property="og:url" content="https://tya-kaihatsu.com/pet-health-management/manual/">
 <meta property="og:image" content="https://tya-kaihatsu.com/pet-health-management/manual/images/03_compare.png">
+<link rel="stylesheet" href="./style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -18,10 +19,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "「記録」をオフにすると、これまで記録したデータは消えますか？",
+      "name": "複数のペットを登録して切り替えることはできますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "消えません。ホームの記録ボタンや「記録を見る」タブの項目一覧から非表示になるだけで、再度オンにすればいつでも過去の記録を見返せます。"
+        "text": "はい。犬・猫・小動物・鳥・爬虫類など複数のペットを登録でき、ホーム画面での切り替えや「記録を見る」タブでの同時比較に対応しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "画面にある小さな「?」マークは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "各画面の部品の使い方を図解付きで表示するヘルプボタンです。まだ見ていない箇所は色付きで強調され、一度確認した後もいつでも押し直して見返せます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「記録」をオフにすると過去のデータは消えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "消えません。ホーム画面の記録ボタンや「記録を見る」タブの項目から一時的に隠れるだけで、再度オンにすればいつでも元の記録を見返せます。"
       }
     },
     {
@@ -29,500 +46,129 @@
       "name": "すでにお世話を記録した日にも通知は届きますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "お世話の通知は、設定した通知時刻の2時間前までにその項目の記録がすでにあれば、その回の通知は自動でスキップされ届きません。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "ごはんやおやつ・薬の名前を毎回手入力しなくてすむ方法はありますか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "お世話記録設定の「ごはん」「おやつ」「薬」の行にある「設定済み ›」バッジからよく使う名前を登録しておくと、記録時は選ぶだけで入力できます。他のペットの登録からコピーすることも可能です。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "画面にある「?」ボタンは何ですか？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "各画面の部品の使い方を図解付きで表示するヘルプボタンです。まだ見ていない箇所は強調表示され、一度確認した後もいつでも押し直して見返せます。"
+        "text": "お世話の通知は、設定した通知時刻の2時間前までにその項目の記録が済んでいれば、その回の通知は自動でスキップされ届きません。"
       }
     }
   ]
 }
 </script>
-<style>
-  :root {
-    --bg: #FAF9F7;
-    --surface: #FFFFFF;
-    --surface-sub: #F5F3EF;
-    --border: #ECE7E1;
-    --text: #33302C;
-    --text-sub: #7D766B;
-    --accent: #E86556;
-    --accent-soft: #FFE4E0;
-    --on-accent: #FFFFFF;
-    --step-bg: #FFF7F5;
-    --badge-blue: #3B82C4;
-    --badge-blue-soft: #E1EFFC;
-    --shadow: rgba(51, 48, 44, 0.08);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #1F1815;
-      --surface: #282019;
-      --surface-sub: #332720;
-      --border: #3D2F27;
-      --text: #F5ECE7;
-      --text-sub: #B0A399;
-      --accent: #FF8577;
-      --accent-soft: #422A25;
-      --on-accent: #241410;
-      --step-bg: #2E221C;
-      --badge-blue: #7CB2EA;
-      --badge-blue-soft: #223347;
-      --shadow: rgba(0, 0, 0, 0.4);
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #1F1815;
-    --surface: #282019;
-    --surface-sub: #332720;
-    --border: #3D2F27;
-    --text: #F5ECE7;
-    --text-sub: #B0A399;
-    --accent: #FF8577;
-    --accent-soft: #422A25;
-    --on-accent: #241410;
-    --step-bg: #2E221C;
-    --badge-blue: #7CB2EA;
-    --badge-blue-soft: #223347;
-    --shadow: rgba(0, 0, 0, 0.4);
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Hiragino Maru Gothic ProN", "M PLUS Rounded 1c", "Noto Sans JP", "Hiragino Sans", system-ui, sans-serif;
-    line-height: 1.65;
-  }
-  .hero-banner {
-    background: linear-gradient(135deg, var(--accent-soft), var(--surface));
-    border-bottom: 1px solid var(--border);
-    padding: 36px 20px 28px;
-    text-align: center;
-  }
-  .pill {
-    display: inline-block;
-    background: var(--accent);
-    color: var(--on-accent);
-    font-size: 12px;
-    font-weight: 800;
-    padding: 4px 14px;
-    border-radius: 999px;
-    margin-bottom: 10px;
-    letter-spacing: 0.03em;
-  }
-  .hero-banner h1 {
-    font-size: 26px;
-    margin: 0 0 10px;
-    line-height: 1.35;
-  }
-  .hero-banner p {
-    max-width: 680px;
-    margin: 0 auto;
-    font-size: 14px;
-    color: var(--text-sub);
-  }
-  .container {
-    max-width: 1040px;
-    margin: 0 auto;
-    padding: 26px 18px 72px;
-  }
-  .intro-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 20px 24px;
-    margin-bottom: 24px;
-    box-shadow: 0 6px 18px var(--shadow);
-  }
-  .intro-card h2 {
-    font-size: 17px;
-    margin: 0 0 6px;
-    color: var(--accent);
-  }
-  .intro-card p {
-    margin: 0;
-    font-size: 13.5px;
-    color: var(--text-sub);
-  }
-  .section-heading {
-    font-size: 18px;
-    font-weight: 800;
-    margin: 0 0 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .want-nav {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin-bottom: 30px;
-  }
-  @media (max-width: 820px) {
-    .want-nav { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 480px) {
-    .want-nav { grid-template-columns: 1fr; }
-  }
-  .want-card {
-    background: var(--surface);
-    border: 2px solid var(--border);
-    border-radius: 16px;
-    padding: 15px 16px;
-    text-decoration: none;
-    color: var(--text);
-    box-shadow: 0 4px 12px var(--shadow);
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    transition: border-color 0.15s ease, transform 0.15s ease;
-  }
-  .want-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-2px);
-  }
-  .want-card .kicker {
-    font-size: 11.5px;
-    font-weight: 800;
-    color: var(--accent);
-  }
-  .want-card .title {
-    font-size: 14.5px;
-    font-weight: 800;
-    line-height: 1.4;
-  }
-  .want-card .desc {
-    font-size: 12px;
-    color: var(--text-sub);
-  }
-  .step-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-  }
-  @media (max-width: 860px) {
-    .step-grid { grid-template-columns: 1fr; }
-  }
-  .feature-box {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    padding: 22px;
-    box-shadow: 0 8px 22px var(--shadow);
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-  .f-head {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 10px;
-  }
-  .step-badge {
-    background: var(--accent-soft);
-    color: var(--accent);
-    font-weight: 900;
-    font-size: 12px;
-    padding: 5px 11px;
-    border-radius: 999px;
-    flex-shrink: 0;
-  }
-  .f-head h2 {
-    font-size: 17.5px;
-    margin: 0;
-    line-height: 1.35;
-  }
-  .f-lead {
-    margin: 0;
-    font-size: 13px;
-    color: var(--text-sub);
-  }
-  .f-body {
-    display: grid;
-    grid-template-columns: 165px 1fr;
-    gap: 16px;
-    align-items: start;
-  }
-  @media (max-width: 520px) {
-    .f-body { grid-template-columns: 1fr; }
-    .f-shot { max-width: 240px; margin: 0 auto; }
-  }
-  .f-shot {
-    margin: 0;
-    background: var(--surface-sub);
-    border-radius: 16px;
-    padding: 8px;
-    border: 1px solid var(--border);
-    text-align: center;
-  }
-  .f-shot img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-  }
-  .f-shot figcaption {
-    font-size: 11.5px;
-    color: var(--text-sub);
-    margin-top: 6px;
-    font-weight: 700;
-  }
-  .flow-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .flow-step {
-    background: var(--step-bg);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 11px 13px;
-    font-size: 13px;
-  }
-  .flow-step h3 {
-    margin: 0 0 3px;
-    color: var(--accent);
-    font-size: 13.5px;
-    font-weight: 800;
-  }
-  .flow-step p {
-    margin: 0;
-    color: var(--text);
-    font-size: 12.8px;
-  }
-  .faq-box {
-    margin-top: 30px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    padding: 24px 26px;
-    box-shadow: 0 8px 22px var(--shadow);
-  }
-  .faq-box h2 {
-    font-size: 19px;
-    margin: 0 0 14px;
-  }
-  .faq-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-  }
-  @media (max-width: 720px) {
-    .faq-grid { grid-template-columns: 1fr; }
-  }
-  .faq-card {
-    background: var(--surface-sub);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 15px 16px;
-    font-size: 13px;
-  }
-  .faq-card h3 {
-    font-size: 14px;
-    margin: 0 0 6px;
-    color: var(--accent);
-  }
-  .faq-card p {
-    margin: 0;
-    color: var(--text);
-  }
-</style>
 </head>
 <body>
-<header class="hero-banner">
-  <span class="pill">公式使い方ガイド</span>
-  <h1>🐾 ぺっときろく かんたん取扱説明書</h1>
-  <p>うちの子に合わせてお世話項目をカスタマイズ！複数のペットの体重・体調・日々の予定をひと目で管理するための使い方ガイドです。</p>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🐾 ぺっときろく <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html" aria-current="page">トップ（目次）</a>
+      <a href="./profile.html">1. プロフィール登録</a>
+      <a href="./care-settings.html">2. お世話記録設定</a>
+      <a href="./compare.html">3. 記録を見る・比較</a>
+      <a href="./notifications.html">4. 通知まとめ</a>
+    </nav>
+  </div>
 </header>
 
+<div class="hero-banner">
+  <span class="pill">公式使い方ガイド</span>
+  <h1>🐾 ぺっときろく かんたん取扱説明書</h1>
+  <p>うちの子に合わせてお世話項目をカスタマイズ！機能ごとの詳しい使い方や、やりたいこと別の手順をページごとにわかりやすくまとめています。</p>
+</div>
+
 <main class="container">
-  <section class="intro-card" aria-labelledby="intro-heading">
-    <h2 id="intro-heading">はじめに</h2>
-    <p>「ぺっときろく」は、犬・猫・小動物（フェレット・ハムスター・うさぎ等）・鳥・爬虫類・両生類・魚・昆虫など、複数のペットの体重や健康状態・日々の予定をまとめて記録できるアプリです。画面の各所にある小さな「?」マークをタップすると、アプリ内でもいつでも図解付きの説明を確認できます。</p>
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに</h2>
+    <p>「ぺっときろく」は、犬・猫・小動物（フェレット・ハムスター・うさぎ等）・鳥・爬虫類・両生類・魚・昆虫など、複数のペットの体重や健康状態・日々の予定を1つのアプリで記録・共有できる健康管理アプリです。</p>
+    <p>アプリ内の各画面にある小さな「?」マークをタップすると、その場で図解付きのチュートリアルを見ることもできます。各機能の詳しい使い方は、下の「やりたいことから探す」または「機能別ページ一覧」からご覧ください。</p>
   </section>
 
-  <h2 class="section-heading">🔍 やりたいことから探す</h2>
+  <h2 class="section-heading">🔍 やりたいことから探す（目的別インデックス）</h2>
   <nav class="want-nav" aria-label="やりたいことから探す">
-    <a class="want-card" href="#feature-profile">
+    <a class="want-card" href="./profile.html">
       <span class="kicker">やりたいこと 01</span>
-      <span class="title">うちの子を登録・編集したい</span>
-      <span class="desc">種類・誕生日・g/kg単位・マイクロチップの登録へ</span>
+      <span class="title">うちの子を登録・編集したい／体重の単位（g・kg）を変えたい</span>
+      <span class="desc">名前・分類と種類・誕生日の自動年齢計算・マイクロチップ番号・グラム/キログラム切り替え</span>
+      <span class="go">「ペットのプロフィール登録・編集」のページを見る →</span>
     </a>
-    <a class="want-card" href="#feature-care-settings">
+    <a class="want-card" href="./care-settings.html">
       <span class="kicker">やりたいこと 02</span>
-      <span class="title">使う記録ボタンや独自項目を並べたい</span>
-      <span class="desc">お世話記録設定・アイコンバッジ・記録項目の作成へ</span>
+      <span class="title">使う記録ボタンだけ並べたい／自分の記録項目を作りたい</span>
+      <span class="desc">記録・バッジ（最大5個）・通知の3列設定、フード・基準体重の登録、「＋記録項目を作成」</span>
+      <span class="go">「お世話記録設定と作成した記録項目」のページを見る →</span>
     </a>
-    <a class="want-card" href="#feature-compare">
+    <a class="want-card" href="./compare.html">
       <span class="kicker">やりたいこと 03</span>
-      <span class="title">複数ペットの記録や予定を振り返りたい</span>
-      <span class="desc">記録を見るタブ・複数ペット比較・カレンダー・グラフへ</span>
+      <span class="title">複数ペットの予定や体重グラフ・カレンダーを見比べたい</span>
+      <span class="desc">複数ペット同時選択、スケジュール・週間・月間カレンダー、項目別のグラフ・一覧</span>
+      <span class="go">「記録を見る（比較・カレンダー・統計）」のページを見る →</span>
     </a>
-    <a class="want-card" href="#feature-notifications">
+    <a class="want-card" href="./notifications.html">
       <span class="kicker">やりたいこと 04</span>
-      <span class="title">ごはんやお世話の記録忘れを防ぎたい</span>
-      <span class="desc">通知まとめタブ・未記録のときだけ届くお世話通知へ</span>
+      <span class="title">ごはんやお世話の記録忘れを通知で防ぎたい</span>
+      <span class="desc">お知らせ通知の一括・個別オン/オフ、記録済みなら届かない2時間前判定のお世話通知</span>
+      <span class="go">「通知まとめ（お知らせ通知・お世話の通知）」のページを見る →</span>
     </a>
   </nav>
 
-  <h2 class="section-heading">📱 機能別の使い方</h2>
-  <div class="step-grid">
-    <section class="feature-box" id="feature-profile">
-      <div class="f-head">
-        <span class="step-badge">機能 01</span>
-        <h2>ペットのプロフィール登録・編集</h2>
+  <h2 class="section-heading">📱 機能別ページ一覧</h2>
+  <div class="feature-index-grid">
+    <a class="feature-link-card" href="./profile.html">
+      <div class="thumb"><img src="./images/04_profile.png" alt="ペットのプロフィール画面のサムネイル"></div>
+      <div>
+        <span class="brand-pill">機能 01</span>
+        <h3>ペットのプロフィール登録・編集</h3>
+        <p>種類と分類の入力、誕生日から年齢の自動計算、体重の単位（g/kg）、マイクロチップ、旅立った日の設定を解説します。</p>
+        <span class="more">詳しい使い方を見る →</span>
       </div>
-      <p class="f-lead">ペットの基本情報や体重の単位、お世話記録設定を管理します（「ペット設定」タブからいつでも編集できます）。</p>
-      <div class="f-body">
-        <figure class="f-shot">
-          <img src="./images/04_profile.png" alt="ペットのプロフィール編集画面（名前・分類・種類・誕生日・性別・マイクロチップNo.・単位設定・お世話記録設定）">
-          <figcaption>プロフィール画面</figcaption>
-        </figure>
-        <div class="flow-steps">
-          <div class="flow-step">
-            <h3>① 名前・分類・種類（必須マーク付き）</h3>
-            <p>種類名（例：フェレット）を入力して候補から選ぶと、「分類（自動(小動物)など）」も自動で決まります。候補にない種類もそのまま入力でき、分類を選べば登録できます。</p>
-          </div>
-          <div class="flow-step">
-            <h3>② 誕生日・年齢の自動計算と性別</h3>
-            <p>誕生日を入れると年齢（例：3歳5ヶ月）が自動計算され、毎年の誕生日予定もカレンダーに自動登録されます。誕生日がわからないときは「不明」にチェックを入れられます。</p>
-          </div>
-          <div class="flow-step">
-            <h3>③ 体重の単位設定（g / kg）とマイクロチップNo.</h3>
-            <p>小動物は「グラム(g)」、犬・猫は「キログラム(kg)」など、ペットごとに体重の単位を選べます。マイクロチップ番号（英数字）も任意で控えられます。</p>
-          </div>
-          <div class="flow-step">
-            <h3>④ お世話記録設定・旅立った日の登録</h3>
-            <p>「お世話記録設定」の行には選択中のバッジ数（例：バッジ 4/5）が表示されます。画面の一番下には、誤操作を防ぐため離した位置に「旅立った日を登録する」ボタンを備えています。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </a>
 
-    <section class="feature-box" id="feature-care-settings">
-      <div class="f-head">
-        <span class="step-badge">機能 02</span>
-        <h2>お世話記録設定と「作成した記録項目」</h2>
+    <a class="feature-link-card" href="./care-settings.html">
+      <div class="thumb"><img src="./images/02_care_settings.png" alt="お世話記録設定画面のサムネイル" loading="lazy"></div>
+      <div>
+        <span class="brand-pill">機能 02</span>
+        <h3>お世話記録設定と「作成した記録項目」</h3>
+        <p>動物の種類での絞り込み、記録・バッジ・通知の切り替え、基準値やフード登録、独自項目の作成方法を解説します。</p>
+        <span class="more">詳しい使い方を見る →</span>
       </div>
-      <p class="f-lead">ペットごとに「どの項目を記録するか」「ホームのアイコンにどのバッジを出すか」「通知するか」を一覧で設定します。</p>
-      <div class="f-body">
-        <figure class="f-shot">
-          <img src="./images/02_care_settings.png" alt="お世話記録設定画面（動物の種類で絞り込み、記録・バッジ・通知のチェック一覧、作成した記録項目）" loading="lazy">
-          <figcaption>お世話記録設定</figcaption>
-        </figure>
-        <div class="flow-steps">
-          <div class="flow-step">
-            <h3>① 動物の種類で絞り込み・使い方を見る</h3>
-            <p>「小動物」「犬」「猫」「鳥」「爬虫類」などのチップで、その子に合ったお世話項目を絞り込めます。右上の「? 使い方を見る」から5枚の説明カードをいつでも確認できます。</p>
-          </div>
-          <div class="flow-step">
-            <h3>② 「記録」「バッジ（最大5個）」「通知」の3列</h3>
-            <p>「記録」をオンにした項目だけホーム画面や「記録を見る」タブに並びます。「バッジ」をオンにすると今日の記録数がペットアイコンに表示されます（最大5個まで）。</p>
-          </div>
-          <div class="flow-step">
-            <h3>③ 基準値・よく使うフードやおやつの登録</h3>
-            <p>体重・体温の「設定済み ›」バッジから適正範囲を、ごはん・おやつ・薬のバッジからよく使う名前を登録でき、日々の記録が選ぶだけで素早く行えます。</p>
-          </div>
-          <div class="flow-step">
-            <h3>④ 「＋記録項目を作成」で自由な項目を追加</h3>
-            <p>一覧の一番下から、「元気度（5段階）」「遊び日記（メモのみ）」「飲水量（数値）」「あり／なし」など独自の記録項目を作成でき、標準項目と同じように記録・バッジ・通知・統計が使えます。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </a>
 
-    <section class="feature-box" id="feature-compare">
-      <div class="f-head">
-        <span class="step-badge">機能 03</span>
-        <h2>記録を見る（複数ペット比較・カレンダー・統計）</h2>
+    <a class="feature-link-card" href="./compare.html">
+      <div class="thumb"><img src="./images/03_compare.png" alt="記録を見るタブのサムネイル" loading="lazy"></div>
+      <div>
+        <span class="brand-pill">機能 03</span>
+        <h3>記録を見る（比較・カレンダー・統計）</h3>
+        <p>複数ペットを選んで予定や記録を並べて比較する方法や、スケジュール・週間・月間の切り替えを解説します。</p>
+        <span class="more">詳しい使い方を見る →</span>
       </div>
-      <p class="f-lead">下部タブの「記録を見る」では、予定カレンダーの確認や、体重・体調記録のグラフ・カレンダー・一覧を振り返れます。</p>
-      <div class="f-body">
-        <figure class="f-shot">
-          <img src="./images/03_compare.png" alt="記録を見るタブの画面（複数ペット選択、項目チップ、スケジュール・週間・月間カレンダー表示）" loading="lazy">
-          <figcaption>記録を見るタブ</figcaption>
-        </figure>
-        <div class="flow-steps">
-          <div class="flow-step">
-            <h3>① ペットを選ぶ（複数選択OK）</h3>
-            <p>上部に並ぶペットカードをタップして選択します。複数のペット（例：ちゃこ、ちゃの）にチェックを入れると、予定や体重グラフなどを並べて比較できます。</p>
-          </div>
-          <div class="flow-step">
-            <h3>② 見たい項目チップをタップ</h3>
-            <p>「カレンダー」のほか、「記録」をオンにしているお世話項目（体重・ごはん・おやつ・水・うんち・おしっこ・掃除・換毛・環境記録・写真/動画・作成した項目）が並びます。</p>
-          </div>
-          <div class="flow-step">
-            <h3>③ スケジュール / 週間 / 月間・グラフ表示</h3>
-            <p>「カレンダー」選択時はスケジュール一覧・週間・月間で予定を確認できます。体重や体調項目を選んだときは「グラフ / カレンダー / 一覧」で日々の変化を振り返れます。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </a>
 
-    <section class="feature-box" id="feature-notifications">
-      <div class="f-head">
-        <span class="step-badge">機能 04</span>
-        <h2>通知まとめ（お知らせ通知・お世話の通知）</h2>
+    <a class="feature-link-card" href="./notifications.html">
+      <div class="thumb"><img src="./images/01_notifications.png" alt="通知まとめタブのサムネイル" loading="lazy"></div>
+      <div>
+        <span class="brand-pill">機能 04</span>
+        <h3>通知まとめ（お知らせ通知・お世話の通知）</h3>
+        <p>通知全体のオン/オフ、2時間前までに記録がないときだけ届くお世話通知、新しい通知の追加方法を解説します。</p>
+        <span class="more">詳しい使い方を見る →</span>
       </div>
-      <p class="f-lead">下部タブの「通知まとめ」では、登録したお世話通知や予定の通知を一覧で確認・切り替えできます。</p>
-      <div class="f-body">
-        <figure class="f-shot">
-          <img src="./images/01_notifications.png" alt="通知まとめタブの画面（お知らせ通知スイッチ、今後の通知一覧、＋通知を追加ボタン）" loading="lazy">
-          <figcaption>通知まとめタブ</figcaption>
-        </figure>
-        <div class="flow-steps">
-          <div class="flow-step">
-            <h3>① お知らせ通知の一括オン/オフと個別スイッチ</h3>
-            <p>一番上の「お知らせ通知」スイッチをオフにすると、登録済みの通知をすべてまとめて止められます。「今後の通知」一覧では、次に届く日時を確認しながら1件ずつオン/オフできます。</p>
-          </div>
-          <div class="flow-step">
-            <h3>② 記録がないときだけ届く「お世話の通知」</h3>
-            <p>お世話の通知（ごはん等）は、設定した通知時刻の<strong>2時間前までに記録がすでにあれば、その回の通知は出ません</strong>。複数のペット（例：ちゃこ、ちゃの）を同じ通知セットにまとめることも可能です。</p>
-          </div>
-          <div class="flow-step">
-            <h3>③ 「＋通知を追加」ボタン</h3>
-            <p>画面下の「＋通知を追加」から、新しい「お世話の通知」やカレンダーの「予定と通知」をいつでも追加できます。</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </a>
   </div>
 
-  <section class="faq-box" id="faq" aria-labelledby="faq-heading">
+  <section class="card-section" id="faq" aria-labelledby="faq-heading">
     <h2 id="faq-heading">💡 よくある質問（FAQ）</h2>
     <div class="faq-grid">
       <article class="faq-card">
-        <h3>Q. お世話記録設定で「記録」をオフにすると、過去のデータは消えますか？</h3>
-        <p>いいえ、これまでに記録したデータは消えません。ホーム画面の記録ボタンや「記録を見る」タブの項目から非表示になるだけで、再度オンにすればいつでも元の記録を見返せます。</p>
+        <h3>Q. 複数のペットを登録して切り替えることはできますか？</h3>
+        <p>はい。犬・猫・小動物・鳥・爬虫類など複数のペットを登録でき、ホーム画面での切り替えや「<a href="./compare.html">記録を見る</a>」タブでの同時比較に対応しています。</p>
       </article>
       <article class="faq-card">
-        <h3>Q. すでにお世話を記録した日にも、リマインダー通知は届きますか？</h3>
-        <p>お世話の通知は、通知時刻の2時間前までにその項目の記録が済んでいれば、その回の通知は自動でスキップされます。まだ記録していないときだけお知らせします。</p>
+        <h3>Q. 画面にある小さな「?」マークは何ですか？</h3>
+        <p>その部品の使い方を図解付きで表示するヘルプボタンです。まだ見ていない箇所は強調表示され、一度確認した後もいつでも押し直して見返せます。</p>
       </article>
       <article class="faq-card">
-        <h3>Q. ごはんやおやつ・薬の名前を毎回入力しなくてすむ方法はありますか？</h3>
-        <p>お世話記録設定の「ごはん」「おやつ」「薬」にある「設定済み ›」バッジからよく使う名前を登録しておくと、記録時は選ぶだけで入力できます。「ほかのペットの登録から選ぶ」でコピーもできます。</p>
+        <h3>Q. 「記録」をオフにすると過去のデータは消えますか？</h3>
+        <p>いいえ、これまでに記録したデータは消えません。再度「<a href="./care-settings.html">お世話記録設定</a>」でオンにすれば、いつでも元の記録を見返せます。</p>
       </article>
       <article class="faq-card">
-        <h3>Q. 画面にある「?」ボタンは何ですか？</h3>
-        <p>その部品の使い方を図解付きで表示するヘルプボタンです。まだ見ていない箇所は色付きで光り、一度確認したあとも「?」をタップすればいつでも説明を見直せます。</p>
+        <h3>Q. すでにお世話を記録した日にも通知は届きますか？</h3>
+        <p>「<a href="./notifications.html">お世話の通知</a>」は、設定した通知時刻の2時間前までにその項目の記録が済んでいれば、その回の通知は自動でスキップされます。</p>
       </article>
     </div>
   </section>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>通知まとめ（お知らせ通知・お世話の通知・リマインダー） | ぺっときろく 取扱説明書</title>
+<meta name="description" content="ぺっときろくの「通知まとめ」タブの使い方を解説します。通知全体の一括オン/オフ、記録がないときだけ届く「お世話の通知」（2時間前判定）、個別スイッチの切り替え、「＋通知を追加」の手順。">
+<link rel="canonical" href="https://tya-kaihatsu.com/pet-health-management/manual/notifications.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通知まとめ（お知らせ通知・お世話の通知・リマインダー） | ぺっときろく 取扱説明書">
+<meta property="og:description" content="ぺっときろくの「通知まとめ」タブの使い方を解説します。通知全体の一括オン/オフ、記録がないときだけ届く「お世話の通知」（2時間前判定）、個別スイッチの切り替え、「＋通知を追加」の手順。">
+<meta property="og:url" content="https://tya-kaihatsu.com/pet-health-management/manual/notifications.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/pet-health-management/manual/images/01_notifications.png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "「お世話の通知」は、すでにお世話を記録した日にも届きますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "届きません。設定した通知時刻の2時間前までにその項目の記録（「していない」「なし」の記録を含む）がすでにあれば、その回の通知は自動でスキップされます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "すべての通知を一時的にまとめて止めることはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。画面一番上の「お知らせ通知」スイッチをオフにすると、登録済みのすべての通知が止まります。再度オンにすれば元の設定のまま再開します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "1つの通知に複数のペットをまとめることはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。お世話の通知では対象ペットを複数選べるため、「ごはん 22:30 ・ ちゃこ、ちゃの」のように1つの通知セットでみんなのお世話タイミングを管理できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「お世話の通知」と「予定の通知」の違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "「お世話の通知」は毎日のごはんや体重など記録忘れを防ぐ通知（2時間前までに記録があれば届かない）で、「予定の通知」は通院や買い物などカレンダーの予定日時に合わせて届く通知です。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🐾 ぺっときろく <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./profile.html">1. プロフィール登録</a>
+      <a href="./care-settings.html">2. お世話記録設定</a>
+      <a href="./compare.html">3. 記録を見る・比較</a>
+      <a href="./notifications.html" aria-current="page">4. 通知まとめ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 04</span>
+  <h1>🔔 通知まとめ（お知らせ通知・お世話の通知）</h1>
+  <p>ごはんや体重などの記録忘れを防ぐ「お世話の通知」と、カレンダーの「予定の通知」を一括管理します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>通知まとめ（お知らせ通知・お世話の通知）</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+    <p>下部タブの「通知まとめ」では、アプリ全体の通知のオン/オフや、登録した通知の次回届く日時の確認、1件ごとのオン/オフ切り替え、新しい通知の追加が行えます。</p>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#step-master">・通知をまとめて止めたい</a>
+      <a class="want-tag" href="#step-list">・次に届く日時を確認／個別にオン・オフしたい</a>
+      <a class="want-tag" href="#step-add">・記録忘れを防ぐ「お世話の通知」を追加したい</a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="guide-heading">
+    <h2 id="guide-heading">📱 画面の各項目と使い方</h2>
+    <div class="detail-layout">
+      <figure class="detail-shot">
+        <img src="./images/01_notifications.png" alt="通知まとめタブの画面（お知らせ通知の全体スイッチ、今後の通知一覧：お世話の通知 ごはん 11月4日 22:30・ちゃこ、ちゃの、＋通知を追加ボタン）">
+        <figcaption>「通知まとめ」タブ</figcaption>
+      </figure>
+
+      <div class="flow-steps">
+        <div class="flow-step" id="step-master">
+          <h3>① お知らせ通知（通知全体のオン/オフ）</h3>
+          <p>画面一番上の「お知らせ通知」スイッチは、アプリ全体のマスタースイッチです。オフにすると、予約済みの「お世話の通知」や「予定の通知」がすべて取り消されて届かなくなります。</p>
+        </div>
+
+        <div class="flow-step" id="step-list">
+          <h3>② 今後の通知一覧（次回日時・対象ペット・個別スイッチ）</h3>
+          <p>登録した通知が、<strong>次に届く日時</strong>と<strong>対象ペット名</strong>（例：<code>11月4日 22:30 ・ ちゃこ、ちゃの</code>）付きで並びます。<br>
+          ・右側のスイッチで、通知の設定を消さずに<strong>1件ずつオン/オフ</strong>を切り替えられます。<br>
+          ・カードをタップすると、曜日や時刻、対象ペットの編集画面が開きます。</p>
+        </div>
+
+        <div class="flow-step" id="step-add">
+          <h3>③ 「＋通知を追加」と2時間前判定の仕組み</h3>
+          <p>画面下の「＋通知を追加」ボタンから、<strong>「お世話の通知」</strong>または<strong>「予定と通知」</strong>を追加できます（<a href="./care-settings.html">お世話記録設定</a>の「通知」列からも同じように設定できます）。<br>
+          <strong>【重要】お世話の通知が届く条件：</strong>設定した曜日・時刻の<strong>2時間前までにその項目の記録がすでにあれば、その回の通知は出ません</strong>。まだ記録していないときだけ「〇〇の記録をしましょう」とお知らせします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" id="faq" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">💡 よくある質問（FAQ）</h2>
+    <div class="faq-grid">
+      <article class="faq-card">
+        <h3>Q. すでにお世話を記録した日にも、お世話の通知は届きますか？</h3>
+        <p>いいえ。通知時刻の2時間前までに記録が済んでいれば、その回の通知は自動でスキップされます。</p>
+      </article>
+      <article class="faq-card">
+        <h3>Q. すべての通知を一時的にまとめて止めることはできますか？</h3>
+        <p>一番上の「お知らせ通知」スイッチをオフにするだけで、個別の通知設定を残したまま全通知を一括停止できます。</p>
+      </article>
+      <article class="faq-card">
+        <h3>Q. 複数のペットに同じ時刻のごはん通知を設定できますか？</h3>
+        <p>はい。1つの通知セットで複数のペット（ちゃこ、ちゃの等）を対象に選べるため、同じ時刻の通知を何件も作る必要はありません。</p>
+      </article>
+      <article class="faq-card">
+        <h3>Q. 通知が届かないときはどこを確認すればよいですか？</h3>
+        <p>①この画面一番上の「お知らせ通知」がオンか、②各通知カードのスイッチが「オン」か、③スマートフォンのOS設定で「ぺっときろく」の通知権限が許可されているかをご確認ください。</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="pager-nav" aria-label="前後のページへ移動">
+    <a class="pager-link" href="./compare.html">
+      <span class="dir">← 前のページ（機能 03）</span>
+      <span class="lbl">記録を見る（比較・カレンダー・統計）</span>
+    </a>
+    <a class="pager-link" href="./index.html">
+      <span class="dir">取扱説明書トップへ →</span>
+      <span class="lbl">目次・やりたいこと一覧に戻る</span>
+    </a>
+  </nav>
+</main>
+</body>
+</html>

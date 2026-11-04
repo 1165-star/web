@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お世話記録設定と「作成した記録項目」（バッジ・通知・独自項目） | ぺっときろく 取扱説明書</title>
+<meta name="description" content="ぺっときろくの「お世話記録設定」の使い方を解説します。動物の種類での絞り込み、記録・バッジ（最大5個）・通知の3列設定、基準体重やフードの登録、「＋記録項目を作成」による独自項目の追加方法。">
+<link rel="canonical" href="https://tya-kaihatsu.com/pet-health-management/manual/care-settings.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="お世話記録設定と「作成した記録項目」（バッジ・通知・独自項目） | ぺっときろく 取扱説明書">
+<meta property="og:description" content="ぺっときろくの「お世話記録設定」の使い方を解説します。動物の種類での絞り込み、記録・バッジ（最大5個）・通知の3列設定、基準体重やフードの登録、「＋記録項目を作成」による独自項目の追加方法。">
+<meta property="og:url" content="https://tya-kaihatsu.com/pet-health-management/manual/care-settings.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/pet-health-management/manual/images/02_care_settings.png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "「記録」のチェックを外すと、これまで記録したデータは消えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "消えません。ホームの記録ボタンや「記録を見る」タブから非表示になるだけで、再度チェックを入れればいつでも過去のデータを見返せます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "「バッジ」はいくつまで選べますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "標準の項目と自分で作成した記録項目を合わせて、ペットごとに最大5個まで選べます。「記録」がオンになっている項目だけ「バッジ」を選べます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "自分で作った「記録項目」は他のペットでも使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。作成した記録項目そのものは全ペット共通で一覧に並び、「記録」「バッジ」「通知」のオン/オフをペットごとに個別に選べます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "基準体重やフード名をあとから変更したいときはどこから開きますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "お世話記録設定の各行にある緑色の「設定済み ›」や「設定済み・2件 ›」のバッジをタップすると、いつでも編集画面を開けます。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🐾 ぺっときろく <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./profile.html">1. プロフィール登録</a>
+      <a href="./care-settings.html" aria-current="page">2. お世話記録設定</a>
+      <a href="./compare.html">3. 記録を見る・比較</a>
+      <a href="./notifications.html">4. 通知まとめ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 02</span>
+  <h1>⚙️ お世話記録設定と「作成した記録項目」</h1>
+  <p>ホームに出す記録ボタン、ペットアイコンに出す回数バッジ、記録忘れ通知、自分だけの記録項目を設定します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>お世話記録設定と「作成した記録項目」</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+    <p>「お世話記録設定」は、<a href="./profile.html">ペットのプロフィール画面</a>の下部にある「お世話記録設定」行をタップすると開きます。ペットの種類に合わせて使う項目だけを選び、さらに自分だけのオリジナル記録項目を追加できます。</p>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#step-filter">・動物の種類に合った項目だけ見たい</a>
+      <a class="want-tag" href="#step-columns">・ホームのボタンやバッジ（最大5個）を選びたい</a>
+      <a class="want-tag" href="#step-presets">・基準体重やよく使うフードを登録したい</a>
+      <a class="want-tag" href="#step-custom">・「元気度」など独自の記録項目を作りたい</a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="guide-heading">
+    <h2 id="guide-heading">📱 画面の各項目と使い方</h2>
+    <div class="detail-layout">
+      <figure class="detail-shot">
+        <img src="./images/02_care_settings.png" alt="お世話記録設定の画面（動物の種類で絞り込み、アイコンに表示するバッジ 4/5選択中、カテゴリ別の記録・バッジ・通知チェック、作成した記録項目、＋記録項目を作成）">
+        <figcaption>お世話記録設定シート</figcaption>
+      </figure>
+
+      <div class="flow-steps">
+        <div class="flow-step" id="step-filter">
+          <h3>① 動物の種類で絞り込み・「? 使い方を見る」</h3>
+          <p>上部のチップ（すべて / 犬 / 猫 / 小動物 / 鳥 / 爬虫類 / 両生類 / 魚 / 昆虫 / その他）で、その動物に関係するお世話項目だけに絞り込めます（開いたときはプロフィールの分類が自動で選ばれます）。<br>
+          右上の「? 使い方を見る」をタップすると、5枚の図解カードで設定のポイントをいつでも見直せます。</p>
+        </div>
+
+        <div class="flow-step" id="step-columns">
+          <h3>② 「記録」「バッジ」「通知」の3列チェック</h3>
+          <p>・<strong>記録（緑のチェック）</strong>：オンにした項目だけ、ホーム画面の記録ボタンと「<a href="./compare.html">記録を見る</a>」タブの項目チップに表示されます。<br>
+          ・<strong>バッジ（青のチェック・最大5個）</strong>：今日の記録回数をホーム画面のペットアイコンの周りに表示します（青いバーに「4 / 5 選択中」のように現在の選択数が出ます）。<br>
+          ・<strong>通知（青のチェック）</strong>：曜日と時刻を指定して、記録がない日に届くお世話通知を設定します（設定済みの行には「通知 ›」バッジが出ます）。</p>
+        </div>
+
+        <div class="flow-step" id="step-presets">
+          <h3>③ 最初に決める項目（基準値・フード・おやつ・薬の登録）</h3>
+          <p>・<strong>体重・体温</strong>：初めて「記録」をオンにすると適正範囲（下限〜上限）の入力画面が開きます。設定後は行の「設定済み ›」バッジからいつでも変更できます。<br>
+          ・<strong>ごはん・おやつ・薬</strong>：よく使うフード名やおやつ・薬を登録しておくと、日々の記録画面で選ぶだけで入力できます。「ほかのペットの登録から選ぶ」で別のペットの登録名をコピーすることも可能です。</p>
+        </div>
+
+        <div class="flow-step" id="step-custom">
+          <h3>④ 「作成した記録項目」と「＋記録項目を作成」</h3>
+          <p>一覧の一番下にある「＋記録項目を作成」を押すと、自分だけの記録項目を作って一覧の1行に追加できます。<br>
+          記録の種類は<strong>「あり／なし」「数値（単位つき）」「5段階（例：元気度）」「メモのみ（例：遊び日記）」</strong>の4種類から選べ、アイコンも自由に設定できます。作成した項目の「編集 ›」バッジから名前・アイコン・単位の変更や削除が行えます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" id="faq" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">💡 よくある質問（FAQ）</h2>
+    <div class="faq-grid">
+      <article class="faq-card">
+        <h3>Q. 「記録」のチェックを外すと、これまで記録したデータは消えますか？</h3>
+        <p>いいえ、データは削除されません。ホームの記録ボタンや「記録を見る」タブから隠れるだけなので、まずは体重とごはんだけオンにして後から増やす使い方も安心です。</p>
+      </article>
+      <article class="faq-card">
+        <h3>Q. 「バッジ」や「通知」の枠が点線になっていて押せない行があるのはなぜですか？</h3>
+        <p>「バッジ」と「通知」は、左側の「記録」がオンになっている項目だけ選べる仕組みです。先に「記録」にチェックを入れると選べるようになります。</p>
+      </article>
+      <article class="faq-card">
+        <h3>Q. 自分で作った「記録項目」は他のペットでも使えますか？</h3>
+        <p>はい。作成した項目自体はすべてのペットのお世話記録設定に並び、使うかどうか（記録・バッジ・通知のON/OFF）をペットごとに選べます。</p>
+      </article>
+      <article class="faq-card">
+        <h3>Q. 他のペットと同じ通知の曜日・時刻を使い回せますか？</h3>
+        <p>はい。通知の設定ポップアップにある「ほかのペットのセットから追加」を選ぶと、既存の通知セットにそのペットを追加して共有できます。</p>
+      </article>
+    </div>
+  </section>
+
+  <nav class="pager-nav" aria-label="前後のページへ移動">
+    <a class="pager-link" href="./profile.html">
+      <span class="dir">← 前のページ（機能 01）</span>
+      <span class="lbl">ペットのプロフィール登録・編集</span>
+    </a>
+    <a class="pager-link" href="./compare.html">
+      <span class="dir">次のページ（機能 03）→</span>
+      <span class="lbl">記録を見る（比較・カレンダー・統計）</span>
+    </a>
+  </nav>
+</main>
+</body>
+</html>
