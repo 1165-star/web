@@ -69,13 +69,17 @@
 
     main {
       max-width: 1040px;
-      padding: 32px 20px 80px;
-      transition: max-width 0.2s ease;
+      padding: 24px 16px 60px;
+    }
+    @media (min-width: 768px) {
+      main {
+        padding: 36px 24px 80px;
+      }
     }
 
     /* ナビゲーション戻るボタン */
     .back-nav {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
     .back-nav .back-link {
       display: inline-flex;
@@ -83,7 +87,7 @@
       gap: 6px;
       color: var(--muted);
       text-decoration: none;
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       font-weight: 600;
       padding: 6px 14px;
       border-radius: 999px;
@@ -98,35 +102,48 @@
       transform: translateX(-3px);
     }
 
-    /* ヒーロー紹介カード (PCで2カラムレイアウト) */
+    /* ヒーロー紹介：スマホでは中央揃え・自然な縦並び、PCでは2カラムのリッチカード */
     .app-showcase-card {
-      display: block !important;
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 24px;
-      margin-bottom: 40px;
+      border-radius: 18px;
+      padding: 24px 18px;
+      margin-bottom: 32px;
       box-shadow: var(--shadow-card);
+      text-align: center;
     }
     @media (min-width: 768px) {
       .app-showcase-card {
-        padding: 36px 36px;
+        padding: 36px;
+        border-radius: 20px;
+        margin-bottom: 40px;
         display: grid !important;
         grid-template-columns: 1.15fr 0.85fr;
         gap: 36px;
         align-items: center;
+        text-align: left;
       }
     }
 
     .app-meta-head {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 16px;
-      margin-bottom: 16px;
+      gap: 12px;
+      margin-bottom: 14px;
     }
+    @media (min-width: 768px) {
+      .app-meta-head {
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 16px;
+      }
+    }
+
     .app-icon-img {
-      width: 76px;
-      height: 76px;
+      width: 80px;
+      height: 80px;
       border-radius: 18px;
       object-fit: cover;
       border: 1px solid var(--border);
@@ -143,17 +160,30 @@
 
     .app-title-group h1 {
       margin: 0 0 6px;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 800;
       color: var(--fg);
       letter-spacing: -0.01em;
     }
+    @media (min-width: 768px) {
+      .app-title-group h1 {
+        font-size: 1.75rem;
+      }
+    }
+
     .badges-row {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
+      justify-content: center;
       align-items: center;
     }
+    @media (min-width: 768px) {
+      .badges-row {
+        justify-content: flex-start;
+      }
+    }
+
     .store-badge {
       display: inline-flex;
       align-items: center;
@@ -169,46 +199,72 @@
     .store-badge svg { width: 12px; height: 12px; }
 
     .tag-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 2px 8px;
-      border-radius: 999px;
-      font-size: 0.72rem;
-      font-weight: 500;
-      background: var(--tag-bg);
-      color: var(--tag-fg);
-      border: 1px solid var(--border);
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .tag-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 0.72rem;
+        font-weight: 500;
+        background: var(--tag-bg);
+        color: var(--tag-fg);
+        border: 1px solid var(--border);
+      }
     }
 
     .app-lead-desc {
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       line-height: 1.6;
-      margin: 14px 0 18px;
+      margin: 12px 0 16px;
+    }
+    @media (min-width: 768px) {
+      .app-lead-desc {
+        font-size: 0.95rem;
+        margin: 14px 0 20px;
+      }
     }
 
-    /* アプリの特長ハイライトチップ */
+    /* アプリの特長ハイライトチップ：スマホでは非表示、PCでのみ表示 */
     .specs-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .specs-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 24px;
+        justify-content: flex-start;
+      }
     }
     .spec-item {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      font-size: 0.8rem;
+      gap: 5px;
+      font-size: 0.78rem;
       color: var(--fg);
       background: var(--bg);
       border: 1px solid var(--border);
-      padding: 4px 10px;
+      padding: 3px 9px;
       border-radius: 8px;
       font-weight: 500;
     }
 
     /* Google Play ダウンロードボタン */
+    .store-cta-wrap {
+      display: flex;
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .store-cta-wrap {
+        justify-content: flex-start;
+      }
+    }
     .store-cta-btn {
       display: inline-flex;
       align-items: center;
@@ -219,7 +275,7 @@
       color: var(--bg);
       text-decoration: none;
       font-weight: 700;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     }
@@ -229,8 +285,8 @@
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
     }
     .store-cta-btn svg {
-      width: 28px;
-      height: 28px;
+      width: 26px;
+      height: 26px;
       fill: currentColor;
       flex-shrink: 0;
     }
@@ -241,39 +297,46 @@
       text-align: left;
     }
     .store-cta-small {
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       opacity: 0.8;
       font-weight: 400;
     }
 
-    /* ヒーロー右側：フィーチャーグラフィック */
-    .hero-banner-side {
-      display: block;
-      margin-top: 20px;
+    /* ヒーロー右側：PCでのみフィーチャーグラフィックを表示 */
+    .hero-right {
+      display: none;
     }
     @media (min-width: 768px) {
-      .hero-banner-side {
-        margin-top: 0;
+      .hero-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-banner-preview {
+        width: 100%;
+        max-width: 440px;
+        height: auto;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-card);
+        display: block;
+        transition: transform 0.3s ease;
+      }
+      .hero-banner-side:hover .hero-banner-preview {
+        transform: scale(1.02);
       }
     }
-    .hero-banner-preview {
-      width: 100%;
-      height: auto;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-card);
-      display: block;
-      transition: transform 0.3s ease;
-    }
-    .hero-banner-side:hover .hero-banner-preview {
-      transform: scale(1.02);
-    }
 
-    /* スクリーンショットギャラリー (PCで幅広表示) */
+    /* スクリーンショットギャラリー */
     .store-gallery {
       max-width: 100%;
-      margin: 0 0 44px;
+      margin: 0 0 36px;
       text-align: left;
+    }
+    @media (min-width: 768px) {
+      .store-gallery {
+        margin: 0 0 44px;
+      }
     }
     .gallery-heading-wrap {
       display: flex;
@@ -281,85 +344,106 @@
       justify-content: space-between;
       border-bottom: 1px solid var(--border);
       padding-bottom: 8px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
     .gallery-heading-wrap h2 {
       margin: 0;
       padding: 0;
       border-bottom: none;
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       font-weight: 800;
     }
     .gallery-hint {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--muted);
     }
 
     .gallery-list {
-      padding: 4px 4px 16px;
-      gap: 14px;
+      padding: 4px 2px 14px;
+      gap: 10px;
+    }
+    @media (min-width: 768px) {
+      .gallery-list {
+        padding: 4px 4px 16px;
+        gap: 14px;
+      }
     }
     .gallery-thumb {
-      border-radius: 12px;
+      border-radius: 10px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     .gallery-thumb:hover {
-      transform: translateY(-4px);
+      transform: translateY(-3px);
       box-shadow: var(--shadow-hover);
     }
     .gallery-thumb img {
-      height: 150px;
+      height: 140px;
     }
     @media (min-width: 768px) {
+      .gallery-thumb {
+        border-radius: 12px;
+      }
       .gallery-thumb img {
         height: 200px;
       }
     }
 
-    /* 「できること」セクション：PCで2カラム */
+    /* 「できること」セクション：スマホでは1カラム、PCでは2カラム */
     .features {
       max-width: 100%;
-      margin: 0 0 44px;
+      margin: 0 0 36px;
       text-align: left;
+    }
+    @media (min-width: 768px) {
+      .features {
+        margin: 0 0 44px;
+      }
     }
     .features-heading-wrap {
       border-bottom: 1px solid var(--border);
       padding-bottom: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
     .features-heading-wrap h2 {
       margin: 0;
       padding: 0;
       border-bottom: none;
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       font-weight: 800;
       text-align: left;
     }
 
     .feature-list {
       display: grid;
-      gap: 12px;
+      gap: 10px;
       grid-template-columns: 1fr;
     }
-    @media (min-width: 680px) {
+    @media (min-width: 768px) {
       .feature-list {
         grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
+        gap: 14px;
       }
     }
 
     .feature-list li {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 14px 16px;
-      font-size: 0.9rem;
-      line-height: 1.55;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      line-height: 1.5;
       display: flex;
       align-items: flex-start;
-      gap: 12px;
+      gap: 10px;
       box-shadow: var(--shadow-card);
       transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    @media (min-width: 768px) {
+      .feature-list li {
+        padding: 14px 16px;
+        border-radius: 12px;
+        font-size: 0.9rem;
+      }
     }
     .feature-list li:hover {
       border-color: var(--accent);
@@ -369,12 +453,12 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 22px;
-      height: 22px;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
       background: var(--accent-soft);
       color: var(--accent);
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       font-weight: 800;
       flex-shrink: 0;
       margin-top: 1px;
@@ -383,7 +467,7 @@
     /* アプリ内リンク (プライバシーポリシー・リリースノート) */
     .app-links-wrap {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 24px;
@@ -391,14 +475,14 @@
     .app-link-card {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       border: 1px solid var(--border);
       background: var(--card-bg);
       border-radius: 10px;
-      padding: 10px 18px;
+      padding: 10px 16px;
       color: var(--accent);
       text-decoration: none;
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       font-weight: 600;
       box-shadow: var(--shadow-card);
       transition: all 0.2s ease;
@@ -448,7 +532,7 @@
           <span class="spec-item">🌐 12言語対応</span>
         </div>
 
-        <div>
+        <div class="store-cta-wrap">
           <a class="store-cta-btn" href="https://play.google.com/store/apps/details?id=com.bloodpressurehistory.app" target="_blank" rel="noopener noreferrer" aria-label="Google Playで入手(Android)">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
             <span class="store-cta-text">
