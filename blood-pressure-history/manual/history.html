@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>記録一覧の確認・編集・削除 | 血圧メモ 取扱説明書</title>
+<meta name="description" content="血圧メモの「一覧」タブの使い方を解説します。過去の血圧測定カードの確認、記録をタップしての日時・数値・メモの再編集、不要なデータの削除手順。">
+<link rel="canonical" href="https://tya-kaihatsu.com/blood-pressure-history/manual/history.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="記録一覧の確認・編集・削除 | 血圧メモ 取扱説明書">
+<meta property="og:description" content="血圧メモの「一覧」タブの使い方を解説します。過去の血圧測定カードの確認、記録をタップしての日時・数値・メモの再編集、不要なデータの削除手順。">
+<meta property="og:url" content="https://tya-kaihatsu.com/blood-pressure-history/manual/history.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/blood-pressure-history/manual/images/04_history_list.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "一度保存した記録の数値をあとから修正できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。「一覧」タブで変更したい記録カードをタップすると「記録を編集」画面が開きます。最高血圧・最低血圧・脈拍・メモだけでなく、測定日時（年・月・日・時・分）も修正して「保存」できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "誤って入力した記録を削除するにはどうすればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "「一覧」タブで各記録カードの右上に表示されているゴミ箱アイコンをタップすると削除できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "無料版で保存できる期間に制限はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無料版では直近1ヶ月分までの記録データが保持されます。1ヶ月以上の長期データをずっと残して蓄積したい場合はPREMIUMプランをご利用いただけます。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">❤️ 血圧メモ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./record.html">1. 記録・リマインダー</a>
+      <a href="./history.html" aria-current="page">2. 記録一覧・編集</a>
+      <a href="./graph.html">3. グラフ分析</a>
+      <a href="./settings.html">4. 設定・バックアップ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 02</span>
+  <h1>📋 記録一覧の確認・編集・削除</h1>
+  <p>過去に測定したすべての血圧データを時系列で見返し、数値や日時の修正、不要なデータの削除を行う方法を解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>記録一覧の確認・編集・削除</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+    <p>画面下部の<strong>「一覧」</strong>タブをタップすると、これまでに保存した血圧記録が新しい順にカード形式で並んで表示されます。</p>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#history-list">・過去の記録カードを確認したい</a>
+      <a class="want-tag" href="#history-edit">・測定日時や数値を修正・再編集したい</a>
+      <a class="want-tag" href="#history-delete">・間違えた記録を削除したい</a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🛠️ 詳しい操作手順</h2>
+
+    <div class="step-item" id="history-list">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">過去の測定記録を一覧で確認する</h3>
+      </div>
+      <p>各記録カードには以下の情報が表示されます。</p>
+      <ul>
+        <li><strong>測定日時:</strong> 年/月/日 (曜日) 時:分が表示されます。</li>
+        <li><strong>血圧値（枠線）:</strong> 最高血圧 / 最低血圧（mmHg）。枠線の色は血圧レベル（緑：安心、黄：注意、橙：高め、赤：危険）に連動して表示されます。</li>
+        <li><strong>脈拍:</strong> 記録されている場合、右側に「脈 XX」と表示されます。</li>
+        <li><strong>ゴミ箱アイコン:</strong> カードの右上に表示され、タップで削除できます。</li>
+      </ul>
+
+      <div class="shot-container shot-container-2col">
+        <div class="shot-card">
+          <img src="./images/04_history_list.png" alt="血圧メモ 記録一覧画面（ダークモード）" width="542" height="1206" loading="lazy">
+          <div class="shot-caption">ダークモードでの記録一覧画面</div>
+        </div>
+        <div class="shot-card">
+          <img src="./images/15_history_light.png" alt="血圧メモ 記録一覧画面（ライトモード）" width="542" height="1206" loading="lazy">
+          <div class="shot-caption">ライトモードでの記録一覧画面</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-item" id="history-edit">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">記録をタップして編集する</h3>
+      </div>
+      <p>修正したい記録カードの本体部分をタップすると、画面下部から<strong>「記録を編集」</strong>シートがスライドして開きます。</p>
+      <ul>
+        <li><strong>測定日時の変更:</strong> 「年」「月」「日」「時」「分」の各ホイールを回転させて、過去の正確な日時に変更できます。</li>
+        <li><strong>血圧・脈拍の変更:</strong> 最高血圧・最低血圧・脈拍のホイールを調整します。</li>
+        <li><strong>メモの編集:</strong> 測定時のメモを追記・修正できます。</li>
+      </ul>
+      <p>変更が完了したら、シート下部の<strong>「✓ 保存」</strong>ボタンを押すと、即座に更新内容が反映されます。</p>
+
+      <div class="shot-card" style="max-width: 420px; margin: 16px auto;">
+        <img src="./images/05_history_edit.png" alt="記録を編集するボトムシート画面" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">日時ホイールと数値ホイールで正確に再編集が可能</div>
+      </div>
+    </div>
+
+    <div class="step-item" id="history-delete">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">不要な記録を削除する</h3>
+      </div>
+      <p>誤って入力してしまった記録や不要になったデータは、該当するカード右上の<strong>ゴミ箱アイコン</strong>をタップすることで素早く削除できます。</p>
+      <div class="callout">
+        <div class="callout-title">⚠️ 削除に関する注意</div>
+        削除したデータは元に戻せません。定期的に「設定」タブからバックアップを作成しておくことをおすすめします。
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ 一覧・編集についてのよくある質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 編集した内容はグラフ画面にも自動で反映されますか？</h3>
+        <p class="faq-a">はい、一覧で修正した測定日時や血圧値は、即座に折れ線グラフやカレンダー、散布図などの分析画面にも反映されます。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 昨日の測定分を今から登録したいときはどうすればいいですか？</h3>
+        <p class="faq-a">まず「記録」タブで通常の数値を入れて保存し、その直後に「一覧」タブで該当のカードをタップして「記録を編集」を開き、測定日時を昨日の日時に変更して「保存」してください。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./record.html">
+      <span class="page-nav-sub">前の機能へ</span>
+      <span class="page-nav-title">‹ 機能 01: 記録・リマインダー</span>
+    </a>
+    <a class="page-nav-link next" href="./graph.html">
+      <span class="page-nav-sub">次の機能へ</span>
+      <span class="page-nav-title">機能 03: グラフ分析 ›</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 <a href="../index.html">血圧メモ アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>
