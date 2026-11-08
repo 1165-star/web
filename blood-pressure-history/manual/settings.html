@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>設定・カスタマイズ・バックアップ | 血圧メモ 取扱説明書</title>
+<meta name="description" content="血圧メモの「設定」タブの使い方を解説します。標準線（基準値）の変更、スキン・フォント・言語のカスタマイズ、Health Connect連携、パスワード暗号化バックアップとデータの復元手順。">
+<link rel="canonical" href="https://tya-kaihatsu.com/blood-pressure-history/manual/settings.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="設定・カスタマイズ・バックアップ | 血圧メモ 取扱説明書">
+<meta property="og:description" content="血圧メモの「設定」タブの使い方を解説します。標準線（基準値）の変更、スキン・フォント・言語のカスタマイズ、Health Connect連携、パスワード暗号化バックアップとデータの復元手順。">
+<meta property="og:url" content="https://tya-kaihatsu.com/blood-pressure-history/manual/settings.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/blood-pressure-history/manual/images/11_settings_main.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "バックアップパスワードを忘れたら復元できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "バックアップファイルは指定したパスワードで強固に暗号化されているため、パスワードを忘れると復元できません。バックアップ作成時に設定したパスワードは必ず忘れないようメモ等に保管してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "スキンの色を変えるとボタンなどの色も変わりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、スキンを変更すると背景色だけでなく、保存ボタンやグラフのアクセントカラー、各種アイコンの色も選んだテーマに合わせて一括で変更されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "多言語に対応していますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。日本語のほか、英語、ドイツ語、フランス語、スペイン語、イタリア語、ポルトガル語、インドネシア語、韓国語、ロシア語、簡体字中国語、繁体字中国語の12言語に対応しています。端末の言語設定が反映されるほか、設定画面から手動で切り替えることも可能です。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">❤️ 血圧メモ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./record.html">1. 記録・リマインダー</a>
+      <a href="./history.html">2. 記録一覧・編集</a>
+      <a href="./graph.html">3. グラフ分析</a>
+      <a href="./settings.html" aria-current="page">4. 設定・バックアップ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 04</span>
+  <h1>⚙️ 設定・カスタマイズ・バックアップ</h1>
+  <p>血圧の基準値調整、スキン配色やフォントの変更、Health Connect連携、安全な暗号化バックアップとデータ復元の方法を解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>設定・カスタマイズ・バックアップ</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+    <p>画面下部の<strong>「設定」</strong>タブでは、アプリの動作設定や見た目のカスタマイズ、外部アプリ連携、データの保護・バックアップなど、重要な設定をまとめて行えます。</p>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#settings-standard">・標準線（基準値）を変更したい</a>
+      <a class="want-tag" href="#settings-skin">・スキン（配色テーマ）を変えたい</a>
+      <a class="want-tag" href="#settings-font">・フォントの種類を変更したい</a>
+      <a class="want-tag" href="#settings-lang">・言語を切り替えたい</a>
+      <a class="want-tag" href="#settings-backup">・バックアップを作成・復元したい</a>
+      <a class="want-tag" href="#settings-premium">・PREMIUM機能について知りたい</a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🛠️ 詳しい操作手順</h2>
+
+    <div class="step-item" id="settings-standard">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">標準線（基準値）の設定</h3>
+      </div>
+      <p>「標準線（基準値）」は、血圧レベル判定の色分けや、グラフ画面の破線として表示される目標値です。</p>
+      <ul>
+        <li><strong>最高血圧 / 最低血圧の数値変更:</strong> 「∧」「∨」ボタンで1mmHg単位で数値を調整できます。</li>
+        <li><strong>テンプレートから選ぶ:</strong> 年代別の平均値などのテンプレートからワンタップで選択できます。</li>
+        <li><strong>デフォルトに戻す:</strong> 初期設定値（最高115 / 最低68mmHg）にいつでもリセットできます。</li>
+      </ul>
+
+      <div class="shot-card" style="max-width: 420px; margin: 16px auto;">
+        <img src="./images/11_settings_main.png" alt="設定画面の標準線・連携・リマインダー項目" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">標準線やHealth Connect連携スイッチが並ぶ設定画面上部</div>
+      </div>
+    </div>
+
+    <div class="step-item" id="settings-skin">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">スキン（配色テーマ）の変更</h3>
+      </div>
+      <p>「スキン」項目をタップすると、スキン設定シートが開きます。</p>
+      <ul>
+        <li><strong>自動（端末設定に追従）:</strong> スマートフォン本体のライト/ダーク設定に合わせて自動で切り替わります（デフォルト）。</li>
+        <li><strong>ライトモード:</strong> 「ネイビー」「テラコッタ」「プラム」「モノクロ」の明るいテーマ。</li>
+        <li><strong>ダークモード:</strong> 「ネイビー（ダーク）」「テラコッタ（ダーク）」「プラム（ダーク）」「モノクロ（ダーク）」の落ち着いた暗色テーマ。</li>
+      </ul>
+      <p>シート上部でカードや文字色のプレビューを確認し、<strong>「適用する」</strong>を押すとアプリ全体のテーマが一新されます。</p>
+
+      <div class="shot-card" style="max-width: 420px; margin: 16px auto;">
+        <img src="./images/12_settings_skin.png" alt="スキン設定の選択シート" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">好みに合わせて選べる全9種類のスキン配色プレビュー</div>
+      </div>
+    </div>
+
+    <div class="step-item" id="settings-font">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">フォント・言語の変更</h3>
+      </div>
+      <ul>
+        <li><strong>フォント:</strong> 「ゴシック体」をはじめとする全9種類のフォントから好みの書体を選択できます。</li>
+        <li><strong>言語:</strong> 日本語のほか、英語、ドイツ語、フランス語、スペイン語など全12言語に対応しています。いつでも自由に言語を切り替えられます。</li>
+      </ul>
+    </div>
+
+    <div class="step-item" id="settings-backup">
+      <div class="step-header">
+        <span class="step-badge">STEP 4</span>
+        <h3 class="step-title">暗号化バックアップとデータの復元</h3>
+      </div>
+      <p>大切な健康データを守るため、バックアップ機能が備わっています。</p>
+      <ul>
+        <li><strong>バックアップを作成:</strong> 指定したパスワードで記録データが強力に暗号化され、バックアップファイルとして端末やクラウドストレージに保存されます。</li>
+        <li><strong>データを復元:</strong> 保存したバックアップファイルを選択し、パスワードを入力することで以前の測定データを安全に復元できます。</li>
+      </ul>
+      <div class="callout">
+        <div class="callout-title">🔒 暗号化パスワードの保管</div>
+        バックアップはパスワードで保護されているため、復元時にパスワードが一致しないとデータを取り出せません。忘れないよう厳重に保管してください。
+      </div>
+
+      <div class="shot-card" style="max-width: 420px; margin: 16px auto;">
+        <img src="./images/13_settings_backup.png" alt="バックアップ・言語・フォントの設定画面" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">バックアップ作成・復元ボタンが配置された設定画面下部</div>
+      </div>
+    </div>
+
+    <div class="step-item" id="settings-premium">
+      <div class="step-header">
+        <span class="step-badge">STEP 5</span>
+        <h3 class="step-title">PREMIUM（プレミアムプラン）について</h3>
+      </div>
+      <p>アプリ画面右上の「👑 PREMIUM」ボタンから、より充実した健康管理を行えるプレミアムプラン（サブスクリプション）をご利用いただけます。</p>
+      <ul>
+        <li><strong>グラフ表示期間の無制限化:</strong> 無料版の2週間から、「1ヶ月」「3ヶ月」「6ヶ月」といった中長期の分析が可能になります。</li>
+        <li><strong>データ保存期間の無制限化:</strong> 過去のすべての記録データを消えずに永続保存できます。</li>
+        <li><strong>ホーム画面ウィジェットの全開放:</strong> 数値表示・アイコン・グラフなど全5種類のウィジェットをホーム画面に設置できます（無料版は1種類）。</li>
+        <li><strong>広告の非表示:</strong> すべての広告が表示されなくなります。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ 設定についてのよくある質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 標準線を変えると過去の記録の色分けも変わりますか？</h3>
+        <p class="faq-a">はい、設定した標準線をもとに一覧やカレンダーヒートマップの色分けが動的に再計算されるため、いつでも新しい基準値で過去の推移を振り返ることができます。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> Health Connect連携をオフにすると、過去に同期したデータはどうなりますか？</h3>
+        <p class="faq-a">血圧メモ内の連携スイッチをオフにしても、すでにHealth Connectに保存された過去のデータは削除されません。次回以降の自動同期のみが停止します。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./graph.html">
+      <span class="page-nav-sub">前の機能へ</span>
+      <span class="page-nav-title">‹ 機能 03: グラフ分析</span>
+    </a>
+    <a class="page-nav-link next" href="./index.html">
+      <span class="page-nav-sub">目次へ戻る</span>
+      <span class="page-nav-title">取扱説明書トップ ›</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 <a href="../index.html">血圧メモ アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

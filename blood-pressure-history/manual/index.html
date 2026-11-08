@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>血圧メモ 取扱説明書（使い方ガイド）— 毎日の血圧・脈拍管理</title>
+<meta name="description" content="毎日の血圧・脈拍をかんたんに記録し、グラフやリマインダーで健康管理をサポートするアプリ「血圧メモ」の公式取扱説明書です。記録・編集・多彩なグラフ分析・Health Connect連携の使い方をわかりやすく解説。">
+<link rel="canonical" href="https://tya-kaihatsu.com/blood-pressure-history/manual/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="血圧メモ 取扱説明書（使い方ガイド）— 毎日の血圧・脈拍管理">
+<meta property="og:description" content="毎日の血圧・脈拍をかんたんに記録し、グラフやリマインダーで健康管理をサポートするアプリ「血圧メモ」の公式取扱説明書です。記録・編集・多彩なグラフ分析・Health Connect連携の使い方をわかりやすく解説。">
+<meta property="og:url" content="https://tya-kaihatsu.com/blood-pressure-history/manual/">
+<meta property="og:image" content="https://tya-kaihatsu.com/blood-pressure-history/manual/images/01_record_main.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "血圧メモは無料で利用できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、毎日の血圧・脈拍記録、記録一覧の編集・削除、2週間分のグラフ表示、測定リマインダー通知、Health Connect連携、データの暗号化バックアップ・復元など、基本機能をすべて無料でご利用いただけます。より長期のグラフ分析や追加ウィジェットを利用したい方向けにPREMIUMプランもご用意しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "測定した血圧の数値によって文字や枠の色が変わるのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "設定した「標準線（基準値）」との差に応じて、自動で「問題なし・安心（緑）」「注意（黄）」「危険度高め（橙）」「危険・要対応（赤）」の4段階に色分けされるためです。ご自身の体調や医師の指導に合わせて、基準値はいつでも設定画面から変更できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AndroidのHealth Connect（ヘルスコネクト）と連携できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。設定画面で「Health Connect連携」を有効にすると、血圧メモに保存した最高血圧・最低血圧が自動でHealth Connectに同期されます。記録画面の下部で最新の同期履歴も確認できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "機種変更時にデータを引き継ぐことはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。設定画面の「バックアップ・データの復元」から暗号化バックアップファイルを作成し、新しい端末で「データを復元」することで安全にデータを引き継げます。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">❤️ 血圧メモ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html" aria-current="page">トップ（目次）</a>
+      <a href="./record.html">1. 記録・リマインダー</a>
+      <a href="./history.html">2. 記録一覧・編集</a>
+      <a href="./graph.html">3. グラフ分析</a>
+      <a href="./settings.html">4. 設定・バックアップ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">公式使い方ガイド</span>
+  <h1>❤️ 血圧メモ かんたん取扱説明書</h1>
+  <p>毎日の血圧・脈拍をサクッと記録！見やすいグラフで推移や日々のリズムを把握できる「血圧メモ」の使い方を、機能別・目的別にわかりやすく解説します。</p>
+</div>
+
+<main class="container">
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに</h2>
+    <p>「血圧メモ」は、家庭用血圧計などで測定した最高血圧（収縮期）・最低血圧（拡張期）・脈拍をスピーディーに入力し、カレンダーやグラフで日々の推移をわかりやすく管理できるヘルスケアアプリです。</p>
+    <p>血圧レベルの自動色分け表示、毎日の測定忘れを防ぐリマインダー、Google Health Connect連携、端末設定に連動するライト/ダークモード対応スキンなど、毎日の健康習慣を快適に支える機能を備えています。</p>
+
+    <div class="shot-card" style="margin-top: 20px;">
+      <img src="./images/01_record_main.png" alt="血圧メモ 記録画面のメイン画面" width="542" height="1206" loading="lazy">
+      <div class="shot-caption">直感的なダイヤル操作でサクッと入力できる「血圧メモ」のメイン記録画面</div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="want-heading">
+    <h2 id="want-heading">🎯 やりたいことから探す</h2>
+    <p>行いたい操作や目的に合わせて、各機能の解説ページへ直接移動できます。</p>
+    <div class="want-tags">
+      <a class="want-tag" href="./record.html#record-basic">・血圧と脈拍を素早く記録したい</a>
+      <a class="want-tag" href="./record.html#record-levels">・血圧レベルの色分け（安心〜危険）の意味を知りたい</a>
+      <a class="want-tag" href="./record.html#record-reminder">・毎日の測定時間に通知アラームを鳴らしたい</a>
+      <a class="want-tag" href="./record.html#record-sync">・Health Connectに血圧データを同期したい</a>
+      <a class="want-tag" href="./history.html#history-list">・過去の測定結果を一覧で見返したい</a>
+      <a class="want-tag" href="./history.html#history-edit">・間違えて入力した日時や数値を修正したい</a>
+      <a class="want-tag" href="./history.html#history-delete">・不要な記録データを削除したい</a>
+      <a class="want-tag" href="./graph.html#graph-summary">・血圧の推移を折れ線グラフで見たい</a>
+      <a class="want-tag" href="./graph.html#graph-time">・朝・昼・夜ごとの血圧の違いを比較したい</a>
+      <a class="want-tag" href="./graph.html#graph-calendar">・カレンダーヒートマップで月間の状況を俯瞰したい</a>
+      <a class="want-tag" href="./graph.html#graph-scatter">・最高血圧と最低血圧のバランス（散布図）を見たい</a>
+      <a class="want-tag" href="./graph.html#graph-range">・1日の中での血圧の振れ幅（変動）を確認したい</a>
+      <a class="want-tag" href="./settings.html#settings-standard">・基準値（標準線）を自分好みに変更したい</a>
+      <a class="want-tag" href="./settings.html#settings-skin">・アプリの見た目やスキン配色を変えたい</a>
+      <a class="want-tag" href="./settings.html#settings-font">・フォントの種類を変更したい</a>
+      <a class="want-tag" href="./settings.html#settings-backup">・機種変更用にデータをバックアップ・復元したい</a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="features-heading">
+    <h2 id="features-heading">📑 機能別マニュアル一覧</h2>
+    <p>画面下部の4つのタブ（記録、一覧、グラフ、設定）に合わせて解説しています。</p>
+
+    <div class="feature-grid">
+      <a class="feature-card" href="./record.html">
+        <div class="feature-card-header">
+          <div class="feature-card-icon">➕</div>
+          <div>
+            <h3 class="feature-card-title">機能 01: 記録・リマインダー</h3>
+          </div>
+        </div>
+        <p class="feature-card-desc">最高血圧・最低血圧・脈拍のスムーズな入力、血圧レベル色分け表示、測定リマインダー通知、Health Connect連携同期について解説します。</p>
+        <span class="feature-card-link">使い方を見る ›</span>
+      </a>
+
+      <a class="feature-card" href="./history.html">
+        <div class="feature-card-header">
+          <div class="feature-card-icon">📋</div>
+          <div>
+            <h3 class="feature-card-title">機能 02: 記録一覧・編集・削除</h3>
+          </div>
+        </div>
+        <p class="feature-card-desc">これまでの血圧測定履歴の確認、記録をタップしての日時・数値・メモの再編集、不要なデータの削除手順を解説します。</p>
+        <span class="feature-card-link">使い方を見る ›</span>
+      </a>
+
+      <a class="feature-card" href="./graph.html">
+        <div class="feature-card-header">
+          <div class="feature-card-icon">📈</div>
+          <div>
+            <h3 class="feature-card-title">機能 03: グラフで血圧分析</h3>
+          </div>
+        </div>
+        <p class="feature-card-desc">「まとめて」推移グラフ、「時間帯別（朝・昼・夜）」比較、総合タブの「カレンダーヒートマップ・散布図・日次の振れ幅」の使い方を解説します。</p>
+        <span class="feature-card-link">使い方を見る ›</span>
+      </a>
+
+      <a class="feature-card" href="./settings.html">
+        <div class="feature-card-header">
+          <div class="feature-card-icon">⚙️</div>
+          <div>
+            <h3 class="feature-card-title">機能 04: 設定・バックアップ</h3>
+          </div>
+        </div>
+        <p class="feature-card-desc">標準線（基準値）の調整、スキン配色・フォント変更、多言語設定、暗号化バックアップとデータの復元方法を解説します。</p>
+        <span class="feature-card-link">使い方を見る ›</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ 全体のよくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 血圧メモは無料で利用できますか？</h3>
+        <p class="faq-a">はい、日々の血圧・脈拍記録、記録一覧の確認や編集・削除、2週間分のグラフ表示、リマインダー通知、Health Connect連携、バックアップ・復元など、基本機能をすべて無料でご利用いただけます。1ヶ月以上の長期グラフ分析や追加ウィジェットを利用したい方向けにPREMIUMプラン（サブスクリプション）も提供しています。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 測定値の色分け（緑・黄・橙・赤）は何を基準にしていますか？</h3>
+        <p class="faq-a">設定画面の「標準線（基準値）」をベースに自動判定されています。初期値は一般的な基準値（最高115 / 最低68mmHg）ですが、年代別の平均値や医師から指示された目標値に合わせて自由に設定できます。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> ダークモードや好みの配色に変更できますか？</h3>
+        <p class="faq-a">はい。「設定」タブの「スキン」から、標準のほか「ネイビー」「テラコッタ」「プラム」「モノクロ」など全9種類の配色を選択できます。端末自体のダークモード設定に合わせて自動で切り替えることも可能です。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 端末が壊れたり機種変更したときにデータは復旧できますか？</h3>
+        <p class="faq-a">事前に「設定」タブの「バックアップ・データの復元」から暗号化バックアップファイル（パスワード保護）を出力して保存しておけば、新しい端末で「データを復元」することでいつでもデータを元通りに戻せます。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 <a href="../index.html">血圧メモ アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>
