@@ -30,6 +30,7 @@
   <link rel="icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="../assets/gallery.css">
   <style>
     /* 共通のsite.cssは他アプリと共有のため変更せず、このページ専用のスタイルはここに閉じる */
     .features {
@@ -104,6 +105,20 @@
       <small>Android</small>
     </a>
 
+    <section class="store-gallery" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">ストアの画像</h2>
+      <ul class="gallery-list">
+        <li><a class="gallery-thumb" href="./images/store/feature.webp"><img src="./images/store/feature-thumb.webp" width="737" height="360" alt="めものわ ストア画像(フィーチャーグラフィック)" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/01.webp"><img src="./images/store/01-thumb.webp" width="217" height="360" alt="めものわ スクリーンショット 1" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/02.webp"><img src="./images/store/02-thumb.webp" width="217" height="360" alt="めものわ スクリーンショット 2" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/03.webp"><img src="./images/store/03-thumb.webp" width="180" height="360" alt="めものわ スクリーンショット 3" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/04.webp"><img src="./images/store/04-thumb.webp" width="202" height="360" alt="めものわ スクリーンショット 4" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/05.webp"><img src="./images/store/05-thumb.webp" width="640" height="360" alt="めものわ スクリーンショット 5" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/06.webp"><img src="./images/store/06-thumb.webp" width="640" height="360" alt="めものわ スクリーンショット 6" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/07.webp"><img src="./images/store/07-thumb.webp" width="640" height="360" alt="めものわ スクリーンショット 7" loading="lazy" decoding="async"></a></li>
+      </ul>
+    </section>
+
     <section class="features">
       <h2>できること</h2>
       <ul class="feature-list">
@@ -127,6 +142,7 @@
     </footer>
   </main>
 
+  <script src="../assets/gallery.js" defer></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
