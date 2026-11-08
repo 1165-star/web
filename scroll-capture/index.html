@@ -10,6 +10,10 @@
   <meta property="og:title" content="縦長スクショ - ちゃ開発組">
   <meta property="og:description" content="スクロールする画面を、自動でスクロールしながら撮影して、1枚の縦長の画像につなげて保存するアプリ。">
   <meta property="og:url" content="https://tya-kaihatsu.com/scroll-capture/">
+  <meta property="og:site_name" content="ちゃ開発組">
+  <meta property="og:image" content="https://tya-kaihatsu.com/assets/icons/scroll-capture.png">
+  <meta name="twitter:card" content="summary">
+
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,94 +32,526 @@
   "installUrl": "https://play.google.com/store/apps/details?id=com.tyakaihatsu.scrollcapture"
 }
   </script>
+
   <link rel="icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/site.css">
   <link rel="stylesheet" href="../assets/gallery.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BM5E3HSSHS');
+  </script>
+
   <style>
-    /* 共通のsite.cssは他アプリと共有のため変更せず、このページ専用のスタイルはここに閉じる */
-    .features {
-      text-align: left;
-      max-width: 480px;
-      margin: 0 auto 32px;
+    :root {
+      --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.03);
+      --shadow-hover: 0 14px 28px -6px rgba(43, 108, 176, 0.12), 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+      --tag-bg: rgba(0, 0, 0, 0.04);
+      --tag-fg: var(--muted);
+      --accent-soft: rgba(43, 108, 176, 0.08);
     }
-    .features h2 {
-      font-size: 1rem;
-      text-align: center;
-      border-bottom: none;
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.25);
+        --shadow-hover: 0 14px 28px -6px rgba(111, 168, 220, 0.18), 0 4px 10px rgba(0, 0, 0, 0.3);
+        --tag-bg: rgba(255, 255, 255, 0.06);
+        --tag-fg: var(--muted);
+        --accent-soft: rgba(111, 168, 220, 0.12);
+      }
     }
-    .feature-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      gap: 10px;
+
+    body {
+      background-image: radial-gradient(circle at 50% -120px, var(--accent-soft) 0%, transparent 65%);
+      background-repeat: no-repeat;
     }
-    .feature-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      border: 1px solid var(--border);
+
+    main {
+      max-width: 1040px;
+      padding: 24px 16px 60px;
+    }
+    @media (min-width: 768px) {
+      main {
+        padding: 36px 24px 80px;
+      }
+    }
+
+    /* ナビゲーション戻るボタン */
+    .back-nav {
+      margin-bottom: 20px;
+    }
+    .back-nav .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 999px;
       background: var(--card-bg);
-      border-radius: 10px;
-      padding: 12px 14px;
-      font-size: 0.88rem;
-      line-height: 1.5;
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+      margin-bottom: 0;
     }
-    .feature-list .mark {
+    .back-nav .back-link:hover {
       color: var(--accent);
-      flex-shrink: 0;
-      font-weight: 700;
+      border-color: var(--accent);
+      transform: translateX(-3px);
     }
-    .store-link {
+
+    /* ヒーロー紹介：スマホでは中央揃え・自然な縦並び、PCでは2カラムのリッチカード */
+    .app-showcase-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px 18px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-card);
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .app-showcase-card {
+        padding: 36px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        display: grid !important;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 36px;
+        align-items: center;
+        text-align: left;
+      }
+    }
+
+    .app-meta-head {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 6px;
-      width: 160px;
-      margin: 0 auto 32px;
-      padding: 16px 12px;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    @media (min-width: 768px) {
+      .app-meta-head {
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .app-icon-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      object-fit: cover;
       border: 1px solid var(--border);
-      background: var(--card-bg);
-      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      flex-shrink: 0;
+    }
+    @media (min-width: 768px) {
+      .app-icon-img {
+        width: 88px;
+        height: 88px;
+        border-radius: 20px;
+      }
+    }
+
+    .app-title-group h1 {
+      margin: 0 0 6px;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--fg);
+      letter-spacing: -0.01em;
+    }
+    @media (min-width: 768px) {
+      .app-title-group h1 {
+        font-size: 1.75rem;
+      }
+    }
+
+    .badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .badges-row {
+        justify-content: flex-start;
+      }
+    }
+
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
       color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 700;
+      background: var(--accent-soft);
+    }
+    .store-badge svg { width: 12px; height: 12px; }
+
+    .tag-badge {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .tag-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 0.72rem;
+        font-weight: 500;
+        background: var(--tag-bg);
+        color: var(--tag-fg);
+        border: 1px solid var(--border);
+      }
+    }
+
+    .app-lead-desc {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin: 12px 0 16px;
+    }
+    @media (min-width: 768px) {
+      .app-lead-desc {
+        font-size: 0.95rem;
+        margin: 14px 0 20px;
+      }
+    }
+
+    /* アプリの特長ハイライトチップ：スマホでは非表示、PCでのみ表示 */
+    .specs-grid {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .specs-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 24px;
+        justify-content: flex-start;
+      }
+    }
+    .spec-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.78rem;
+      color: var(--fg);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 3px 9px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    /* Google Play ダウンロードボタン */
+    .store-cta-wrap {
+      display: flex;
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .store-cta-wrap {
+        justify-content: flex-start;
+      }
+    }
+    .store-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 24px;
+      border-radius: 14px;
+      background: var(--fg);
+      color: var(--bg);
       text-decoration: none;
       font-weight: 700;
-      font-size: 0.9rem;
+      font-size: 0.92rem;
+      transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     }
-    .store-link svg { width: 72px; height: 72px; }
-    .store-link small { color: inherit; opacity: 0.8; font-weight: 400; font-size: 0.75rem; }
+    .store-cta-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+    }
+    .store-cta-btn svg {
+      width: 26px;
+      height: 26px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+    .store-cta-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+      text-align: left;
+    }
+    .store-cta-small {
+      font-size: 0.68rem;
+      opacity: 0.8;
+      font-weight: 400;
+    }
+
+    /* ヒーロー右側：PCでのみフィーチャーグラフィックを表示 */
+    .hero-right {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .hero-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-banner-preview {
+        width: 100%;
+        max-width: 440px;
+        height: auto;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-card);
+        display: block;
+        transition: transform 0.3s ease;
+      }
+      .hero-banner-side:hover .hero-banner-preview {
+        transform: scale(1.02);
+      }
+    }
+
+    /* スクリーンショットギャラリー */
+    .store-gallery {
+      max-width: 100%;
+      margin: 0 0 36px;
+      text-align: left;
+    }
+    @media (min-width: 768px) {
+      .store-gallery {
+        margin: 0 0 44px;
+      }
+    }
+    .gallery-heading-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+    }
+    .gallery-heading-wrap h2 {
+      margin: 0;
+      padding: 0;
+      border-bottom: none;
+      font-size: 1.15rem;
+      font-weight: 800;
+    }
+    .gallery-hint {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .gallery-list {
+      padding: 4px 2px 14px;
+      gap: 10px;
+    }
+    @media (min-width: 768px) {
+      .gallery-list {
+        padding: 4px 4px 16px;
+        gap: 14px;
+      }
+    }
+    .gallery-thumb {
+      border-radius: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .gallery-thumb:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    .gallery-thumb img {
+      height: 140px;
+    }
+    @media (min-width: 768px) {
+      .gallery-thumb {
+        border-radius: 12px;
+      }
+      .gallery-thumb img {
+        height: 200px;
+      }
+    }
+
+    /* 「できること」等のセクション：スマホでは1カラム、PCでは2カラム */
+    .features {
+      max-width: 100%;
+      margin: 0 0 36px;
+      text-align: left;
+    }
+    @media (min-width: 768px) {
+      .features {
+        margin: 0 0 44px;
+      }
+    }
+    .features-heading-wrap {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    .features-heading-wrap h2 {
+      margin: 0;
+      padding: 0;
+      border-bottom: none;
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 768px) {
+      .feature-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+      .feature-list.single-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .feature-list li {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 0.86rem;
+      line-height: 1.55;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .feature-list li:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .feature-list .mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* アプリ内リンク (プライバシーポリシー・リリースノート) */
+    .app-links-wrap {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+    .app-link-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 10px 16px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-card);
+      transition: all 0.2s ease;
+    }
+    .app-link-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
   </style>
-<meta property="og:site_name" content="ちゃ開発組">
-<meta property="og:image" content="https://tya-kaihatsu.com/assets/icons/scroll-capture.png">
-<meta name="twitter:card" content="summary">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-BM5E3HSSHS');
-</script>
 </head>
 <body>
   <main>
-    <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+    <nav class="back-nav">
+      <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+    </nav>
 
-    <div class="app-hero">
-      <img class="icon" src="../assets/icons/scroll-capture.png" alt="縦長スクショのアイコン">
-      <h1>縦長スクショ</h1>
-      <p class="desc">スクロールする画面を、自動でスクロールしながら撮影して、1枚の縦長の画像につなげて保存するアプリ。</p>
+    <!-- アプリ紹介ヒーロー -->
+    <div class="app-showcase-card">
+      <div class="hero-left">
+        <div class="app-meta-head">
+          <img class="app-icon-img" src="../assets/icons/scroll-capture.png" alt="縦長スクショのアイコン">
+          <div class="app-title-group">
+            <h1>縦長スクショ</h1>
+            <div class="badges-row">
+              <span class="store-badge">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+                Google Play 公開中
+              </span>
+              <span class="tag-badge">画像ユーティリティ / ツール</span>
+              <span class="tag-badge">Android対応</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="app-lead-desc">スクロールする画面を、自動でスクロールしながら撮影して、1枚の縦長の画像につなげて保存するアプリ。</p>
+
+        <div class="specs-grid">
+          <span class="spec-item">📜 自動スクロール撮影＆1枚連結</span>
+          <span class="spec-item">🔘 フローティングボタンから簡単開始</span>
+          <span class="spec-item">👁️ 保存前プレビューで確認可能</span>
+          <span class="spec-item">🔒 端末内のみで安全処理・外部送信なし</span>
+          <span class="spec-item">🌙 ライト・ダークテーマ両対応</span>
+          <span class="spec-item">🌐 12言語に対応</span>
+        </div>
+
+        <div class="store-cta-wrap">
+          <a class="store-cta-btn" href="https://play.google.com/store/apps/details?id=com.tyakaihatsu.scrollcapture" aria-label="Google Play で手に入れる (Android)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+            <div class="store-cta-text">
+              <span class="store-cta-small">GET IT ON</span>
+              <span>Google Play で手に入れる</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <a class="hero-banner-side" href="./images/store/feature.webp" aria-label="フィーチャーグラフィックを拡大表示">
+          <img class="hero-banner-preview" src="./images/store/feature-thumb.webp" width="737" height="360" alt="縦長スクショのフィーチャーグラフィック" loading="eager">
+        </a>
+      </div>
     </div>
 
-    <a class="store-link" href="https://play.google.com/store/apps/details?id=com.tyakaihatsu.scrollcapture" aria-label="Google Playで入手(Android)">
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
-      Google Playで入手
-      <small>Android</small>
-    </a>
-
+    <!-- スクリーンショットギャラリー -->
     <section class="store-gallery" aria-labelledby="gallery-heading">
-      <h2 id="gallery-heading">スクリーンショット</h2>
+      <div class="gallery-heading-wrap">
+        <h2 id="gallery-heading">スクリーンショット</h2>
+        <span class="gallery-hint">クリックして拡大</span>
+      </div>
       <ul class="gallery-list">
         <li><a class="gallery-thumb" href="./images/store/feature.webp"><img src="./images/store/feature-thumb.webp" width="737" height="360" alt="縦長スクショ ストア画像(フィーチャーグラフィック)" loading="lazy" decoding="async"></a></li>
         <li><a class="gallery-thumb" href="./images/store/01.webp"><img src="./images/store/01-thumb.webp" width="202" height="360" alt="縦長スクショ スクリーンショット 1" loading="lazy" decoding="async"></a></li>
@@ -124,38 +560,53 @@
       </ul>
     </section>
 
+    <!-- できること -->
     <section class="features">
-      <h2>できること</h2>
+      <div class="features-heading-wrap">
+        <h2>できること</h2>
+      </div>
       <ul class="feature-list">
-        <li><span class="mark">✓</span>長いWebページやチャットなど、スクロールする画面を、自動でスクロールしながら撮影して、1枚の縦長の画像につなげる</li>
-        <li><span class="mark">✓</span>撮影は、フローティングボタンから「撮影開始」を押したときだけ。撮影中はいつでもキャンセルできる</li>
-        <li><span class="mark">✓</span>保存の前にプレビューで確認して、保存かキャンセルを選べる。保存先は端末の Pictures/ScrollCapture</li>
-        <li><span class="mark">✓</span>撮影した画像は、端末の中だけで処理する。外部へ送信しない</li>
-        <li><span class="mark">✓</span>ライト・ダークのテーマと、日本語・英語・簡体字中国語・繁体字中国語・韓国語・スペイン語・ポルトガル語・フランス語・ドイツ語・ロシア語・インドネシア語・イタリア語の12言語に対応</li>
-        <li><span class="mark">✓</span>無料で使える(広告が表示されます)。月額・年額のPREMIUMに登録すると、広告が表示されなくなる</li>
+        <li><span class="mark">✓</span><span>長いWebページやチャットなど、スクロールする画面を、自動でスクロールしながら撮影して、1枚の縦長の画像につなげる</span></li>
+        <li><span class="mark">✓</span><span>撮影は、フローティングボタンから「撮影開始」を押したときだけ。撮影中はいつでもキャンセルできる</span></li>
+        <li><span class="mark">✓</span><span>保存の前にプレビューで確認して、保存かキャンセルを選べる。保存先は端末の Pictures/ScrollCapture</span></li>
+        <li><span class="mark">✓</span><span>撮影した画像は、端末の中だけで処理する。外部へ送信しない</span></li>
+        <li><span class="mark">✓</span><span>ライト・ダークのテーマと、日本語・英語・簡体字中国語・繁体字中国語・韓国語・スペイン語・ポルトガル語・フランス語・ドイツ語・ロシア語・インドネシア語・イタリア語の12言語に対応</span></li>
+        <li><span class="mark">✓</span><span>無料で使える(広告が表示されます)。月額・年額のPREMIUMに登録すると、広告が表示されなくなる</span></li>
       </ul>
     </section>
 
+    <!-- ユーザー補助サービスについて -->
     <section class="features">
-      <h2>ユーザー補助サービスについて</h2>
+      <div class="features-heading-wrap">
+        <h2>ユーザー補助サービスについて</h2>
+      </div>
       <ul class="feature-list">
-        <li><span class="mark">・</span>このアプリは、AndroidのAccessibilityService(ユーザー補助サービス)を使います。目的は、スクロールする画面を縦長の1枚の画像にすることだけです。</li>
-        <li><span class="mark">・</span>サービスで行うのは、「撮影開始」を押したときのスクリーンショットの取得と、画面をスクロールするための上方向のスワイプです。画面の文字や部品は読み取りません。</li>
-        <li><span class="mark">・</span>許可を求める前に、アプリの中で利用目的と取得するデータを説明し、同意を確認します。サービスは、端末の設定からいつでも停止できます。</li>
-        <li><span class="mark">・</span>他のアプリが画面の撮影を禁止している場合は、撮影できません。</li>
+        <li><span class="mark">ℹ️</span><span>このアプリは、AndroidのAccessibilityService(ユーザー補助サービス)を使います。目的は、スクロールする画面を縦長の1枚の画像にすることだけです。</span></li>
+        <li><span class="mark">ℹ️</span><span>サービスで行うのは、「撮影開始」を押したときのスクリーンショットの取得と、画面をスクロールするための上方向のスワイプです。画面の文字や部品は読み取りません。</span></li>
+        <li><span class="mark">ℹ️</span><span>許可を求める前に、アプリの中で利用目的と取得するデータを説明し、同意を確認します。サービスは、端末の設定からいつでも停止できます。</span></li>
+        <li><span class="mark">ℹ️</span><span>他のアプリが画面の撮影を禁止している場合は、撮影できません。</span></li>
       </ul>
     </section>
 
+    <!-- 対応環境 -->
     <section class="features">
-      <h2>対応環境</h2>
-      <ul class="feature-list">
-        <li><span class="mark">・</span>Android 11 以降</li>
+      <div class="features-heading-wrap">
+        <h2>対応環境</h2>
+      </div>
+      <ul class="feature-list single-col">
+        <li><span class="mark">📱</span><span>Android 11 以降</span></li>
       </ul>
     </section>
 
-    <div class="app-links">
-      <a href="./privacy-policy.html">プライバシーポリシー</a>
-      <a href="./release-notes.html">リリースノート</a>
+    <div class="app-links-wrap">
+      <a class="app-link-card" href="./privacy-policy.html">
+        <span>プライバシーポリシー</span>
+        <span>&rarr;</span>
+      </a>
+      <a class="app-link-card" href="./release-notes.html">
+        <span>リリースノート</span>
+        <span>&rarr;</span>
+      </a>
     </div>
 
     <footer>

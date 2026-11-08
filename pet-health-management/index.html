@@ -10,6 +10,10 @@
   <meta property="og:title" content="ぺっときろく - ちゃ開発組">
   <meta property="og:description" content="体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。">
   <meta property="og:url" content="https://tya-kaihatsu.com/pet-health-management/">
+  <meta property="og:site_name" content="ちゃ開発組">
+  <meta property="og:image" content="https://tya-kaihatsu.com/assets/icons/pet-health-management.png">
+  <meta name="twitter:card" content="summary">
+
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -25,90 +29,408 @@
   }
 }
   </script>
+
   <link rel="icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="stylesheet" href="../assets/site.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BM5E3HSSHS');
+  </script>
+
   <style>
-    /* 共通のsite.cssは他アプリと共有のため変更せず、このページ専用のスタイルはここに閉じる */
-    .features {
-      text-align: left;
-      max-width: 480px;
-      margin: 0 auto 32px;
+    :root {
+      --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.03);
+      --shadow-hover: 0 14px 28px -6px rgba(43, 108, 176, 0.12), 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+      --tag-bg: rgba(0, 0, 0, 0.04);
+      --tag-fg: var(--muted);
+      --accent-soft: rgba(43, 108, 176, 0.08);
     }
-    .features h2 {
-      font-size: 1rem;
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.25);
+        --shadow-hover: 0 14px 28px -6px rgba(111, 168, 220, 0.18), 0 4px 10px rgba(0, 0, 0, 0.3);
+        --tag-bg: rgba(255, 255, 255, 0.06);
+        --tag-fg: var(--muted);
+        --accent-soft: rgba(111, 168, 220, 0.12);
+      }
+    }
+
+    body {
+      background-image: radial-gradient(circle at 50% -120px, var(--accent-soft) 0%, transparent 65%);
+      background-repeat: no-repeat;
+    }
+
+    main {
+      max-width: 1040px;
+      padding: 24px 16px 60px;
+    }
+    @media (min-width: 768px) {
+      main {
+        padding: 36px 24px 80px;
+      }
+    }
+
+    /* ナビゲーション戻るボタン */
+    .back-nav {
+      margin-bottom: 20px;
+    }
+    .back-nav .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+      margin-bottom: 0;
+    }
+    .back-nav .back-link:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      transform: translateX(-3px);
+    }
+
+    /* ヒーロー紹介：スマホでは中央揃え・自然な縦並び、PCでは2カラムのリッチカード */
+    .app-showcase-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px 18px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-card);
       text-align: center;
-      border-bottom: none;
     }
-    .feature-list {
-      list-style: none;
+    @media (min-width: 768px) {
+      .app-showcase-card {
+        padding: 36px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        display: grid !important;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 36px;
+        align-items: center;
+        text-align: left;
+      }
+    }
+
+    .app-meta-head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    @media (min-width: 768px) {
+      .app-meta-head {
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .app-icon-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      flex-shrink: 0;
+    }
+    @media (min-width: 768px) {
+      .app-icon-img {
+        width: 88px;
+        height: 88px;
+        border-radius: 20px;
+      }
+    }
+
+    .app-title-group h1 {
+      margin: 0 0 6px;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--fg);
+      letter-spacing: -0.01em;
+    }
+    @media (min-width: 768px) {
+      .app-title-group h1 {
+        font-size: 1.75rem;
+      }
+    }
+
+    .badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .badges-row {
+        justify-content: flex-start;
+      }
+    }
+
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border: 1px solid #d97706;
+      border-radius: 999px;
+      color: #d97706;
+      font-size: 0.72rem;
+      font-weight: 700;
+      background: rgba(217, 119, 6, 0.1);
+    }
+
+    .tag-badge {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .tag-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 0.72rem;
+        font-weight: 500;
+        background: var(--tag-bg);
+        color: var(--tag-fg);
+        border: 1px solid var(--border);
+      }
+    }
+
+    .app-lead-desc {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin: 12px 0 0;
+    }
+    @media (min-width: 768px) {
+      .app-lead-desc {
+        font-size: 0.95rem;
+        margin: 14px 0 0;
+      }
+    }
+
+    /* アプリの特長ハイライトチップ：スマホでは非表示、PCでのみ右カラムに表示 */
+    .hero-right-specs {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .hero-right-specs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 20px;
+      }
+      .specs-title {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--muted);
+        margin: 0 0 4px;
+      }
+      .specs-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .spec-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.82rem;
+        color: var(--fg);
+        font-weight: 500;
+      }
+    }
+
+    /* 「できること」セクション：スマホでは1カラム、PCでは2カラム */
+    .features {
+      max-width: 100%;
+      margin: 0 0 36px;
+      text-align: left;
+    }
+    @media (min-width: 768px) {
+      .features {
+        margin: 0 0 44px;
+      }
+    }
+    .features-heading-wrap {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    .features-heading-wrap h2 {
       margin: 0;
       padding: 0;
+      border-bottom: none;
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .feature-list {
       display: grid;
       gap: 10px;
+      grid-template-columns: 1fr;
     }
+    @media (min-width: 768px) {
+      .feature-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+    }
+
     .feature-list li {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 0.86rem;
+      line-height: 1.55;
       display: flex;
       align-items: flex-start;
       gap: 10px;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .feature-list li:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .feature-list .mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* アプリ内リンク (プライバシーポリシー・リリースノート) */
+    .app-links-wrap {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+    .app-link-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       border: 1px solid var(--border);
       background: var(--card-bg);
       border-radius: 10px;
-      padding: 12px 14px;
-      font-size: 0.88rem;
-      line-height: 1.5;
-    }
-    .feature-list .mark {
+      padding: 10px 16px;
       color: var(--accent);
-      flex-shrink: 0;
-      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-card);
+      transition: all 0.2s ease;
+    }
+    .app-link-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
     }
   </style>
-<meta property="og:site_name" content="ちゃ開発組">
-<meta property="og:image" content="https://tya-kaihatsu.com/assets/icons/pet-health-management.png">
-<meta name="twitter:card" content="summary">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-BM5E3HSSHS');
-</script>
 </head>
 <body>
   <main>
-    <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+    <nav class="back-nav">
+      <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+    </nav>
 
-    <div class="app-hero">
-      <img class="icon" src="../assets/icons/pet-health-management.png" alt="ぺっときろくのアイコン">
-      <h1>ぺっときろく</h1>
-      <p class="desc">体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。</p>
+    <!-- アプリ紹介ヒーロー -->
+    <div class="app-showcase-card">
+      <div class="hero-left">
+        <div class="app-meta-head">
+          <img class="app-icon-img" src="../assets/icons/pet-health-management.png" alt="ぺっときろくのアイコン">
+          <div class="app-title-group">
+            <h1>ぺっときろく</h1>
+            <div class="badges-row">
+              <span class="store-badge">🛠️ 開発中 (近日公開予定)</span>
+              <span class="tag-badge">ペット / 健康管理・記録</span>
+              <span class="tag-badge">Android対応</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="app-lead-desc">体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。</p>
+      </div>
+
+      <!-- PC右側：機能ハイライトボックス -->
+      <div class="hero-right-specs">
+        <div class="specs-title">主な機能ハイライト</div>
+        <div class="specs-list">
+          <div class="spec-item"><span>🐾</span> 体重・排泄・ごはんを詳細記録</div>
+          <div class="spec-item"><span>📅</span> カレンダー＆通院予定リマインダー</div>
+          <div class="spec-item"><span>📊</span> グラフ表示で推移を一目確認</div>
+          <div class="spec-item"><span>🐶</span> 犬・猫・小動物・爬虫類まで対応</div>
+          <div class="spec-item"><span>📱</span> ホーム画面ウィジェット対応</div>
+          <div class="spec-item"><span>🔄</span> 端末同士の安全な直接データ同期</div>
+        </div>
+      </div>
     </div>
 
+    <!-- できること -->
     <section class="features">
-      <h2>できること</h2>
+      <div class="features-heading-wrap">
+        <h2>できること</h2>
+      </div>
       <ul class="feature-list">
-        <li><span class="mark">✓</span>体重・うんち・おしっこ・ごはんを専用の記録画面でしっかり記録(うんち・おしっこは調子[6段階]・色・量・要注意チェックまで、ごはんは食べ具合[6段階]とフード名の候補選択、体重はグラム/キログラム切替)</li>
-        <li><span class="mark">✓</span>おやつ・お水・お散歩・お薬・鳥かごからの外出・ケージから出す、といった日々のお世話もワンタップで記録</li>
-        <li><span class="mark">✓</span>自由な項目名で残せるカスタム記録、室温などの環境記録、写真・動画の記録にも対応</li>
-        <li><span class="mark">✓</span>通院やシャンプーなどの予定をカレンダーで管理し、リマインダー通知で知らせてくれる</li>
-        <li><span class="mark">✓</span>統計タブのグラフ・カレンダー表示で体重やうんちの調子などの推移をひと目で確認、複数のペットをまとめて比較もできる</li>
-        <li><span class="mark">✓</span>ホーム画面はカードを並べたグリッド表示と、1匹ずつ大きく見せるワイド表示を切り替え可能(複数のペットがいる場合はワイド表示でスワイプして切り替え)</li>
-        <li><span class="mark">✓</span>ペットカードの背景を色・柄・お気に入りの写真から選んで自分好みにカスタマイズ</li>
-        <li><span class="mark">✓</span>犬・猫はもちろん、鳥・爬虫類・両生類・魚・昆虫など幅広い種類のペットに対応、複数のペットをまとめて管理できる</li>
-        <li><span class="mark">✓</span>ホーム画面ウィジェットで今日の記録状況をすぐ確認(Android)</li>
-        <li><span class="mark">✓</span>ペットの誕生日をお祝いする演出付き</li>
-        <li><span class="mark">✓</span>ライト/ダークテーマと複数のフォントから好みの見た目を選択</li>
-        <li><span class="mark">✓</span>バックアップと復元で、大切な記録をしっかり守る</li>
-        <li><span class="mark">✓</span>PREMIUMなら、インターネットを使わず端末どうしだけで、家族の端末と記録を完全に同期(通信は端末同士で直接行い、当方のサーバーは経由しません)</li>
-        <li><span class="mark">✓</span>日本語を含む12言語に対応、端末の言語設定に自動で合わせて表示</li>
+        <li><span class="mark">✓</span><span>体重・うんち・おしっこ・ごはんを専用の記録画面でしっかり記録 (うんち・おしっこは調子 [6段階]・色・量・要注意チェックまで、ごはんは食べ具合 [6段階] とフード名の候補選択、体重はグラム/キログラム切替)</span></li>
+        <li><span class="mark">✓</span><span>おやつ・お水・お散歩・お薬・鳥かごからの外出・ケージから出す、といった日々のお世話もワンタップで記録</span></li>
+        <li><span class="mark">✓</span><span>自由な項目名で残せるカスタム記録、室温などの環境記録、写真・動画の記録にも対応</span></li>
+        <li><span class="mark">✓</span><span>通院やシャンプーなどの予定をカレンダーで管理し、リマインダー通知で知らせてくれる</span></li>
+        <li><span class="mark">✓</span><span>統計タブのグラフ・カレンダー表示で体重やうんちの調子などの推移をひと目で確認、複数のペットをまとめて比較もできる</span></li>
+        <li><span class="mark">✓</span><span>ホーム画面はカードを並べたグリッド表示と、1匹ずつ大きく見せるワイド表示を切り替え可能 (複数のペットがいる場合はワイド表示でスワイプして切り替え)</span></li>
+        <li><span class="mark">✓</span><span>ペットカードの背景を色・柄・お気に入りの写真から選んで自分好みにカスタマイズ</span></li>
+        <li><span class="mark">✓</span><span>犬・猫はもちろん、鳥・爬虫類・両生類・魚・昆虫など幅広い種類のペットに対応、複数のペットをまとめて管理できる</span></li>
+        <li><span class="mark">✓</span><span>ホーム画面ウィジェットで今日の記録状況をすぐ確認 (Android)</span></li>
+        <li><span class="mark">✓</span><span>ペットの誕生日をお祝いする演出付き</span></li>
+        <li><span class="mark">✓</span><span>ライト/ダークテーマと複数のフォントから好みの見た目を選択</span></li>
+        <li><span class="mark">✓</span><span>バックアップと復元で、大切な記録をしっかり守る</span></li>
+        <li><span class="mark">✓</span><span>PREMIUMなら、インターネットを使わず端末どうしだけで、家族の端末と記録を完全に同期 (通信は端末同士で直接行い、当方のサーバーは経由しません)</span></li>
+        <li><span class="mark">✓</span><span>日本語を含む12言語に対応、端末の言語設定に自動で合わせて表示</span></li>
       </ul>
     </section>
 
-    <div class="app-links">
-      <a href="./privacy-policy.html">プライバシーポリシー</a>
-      <a href="./release-notes.html">リリースノート</a>
+    <div class="app-links-wrap">
+      <a class="app-link-card" href="./privacy-policy.html">
+        <span>プライバシーポリシー</span>
+        <span>&rarr;</span>
+      </a>
+      <a class="app-link-card" href="./release-notes.html">
+        <span>リリースノート</span>
+        <span>&rarr;</span>
+      </a>
     </div>
 
     <footer>
