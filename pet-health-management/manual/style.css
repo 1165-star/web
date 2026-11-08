@@ -304,7 +304,7 @@ body {
 }
 @media (max-width: 780px) {
   .detail-layout { grid-template-columns: 1fr; }
-  .detail-shot { max-width: 280px; margin: 0 auto; }
+  .detail-shot { max-width: 280px; margin: 0 auto; position: static; }
 }
 .detail-shot {
   margin: 0;
