@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>タイムラインとスタミナ管理 — スタミナ手帳 取扱説明書</title>
+<meta name="description" content="スタミナ手帳のメイン画面「タイムライン」の使い方。登録したゲームのスタミナ残量・全快予定時刻の確認、ワンタップの「1周消費」や実値入力、リセット時刻カウントダウンの活用法を詳しく解説します。">
+<link rel="canonical" href="https://tya-kaihatsu.com/sutamina-techo/manual/timeline.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="タイムラインとスタミナ管理 — スタミナ手帳 取扱説明書">
+<meta property="og:description" content="スタミナ手帳のメイン画面「タイムライン」の使い方。登録したゲームのスタミナ残量・全快予定時刻の確認、ワンタップの「1周消費」や実値入力、リセット時刻カウントダウンの活用法を詳しく解説します。">
+<meta property="og:url" content="https://tya-kaihatsu.com/sutamina-techo/manual/timeline.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/sutamina-techo/manual/images/01_timeline_main.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "スタミナ手帳でスタミナとリセット時刻を管理する手順",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "タイムラインで各ゲームの全快時刻を確認する",
+      "text": "タイムライン画面の上部に並ぶゲームカードで、現在のスタミナゲージ、全快予定時刻、あと何分で全快するかを確認します。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "スタミナを消費したときは「1周消費」を押す",
+      "text": "クエストを1周プレイした後は「1周消費」ボタンをタップするだけで、設定した周回分のスタミナが即座に引かれます。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "デイリーリセットやイベント期限を確認する",
+      "text": "スタミナカードの下部に各ゲームのリセット時刻やイベント終了までの残り時間が時系列で一覧表示されます。"
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🎮 スタミナ手帳 <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./timeline.html" aria-current="page">1. タイムライン</a>
+      <a href="./games.html">2. ゲーム登録・編集</a>
+      <a href="./tools.html">3. 常駐便利ツール</a>
+      <a href="./notifications.html">4. 通知管理</a>
+      <a href="./settings.html">5. 統計・バックアップ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a>
+    <span>›</span>
+    <span aria-current="page">1. タイムライン・スタミナ管理</span>
+  </nav>
+
+  <section class="card-section">
+    <h1>⏱️ 1. タイムラインとスタミナ管理</h1>
+    <p>アプリを起動して最初に表示される「タイムライン」画面は、管理しているすべてのゲームのスタミナ状況と、デイリー/週間リセット、イベント終了時刻が時系列でまとまった総合ダッシュボードです。</p>
+
+    <div class="shot-card" style="margin-top: 20px;">
+      <img src="./images/01_timeline_main.png" alt="スタミナ手帳のタイムライン画面" width="542" height="1206" loading="lazy">
+      <div class="shot-caption">スタミナの残量ゲージ、満タン時刻、リセットまでの残り時間がひと目でわかるタイムライン</div>
+    </div>
+  </section>
+
+  <section class="card-section" id="stamina-check">
+    <h2>📊 スタミナカードの見方</h2>
+    <p>タイムラインの上部には、現在スタミナを管理している各ゲームのカードが並びます。</p>
+    <ul>
+      <li><strong>スタミナ数値とゲージ：</strong>「現在値 / 上限値」を大きく表示。満タンに近づくほどゲージが伸び、満タンになると「満タン」バッジが表示されます。</li>
+      <li><strong>全快予定時刻と残り時間：</strong>右上に「11/10 3:31 PM（あと35分）」のように、スタミナが上限まで回復する具体的な時刻とカウントダウンが表示されます。</li>
+      <li><strong>次の1回復時刻：</strong>次の1ポイントが回復する直近の時刻（例：3:01 PM）が確認できます。</li>
+      <li><strong>あと〇周：</strong>設定した1周あたりの消費スタミナ数に基づき、現在値であと何回クエストを回れるかを自動計算して表示します。</li>
+      <li><strong>溢れ累計：</strong>スタミナが満タンのまま放置されて溢れてしまったスタミナの累計量が表示され、無駄のないプレイを意識できます。</li>
+    </ul>
+
+    <div class="callout">
+      <div class="callout-title">💡 12時間表記と24時間表記の切り替え</div>
+      <p>画面上部の「12h」ボタンをタップすると、瞬時に「24h」表記（15:31など）に切り替わります。お好みの時間形式に合わせてご利用ください。</p>
+    </div>
+  </section>
+
+  <section class="card-section" id="stamina-spend">
+    <h2>🎮 スタミナの消費・更新操作</h2>
+    <p>スタミナを消費したときや、ゲーム内のスタミナと同期させたいときの操作方法です。</p>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">方法 A</span>
+        <h3 class="step-title">ワンタップで「1周消費」</h3>
+      </div>
+      <p>ゲームでクエストやダンジョンを1周クリアしたら、カード内の「1周消費」ボタンをタップします。あらかじめ設定した1周あたりのスタミナ（例：10や15）が即座に引かれ、全快予定時刻が自動更新されます。</p>
+    </div>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">方法 B</span>
+        <h3 class="step-title">正確な数値を合わせる「実値入力」</h3>
+      </div>
+      <p>レベルアップでスタミナが回復したときや、回復薬・アイテムを使ったときは「実値入力」ボタンをタップします。ゲーム画面のスタミナ実数値を直接入力して保存すれば、ズレをいつでも完璧にリセットできます。</p>
+    </div>
+  </section>
+
+  <section class="card-section">
+    <h2>🔄 デイリー・週間リセットのカウントダウン</h2>
+    <p>スタミナカードの下には、各ゲームのデイリーリセット（毎日早朝4時など）や週間リセットのカードが表示されます。「あと〇時間〇分」とリアルタイムにカウントダウンされるため、「今日中にデイリーミッションを消化し忘れた！」という失敗を防げます。</p>
+  </section>
+
+  <nav class="page-nav">
+    <a class="page-nav-link" href="./index.html">
+      <span class="page-nav-sub">← 目次へ戻る</span>
+      <span class="page-nav-title">取扱説明書トップ</span>
+    </a>
+    <a class="page-nav-link" href="./games.html" style="text-align: right;">
+      <span class="page-nav-sub">次の機能 →</span>
+      <span class="page-nav-title">2. ゲーム登録とスタミナ・フリー項目</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 / <a href="../index.html">スタミナ手帳 公式ページ</a> / <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ゲーム常駐便利ツール（計算機・ガチャカウンター）— スタミナ手帳 取扱説明書</title>
+<meta name="description" content="ゲームをプレイしながら画面端に重ねて使える「フローティング簡易計算機」と「簡易ガチャカウンター」の使い方。縦画面・横画面どちらのゲームでも中断せずに周回計算や天井までの回数カウントが可能です。">
+<link rel="canonical" href="https://tya-kaihatsu.com/sutamina-techo/manual/tools.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ゲーム常駐便利ツール（計算機・ガチャカウンター）— スタミナ手帳 取扱説明書">
+<meta property="og:description" content="ゲームをプレイしながら画面端に重ねて使える「フローティング簡易計算機」と「簡易ガチャカウンター」の使い方。縦画面・横画面どちらのゲームでも中断せずに周回計算や天井までの回数カウントが可能です。">
+<meta property="og:url" content="https://tya-kaihatsu.com/sutamina-techo/manual/tools.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/sutamina-techo/manual/images/03_floating_home.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "ゲーム画面にフローティングツールを常駐させる手順",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "ゲーム画面から「簡易ガチャカウンター」または「簡易計算機」を開く",
+      "text": "ゲームタブの上部にあるツールメニューから、使いたいツールを選択します。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "「フローティング表示」ボタンをタップする",
+      "text": "画面内の「フローティング表示」ボタンを押すと、画面端に小さな常駐操作バーが表示されます。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "ゲームを起動して画面端でそのまま操作する",
+      "text": "ゲーム画面を開いたまま、画面端のバーで「+1」「+10」のカウントや計算を快適に行えます。"
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🎮 スタミナ手帳 <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./timeline.html">1. タイムライン</a>
+      <a href="./games.html">2. ゲーム登録・編集</a>
+      <a href="./tools.html" aria-current="page">3. 常駐便利ツール</a>
+      <a href="./notifications.html">4. 通知管理</a>
+      <a href="./settings.html">5. 統計・バックアップ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a>
+    <span>›</span>
+    <span aria-current="page">3. ゲーム常駐便利ツール</span>
+  </nav>
+
+  <section class="card-section">
+    <h1>🧮 3. ゲーム常駐便利ツール（計算機＆ガチャカウンター）</h1>
+    <p>「スタミナ手帳」には、ゲームプレイヤーのために設計された2つの強力なツール「簡易ガチャカウンター」と「簡易計算機」が搭載されています。ゲームを起動したまま画面端に重ねて操作できる「フローティング機能」に対応しています。</p>
+
+    <div class="shot-card" style="margin-top: 20px;">
+      <img src="./images/03_floating_home.png" alt="ホーム画面上のフローティングツール表示" width="542" height="1206" loading="lazy">
+      <div class="shot-caption">画面上にオーバーレイ常駐する簡易計算機バー（上）と簡易ガチャカウンターバー（右）</div>
+    </div>
+  </section>
+
+  <section class="card-section" id="gacha-floating">
+    <h2>🎲 簡易ガチャカウンター</h2>
+    <p>「天井まであと何連回したかわからなくなった」「単発チケットと10連の合計を記録したい」という時に最適なカウンターです。</p>
+
+    <div class="shot-container-2col">
+      <div class="shot-card">
+        <img src="./images/03_gacha_counter.png" alt="簡易ガチャカウンター画面" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">簡易ガチャカウンター：現在の回数、+1、+10、一括加算設定</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/03_gacha_counter_setting.png" alt="フローティング内カウント表示設定" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">「フローティング内でカウント表示」にチェックを入れるとゲーム画面のままカウント可能</div>
+      </div>
+    </div>
+
+    <ul>
+      <li><strong>「+1」「+10」ボタン：</strong>ワンタップでガチャ回数をすばやくカウントアップ。</li>
+      <li><strong>一括加算カスタマイズ：</strong>「一括加算：+10回 ▼」から、ゲームに応じた連数（11連など）に切り替え可能。</li>
+      <li><strong>数字の直接変更・リセット：</strong>カウント数字をタップして自由に変更したり、「0にリセット」「-1回」で修正できます。</li>
+      <li><strong>スリープ防止機能：</strong>この画面を表示中は画面が自動消灯（スリープ）しないため、長時間のガチャ配信や作業中も安心です。</li>
+    </ul>
+  </section>
+
+  <section class="card-section" id="calc-floating">
+    <h2>➕ 簡易計算機</h2>
+    <p>「あと何周でイベントポイントが目標に届くか」「スタミナ回復薬が何個必要か」など、ゲーム中にサクッと1行の計算式を組み立てられる計算機です。</p>
+
+    <div class="shot-container-2col">
+      <div class="shot-card">
+        <img src="./images/03_calculator.png" alt="簡易計算機画面" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">簡易計算機：項を追加して式を組み立て、計算結果を確認</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/03_calculator_setting.png" alt="フローティング内計算結果表示設定" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">「フローティング内で計算結果表示」で画面端のバーに答えを直接表示</div>
+      </div>
+    </div>
+
+    <ul>
+      <li><strong>数字や記号をタップして変更：</strong>数字や「＋」「ー」「×」「÷」をタップして式を簡単に作れます。</li>
+      <li><strong>項の追加・削除：</strong>「＋ 項を追加」で複数の数値を組み合わせた計算もスムーズに行えます。</li>
+    </ul>
+  </section>
+
+  <section class="card-section">
+    <h2>📱 ゲームプレイ中の常駐表示（縦画面＆横画面に対応）</h2>
+    <p>「フローティング表示」を押すと、操作バーがゲーム画面の端にオーバーレイ常駐します。縦スクロール型RPGや横画面のアクションゲームなど、ゲームの画面の向きに合わせて邪魔にならない位置へスマートに配置されます。</p>
+
+    <h3>縦画面ゲームでの常駐例</h3>
+    <div class="shot-container-2col">
+      <div class="shot-card">
+        <img src="./images/03_floating_game_portrait_calc.png" alt="縦画面ゲームでの簡易計算機バー常駐" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">縦画面ゲーム：画面上部に計算機バーを常駐させて目標ポイントをリアルタイム計算</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/03_floating_game_portrait_gacha.png" alt="縦画面ゲームでのガチャカウンター常駐" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">縦画面ゲーム：画面右端にガチャバーを常駐させてガチャを引きながらカウント</div>
+      </div>
+    </div>
+
+    <h3>横画面ゲームでの常駐例</h3>
+    <div class="shot-container">
+      <div class="shot-card">
+        <img src="./images/03_floating_game_landscape_calc.png" alt="横画面ゲームでの簡易計算機バー常駐" width="1206" height="542" loading="lazy">
+        <div class="shot-caption">横画面ゲーム：画面上端の空きスペースに計算機バーをスマートに常駐</div>
+      </div>
+      <div class="shot-card" style="margin-top: 16px;">
+        <img src="./images/03_floating_game_landscape_gacha.png" alt="横画面ゲームでのガチャカウンター常駐" width="1206" height="542" loading="lazy">
+        <div class="shot-caption">横画面ゲーム：ガチャ画面の邪魔にならない位置で回数をカウント</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">💡 画面を切り替えずにカウントを続ける設定</div>
+      <p>「フローティング内でカウント表示」「フローティング内で計算結果表示」にチェックを入れておくと、カウントボタンを押した際にメインアプリへ戻る画面切り替えが発生せず、ゲーム画面を表示したまま連続でカウント・計算できます。</p>
+    </div>
+  </section>
+
+  <nav class="page-nav">
+    <a class="page-nav-link" href="./games.html">
+      <span class="page-nav-sub">← 前の機能</span>
+      <span class="page-nav-title">2. ゲーム登録とスタミナ・フリー項目</span>
+    </a>
+    <a class="page-nav-link" href="./notifications.html" style="text-align: right;">
+      <span class="page-nav-sub">次の機能 →</span>
+      <span class="page-nav-title">4. 通知管理</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 / <a href="../index.html">スタミナ手帳 公式ページ</a> / <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>
