@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>設定・スキン・フォント・バックアップ | ゆびさすコンパス 取扱説明書</title>
+<meta name="description" content="ゆびさすコンパスの設定画面の使い方を解説します。誕生日（星座）の優先表示、9種のフォント、8種のカラーテーマ（ライト/ダーク）と端末連動スキン設定、12言語対応、バックアップと復元。">
+<link rel="canonical" href="https://tya-kaihatsu.com/houkaku-compass/manual/settings.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="設定・スキン・フォント・バックアップ | ゆびさすコンパス 取扱説明書">
+<meta property="og:description" content="ゆびさすコンパスの設定画面の使い方を解説します。誕生日（星座）の優先表示、9種のフォント、8種のカラーテーマ（ライト/ダーク）と端末連動スキン設定、12言語対応、バックアップと復元。">
+<meta property="og:url" content="https://tya-kaihatsu.com/houkaku-compass/manual/settings.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/houkaku-compass/manual/images/08_settings_main.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "誕生日を設定すると何が変わりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "誕生日（月日のみ。年の入力は不要）を設定すると、あなたの星座の方角が目的地一覧の最上部に特別枠として表示され、毎日の星の向きをすぐに確認できるようになります。設定はいつでもクリアできます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ライトモードとダークモードは自動で切り替わりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。「スキン設定」で「端末の設定に連動」をONにしておくと、スマートフォンのシステム設定（昼間はライト、夜間はダークなど）に合わせて、選択したライト用スキンとダーク用スキンが自動的に切り替わります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "バックアップファイルはどこに保存されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "「バックアップ」ボタンを押すと、スマートフォンのファイル保存ダイアログが開き、Googleドライブや端末のダウンロードフォルダなど、お好みの場所にJSONファイルとして安全に保存できます。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🧭 ゆびさすコンパス <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./compass.html">1. コンパス・針デザイン</a>
+      <a href="./places.html">2. 目的地・通知予約</a>
+      <a href="./register.html">3. 場所の登録・管理</a>
+      <a href="./settings.html" aria-current="page">4. 設定・スキン・バックアップ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 04</span>
+  <h1>⚙️ 設定・スキン・フォント・バックアップ</h1>
+  <p>誕生日の星座優先表示、多彩なスキンやフォントの着せ替え、多言語設定、大切なデータのバックアップと復元手順を解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>設定・スキン・フォント・バックアップ</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+    <p>コンパス画面右上の「設定」ボタンをタップすると、アプリ全体のカスタマイズやデータ管理を行う設定画面が開きます。</p>
+    <div class="want-tags">
+      <a class="want-tag" href="#set-birthday">・自分の星座の方角をトップに表示したい</a>
+      <a class="want-tag" href="#set-font">・フォントを変更したい</a>
+      <a class="want-tag" href="#set-skin">・スキン（配色テーマ）を着せ替えたい</a>
+      <a class="want-tag" href="#set-lang">・言語を変更したい</a>
+      <a class="want-tag" href="#set-backup">・登録データや針の画像をバックアップ・復元したい</a>
+    </div>
+
+    <div class="shot-card">
+      <img src="./images/08_settings_main.png" alt="設定画面のメイン表示" width="1084" height="3088" loading="lazy">
+      <div class="shot-caption">設定画面：誕生日設定、フォント、スキン、言語、バックアップ・復元、アプリ情報</div>
+    </div>
+  </section>
+
+  <section class="card-section" id="set-birthday" aria-labelledby="bday-heading">
+    <h2 id="bday-heading">♈ 1. 誕生日（あなたの星座）の設定</h2>
+    <p>ご自身の誕生日（月日）を登録すると、あなたの星座が目的地の最上部に特別表示されます。</p>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">1</span>
+        <h4>月日の選択</h4>
+      </div>
+      <p>「誕生日（あなたの星座）」欄をタップし、誕生月日を選択します（生まれた年は不要です）。自動で12星座（例：おひつじ座、おうし座など）が割り当てられます。</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">2</span>
+        <h4>目的地の最上部に優先表示</h4>
+      </div>
+      <p>設定すると、目的地選択ドロワーの一番上にあなたの星座が表示され、夜空に輝く星座の方角をいつでも即座に向くことができます。</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">3</span>
+        <h4>誕生日のクリア</h4>
+      </div>
+      <p>表示を解除したい場合は、「誕生日をクリア」をタップするだけでいつでも初期状態に戻せます。</p>
+    </div>
+  </section>
+
+  <section class="card-section" id="set-font" aria-labelledby="font-heading">
+    <h2 id="font-heading">🔤 2. フォントのカスタマイズ</h2>
+    <p>アプリ全体のテキストフォントを、お好みの雰囲気に合わせて変更できます。</p>
+    <p>システム標準のほか、きれい系・強め系・かわいい系の3カテゴリー・全9書体から選択可能です。設定したフォントはコンパス画面やメニュー全体に即時反映されます。</p>
+  </section>
+
+  <section class="card-section" id="set-skin" aria-labelledby="skin-heading">
+    <h2 id="skin-heading">🎨 3. スキン（カラーテーマ）の設定</h2>
+    <p>気分や好みに合わせて、コンパスや背景のカラーリングを自由に変更できます。</p>
+
+    <div class="shot-card">
+      <img src="./images/09_settings_skin.png" alt="スキン設定画面" width="1084" height="2412" loading="lazy">
+      <div class="shot-caption">スキン設定画面：上部のミニコンパスで色合いをリアルタイムプレビューしながら選択可能</div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">1</span>
+        <h4>端末の設定に連動</h4>
+      </div>
+      <p>「端末の設定に連動」をONにすると、スマホ本体のダークテーマ設定に応じてライトモード用スキンとダークモード用スキンが自動的に切り替わります。</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">2</span>
+        <h4>ライトモード用スキン（4種類）</h4>
+      </div>
+      <p>🌅 <strong>朝焼け</strong> / ☀️ <strong>陽だまり</strong> / 🌊 <strong>水面</strong> / 🌿 <strong>若葉</strong> の明るく清潔感のあるテーマから選べます。</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">3</span>
+        <h4>ダークモード用スキン（4種類）</h4>
+      </div>
+      <p>⬛ <strong>漆黒</strong> / 🌲 <strong>森</strong> / 🫘 <strong>小豆</strong> / 🌌 <strong>深夜</strong> の落ち着いたダークテーマから選べます。</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">4</span>
+        <h4>「適用する」で保存</h4>
+      </div>
+      <p>上部のプレビューで確認しながら好みの配色を選び、「適用する」ボタンをタップして確定します。</p>
+    </div>
+  </section>
+
+  <section class="card-section" id="set-lang" aria-labelledby="lang-heading">
+    <h2 id="lang-heading">🌐 4. 言語の切り替え</h2>
+    <p>ゆびさすコンパスは以下の全12言語に対応しています：</p>
+    <p><strong>日本語 / 英語（English） / 簡体字中国語（简体中文） / 繁体字中国語（繁體中文） / 韓国語（한국어） / スペイン語（Español） / ポルトガル語（Português） / フランス語（Français） / ドイツ語（Deutsch） / ロシア語（Русский） / インドネシア語（Bahasa Indonesia） / イタリア語（Italiano）</strong></p>
+    <p>端末の標準言語に自動追従するほか、設定画面からいつでも任意の言語を手動選択できます。</p>
+  </section>
+
+  <section class="card-section" id="set-backup" aria-labelledby="backup-heading">
+    <h2 id="backup-heading">💾 5. バックアップと復元（データ移行）</h2>
+    <p>登録した場所、お気に入り、通知スケジュール、設定したカスタム針の写真データを安全にバックアップ・復元できます。</p>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">1</span>
+        <h4>バックアップの作成</h4>
+      </div>
+      <p>「バックアップ」ボタンをタップすると、保存ダイアログが開きます。Googleドライブや端末内のフォルダを指定して、バックアップファイル（JSON形式）を保存してください。</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">2</span>
+        <h4>データの復元</h4>
+      </div>
+      <p>機種変更後やアプリ再インストール時に「復元」ボタンをタップし、保存しておいたバックアップファイルを選択します。登録した場所や針のデザインが一括で元の状態に戻ります。</p>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ よくある質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-badge">Q.</span><span>バックアップファイルに有効期限はありますか？</span></div>
+        <p class="faq-a">いいえ、有効期限はありません。定期的にバックアップを取っておくことで、万が一の端末故障や紛失の際にもいつでも復元できます。</p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-badge">Q.</span><span>フォントやスキンの設定はバックアップされますか？</span></div>
+        <p class="faq-a">はい、選択したフォントやスキン設定、誕生日の情報もバックアップデータに含まれます。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="pager">
+    <a class="pager-prev" href="./register.html">&larr; 3. 場所の登録・管理</a>
+    <a class="pager-next" href="./index.html">取扱説明書トップ &rarr;</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> ちゃ開発組 &mdash; <a href="../">ゆびさすコンパス 紹介ページへ戻る</a></p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

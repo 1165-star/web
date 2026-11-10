@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>目的地の選択とスケジュール通知予約 | ゆびさすコンパス 取扱説明書</title>
+<meta name="description" content="ゆびさすコンパスの豊富な目的地一覧の選び方とスケジュール通知機能の使い方を解説します。恵方・キブラ・神社仏閣・太陽や月・12星座の選択、一回・毎日・毎週・毎年の通知予約設定。">
+<link rel="canonical" href="https://tya-kaihatsu.com/houkaku-compass/manual/places.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="目的地の選択とスケジュール通知予約 | ゆびさすコンパス 取扱説明書">
+<meta property="og:description" content="ゆびさすコンパスの豊富な目的地一覧の選び方とスケジュール通知機能の使い方を解説します。恵方・キブラ・神社仏閣・太陽や月・12星座の選択、一回・毎日・毎週・毎年の通知予約設定。">
+<meta property="og:url" content="https://tya-kaihatsu.com/houkaku-compass/manual/places.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/houkaku-compass/manual/images/07_places_drawer.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1つの場所に複数の通知を設定できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。1つの場所に対して、朝と夕方の毎日通知や、特定の記念日と毎週末の通知など、複数のスケジュール通知を組み合わせて追加登録できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "太陽や月の方角はリアルタイムに変わりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。太陽や月、12星座の方角は現在時刻と現在地（GPS）に基づいて天体の天球上の位置をリアルタイムに計算しているため、時間の経過とともに針の向きが自然に変化します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "通知が届かない場合の対処法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "スマートフォンの「設定」アプリから「アプリ」→「ゆびさすコンパス」を開き、「通知」の許可がオンになっているか、および端末の省電力モード（バッテリー最適化）でバックグラウンド実行が制限されていないかご確認ください。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🧭 ゆびさすコンパス <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./compass.html">1. コンパス・針デザイン</a>
+      <a href="./places.html" aria-current="page">2. 目的地・通知予約</a>
+      <a href="./register.html">3. 場所の登録・管理</a>
+      <a href="./settings.html">4. 設定・スキン・バックアップ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 02</span>
+  <h1>🔔 目的地の選択とスケジュール通知予約</h1>
+  <p>恵方・キブラ・神社仏閣・太陽・星座など多彩な目的地の選び方と、お参りや記念日に役立つスケジュール通知の設定手順を解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>目的地の選択とスケジュール通知予約</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+    <p>「選択中の場所」一覧ドロワーでは、あらかじめ用意された多数のプリセット地や、自分で登録した場所を素早く探して切り替えることができます。また、場所ごとに通知スケジュールを設定することも可能です。</p>
+    <div class="want-tags">
+      <a class="want-tag" href="#places-preset">・恵方・キブラ・真北・神社・星座などプリセット地を選びたい</a>
+      <a class="want-tag" href="#places-notification">・特定の時間や記念日に向けて通知を予約したい</a>
+      <a class="want-tag" href="#places-open">・通知から直接コンパスを開く動作について知りたい</a>
+    </div>
+
+    <div class="shot-card">
+      <img src="./images/07_places_drawer.png" alt="目的地一覧ドロワー" width="1084" height="5881" loading="lazy">
+      <div class="shot-caption">目的地一覧ドロワー：お気に入り、登録場所、日本・世界の聖地、天体や星座などがカテゴリーごとに並びます</div>
+    </div>
+  </section>
+
+  <section class="card-section" id="places-preset" aria-labelledby="preset-heading">
+    <h2 id="preset-heading">🗺️ 1. プリセット目的地の種類と選択</h2>
+    <p>ゆびさすコンパスには、日常やお参り・イベントに役立つ目的地が最初から豊富に登録されています。</p>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">1</span>
+        <h4>国に依存しない共通の目的地</h4>
+      </div>
+      <p>
+        ・<strong>恵方（年毎に自動計算）：</strong> 今年の恵方を自動で算出して表示します。<br>
+        ・<strong>北極星（真北） / 真南 / 磁北極：</strong> 方位の基準点を確認できます。<br>
+        ・<strong>彼岸（西方浄土）：</strong> 春分・秋分の日の入り方角（真西）の確認に便利です。<br>
+        ・<strong>太陽 / 月：</strong> 現在時刻の太陽や月の位置をリアルタイムに指し示します。<br>
+        ・<strong>12星座（おひつじ座〜うお座）：</strong> 夜空に浮かぶ各星座の方角をリアルタイムに案内します。
+      </p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">2</span>
+        <h4>自分の国（日本）の神社仏閣・名所</h4>
+      </div>
+      <p>夫婦岩、大文字山、皇居、天岩戸神社、犬吠埼、伊勢神宮、出雲大社、富士山、高野山奥之院、東大寺、厳島神社、熊野本宮大社、明治神宮など、日本を代表する名所・パワースポットが揃っています。</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">3</span>
+        <h4>世界各国の聖地・名所</h4>
+      </div>
+      <p>サウジアラビア（メッカのカアバ神殿/キブラ）、アメリカ、中国、台湾、韓国、スペイン、フランス、ドイツなど世界各国の名所をアコーディオンから展開して選択できます。</p>
+    </div>
+  </section>
+
+  <section class="card-section" id="places-notification" aria-labelledby="noti-heading">
+    <h2 id="noti-heading">⏰ 2. スケジュール通知予約の設定</h2>
+    <p>特定の場所を向きたい日時が決まっている場合、通知をスケジュール登録しておけば、忘れることなくコンパスを起動できます。</p>
+
+    <div class="shot-duo">
+      <div class="shot-card">
+        <img src="./images/05_notification_dialog.png" alt="通知設定ダイアログ" width="1084" height="2412" loading="lazy">
+        <div class="shot-caption">通知設定ダイアログ：通知の追加・管理画面</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/06_notification_schedule.png" alt="通知日時の設定ダイアログ" width="1084" height="2412" loading="lazy">
+        <div class="shot-caption">日時の設定画面：頻度と日時を指定</div>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">1</span>
+        <h4>場所の横にある「通知」スイッチをタップ</h4>
+      </div>
+      <p>目的地リストの中で、通知を設定したい場所の右側にある「通知」ボタンをタップします。</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">2</span>
+        <h4>「追加」ボタンをタップ</h4>
+      </div>
+      <p>「通知の設定」ダイアログが表示されたら、「追加」ボタンを押します。</p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">3</span>
+        <h4>繰り返しの頻度を選択</h4>
+      </div>
+      <p>
+        ・<strong>一回だけ：</strong> 特定の日時（例：ライブ開演時刻、イベント日など）に1度だけ通知<br>
+        ・<strong>毎日：</strong> 毎日の決まった時間（例：朝のお祈り、日課の礼拝など）に通知<br>
+        ・<strong>毎年：</strong> 記念日や節分など、年に1度のイベントに合わせて通知<br>
+        ・<strong>毎週：</strong> 決まった曜日の時刻に定期通知
+      </p>
+    </div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">4</span>
+        <h4>日時を指定して「追加」をタップ</h4>
+      </div>
+      <p>日付や時刻を選択し、「追加」ボタンを押すと通知スケジュールが確定します。</p>
+    </div>
+  </section>
+
+  <section class="card-section" id="places-open" aria-labelledby="open-heading">
+    <h2 id="open-heading">🚀 3. 通知からのワンタップ起動</h2>
+    <p>指定した時刻になると、スマートフォンに通知メッセージが届きます。</p>
+    <p>通知をタップすると<strong>その目的地が自動で選択された状態でアプリが起動</strong>するため、メニューから探す手間なく、すぐにその方角を向くことができます。</p>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ よくある質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-badge">Q.</span><span>通知を一時的にオフにすることはできますか？</span></div>
+        <p class="faq-a">はい。場所一覧にある「通知」のトグルスイッチをOFFにするだけで、設定したスケジュールを削除することなく一時的に通知を停止できます。</p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-badge">Q.</span><span>不要になった通知スケジュールを削除するには？</span></div>
+        <p class="faq-a">通知設定ダイアログを開き、登録されているスケジュール一覧から該当の項目をタップして削除できます。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="pager">
+    <a class="pager-prev" href="./compass.html">&larr; 1. コンパス・針デザイン</a>
+    <a class="pager-next" href="./register.html">3. 場所の登録・管理 &rarr;</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> ちゃ開発組 &mdash; <a href="../">ゆびさすコンパス 紹介ページへ戻る</a></p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
