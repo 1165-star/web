@@ -228,16 +228,20 @@ body {
   border-radius: 14px;
   padding: 14px;
   text-align: center;
-  margin: 18px 0;
+  margin: 18px auto;
+  max-width: 440px;
+}
+.shot-grid .shot-card {
+  max-width: 100%;
+  margin: 0;
 }
 .shot-card img {
   max-width: 100%;
   height: auto;
-  max-height: 480px;
   border-radius: 10px;
   box-shadow: var(--shadow-lg);
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  margin: 0 auto;
 }
 .shot-caption {
   font-size: 12px;
@@ -254,11 +258,11 @@ body {
   gap: 16px;
   margin: 20px 0;
 }
-@media (min-width: 600px) {
-  .shot-grid { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 640px) {
+  .shot-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
 }
 @media (min-width: 900px) {
-  .shot-grid.three-col { grid-template-columns: repeat(3, 1fr); }
+  .shot-grid.three-col { grid-template-columns: repeat(3, 1fr); gap: 18px; }
 }
 
 /* やりたいことグリッド */
