@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>評価・レビューの使い方｜アプリ成績表 取扱説明書（レビューの翻訳・返信・新着の通知）</title>
+<meta name="description" content="アプリ成績表の「評価」タブを解説。評価の平均と推移、Google Playのレビューの閲覧・翻訳・コピー、新着・更新レビューの印とお知らせ、翻訳してレビューに返信する方法（PREMIUM）。">
+<link rel="canonical" href="https://tya-kaihatsu.com/app-report-card/manual/ratings.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="評価・レビューの使い方｜アプリ成績表 取扱説明書（レビューの翻訳・返信・新着の通知）">
+<meta property="og:description" content="アプリ成績表の「評価」タブを解説。評価の平均と推移、Google Playのレビューの閲覧・翻訳・コピー、新着・更新レビューの印とお知らせ、翻訳してレビューに返信する方法（PREMIUM）。">
+<meta property="og:url" content="https://tya-kaihatsu.com/app-report-card/manual/ratings.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/app-report-card/manual/images/ratings_reviews.webp">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "返信するには、何が必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PREMIUMへの登録と、そのアプリに返信する権限のあるPlay Consoleのアカウントでのログインが必要です。権限が無いときは、「返信する権限がありません」と案内が出ます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "過去のレビューが、全部は出てきません。",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Playから取得できるのは、直近約7日分だけです。アプリは、取得したレビューを端末に蓄積していくので、使いはじめる前の古いレビューは表示できません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "レビューの翻訳が表示されません。",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "レビューは、アプリの表示言語に翻訳して表示します。原文のままのときは、「翻訳を表示」「原文を表示」で切り替えられます。翻訳は、通信状態や、言語データの有無に影響されることがあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "新着のお知らせが出ないようにできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "設定の「新着・更新レビューのお知らせ」をオフにしてください。印（NEW・更新）や、タブのアイコンの数字は、そのまま表示されます。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">📊 アプリ成績表 <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./start.html">1. はじめての準備</a>
+      <a href="./basics.html">2. 画面の見かた・基本操作</a>
+      <a href="./revenue.html">3. 収益</a>
+      <a href="./installs.html">4. インストール</a>
+      <a href="./users.html">5. ユーザー</a>
+      <a href="./ratings.html" aria-current="page">6. 評価・レビュー</a>
+      <a href="./quality.html">7. 品質</a>
+      <a href="./settings.html">8. 設定・バックアップ</a>
+      <a href="./widgets.html">9. ウィジェット</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 06</span>
+  <h1>⭐ 評価・レビュー（翻訳して返信）</h1>
+  <p>評価の推移、レビューの閲覧と翻訳、新着の確認、翻訳しながらの返信のしかたを解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>⭐ 評価・レビュー（翻訳して返信）</span>
+  </nav>
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+      <p>「評価」タブは、Google Playの評価とレビューをまとめて確認し、レビューに返信するための画面です。海外のレビューも、アプリの表示言語に翻訳して読めます。返信は、自分の言語で書いて、相手の言語に翻訳して送れます。</p>
+      <p>Play Consoleのアカウントでのログインが必要です。返信はPREMIUMの機能です。</p>
+
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#ratings-average">・アプリの評価の平均と推移を見たい</a>
+      <a class="want-tag" href="#ratings-reviews">・レビューを読みたい・翻訳したい</a>
+      <a class="want-tag" href="#ratings-new">・新しいレビューや、変更されたレビューに気づきたい</a>
+      <a class="want-tag" href="#ratings-reply">・海外のレビューに、自分の言語で返信したい</a>
+      <a class="want-tag" href="#ratings-edit">・送った返信を見たい・直したい</a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🛠️ 詳しい使い方</h2>
+
+    <div class="step-item" id="ratings-average">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">評価の平均と推移</h3>
+      </div>
+      <p><strong>「評価」</strong>のカードに、アプリごとの累計の平均が並びます。</p>
+      <p><strong>「評価の推移」</strong>は、累計の平均評価の推移の折れ線グラフ、<strong>「日ごとの評価」</strong>は、その日についた評価の平均の折れ線グラフです（評価がつかなかった日は、点がありません）。どちらも縦軸は、1〜5に固定されています。</p>
+
+    <div class="shot-card narrow">
+      <img src="./images/ratings_average.webp" alt="評価のカード。アプリごとの累計の平均評価" width="542" height="287" loading="lazy">
+      <div class="shot-caption">アプリごとの累計の平均</div>
+    </div>
+    <div class="shot-card narrow">
+      <img src="./images/ratings_trend.webp" alt="評価の推移の折れ線グラフ" width="542" height="561" loading="lazy">
+      <div class="shot-caption">累計の平均評価の推移</div>
+    </div>
+    <div class="shot-card narrow">
+      <img src="./images/ratings_daily.webp" alt="日ごとの評価の折れ線グラフ" width="542" height="584" loading="lazy">
+      <div class="shot-caption">その日についた評価の平均</div>
+    </div>
+    </div>
+
+    <div class="step-item" id="ratings-reviews">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">レビューを読む・翻訳する・コピーする</h3>
+      </div>
+      <p>Google Playのレビューを一覧で読めます。</p>
+      <ul>
+        <li>Playから取得できるレビューは<strong>直近約7日分</strong>だけのため、取得のたびに端末に<strong>蓄積</strong>します（アプリごとに最大500件）。「保存したデータを消して取り直す」でも、レビューは消えません。</li>
+        <li>外国語のレビューは、アプリの表示言語に翻訳して表示されます。レビューの下の<strong>「原文を表示」／「翻訳を表示」</strong>で、原文と翻訳を切り替えられます。</li>
+        <li><strong>「コピー」</strong>を押すと、レビューの文章をコピーできます。</li>
+      </ul>
+
+    <div class="shot-card narrow">
+      <img src="./images/ratings_reviews.webp" alt="レビューの一覧。星、アプリ名、コメント、コピーと返信するのリンク" width="542" height="867" loading="lazy">
+      <div class="shot-caption">レビューごとに、「コピー」と「返信する」が並びます</div>
+    </div>
+    </div>
+
+    <div class="step-item" id="ratings-new">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">新着・更新レビューの印とお知らせ</h3>
+      </div>
+      <p>取得したレビューを、すでに保存してあるものと比べて、<strong>新しく届いたものに「NEW」</strong>、<strong>星や本文が変わったものに「更新」</strong>の印を付けます。</p>
+      <ul>
+        <li>更新されたレビューでは、<strong>「星が変わりました」</strong>の表示（例: ★2 → ★4）と、<strong>「変更前の内容を見る」</strong>で、変更前の星・本文を確認できます。</li>
+        <li>「評価」タブのアイコンには、印の付いたレビューの数が赤い数字で出ます。</li>
+        <li><strong>「確認済みにする」</strong>を押すと、表示中のアプリの印がすべて消えます。</li>
+        <li>データの取得が終わったとき、新着・更新があると、「新しいレビューが◯件あります」というお知らせがポップアップで出ます（この端末ではじめて取得したときは出ません）。設定の「新着・更新レビューのお知らせ」で、オン・オフを切り替えられます。</li>
+      </ul>
+
+    </div>
+
+    <div class="step-item" id="ratings-reply">
+      <div class="step-header">
+        <span class="step-badge">STEP 4</span>
+        <h3 class="step-title">レビューに返信する（PREMIUM）</h3>
+      </div>
+      <p>レビューの<strong>「返信する」</strong>を押すと、カードの中に入力欄が開きます。返信は、<strong>PREMIUM</strong>の機能です（無料のときは、ボタンに南京錠が付き、押すとPREMIUMの画面が開きます）。</p>
+      <ol>
+        <li><strong>自分の言語（アプリの表示言語）で</strong>、返信を書きます（350文字まで）。</li>
+        <li><strong>「翻訳してプレビュー」</strong>を押すと、レビューした人の言語に翻訳されます。入力欄は翻訳後の文に切り替わり、直せます。その下に、書いた文と、翻訳後の文を自分の言語に戻した確認用の文が表示されます。</li>
+        <li>翻訳後の文が350文字を超えたときは警告が出て、送れません。短くしてください。</li>
+        <li><strong>「送信」</strong>を押すと、送る内容の確認ダイアログが出ます。<strong>「送信する」</strong>で確定です。</li>
+      </ol>
+
+      <div class="callout">
+        <div class="callout-title">⚠️ 返信は公開されます</div>
+        返信は、Google Playのストアに公開され、レビューした人にも通知されます。送る前に、確認ダイアログで内容をよくご確認ください。
+      </div>      <ul>
+        <li>レビューした人の言語が、自分の言語と同じときは、翻訳せずに送ります。</li>
+        <li>相手の言語に翻訳できないとき（対応していない言語・言語データを取得できないとき）は、<strong>「相手の言語に訳せないが、このまま送る」</strong>で、書いた文のまま送れます。</li>
+        <li>「元の文を書き直す」で、書いた文の入力に戻れます（翻訳後に直した内容は消えます）。</li>
+        <li>翻訳には、端末内で動く翻訳機能を使います。はじめて使う言語は、<strong>言語データのダウンロード</strong>（1言語あたり数十MB）が必要で、その間は「ダウンロード中」が表示されます。</li>
+      </ul>
+
+    </div>
+
+    <div class="step-item" id="ratings-edit">
+      <div class="step-header">
+        <span class="step-badge">STEP 5</span>
+        <h3 class="step-title">送った返信を見る・編集する</h3>
+      </div>
+      <p>返信済みのレビューには、<strong>「あなたの返信」</strong>の枠が出ます。</p>
+      <ul>
+        <li><strong>「翻訳を表示」</strong>で、返信を自分の言語に訳して読めます（翻訳は保存されません）。</li>
+        <li><strong>「返信を編集」</strong>を押すと、いまの返信が自分の言語に訳されて入力欄に入ります。直して、もう一度翻訳して送れます。</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 返信するには、何が必要ですか？</h3>
+        <p class="faq-a">PREMIUMへの登録と、そのアプリに返信する権限のあるPlay Consoleのアカウントでのログインが必要です。権限が無いときは、「返信する権限がありません」と案内が出ます。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 過去のレビューが、全部は出てきません。</h3>
+        <p class="faq-a">Playから取得できるのは、直近約7日分だけです。アプリは、取得したレビューを端末に蓄積していくので、使いはじめる前の古いレビューは表示できません。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> レビューの翻訳が表示されません。</h3>
+        <p class="faq-a">レビューは、アプリの表示言語に翻訳して表示します。原文のままのときは、「翻訳を表示」「原文を表示」で切り替えられます。翻訳は、通信状態や、言語データの有無に影響されることがあります。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 新着のお知らせが出ないようにできますか？</h3>
+        <p class="faq-a">設定の「新着・更新レビューのお知らせ」をオフにしてください。印（NEW・更新）や、タブのアイコンの数字は、そのまま表示されます。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./users.html">
+      <span class="page-nav-sub">前の機能へ</span>
+      <span class="page-nav-title">‹ 5. ユーザー</span>
+    </a>
+    <a class="page-nav-link next" href="./quality.html">
+      <span class="page-nav-sub">次の機能へ</span>
+      <span class="page-nav-title">7. 品質 ›</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 <a href="../index.html">アプリ成績表 アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

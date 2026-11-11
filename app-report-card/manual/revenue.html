@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>収益タブの使い方｜アプリ成績表 取扱説明書（AdMob広告収益・eCPM・日別グラフ）</title>
+<meta name="description" content="アプリ成績表の「収益」タブを解説。AdMobの広告収益・インプレッション・クリック・eCPM、日別の積み上げグラフ、アプリ別の収益、1インストールあたりの収益、定期購入の件数の見かた。">
+<link rel="canonical" href="https://tya-kaihatsu.com/app-report-card/manual/revenue.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="収益タブの使い方｜アプリ成績表 取扱説明書（AdMob広告収益・eCPM・日別グラフ）">
+<meta property="og:description" content="アプリ成績表の「収益」タブを解説。AdMobの広告収益・インプレッション・クリック・eCPM、日別の積み上げグラフ、アプリ別の収益、1インストールあたりの収益、定期購入の件数の見かた。">
+<meta property="og:url" content="https://tya-kaihatsu.com/app-report-card/manual/revenue.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/app-report-card/manual/images/revenue_daily.webp">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "表示される収益は、確定した金額ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ。収益は推定値です。AdMobでの確定には遅れがあるため、実際の支払額とは異なることがあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "今日の収益が$0.00のままです。",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AdMobの数字の反映には遅れがあります。「◯/◯分まで集計済み」と書かれた日までが、取得できている日です。しばらくしてから、画面を下に引っ張って更新してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "複数のアプリの収益を、まとめて見られますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。AdMobのアカウントにあるアプリは、すべて一覧に入ります。右下のボタンで、見たいアプリだけに絞り込めます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "通貨が複数あるとどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AdMobのアカウントごとに通貨が違うことがあります。違う通貨の金額は、足さずに、通貨ごとに分けて表示します。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">📊 アプリ成績表 <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./start.html">1. はじめての準備</a>
+      <a href="./basics.html">2. 画面の見かた・基本操作</a>
+      <a href="./revenue.html" aria-current="page">3. 収益</a>
+      <a href="./installs.html">4. インストール</a>
+      <a href="./users.html">5. ユーザー</a>
+      <a href="./ratings.html">6. 評価・レビュー</a>
+      <a href="./quality.html">7. 品質</a>
+      <a href="./settings.html">8. 設定・バックアップ</a>
+      <a href="./widgets.html">9. ウィジェット</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 03</span>
+  <h1>💰 収益（AdMobの広告収益）</h1>
+  <p>AdMobの広告収益を、期間別・アプリ別・日別に確認する方法を解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>💰 収益（AdMobの広告収益）</span>
+  </nav>
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+      <p>「収益」タブは、AdMobの広告収益をまとめて確認する画面です。収益・インプレッション・クリック・eCPMを、複数のアプリ・複数のアカウントの合計として表示します。</p>
+      <p>AdMobのアカウントでのログインが必要です（<a href="./start.html#start-admob">はじめての準備</a>を参照）。</p>
+
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#revenue-cards">・今日・昨日・今月の広告収益を知りたい</a>
+      <a class="want-tag" href="#revenue-daily">・日ごとの収益の推移をグラフで見たい</a>
+      <a class="want-tag" href="#revenue-byapp">・アプリごとの収益を比べたい</a>
+      <a class="want-tag" href="#revenue-perinstall">・1インストールあたりの収益を知りたい</a>
+      <a class="want-tag" href="#revenue-subs">・定期購入の有効数・新規・解約を知りたい</a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🛠️ 詳しい使い方</h2>
+
+    <div class="step-item" id="revenue-cards">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">今日・昨日・直近7日・今月の広告収益</h3>
+      </div>
+      <p>「収益」タブの上部には、4つのカードが並びます。それぞれに、<strong>広告収益・インプレッション（広告の表示回数）・クリック・eCPM</strong>（1,000回表示あたりの収益）が出ます。</p>
+      <ul>
+        <li>「今日」は、AdMob側の反映が遅れるため、$0.00（インプレッション0）と表示されることがあります。</li>
+        <li>金額・件数は、選んだアプリの合計です（アプリの選択は<a href="./basics.html#basics-picker">基本操作</a>を参照）。</li>
+      </ul>
+
+    <div class="shot-card narrow">
+      <img src="./images/revenue_cards.webp" alt="収益タブの上部。今日・昨日・直近7日・今月の広告収益、インプレッション、クリック、eCPM" width="542" height="383" loading="lazy">
+      <div class="shot-caption">4つの期間の広告収益。下に「10/25分まで集計済み」が出ます</div>
+    </div>
+    </div>
+
+    <div class="step-item" id="revenue-daily">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">日別の広告収益のグラフ</h3>
+      </div>
+      <p>日ごとの広告収益を、<strong>アプリごとに色分けした積み上げ棒グラフ</strong>で表示します。タップした日は、グラフの下の「選んだ日」に、その日の合計とアプリごとの金額が出ます。拡大・縮小・スクロールのしかたは、<a href="./basics.html#basics-graph">基本操作</a>をご覧ください。</p>
+
+    <div class="shot-card narrow">
+      <img src="./images/revenue_daily.webp" alt="日別の広告収益の積み上げ棒グラフと、選んだ日のボックス" width="542" height="560" loading="lazy">
+      <div class="shot-caption">アプリごとの色分けと、選んだ日の内訳</div>
+    </div>
+    </div>
+
+    <div class="step-item" id="revenue-byapp">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">アプリ別の広告収益</h3>
+      </div>
+      <p>今月の広告収益を、アプリごとに表示します。どのアプリがどれだけ稼いでいるかを、ひと目で比べられます。</p>
+
+    <div class="shot-card narrow">
+      <img src="./images/revenue_byapp.webp" alt="アプリ別の広告収益。今月のアプリごとの金額" width="542" height="188" loading="lazy">
+      <div class="shot-caption">今月のアプリ別の合計</div>
+    </div>
+    </div>
+
+    <div class="step-item" id="revenue-perinstall">
+      <div class="step-header">
+        <span class="step-badge">STEP 4</span>
+        <h3 class="step-title">1インストールあたりの広告収益</h3>
+      </div>
+      <p><strong>今月の広告収益 ÷ 今月のインストール数</strong>で計算した、1インストールあたりの収益です。収益（AdMob）と、インストール数（Play）の両方が取れたアプリだけで計算します。カードの下には、それぞれの「集計済み」の日が出ます。通貨が複数あるときは、同じ通貨のアプリだけで計算します。</p>
+
+    <div class="shot-card narrow">
+      <img src="./images/revenue_perinstall.webp" alt="1インストールあたりの広告収益のカード" width="542" height="220" loading="lazy">
+      <div class="shot-caption">何件のアプリの今月分から計算したかも表示されます</div>
+    </div>
+    </div>
+
+    <div class="step-item" id="revenue-subs">
+      <div class="step-header">
+        <span class="step-badge">STEP 5</span>
+        <h3 class="step-title">定期購入の件数</h3>
+      </div>
+      <p>アプリ内で定期購入（サブスクリプション）を販売しているときは、<strong>商品とベースプランごとの件数</strong>が出ます。</p>
+      <ul>
+        <li><strong>有効</strong>: 最新の日の、有効な定期購入の数です。</li>
+        <li><strong>新規</strong>・<strong>解約</strong>: 取得できた期間の合計です。</li>
+      </ul>
+      <p>定期購入の無いアプリは表示されません。</p>
+
+    <div class="shot-card narrow">
+      <img src="./images/revenue_subs.webp" alt="定期購入の件数。商品とベースプランごとの有効・新規・解約の数" width="542" height="321" loading="lazy">
+      <div class="shot-caption">商品ごとの有効・新規・解約</div>
+    </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 表示される収益は、確定した金額ですか？</h3>
+        <p class="faq-a">いいえ。収益は推定値です。AdMobでの確定には遅れがあるため、実際の支払額とは異なることがあります。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 今日の収益が$0.00のままです。</h3>
+        <p class="faq-a">AdMobの数字の反映には遅れがあります。「◯/◯分まで集計済み」と書かれた日までが、取得できている日です。しばらくしてから、画面を下に引っ張って更新してください。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 複数のアプリの収益を、まとめて見られますか？</h3>
+        <p class="faq-a">はい。AdMobのアカウントにあるアプリは、すべて一覧に入ります。右下のボタンで、見たいアプリだけに絞り込めます。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 通貨が複数あるとどうなりますか？</h3>
+        <p class="faq-a">AdMobのアカウントごとに通貨が違うことがあります。違う通貨の金額は、足さずに、通貨ごとに分けて表示します。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./basics.html">
+      <span class="page-nav-sub">前の機能へ</span>
+      <span class="page-nav-title">‹ 2. 画面の見かた・基本操作</span>
+    </a>
+    <a class="page-nav-link next" href="./installs.html">
+      <span class="page-nav-sub">次の機能へ</span>
+      <span class="page-nav-title">4. インストール ›</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 <a href="../index.html">アプリ成績表 アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>
