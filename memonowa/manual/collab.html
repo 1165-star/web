@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>近くの人と共同編集 | めものわ 取扱説明書</title>
+<meta name="description" content="めものわの共同編集機能の使い方を解説します。インターネット回線・Wi-Fi不要、端末同士の近距離直接通信、QRコードと4桁パスワードによる安全な接続、ホストとゲストの操作手順、リアルタイム描画。">
+<link rel="canonical" href="https://tya-kaihatsu.com/memonowa/manual/collab.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="近くの人と共同編集 | めものわ 取扱説明書">
+<meta property="og:description" content="めものわの共同編集機能の使い方を解説します。インターネット回線・Wi-Fi不要、端末同士の近距離直接通信、QRコードと4桁パスワードによる安全な接続、ホストとゲストの操作手順、リアルタイム描画。">
+<meta property="og:url" content="https://tya-kaihatsu.com/memonowa/manual/collab.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/memonowa/manual/images/17_collab_host_qr.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "共同編集を行う際、同じWi-Fiルーターに接続している必要がありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いいえ、同じWi-Fiルーターに接続する必要はありません。端末同士がBluetoothや端末間ダイレクトWi-Fiで直接通信するため、屋外や移動中などWi-Fi環境がない場所でも共同編集が可能です（端末のBluetoothとWi-Fiをオンにしてお使いください）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "何人まで同時に一緒に描くことができますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無料版ではホストを含めて最大4人まで同時に接続できます。ホストがPREMIUMプランを利用している場合、参加人数の上限なしで何人でも共同編集にご参加いただけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "見知らぬ人が勝手に接続してくる心配はありませんか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "QRコードの読み取りに加え、ホストの画面に表示される都度発行の「4桁パスワード」を入力しないと参加できない二重のセキュリティ設計になっています。近くにいる特定の人だけにパスワードを伝えることで、安全にお使いいただけます。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🎨 めものわ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./drawing.html">1. お絵かき・基本操作</a>
+      <a href="./background.html">2. 背景と画像の配置</a>
+      <a href="./collab.html" aria-current="page">3. 近くの人と共同編集</a>
+      <a href="./export.html">4. 画像保存・印刷・設定</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 03</span>
+  <h1>🤝 近くの人と共同編集</h1>
+  <p>ネット環境・サーバー・ログイン一切不要！近くにいる人とBluetooth・Wi-Fi直接通信でつながり、リアルタイムに1枚の白紙ノートを共有して一緒に描く方法を解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>近くの人と共同編集</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（共同編集の特徴と準備）</h2>
+    <p>「めものわ」の共同編集は、クラウドサーバーや外部インターネットを一切経由しません。お互いのスマートフォン同士が電波（Bluetooth / Wi-Fiダイレクト）で直接やり取りするため、次のような安心・快適な特長があります。</p>
+
+    <div class="callout gold">
+      <div class="callout-title">めものわ 共同編集の特長</div>
+      <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+        <li><strong>インターネット不要:</strong> 電波の届かない山の中、飛行機の中、通信制限中の端末でも使えます。</li>
+        <li><strong>アカウント・ログイン不要:</strong> アプリを開いてすぐにつながります。</li>
+        <li><strong>セキュアな直接通信:</strong> データは外部サーバーに送信されず、端末間で暗号化されて直接届きます。</li>
+        <li><strong>QRコード＋4桁パスワード:</strong> 近くの意図した相手とだけ、安全かつ確実に接続できます。</li>
+      </ul>
+    </div>
+
+    <div class="callout" style="margin-top: 14px;">
+      <div class="callout-title">⚠️ ご使用前の準備</div>
+      <p style="margin: 0;">共同編集を利用するすべての端末で、端末設定の<strong>Bluetooth</strong>と<strong>Wi-Fi</strong>をオンにしてください（Wi-Fiスポットへの接続は不要ですが、端末間の近距離無線機能のためにWi-Fiをオンにしておく必要があります）。</p>
+    </div>
+
+    <div class="shot-card" style="margin-top: 20px;">
+      <img src="./images/16_collab_menu.png" alt="共同編集のメニュー選択画面" width="542" height="1151" loading="lazy">
+      <div class="shot-caption">ツールバーの共同編集アイコンをタップして、「ホストになる」か「QRで参加」を選択</div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="host-heading" id="start">
+    <h2 id="host-heading">👑 ホスト（部屋を作る人）の手順</h2>
+    <p>自分のキャンバスに友達を招待したい人が「ホスト」になります。</p>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">ステップ 1</span>
+        <h3 class="step-title">「ホストになる」をタップする</h3>
+      </div>
+      <p style="margin: 0 0 10px;">共同編集シートの右側にある黄色い「ホストになる」ボタンをタップします。</p>
+    </div>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">ステップ 2</span>
+        <h3 class="step-title">QRコードと4桁パスワードを友達に見せる</h3>
+      </div>
+      <p style="margin: 0 0 10px;">画面上に専用のQRコードと、そのセッション限定の「4桁パスワード」が表示されます。友達にこのQRコードを読み取ってもらい、表示されている4桁のパスワードを口頭などで伝えます。</p>
+    </div>
+
+    <div class="shot-card">
+      <img src="./images/17_collab_host_qr.png" alt="ホスト画面に表示されたQRコードと4桁パスワード" width="542" height="1151" loading="lazy">
+      <div class="shot-caption">ホスト画面。参加者が接続すると上部の参加者数がカウントアップされます</div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">💡 ホスト側の注意点</div>
+      <p style="margin: 0;">共同編集を行っている間は、ホストのアプリを開いたままにしてください。ホストがアプリを閉じると、接続が自動的に終了します。</p>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="guest-heading">
+    <h2 id="guest-heading">🙋 ゲスト（参加する人）の手順</h2>
+    <p>ホストのキャンバスに参加して一緒に描きたい人は「ゲスト」として接続します。</p>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">ステップ 1</span>
+        <h3 class="step-title">「QRで参加(ゲスト)」をタップする</h3>
+      </div>
+      <p style="margin: 0 0 10px;">共同編集シートの左側にある「QRで参加(ゲスト)」ボタンをタップします。カメラが起動します。</p>
+    </div>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">ステップ 2</span>
+        <h3 class="step-title">ホストの画面のQRコードをカメラで読み取る</h3>
+      </div>
+      <p style="margin: 0 0 10px;">枠の中にホスト端末の画面に表示されているQRコードを合わせると、自動的に読み取りが行われます。</p>
+    </div>
+
+    <div class="shot-container-2col">
+      <div class="shot-card">
+        <img src="./images/19_collab_guest_camera.png" alt="ホストのQRコードを読み取るカメラ画面" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">カメラ枠にホストのQRコードを合わせる</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/20_collab_guest_password.png" alt="4桁パスワードの入力ダイアログ" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">ホストから教えてもらった4桁の数字を入力して「OK」</div>
+      </div>
+    </div>
+
+    <div class="step-item" style="margin-top: 20px;">
+      <div class="step-header">
+        <span class="step-badge">ステップ 3</span>
+        <h3 class="step-title">4桁のパスワードを入力する</h3>
+      </div>
+      <p style="margin: 0;">パスワード入力画面が表示されたら、ホストから教えてもらった4桁の数字を入力して「OK」をタップします。認証が完了すると、自動的にホストのキャンバスに接続されます。</p>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="active-heading">
+    <h2 id="active-heading">🎨 接続中の画面と共同編集</h2>
+    <p>接続が確立すると、ツールバーの共同編集アイコンに緑色のランプが点灯し、共同編集モード中であることがひと目でわかります。</p>
+
+    <div class="shot-card">
+      <img src="./images/18_collab_active.png" alt="共同編集中のキャンバス。左下に緑色のランプが点灯" width="542" height="1151" loading="lazy">
+      <div class="shot-caption">接続中は緑色のランプが点灯。お互いが描いた線がリアルタイムに相手の画面に反映される</div>
+    </div>
+
+    <div class="callout gold">
+      <div class="callout-title">💡 リアルタイムの同時描画</div>
+      <p style="margin: 0;">どちらが描いたストロークも、遅延なくスムーズにお互いの画面へリアルタイム反映されます。お互いに異なる色やペンスタイルを使って、ひとつの絵を合作したり、メッセージを書き合ったりして楽しめます。</p>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="close-heading">
+    <h2 id="close-heading">⏹️ 共同編集の終了方法</h2>
+    <p>共同編集を終了したいときは、以下の操作で行います。</p>
+    <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+      <li><strong>ホスト側:</strong> 共同編集メニューを開き、「共同編集をやめる」ボタンをタップすると、全員の接続が安全に切断されます。</li>
+      <li><strong>ゲスト側:</strong> 共同編集メニューから「閉じる」や切断を行うことで、いつでも自分だけ退出できます。</li>
+    </ul>
+  </section>
+
+  <nav class="page-nav" aria-label="前後ページナビゲーション">
+    <a class="page-nav-link" href="./background.html">
+      <span class="page-nav-sub">&larr; 前の機能</span>
+      <span class="page-nav-title">2. 背景と画像の配置</span>
+    </a>
+    <a class="page-nav-link next" href="./export.html">
+      <span class="page-nav-sub">次の機能 &rarr;</span>
+      <span class="page-nav-title">4. 画像保存・印刷・設定</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; ちゃ開発組 — <a href="../">めものわ 公式紹介ページへ戻る</a></p>
+</footer>
+</body>
+</html>
