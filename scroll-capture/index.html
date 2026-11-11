@@ -463,6 +463,41 @@
       margin-top: 1px;
     }
 
+    .title-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+    @media (min-width: 768px) {
+      .title-row {
+        justify-content: flex-start;
+      }
+    }
+    .title-manual-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-card);
+    }
+    .title-manual-link:hover {
+      background: var(--accent);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-hover);
+    }
+
     /* アプリ内リンク (プライバシーポリシー・リリースノート) */
     .app-links-wrap {
       display: flex;
@@ -505,7 +540,10 @@
         <div class="app-meta-head">
           <img class="app-icon-img" src="../assets/icons/scroll-capture.png" alt="縦長スクショのアイコン">
           <div class="app-title-group">
-            <h1>縦長スクショ</h1>
+            <div class="title-row">
+              <h1>縦長スクショ</h1>
+              <a class="title-manual-link" href="./manual/" target="_blank" rel="noopener noreferrer">取扱説明書 &rarr;</a>
+            </div>
             <div class="badges-row">
               <span class="store-badge">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
@@ -599,6 +637,7 @@
     </section>
 
     <div class="app-links-wrap">
+      <a class="app-link-card" href="./manual/" target="_blank" rel="noopener noreferrer">取扱説明書 &rarr;</a>
       <a class="app-link-card" href="./privacy-policy.html">
         <span>プライバシーポリシー</span>
         <span>&rarr;</span>
