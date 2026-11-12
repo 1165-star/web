@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お絵かき・基本操作 | めものわ 取扱説明書</title>
+<meta name="description" content="めものわのキャンバス操作と描画ツールの使い方を解説します。ペンの太さ・スタイル（通常・クレヨン・スプレー・マーカー）、直線定規ツール、カラーパレット、消しゴム、元に戻す（アンドゥ）、白紙に戻す機能。">
+<link rel="canonical" href="https://tya-kaihatsu.com/memonowa/manual/drawing.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="お絵かき・基本操作 | めものわ 取扱説明書">
+<meta property="og:description" content="めものわのキャンバス操作と描画ツールの使い方を解説します。ペンの太さ・スタイル（通常・クレヨン・スプレー・マーカー）、直線定規ツール、カラーパレット、消しゴム、元に戻す（アンドゥ）、白紙に戻す機能。">
+<meta property="og:url" content="https://tya-kaihatsu.com/memonowa/manual/drawing.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/memonowa/manual/images/02_pen_styles.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "描いた線を部分的に消すにはどうすればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ツールバーの「消しゴム」アイコンをタップして選択し、消したい部分を指やタッチペンでなぞることで、なぞった線だけをきれいに消去できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "きれいな直線を引くにはどうすればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ツールバーの「定規」アイコンをタップして有効にします。キャンバス上を指でなぞると、始点から終点までピシッとまっすぐな直線が描かれます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "画面全体を広く使いたいとき、ツールバーを隠すことはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ツールバーの一番下にある丸い「三本線（開閉トグル）」ボタンをタップすると、ツールバーのアイコン列を折りたたんで画面の端に最小化できます。もう一度タップすると元に戻ります。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🎨 めものわ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./drawing.html" aria-current="page">1. お絵かき・基本操作</a>
+      <a href="./background.html">2. 背景と画像の配置</a>
+      <a href="./collab.html">3. 近くの人と共同編集</a>
+      <a href="./export.html">4. 画像保存・印刷・設定</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 01</span>
+  <h1>✏️ お絵かき・基本操作</h1>
+  <p>なめらかなペン描画、あたたかいクレヨン調やスプレー表現、ピシッと引ける直線定規、カラーパレットの使い方をわかりやすく解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>お絵かき・基本操作</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（画面構成とツールバー）</h2>
+    <p>「めものわ」を起動すると、目に優しいクリーム色の白紙ノートが全画面に広がります。画面左側（または配置に応じた位置）に並ぶ縦型のツールバーから、いつでも素早く道具を切り替えることができます。</p>
+
+    <div class="tool-grid">
+      <div class="tool-item">
+        <div class="tool-icon-box">〰️</div>
+        <div class="tool-text-box">
+          <h4>ペン（太さ・スタイル）</h4>
+          <p>タップして描画モードにします。もう一度タップすると太さやスタイル（通常・クレヨン・スプレー・マーカー）を選べます。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">📐</div>
+        <div class="tool-text-box">
+          <h4>定規（直線モード）</h4>
+          <p>オンにすると、指を引くだけで始点から終点まで歪みのないまっすぐな直線を引くことができます。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">🎨</div>
+        <div class="tool-text-box">
+          <h4>カラーパレット</h4>
+          <p>ペンの色を選択します。16色の使いやすい標準色に加え、自由な色を追加できます。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">🧼</div>
+        <div class="tool-text-box">
+          <h4>消しゴム</h4>
+          <p>描いたストロークを指やペン先でなぞって部分的に消去します。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">↩️</div>
+        <div class="tool-text-box">
+          <h4>元に戻す（アンドゥ）</h4>
+          <p>直前に描いた1画（または消しゴム操作）を取り消して前の状態に戻します。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">🖼️</div>
+        <div class="tool-text-box">
+          <h4>背景設定</h4>
+          <p>キャンバスの背景を無地・方眼紙・端末内の好きな写真に切り替えます。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">💾</div>
+        <div class="tool-text-box">
+          <h4>画像保存・印刷</h4>
+          <p>作品を写真アルバムへ保存したり、A4比率での書き出し、透過PNG、プリンター印刷を行います。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">🤝</div>
+        <div class="tool-text-box">
+          <h4>共同編集</h4>
+          <p>ネット不要！近くの端末と直接通信でつなぎ、同じノートをリアルタイムに共有します。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">⚙️</div>
+        <div class="tool-text-box">
+          <h4>設定</h4>
+          <p>テーマ（スキン）の変更、バックアップ・復元、言語切り替えなどを行います。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">☰</div>
+        <div class="tool-text-box">
+          <h4>開閉トグル</h4>
+          <p>タップするとツールバーがコンパクトに折りたたまれ、キャンバスを広く使えます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="pen-heading" id="styles">
+    <h2 id="pen-heading">✏️ ペンの太さとスタイルを選ぶ</h2>
+    <p>ツールバーの一番上にある「ペン」アイコンをタップすると、ペンのカスタマイズメニューが開きます。</p>
+
+    <div class="shot-card">
+      <img src="./images/02_pen_styles.png" alt="ペンの太さとスタイルの選択シート" width="542" height="1151" loading="lazy">
+      <div class="shot-caption">4種類の太さと、通常・クレヨン・スプレー・マーカーから直感的に選べる</div>
+    </div>
+
+    <div class="shot-container-3col" style="margin-top: 24px;">
+      <div class="shot-card">
+        <img src="./images/04_pen_normal.png" alt="通常のペンストローク" width="542" height="1151" loading="lazy">
+        <div class="shot-caption"><strong>通常ペン</strong><br>素直でなめらかな筆跡。普段の文字メモやお絵描きの主線に最適です。</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/06_pen_crayon.png" alt="クレヨン調ストローク" width="542" height="1151" loading="lazy">
+        <div class="shot-caption"><strong>クレヨン</strong><br>画用紙に描いたようなあたたかいかすれ感。お子様のお絵描きにもぴったり。</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/07_pen_spray.png" alt="スプレー調ストローク" width="542" height="1151" loading="lazy">
+        <div class="shot-caption"><strong>スプレー（砂目）</strong><br>細かな粒子が散るエアブラシ風の質感。背景や陰影のニュアンス付けに活躍します。</div>
+      </div>
+    </div>
+
+    <div class="shot-container-3col" style="margin-top: 14px;">
+      <div class="shot-card">
+        <img src="./images/08_pen_marker.png" alt="半透明マーカー" width="542" height="1151" loading="lazy">
+        <div class="shot-caption"><strong>蛍光マーカー</strong><br>下が透けて見える半透明の線。文字の強調や色付け、塗り絵に便利です。</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/05_pen_thin.png" alt="細い線ストローク" width="542" height="1151" loading="lazy">
+        <div class="shot-caption"><strong>細線</strong><br>繊細なディテールや小さな文字の書き込みに。</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/09_pen_thick.png" alt="太い線ストローク" width="542" height="1151" loading="lazy">
+        <div class="shot-caption"><strong>極太線</strong><br>力強い見出しや大胆なイラストの着色に。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="ruler-heading" id="ruler">
+    <h2 id="ruler-heading">📐 定規（直線ツール）でまっすぐな線を引く</h2>
+    <p>手書きではブレてしまいがちな直線も、「定規」ツールを使えばワンアクションでピシッとまっすぐ引くことができます。</p>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">操作手順</span>
+        <h3 class="step-title">定規ツールの使い方</h3>
+      </div>
+      <ol style="margin: 0; padding-left: 20px; line-height: 1.8;">
+        <li>ツールバー上から2番目の「定規」アイコンをタップして有効にします（アイコンが金色に光ります）。</li>
+        <li>キャンバス上で指を置いて、引きたい方向へスライドします。</li>
+        <li>指を離すと、始点から終点まで一直線のきれいな線が確定します。</li>
+      </ol>
+    </div>
+
+    <div class="shot-card">
+      <img src="./images/03_ruler_straight.png" alt="定規ツールで引いた美しい直線" width="542" height="1151" loading="lazy">
+      <div class="shot-caption">定規アイコンをオンにして引くだけで、ブレのないきれいな直線を描画</div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="palette-heading" id="palette">
+    <h2 id="palette-heading">🎨 カラーパレットで色を選ぶ</h2>
+    <p>ツールバーの「パレット」アイコンをタップすると、カラー選択パネルが表示されます。</p>
+
+    <div class="shot-card">
+      <img src="./images/10_color_palette.png" alt="カラーパレットの選択シート" width="542" height="1151" loading="lazy">
+      <div class="shot-caption">定番の16色に加え、「＋」ボタンから自由なカラーを作成可能</div>
+    </div>
+
+    <div class="callout gold">
+      <div class="callout-title">💡 自由なカラー作成</div>
+      <p style="margin: 0;">パレット左下の「＋」ボタンをタップすると、スライダーや色相環から自分好みの色を無制限に作って追加できます。</p>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="clean-heading">
+    <h2 id="clean-heading">🗑️ 白紙に戻す・やり直す</h2>
+    <p>画面右上の「白紙に戻す」ボタンをタップすると、キャンバス上の描画内容を一括でクリアして最初のきれいな白紙に戻すことができます。</p>
+    <div class="callout">
+      <div class="callout-title">安心の確認メッセージ</div>
+      <p style="margin: 0;">うっかり押し間違えて大切な絵が消えてしまわないよう、「白紙に戻す」ボタンを押した際には確認ダイアログが表示されます。</p>
+    </div>
+  </section>
+
+  <nav class="page-nav" aria-label="前後ページナビゲーション">
+    <a class="page-nav-link" href="./index.html">
+      <span class="page-nav-sub">&larr; 前のページ</span>
+      <span class="page-nav-title">取扱説明書トップ（目次）</span>
+    </a>
+    <a class="page-nav-link next" href="./background.html">
+      <span class="page-nav-sub">次の機能 &rarr;</span>
+      <span class="page-nav-title">2. 背景と画像の配置</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; ちゃ開発組 — <a href="../">めものわ 公式紹介ページへ戻る</a></p>
+</footer>
+</body>
+</html>
