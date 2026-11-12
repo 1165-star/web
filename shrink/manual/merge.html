@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>複数の動画を結合する | Shrink 取扱説明書</title>
+<meta name="description" content="スマートフォンで撮影した複数の動画を1つの動画ファイルに結合する手順を解説します。複数動画の選択、ドラッグハンドルによる再生順序の並び替え、結合前の通しプレビュー再生、バックグラウンドでの高速エンコード。">
+<link rel="canonical" href="https://tya-kaihatsu.com/shrink/manual/merge.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="複数の動画を結合する | Shrink 取扱説明書">
+<meta property="og:description" content="スマートフォンで撮影した複数の動画を1つの動画ファイルに結合する手順を解説します。複数動画の選択、ドラッグハンドルによる再生順序の並び替え、結合前の通しプレビュー再生、バックグラウンドでの高速エンコード。">
+<meta property="og:url" content="https://tya-kaihatsu.com/shrink/manual/merge.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/shrink/manual/images/09_merge_main.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "縦向き動画と横向き動画を一緒に結合できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、異なる向きや解像度の動画同士でも結合可能です。基準となるサイズに合わせて自動でスケール調整やパディングが行われ、映像の比率が崩れることなく綺麗に1本の動画にまとめられます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "一度に結合できる動画の本数に上限はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "本数に厳密な制限はありません。旅行やイベントなどで細かく撮影した数十本のクリップでも、端末のストレージ空き容量が十分にあればまとめて1本に結合できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "結合する順番を後から変更できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。結合画面の動画一覧で、各動画カードの右端にあるドラッグハンドル（三本線マーク）を指で押さえながら上下に動かすことで、何度でも直感的に再生順序を入れ替えることができます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "結合した動画は元の画質のまま保存されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shrinkの結合エンジンは、画質の劣化を最小限に抑えながら高画質・最適なコーデックでスムーズに繋ぎ合わせます。結合後の容量も結果画面でわかりやすく確認できます。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🎬 Shrink <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./compress.html">1. 動画の圧縮</a>
+      <a href="./merge.html" aria-current="page">2. 動画の結合</a>
+      <a href="./completed.html">3. 保存と再圧縮</a>
+      <a href="./settings.html">4. 設定・PREMIUM</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 02</span>
+  <h1>🎞️ 複数の動画を結合する</h1>
+  <p>旅行や日常で撮りためた複数の動画クリップを順番通りに繋ぎ合わせ、1本のまとまった動画にエンコードする手順を解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>&rsaquo;</span> <span>複数の動画を結合する</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 この画面でできること</h2>
+    <p>「動画の結合」は、2本以上の動画を選択して、お好みの並び順でシームレスに1本の動画ファイルへと繋ぎ合わせる機能です。</p>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#merge-select">・複数の動画を選んで1本にまとめたい</a>
+      <a class="want-tag" href="#merge-reorder">・結合する動画の順番を入れ替えたい</a>
+      <a class="want-tag" href="#merge-preview">・結合前に全体の流れを通しで確認したい</a>
+      <a class="want-tag" href="#merge-process">・結合処理を開始してバックグラウンドで完了させたい</a>
+      <a class="want-tag" href="#merge-save">・出来上がった動画をアルバムに保存したい</a>
+    </div>
+
+    <div class="shot-container-3col" style="margin-top: 24px;">
+      <div class="shot-card">
+        <img src="./images/09_merge_main.png" alt="動画結合画面" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">選択した動画の並び替えとプレビューを行う結合画面</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/10_merge_progress.png" alt="動画結合中画面" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">結合の進捗状況が表示される処理中画面</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/11_merge_result.png" alt="動画結合完了画面" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">結合後の動画サイズや再生・保存ができる結果画面</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🚀 結合の基本ステップ</h2>
+
+    <div class="step-item" id="merge-select">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">結合したい動画を複数選択する</h3>
+      </div>
+      <p>ホーム画面で動画を選択する際、結合したい複数の動画（2本以上）をタップしてチェックを入れます。</p>
+      <p>選択が完了すると、自動的に「動画を結合」画面へと遷移し、選択した動画の一覧がリスト表示されます。</p>
+    </div>
+
+    <div class="step-item" id="merge-reorder">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">ドラッグ操作で再生順序を並び替える</h3>
+      </div>
+      <p>リスト内の各カードの右端にあるドラッグハンドル（三本線マーク）を指で長押ししながら、上下にドラッグします。</p>
+      <p>上から下への並び順で動画が繋ぎ合わされます。不要な動画がある場合は、カード横の削除ボタン（✕）を押してリストから外すことも可能です。</p>
+    </div>
+
+    <div class="step-item" id="merge-preview">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">結合前の通しプレビューで確認する</h3>
+      </div>
+      <p>画面上部の動画プレイヤーの再生ボタンをタップすると、並び替えた順番通りに動画が連続再生されます。</p>
+      <p>シーンの繋ぎ目や全体の長さに違和感がないかを事前に確認できるため、無駄な結合待ち時間を減らすことができます。</p>
+    </div>
+
+    <div class="step-item" id="merge-process">
+      <div class="step-header">
+        <span class="step-badge">STEP 4</span>
+        <h3 class="step-title">「⚡ 結合開始」をタップする</h3>
+      </div>
+      <p>画面最下部の青い「⚡ 結合開始」ボタンを押すと、結合処理が始まります。</p>
+      <p>進行バーでエンコードの進み具合が表示されます。圧縮と同様、WorkManagerによるバックグラウンド処理に対応しているため、処理中に他アプリを操作していても通知で完了をお知らせします。</p>
+    </div>
+
+    <div class="step-item" id="merge-save">
+      <div class="step-header">
+        <span class="step-badge">STEP 5</span>
+        <h3 class="step-title">結合動画の確認とアルバム保存</h3>
+      </div>
+      <p>結合が完了すると結果画面が開きます。全体の合計ファイルサイズが表示され、再生ボタンから仕上がりをフル視聴できます。</p>
+      <p>「アルバムに保存」をタップすると、スマートフォン内のギャラリーへ結合動画が書き出されます。</p>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 結合後のファイルサイズが大きくなった場合はどうすればよいですか？</h3>
+        <p class="faq-a">動画を複数本繋げると再生時間が長くなり全体のファイルサイズも大きくなります。結合完了後、その動画をもう一度「動画の圧縮」機能に読み込ませることで、メールやSNSの送信制限（25MBや100MBなど）へ簡単に圧縮できます。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 動画の音声ボリュームが動画ごとに違う場合はどうなりますか？</h3>
+        <p class="faq-a">結合処理時に各クリップの音声ストリームが適切にミキシングされ、途切れることなくスムーズに連続再生されるよう処理されます。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 結合前の元の動画ファイルは消えてしまいますか？</h3>
+        <p class="faq-a">いいえ。結合処理は元動画の複製・再エンコードによって新しいファイルを作成するため、撮影した元の動画クリップはそのまま端末内に残ります。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./compress.html">
+      <span class="page-nav-sub">&larr; 前の機能</span>
+      <span class="page-nav-title">機能 01: 動画の圧縮</span>
+    </a>
+    <a class="page-nav-link next" href="./completed.html">
+      <span class="page-nav-sub">次の機能 &rarr;</span>
+      <span class="page-nav-title">機能 03: 保存と再圧縮</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; ちゃ開発組 | <a href="../index.html">Shrink アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shrink 取扱説明書（使い方ガイド）— 目標サイズで動画を軽く圧縮・結合</title>
+<meta name="description" content="動画を指定した目標ファイルサイズへ簡単に圧縮・複数動画の結合ができるAndroidアプリ「Shrink」の公式取扱説明書です。メール・LINE・Discord向けプリセット選択、自前プリセットの追加、音声・位置情報削除、結合、ワンタップ再圧縮の使い方を詳しく解説。">
+<link rel="canonical" href="https://tya-kaihatsu.com/shrink/manual/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Shrink 取扱説明書（使い方ガイド）— 目標サイズで動画を軽く圧縮・結合">
+<meta property="og:description" content="動画を指定した目標ファイルサイズへ簡単に圧縮・複数動画の結合ができるAndroidアプリ「Shrink」の公式取扱説明書です。メール・LINE・Discord向けプリセット選択、自前プリセットの追加、音声・位置情報削除、結合、ワンタップ再圧縮の使い方を詳しく解説。">
+<meta property="og:url" content="https://tya-kaihatsu.com/shrink/manual/">
+<meta property="og:image" content="https://tya-kaihatsu.com/shrink/manual/images/02_compress_main.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Shrinkは無料で利用できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、動画の圧縮（各種SNS・メール向けプリセットの利用）、自前プリセットの追加（最大5個まで）、複数動画の結合、音声や位置情報の削除、アルバム保存・共有、データの暗号化バックアップなど、基本機能をすべて無料でご利用いただけます。プリセットを無制限に追加したい方や広告を非表示にしたい方向けにPREMIUMプランもご用意しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "圧縮後の動画はどこに保存されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "圧縮や結合が完了した画面で「アルバムに保存」ボタンを押すことで、端末の写真・動画ギャラリー（アルバム）へ直接保存されます。また、「共有」ボタンからLINEやメールなどの他アプリへ直接送信することも可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "目標サイズをわずかに超えてしまった場合はどうすればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "圧縮結果が目標サイズをわずかでも上回った場合、結果画面に「再圧縮する」ボタンが自動で表示されます。タップするだけで、手動で数値を再計算することなく確実に目標サイズ以下に収まるよう自動調整して再圧縮が行われます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "動画の音声や位置情報（GPS）を消して軽量化・プライバシー保護できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。圧縮画面の詳細設定にある「音声を削除」をオンにすると、無音動画としてエンコードされ容量をさらに節約できます。また「位置情報を削除」をオンにすると、撮影時の位置情報（GPSメタデータ）を取り除いて安全に共有できます。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🎬 Shrink <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html" aria-current="page">トップ（目次）</a>
+      <a href="./compress.html">1. 動画の圧縮</a>
+      <a href="./merge.html">2. 動画の結合</a>
+      <a href="./completed.html">3. 保存と再圧縮</a>
+      <a href="./settings.html">4. 設定・PREMIUM</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">公式使い方ガイド</span>
+  <h1>🎬 Shrink かんたん取扱説明書</h1>
+  <p>目標ファイルサイズを選ぶだけで動画をサクッと軽量化し、複数動画の結合や音声・位置情報の削除も行える「Shrink」の使い方を、機能別・目的別にわかりやすく解説します。</p>
+</div>
+
+<main class="container">
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに</h2>
+    <p>「Shrink」は、スマートフォンで撮影した高画質動画や長尺動画を、メール添付・LINE・Discord・X（旧Twitter）などの送信制限に合わせて、ワンタップで最適なファイルサイズへ圧縮できる動画ユーティリティアプリです。</p>
+    <p>ビットレートや解像度などの難しい専門知識は不要です。「Gmail（25MB）」「Discord無料版（10MB/25MB）」「LINE（100MB）」などの送信先プリセットを選ぶだけで、自動で最適な画質バランスを計算して高速エンコードします。さらに、複数動画の結合、音声・位置情報の削除、万が一のサイズ超過時のワンタップ再圧縮など、スマートな動画共有を支える機能を備えています。</p>
+
+    <div class="shot-container-2col" style="margin-top: 24px;">
+      <div class="shot-card">
+        <img src="./images/01_home.png" alt="Shrink ホーム画面" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">動画を選択して圧縮・結合をスムーズに開始できるホーム画面</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/02_compress_main.png" alt="Shrink 動画圧縮設定画面" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">目標サイズを選ぶだけで最適な圧縮が実行される圧縮設定画面</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="want-heading">
+    <h2 id="want-heading">🔍 やりたいことから探す</h2>
+    <p>行いたい操作や目的に合わせて、各機能の詳細解説ページへ直接移動できます。</p>
+    <div class="want-tags">
+      <a class="want-tag" href="./compress.html#compress-basic">・動画をメールやSNSで送れるサイズに小さくしたい</a>
+      <a class="want-tag" href="./compress.html#compress-presets">・プリセット（25MB, 10MBなど）を選んで圧縮したい</a>
+      <a class="want-tag" href="./compress.html#compress-custom">・自分専用の目標容量プリセットを追加・編集したい</a>
+      <a class="want-tag" href="./compress.html#compress-reorder">・よく使うプリセットを長押しで先頭に並び替えたい</a>
+      <a class="want-tag" href="./compress.html#compress-audio">・動画の音声を消して無音化し、容量を節約したい</a>
+      <a class="want-tag" href="./compress.html#compress-gps">・動画から位置情報（GPS）を取り除いて安全に送りたい</a>
+      <a class="want-tag" href="./merge.html#merge-select">・複数の動画を1つの動画に結合したい</a>
+      <a class="want-tag" href="./merge.html#merge-reorder">・結合する動画の順番をドラッグで並び替えたい</a>
+      <a class="want-tag" href="./merge.html#merge-preview">・結合前に動画を通しでプレビュー確認したい</a>
+      <a class="want-tag" href="./completed.html#save-album">・圧縮・結合後の動画を端末のアルバムに保存したい</a>
+      <a class="want-tag" href="./completed.html#completed-preview">・圧縮後の画質や仕上がりを再生して確認したい</a>
+      <a class="want-tag" href="./completed.html#recompress">・目標サイズをわずかに超えたときにワンタップで再圧縮したい</a>
+      <a class="want-tag" href="./settings.html#settings-skin">・ダークモードやウォームライト（スキン配色）を切り替えたい</a>
+      <a class="want-tag" href="./settings.html#settings-font">・文字の大きさを変更して読みやすくしたい</a>
+      <a class="want-tag" href="./settings.html#settings-backup">・プリセットなどのデータをバックアップ・復元したい</a>
+      <a class="want-tag" href="./settings.html#settings-premium">・PREMIUMプランで広告を非表示にし、自前プリセットを無制限に追加したい</a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="features-heading">
+    <h2 id="features-heading">📑 機能一覧</h2>
+    <div class="feature-grid">
+      <a class="feature-card" href="./compress.html">
+        <div class="feature-card-header">
+          <div class="feature-card-icon">⚡</div>
+          <div>
+            <h3 class="feature-card-title">機能 01: 動画の圧縮</h3>
+          </div>
+        </div>
+        <p class="feature-card-desc">目標サイズ（25MB・10MB・100MBなど）を選ぶだけの直感圧縮。自前プリセットの追加・編集、ドラッグ並び替え、音声や位置情報の削除機能を解説します。</p>
+        <span class="feature-card-link">使い方を見る &rsaquo;</span>
+      </a>
+
+      <a class="feature-card" href="./merge.html">
+        <div class="feature-card-header">
+          <div class="feature-card-icon">🎞️</div>
+          <div>
+            <h3 class="feature-card-title">機能 02: 動画の結合</h3>
+          </div>
+        </div>
+        <p class="feature-card-desc">複数動画を1本にまとめる結合機能。選択リストのドラッグ順序変更、結合前の通しプレビュー再生、バックグラウンドでの結合処理を解説します。</p>
+        <span class="feature-card-link">使い方を見る &rsaquo;</span>
+      </a>
+
+      <a class="feature-card" href="./completed.html">
+        <div class="feature-card-header">
+          <div class="feature-card-icon">💾</div>
+          <div>
+            <h3 class="feature-card-title">機能 03: 保存と再圧縮</h3>
+          </div>
+        </div>
+        <p class="feature-card-desc">Before/Afterの容量比較・削減率表示、フルスクリーンプレビュー再生、端末アルバムへの保存、目標サイズ超過時のワンタップ再圧縮機能を解説します。</p>
+        <span class="feature-card-link">使い方を見る &rsaquo;</span>
+      </a>
+
+      <a class="feature-card" href="./settings.html">
+        <div class="feature-card-header">
+          <div class="feature-card-icon">⚙️</div>
+          <div>
+            <h3 class="feature-card-title">機能 04: 設定・PREMIUM</h3>
+          </div>
+        </div>
+        <p class="feature-card-desc">ダークモード・ウォームライトのスキン切り替え、文字サイズ・言語設定、暗号化バックアップと復元、広告非表示・無制限プリセットのPREMIUMプランを解説します。</p>
+        <span class="feature-card-link">使い方を見る &rsaquo;</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ 全体のよくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 動画の圧縮中にアプリを閉じても処理は続きますか？</h3>
+        <p class="faq-a">はい、動画の圧縮および結合処理はAndroidのバックグラウンドタスク（WorkManager）として実行されます。処理中に他のアプリを使用したり画面をオフにしたりしても、処理が中断されることなく継続し、完了すると通知でお知らせします。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 圧縮すると元動画は上書き・削除されてしまいますか？</h3>
+        <p class="faq-a">いいえ、元動画は一切変更・削除されません。圧縮・結合された動画は完全に別の新しい動画として生成され、「アルバムに保存」をタップした際にギャラリーへ新規保存されます。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 無料版とPREMIUMプランの違いは何ですか？</h3>
+        <p class="faq-a">無料版でも動画の圧縮・結合、音声・位置情報の削除、自前プリセットの追加（最大5個まで）などすべての基本機能を制限なくご利用いただけます。PREMIUMプラン（買い切り）をご購入いただくと、アプリ内の広告が完全に非表示になり、自前プリセットを無制限に追加できるようになります。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 機種変更時に追加したプリセットを引き継ぐことはできますか？</h3>
+        <p class="faq-a">はい。「設定」画面の「データのバックアップ」からパスワード保護された暗号化バックアップファイルを出力し、新しい端末で「データを復元」することで、追加した自前プリセットや並び順をそのまま引き継ぐことができます。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; ちゃ開発組 | <a href="../index.html">Shrink アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

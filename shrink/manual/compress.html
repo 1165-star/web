@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>動画の圧縮とプリセット設定 | Shrink 取扱説明書</title>
+<meta name="description" content="動画を指定した目標ファイルサイズへ簡単に圧縮する手順を解説します。メール・LINE・Discord・X向けの初期プリセット選択、自前プリセットの追加・編集・ドラッグ並び替え、音声や位置情報の削除機能の使い方。">
+<link rel="canonical" href="https://tya-kaihatsu.com/shrink/manual/compress.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="動画の圧縮とプリセット設定 | Shrink 取扱説明書">
+<meta property="og:description" content="動画を指定した目標ファイルサイズへ簡単に圧縮する手順を解説します。メール・LINE・Discord・X向けの初期プリセット選択、自前プリセットの追加・編集・ドラッグ並び替え、音声や位置情報の削除機能の使い方。">
+<meta property="og:url" content="https://tya-kaihatsu.com/shrink/manual/compress.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/shrink/manual/images/02_compress_main.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "自前プリセットは最大何個まで追加できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無料版では自前プリセットを最大5個まで自由に追加・保存できます。PREMIUMプランにご加入いただくと、上限なくいくつでもプリセットを追加できるようになります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "プリセットカードの並び順を変えるにはどうすればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "並び替えたいプリセットカードを指で長押し（約0.3秒）すると浮き上がります。そのままドラッグしてお好みの位置へ移動し指を離すだけで、簡単に並び順を変更できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "音声を削除するとどれくらい容量が軽くなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "動画の内容や音声ビットレートによって異なりますが、一般的に音声トラックを取り除くことで全体の約10%〜25%の容量を削減できます。音声が不要な記録動画や防犯カメラ映像、スライド動画などに最適です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "圧縮の途中で処理をキャンセルできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、圧縮中画面の下部にある「キャンセル」ボタンを押すことで、いつでも安全に圧縮処理を中止できます。キャンセルした場合、一時ファイルは自動で破棄され端末の容量を圧迫しません。"
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🎬 Shrink <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./compress.html" aria-current="page">1. 動画の圧縮</a>
+      <a href="./merge.html">2. 動画の結合</a>
+      <a href="./completed.html">3. 保存と再圧縮</a>
+      <a href="./settings.html">4. 設定・PREMIUM</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 01</span>
+  <h1>⚡ 動画の圧縮とプリセット設定</h1>
+  <p>送信先に合わせた目標容量プリセットを選ぶだけの高速圧縮手順や、自前プリセットのカスタマイズ、音声・位置情報の削除機能について解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>&rsaquo;</span> <span>動画の圧縮とプリセット設定</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 この画面でできること</h2>
+    <p>「動画の圧縮」は、スマートフォン内の大きな動画ファイルを、指定した目標ファイルサイズ（MB）へ最適化して軽量化する主要機能です。</p>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#compress-basic">・動画を選んで目標サイズに圧縮したい</a>
+      <a class="want-tag" href="#compress-presets">・プリセット一覧とおすすめの送信先を知りたい</a>
+      <a class="want-tag" href="#compress-custom">・自前プリセットを追加・編集・削除したい</a>
+      <a class="want-tag" href="#compress-reorder">・プリセットの並び順を変更したい</a>
+      <a class="want-tag" href="#compress-options">・音声や位置情報を削除して安全に軽量化したい</a>
+    </div>
+
+    <div class="shot-container-2col" style="margin-top: 24px;">
+      <div class="shot-card">
+        <img src="./images/02_compress_main.png" alt="動画圧縮設定画面" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">目標ファイルサイズと詳細設定を選択する圧縮画面</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/03_compress_progress.png" alt="圧縮処理中画面" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">進捗パーセントが表示されバックグラウンドで実行される進行中画面</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🚀 圧縮の基本ステップ</h2>
+
+    <div class="step-item" id="compress-basic">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">圧縮したい動画を選択する</h3>
+      </div>
+      <p>ホーム画面の「動画を選択」ボタンをタップし、端末のギャラリーやファイル管理アプリから圧縮したい動画（MP4, MOV, WebMなど）を選びます。</p>
+      <p>動画を選択すると、上部にプレビュー枠が表示され、現在の元動画の容量（例: <code>54.3 MB</code>）と長さが自動で読み込まれます。</p>
+    </div>
+
+    <div class="step-item" id="compress-presets">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">目標ファイルサイズ（プリセット）を選択する</h3>
+      </div>
+      <p>画面中央に並んでいる「目標ファイルサイズ」カードの中から、動画を送りたい相手やサービスに合ったプリセットをタップして選びます（青色でハイライトされます）。</p>
+
+      <div class="manual-table-wrap">
+        <table class="manual-table">
+          <thead>
+            <tr>
+              <th>プリセット容量</th>
+              <th>主な用途・対応サービス</th>
+              <th>特徴</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>25 MB</strong></td>
+              <td>Gmail, Yahoo!メール, Discord (無料)</td>
+              <td>主要メールサービスの添付ファイル上限にぴったり収まる定番サイズ</td>
+            </tr>
+            <tr>
+              <td><strong>20 MB</strong></td>
+              <td>一般的なメール送信用</td>
+              <td>社内メールや通信環境の安全マージンを考慮したサイズ</td>
+            </tr>
+            <tr>
+              <td><strong>16 MB</strong></td>
+              <td>WhatsApp</td>
+              <td>WhatsAppのメディア共有上限（16MB）に完全対応</td>
+            </tr>
+            <tr>
+              <td><strong>10 MB</strong></td>
+              <td>Outlook, キャリアメール</td>
+              <td>大手キャリアメールやOutlook添付の厳格な上限に合わせた設定</td>
+            </tr>
+            <tr>
+              <td><strong>50 MB</strong></td>
+              <td>Discord Nitro Basic</td>
+              <td>Discord Nitro Basicの上限サイズに合わせた高画質設定</td>
+            </tr>
+            <tr>
+              <td><strong>100 MB</strong></td>
+              <td>LINE, Microsoft Teams, Slack</td>
+              <td>ビジネスチャットやLINEで高画質を保ったまま送れる上限サイズ</td>
+            </tr>
+            <tr>
+              <td><strong>500 MB</strong></td>
+              <td>X (旧Twitter), 各種クラウド共有</td>
+              <td>長尺の高解像度動画をSNS投稿用にバランスよくまとめる設定</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="step-item" id="compress-options">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">詳細設定（音声削除・位置情報削除）を選ぶ</h3>
+      </div>
+      <p>画面下部の「詳細設定」欄で、必要に応じてスイッチをオンにします。</p>
+      <ul>
+        <li><strong>音声を削除:</strong> オンにすると、動画内の音声トラックを削除して無音化します。音声データ分の容量が浮くため、映像のビットレートをより高く保つことができます。</li>
+        <li><strong>位置情報を削除:</strong> オンにすると、スマホカメラで撮影した際に記録されたGPS位置情報メタデータを完全に消去します。プライベートな場所で撮影した動画をSNSや掲示板へ安心して公開できます。</li>
+      </ul>
+    </div>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">STEP 4</span>
+        <h3 class="step-title">「⚡ 圧縮開始」をタップする</h3>
+      </div>
+      <p>画面最下部の青い「⚡ 圧縮開始」ボタンを押すと、エンコード処理が始まります。</p>
+      <p>処理中は進行バーと完了パーセントが表示されます。途中でやめたい場合は「キャンセル」を押せばいつでも安全に中断できます。また、画面を閉じたり他アプリを開いたりしても、バックグラウンドで処理が続行されます。</p>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="custom-heading">
+    <h2 id="custom-heading">🛠️ プリセットの追加・編集・並び替え</h2>
+    <p>よく使う特定のファイルサイズがある場合、自分専用のカスタムプリセットを自由に追加・管理できます。</p>
+
+    <div class="shot-container-2col" style="margin: 20px 0;">
+      <div class="shot-card">
+        <img src="./images/07_preset_add.png" alt="プリセット追加モーダル" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">目標容量とラベル名を入力して保存できる追加画面</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/08_preset_edit.png" alt="プリセット編集モーダル" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">数値の修正や不要になった自前プリセットの削除画面</div>
+      </div>
+    </div>
+
+    <h3 id="compress-custom">自前プリセットの追加</h3>
+    <ol>
+      <li>プリセット一覧の最後にある「＋ プリセット追加」ボタンをタップします。</li>
+      <li>「目標サイズ（MB）」に任意の数値（例: <code>8</code> MBや <code>30</code> MBなど）を入力します。</li>
+      <li>「用途・メモ（任意）」に、わかりやすいラベル（例: <code>社内チャット用</code>、<code>ブログ用</code>など）を入力します。</li>
+      <li>「保存」をタップすると、一覧に新しいプリセットが追加されます。</li>
+    </ol>
+
+    <h3 id="compress-edit">プリセットの編集・削除</h3>
+    <p>各プリセットカードの右上にある鉛筆アイコン（✏️）をタップすると、編集モーダルが開きます。容量やラベルの修正ができるほか、自前で追加したプリセットの場合は「このプリセットを削除」ボタンから削除も可能です。</p>
+
+    <h3 id="compress-reorder">長押しドラッグで並び替え</h3>
+    <p>よく使うプリセットを先頭（左上）に置いておきたい場合、プリセットカードを<strong>長押し（約0.3秒）</strong>するとカードが浮き上がります。そのまま指を離さずにドラッグしてお好みの場所へ移動し、指を離すことで直感的に順番を整理できます。</p>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 圧縮後の動画の画質はどれくらい保たれますか？</h3>
+        <p class="faq-a">Shrinkでは、動画の再生時間と目標容量のバランスから、解像度（1080p, 720p, 480p等）と映像ビットレートを自動で最適計算します。極端に小さな目標値を指定しない限り、スマホ画面やPCで自然に視聴できる鮮明な画質を維持します。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 元動画より大きな目標サイズを指定した場合はどうなりますか？</h3>
+        <p class="faq-a">元動画のファイルサイズが指定した目標サイズよりも小さい場合、無駄な再エンコードによる画質劣化や容量増加を防ぐため、案内メッセージが表示されます。</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> どのような動画ファイル形式に対応していますか？</h3>
+        <p class="faq-a">Android端末の標準カメラで撮影されたMP4動画をはじめ、MOV、WebM、MKVなど主要な動画コンテナ形式を幅広くサポートしています。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./index.html">
+      <span class="page-nav-sub">&larr; 前のページ</span>
+      <span class="page-nav-title">取扱説明書トップ（目次）</span>
+    </a>
+    <a class="page-nav-link next" href="./merge.html">
+      <span class="page-nav-sub">次の機能 &rarr;</span>
+      <span class="page-nav-title">機能 02: 動画の結合</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; ちゃ開発組 | <a href="../index.html">Shrink アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>
