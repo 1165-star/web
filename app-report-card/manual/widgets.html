@@ -59,102 +59,122 @@
 </head>
 <body>
 <header class="site-header">
-<div class="site-header-inner">
-<a class="brand-link" href="./index.html">📊 アプリ成績表 <span class="brand-pill">取扱説明書</span></a>
-<nav aria-label="取扱説明書メニュー" class="global-nav">
-<a href="./index.html">トップ（目次）</a>
-<a href="./start.html">1. はじめての準備</a>
-<a href="./basics.html">2. 画面の見かた・基本操作</a>
-<a href="./revenue.html">3. 収益</a>
-<a href="./installs.html">4. インストール</a>
-<a href="./users.html">5. ユーザー</a>
-<a href="./ratings.html">6. 評価・レビュー</a>
-<a href="./quality.html">7. 品質</a>
-<a href="./settings.html">8. 設定・バックアップ</a>
-<a aria-current="page" href="./widgets.html">9. ウィジェット</a>
-</nav>
-</div>
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">📊 アプリ成績表 <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./start.html">1. はじめての準備</a>
+      <a href="./basics.html">2. 画面の見かた・基本操作</a>
+      <a href="./revenue.html">3. 収益</a>
+      <a href="./installs.html">4. インストール</a>
+      <a href="./users.html">5. ユーザー</a>
+      <a href="./ratings.html">6. 評価・レビュー</a>
+      <a href="./quality.html">7. 品質</a>
+      <a href="./settings.html">8. 設定・バックアップ</a>
+      <a href="./widgets.html" aria-current="page">9. ウィジェット</a>
+    </nav>
+  </div>
 </header>
+
 <div class="hero-banner">
-<span class="pill">機能 09</span>
-<h1>🧩 ホーム画面のウィジェット</h1>
-<p>ホーム画面で、収益やインストール数をひと目で確認できるウィジェットの使い方を解説します。</p>
+  <span class="pill">機能 09</span>
+  <h1>🧩 ホーム画面のウィジェット</h1>
+  <p>ホーム画面で、収益やインストール数をひと目で確認できるウィジェットの使い方を解説します。</p>
 </div>
+
 <main class="container">
-<nav aria-label="パンくずリスト" class="breadcrumb">
-<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>🧩 ホーム画面のウィジェット</span>
-</nav>
-<section aria-labelledby="intro-heading" class="card-section">
-<h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
-<p>アプリを開かなくても、ホーム画面で、収益・インストール数・評価を確認できます（Android）。</p>
-<div aria-label="このページの主な目的" class="want-tags">
-<a class="want-tag" href="#widgets-kinds">・どんなウィジェットがあるか知りたい</a>
-<a class="want-tag" href="#widgets-add">・ホーム画面にウィジェットを置きたい</a>
-<a class="want-tag" href="#widgets-update">・ウィジェットがいつ更新されるか知りたい</a>
-</div>
-</section>
-<section aria-labelledby="steps-heading" class="card-section">
-<h2 id="steps-heading">🛠️ 詳しい使い方</h2>
-<div class="step-item" id="widgets-kinds">
-<div class="step-header">
-<span class="step-badge">STEP 1</span>
-<h3 class="step-title">5種類のウィジェット</h3>
-</div>
-<p>ホーム画面に置けるウィジェットは、次の5種類です。</p>
-<ul>
-<li><strong>収益（最新日）</strong>: 最新の日の広告収益。</li>
-<li><strong>今月の収益</strong>: 今月の広告収益。</li>
-<li><strong>広告の表示回数</strong>: 最新の日の表示回数と、今月の合計。</li>
-<li><strong>インストール</strong>: 最新の日のインストール数と、減少数。</li>
-<li><strong>評価</strong>: 選んでいるアプリの評価の平均（「4件のアプリの平均」のように、何件の平均かも出ます）。</li>
-</ul>
-<p>データが無いときは、「データなし」と表示されます。</p>
-<div class="shot-card narrow">
-<img alt="ホーム画面に置いた5つのウィジェット。評価、インストール、広告の表示回数、今月の収益、収益（最新日）" height="896" loading="lazy" src="./images/widgets_home.webp" width="542"/>
-<div class="shot-caption">ホーム画面に置いたウィジェット</div>
-</div>
-</div>
-<div class="step-item" id="widgets-add">
-<div class="step-header">
-<span class="step-badge">STEP 2</span>
-<h3 class="step-title">ウィジェットを置く</h3>
-</div>
-<p>ホーム画面の何もない場所を長押しして、<strong>「ウィジェット」</strong>から<strong>「アプリ成績表」</strong>を選び、置きたいウィジェットをホーム画面に追加します（操作は、お使いの端末によって異なります）。</p>
-<p>ウィジェットを選ぶ画面の名前と説明は、端末の言語で表示されます。</p>
-</div>
-<div class="step-item" id="widgets-update">
-<div class="step-header">
-<span class="step-badge">STEP 3</span>
-<h3 class="step-title">数字の更新と、対象のアプリ</h3>
-</div>
-<p>ウィジェットの数字は、アプリが端末に保存したデータから集計します（ウィジェット自身は通信しません）。</p>
-<ul>
-<li>アプリで<strong>選んでいるアプリ</strong>の分が集計されます。</li>
-<li>データの取得が終わったとき、30分ごとの自動更新のとき、ウィジェットを置いたときに更新されます。</li>
-<li>ウィジェットの中の文字は、アプリで選んだ言語で表示されます。</li>
-<li>スキンを変えたとき、バックアップから復元したときも、ウィジェットが最新の内容になります。</li>
-</ul>
-</div>
-</section>
-<section aria-labelledby="faq-heading" class="card-section">
-<h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
-<div class="faq-list">
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> ウィジェットの数字が古いです。</h3>
-<p class="faq-a">ウィジェットは、アプリが保存したデータを表示します。アプリを開いてデータを取得すると、更新されます。30分ごとにも自動で更新されます。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> ウィジェットの色を変えられますか？</h3>
-<p class="faq-a">アプリの「スキン」に合わせて、ウィジェットの背景色が変わります。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> ウィジェットに出す数字は、アプリを絞り込めますか？</h3>
-<p class="faq-a">はい。アプリで選んでいる（対象アプリ）の分が集計されます。</p>
-</div>
-</div>
-</section>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>🧩 ホーム画面のウィジェット</span>
+  </nav>
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+      <p>アプリを開かなくても、ホーム画面で、収益・インストール数・評価を確認できます（Android）。</p>
 
-<div class="page-nav"><a class="page-nav-link" href="./settings.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 8. 設定・バックアップ</span></a><a class="page-nav-link next" href="../index.html"><span class="page-nav-sub">アプリのご案内</span><span class="page-nav-title">📊 アプリ成績表 アプリ紹介ページ ›</span></a></div></main>
-<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">📊 アプリ成績表 アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#widgets-kinds">・どんなウィジェットがあるか知りたい</a>
+      <a class="want-tag" href="#widgets-add">・ホーム画面にウィジェットを置きたい</a>
+      <a class="want-tag" href="#widgets-update">・ウィジェットがいつ更新されるか知りたい</a>
+    </div>
+  </section>
 
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🛠️ 詳しい使い方</h2>
 
+    <div class="step-item" id="widgets-kinds">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">5種類のウィジェット</h3>
+      </div>
+      <p>ホーム画面に置けるウィジェットは、次の5種類です。</p>
+      <ul>
+        <li><strong>収益（最新日）</strong>: 最新の日の広告収益。</li>
+        <li><strong>今月の収益</strong>: 今月の広告収益。</li>
+        <li><strong>広告の表示回数</strong>: 最新の日の表示回数と、今月の合計。</li>
+        <li><strong>インストール</strong>: 最新の日のインストール数と、減少数。</li>
+        <li><strong>評価</strong>: 選んでいるアプリの評価の平均（「4件のアプリの平均」のように、何件の平均かも出ます）。</li>
+      </ul>
+      <p>データが無いときは、「データなし」と表示されます。</p>
+
+    <div class="shot-card narrow">
+      <img src="./images/widgets_home.webp" alt="ホーム画面に置いた5つのウィジェット。評価、インストール、広告の表示回数、今月の収益、収益（最新日）" width="542" height="896" loading="lazy">
+      <div class="shot-caption">ホーム画面に置いたウィジェット</div>
+    </div>
+    </div>
+
+    <div class="step-item" id="widgets-add">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">ウィジェットを置く</h3>
+      </div>
+      <p>ホーム画面の何もない場所を長押しして、<strong>「ウィジェット」</strong>から<strong>「アプリ成績表」</strong>を選び、置きたいウィジェットをホーム画面に追加します（操作は、お使いの端末によって異なります）。</p>
+      <p>ウィジェットを選ぶ画面の名前と説明は、端末の言語で表示されます。</p>
+
+    </div>
+
+    <div class="step-item" id="widgets-update">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">数字の更新と、対象のアプリ</h3>
+      </div>
+      <p>ウィジェットの数字は、アプリが端末に保存したデータから集計します（ウィジェット自身は通信しません）。</p>
+      <ul>
+        <li>アプリで<strong>選んでいるアプリ</strong>の分が集計されます。</li>
+        <li>データの取得が終わったとき、30分ごとの自動更新のとき、ウィジェットを置いたときに更新されます。</li>
+        <li>ウィジェットの中の文字は、アプリで選んだ言語で表示されます。</li>
+        <li>スキンを変えたとき、バックアップから復元したときも、ウィジェットが最新の内容になります。</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> ウィジェットの数字が古いです。</h3>
+        <p class="faq-a">ウィジェットは、アプリが保存したデータを表示します。アプリを開いてデータを取得すると、更新されます。30分ごとにも自動で更新されます。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> ウィジェットの色を変えられますか？</h3>
+        <p class="faq-a">アプリの「スキン」に合わせて、ウィジェットの背景色が変わります。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> ウィジェットに出す数字は、アプリを絞り込めますか？</h3>
+        <p class="faq-a">はい。アプリで選んでいる（対象アプリ）の分が集計されます。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./settings.html">
+      <span class="page-nav-sub">前の機能へ</span>
+      <span class="page-nav-title">‹ 8. 設定・バックアップ</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 <a href="../index.html">アプリ成績表 アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

@@ -58,138 +58,204 @@
 </head>
 <body>
 <header class="site-header">
-<div class="site-header-inner">
-<a class="brand-link" href="./index.html">📐 モノサシ <span class="brand-pill">取扱説明書</span></a>
-<nav aria-label="取扱説明書メニュー" class="global-nav">
-<a href="./index.html">トップ（目次）</a>
-<a href="./measure.html">1. 撮影・モノサシ判定</a>
-<a href="./photos.html">2. 写真一覧・推移グラフ</a>
-<a href="./results.html">3. 結果・手放した記録</a>
-<a aria-current="page" href="./settings.html">4. 設定・ウィジェット</a>
-</nav>
-</div>
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">📐 モノサシ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./measure.html">1. 撮影・モノサシ判定</a>
+      <a href="./photos.html">2. 写真一覧・推移グラフ</a>
+      <a href="./results.html">3. 結果・手放した記録</a>
+      <a href="./settings.html" aria-current="page">4. 設定・ウィジェット</a>
+    </nav>
+  </div>
 </header>
+
 <div class="hero-banner">
-<span class="pill">機能 04</span>
-<h1>⚙️ 設定・リマインド・ウィジェット</h1>
-<p>忘れがちな断捨離を支えるリマインド通知、お好みの配色に染めるスキン機能、暗号化バックアップ、ホーム画面ウィジェットを解説します。</p>
+  <span class="pill">機能 04</span>
+  <h1>⚙️ 設定・リマインド・ウィジェット</h1>
+  <p>忘れがちな断捨離を支えるリマインド通知、お好みの配色に染めるスキン機能、暗号化バックアップ、ホーム画面ウィジェットを解説します。</p>
 </div>
+
 <main class="container">
-<section aria-labelledby="settings-heading" class="card-section">
-<h2 id="settings-heading">⚙️ 設定画面の概要</h2>
-<p>下部ナビゲーションの「設定」タブから、通知、外観、バックアップなど各種カスタマイズを行えます。</p>
-<div class="shot-card">
-<img alt="モノサシ 設定画面" height="1578" loading="lazy" src="./images/16_settings_main.png" width="542"/>
-<div class="shot-caption">手放しリマインド、フォント、スキン、言語、バックアップ・復元がまとまった設定画面</div>
-</div>
-</section>
-<section aria-labelledby="remind-heading" class="card-section" id="remind-heading-wrap">
-<h2 id="remind-heading">🔔 手放しリマインド通知</h2>
-<p>せっかく「不要」と判断できたのに、忙しさでそのまま放置してしまうのを防ぐためのスマート通知機能です。</p>
+  <section class="card-section" aria-labelledby="settings-heading">
+    <h2 id="settings-heading">⚙️ 設定画面の概要</h2>
+    <p>下部ナビゲーションの「設定」タブから、通知、外観、バックアップなど各種カスタマイズを行えます。</p>
 
-<div class="step-item"><div class="step-header"><span class="step-badge">STEP 1</span><h3 class="step-title">「通知する」スイッチをオン</h3></div><p>手放しリマインド機能が有効になり、通知を受け取る準備が整います。</p></div>
-<div class="step-item"><div class="step-header"><span class="step-badge">STEP 2</span><h3 class="step-title">通知間隔（7日後 / 14日後 / 30日後）を選択</h3></div><p>ご自身の片付けペースに合わせてボタンを選択します。アプリを開かない期間がその日数を超えたとき、1回だけお知らせします。</p></div>
+    <div class="shot-card">
+      <img src="./images/16_settings_main.png" alt="モノサシ 設定画面" width="542" height="1578" loading="lazy">
+      <div class="shot-caption">手放しリマインド、フォント、スキン、言語、バックアップ・復元がまとまった設定画面</div>
+    </div>
+  </section>
 
-<div class="callout">
-<strong>💡 通知の仕組み</strong><br/>
+  <section class="card-section" id="remind-heading-wrap" aria-labelledby="remind-heading">
+    <h2 id="remind-heading">🔔 手放しリマインド通知</h2>
+    <p>せっかく「不要」と判断できたのに、忙しさでそのまま放置してしまうのを防ぐためのスマート通知機能です。</p>
+
+    <div class="step-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">「通知する」スイッチをオン</div>
+          <div class="step-desc">手放しリマインド機能が有効になり、通知を受け取る準備が整います。</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">通知間隔（7日後 / 14日後 / 30日後）を選択</div>
+          <div class="step-desc">ご自身の片付けペースに合わせてボタンを選択します。アプリを開かない期間がその日数を超えたとき、1回だけお知らせします。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>💡 通知の仕組み</strong><br>
       処分を検討できる「不要」のものがあるときはその処分を促し、まだ「不要」がない間は未判定の写真が残っていることをお知らせします。しつこく何度も鳴ることはなく、設定日数ごとに1回だけ控えめにお知らせします。
     </div>
-</section>
-<section aria-labelledby="skin-heading" class="card-section" id="skin-heading-wrap">
-<h2 id="skin-heading">🎨 スキン（テーマカラー）の変更</h2>
-<p>「設定」画面の「スキン」をタップすると、多彩な配色パレットからお好みのテーマを選択できます。</p>
-<div class="shot-card">
-<img alt="スキン選択モーダル" height="1206" loading="lazy" src="./images/17_settings_skin_modal.png" width="542"/>
-<div class="shot-caption">プレビューを確認しながら、ライト4種・ダーク4種・システム連動をワンタップで切り替え</div>
-</div>
-<div class="table-wrap">
-<table class="manual-table">
-<thead>
-<tr>
-<th>テーマ分類</th>
-<th>スキン名</th>
-<th>特徴</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>システム連動</strong></td>
-<td>デフォルト</td>
-<td>端末のダーク/ライト設定に自動追従する標準配色</td>
-</tr>
-<tr>
-<td rowspan="4"><strong>ライトモード</strong></td>
-<td>そよ風</td>
-<td>爽やかなブルー系の清潔感あるデザイン</td>
-</tr>
-<tr>
-<td>陽だまり</td>
-<td>あたたかいアンバー・オレンジ系の落ち着いたデザイン</td>
-</tr>
-<tr>
-<td>若葉</td>
-<td>安らぎのあるフレッシュグリーン系デザイン</td>
-</tr>
-<tr>
-<td>さくら</td>
-<td>優しいピンク・ローズ系の華やかなデザイン</td>
-</tr>
-<tr>
-<td rowspan="4"><strong>ダークモード</strong></td>
-<td>夜霧</td>
-<td>深みのあるブルーグレー系のクールなダークデザイン</td>
-</tr>
-<tr>
-<td>墨</td>
-<td>黒を基調としたシックでコントラストの高いデザイン</td>
-</tr>
-<tr>
-<td>深緑</td>
-<td>落ち着きのあるディープフォレストグリーン系デザイン</td>
-</tr>
-<tr>
-<td>小豆</td>
-<td>上品なバーガンディ・ワインレッド系デザイン</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section aria-labelledby="widget-heading" class="card-section" id="widget-guide">
-<h2 id="widget-heading">📱 Android ホーム画面ウィジェット</h2>
-<p>スマートフォンのホーム画面に「モノサシ」のウィジェットを配置すると、アプリを開かなくても持ち物の状態が自然と目に入り、日常の中で断捨離への意識を高めることができます。</p>
-<div class="shot-card">
-<img alt="Androidホーム画面ウィジェット" height="995" loading="lazy" src="./images/15_widget_home.png" width="542"/>
-<div class="shot-caption">「不要」写真ウィジェット、未判定件数ウィジェット、処分候補ウィジェットを自由に配置可能</div>
-</div>
+  </section>
 
-<div class="step-item"><div class="step-header"><span class="step-badge">STEP 1</span><h3 class="step-title">写真ウィジェット（不要・判定中）</h3></div><p>登録した写真がホーム画面にカードとして表示され、タップするとすぐにアプリで詳細を確認できます。</p></div>
-<div class="step-item"><div class="step-header"><span class="step-badge">STEP 2</span><h3 class="step-title">未判定件数ウィジェット</h3></div><p>まだ判定が終わっていない写真の数を大きな数字で表示。今日の目標達成を促します。</p></div>
-<div class="step-item"><div class="step-header"><span class="step-badge">STEP 3</span><h3 class="step-title">処分候補ウィジェット</h3></div><p>「不要」の判断が下された持ち物が並んで表示され、週末の片付けやゴミ出しのタイミングを見逃しません。</p></div>
+  <section class="card-section" id="skin-heading-wrap" aria-labelledby="skin-heading">
+    <h2 id="skin-heading">🎨 スキン（テーマカラー）の変更</h2>
+    <p>「設定」画面の「スキン」をタップすると、多彩な配色パレットからお好みのテーマを選択できます。</p>
 
-</section>
-<section aria-labelledby="backup-heading" class="card-section" id="backup-guide">
-<h2 id="backup-heading">💾 バックアップとデータの復元</h2>
-<p>大切な持ち物の判定データや写真を守るため、アプリ内で完結する<strong>暗号化バックアップ</strong>機能を備えています。</p>
+    <div class="shot-card">
+      <img src="./images/17_settings_skin_modal.png" alt="スキン選択モーダル" width="542" height="1206" loading="lazy">
+      <div class="shot-caption">プレビューを確認しながら、ライト4種・ダーク4種・システム連動をワンタップで切り替え</div>
+    </div>
 
-<div class="step-item"><div class="step-header"><span class="step-badge">STEP 1</span><h3 class="step-title">バックアップを作成</h3></div><p>「バックアップ」ボタンをタップすると、データベースと写真が暗号化された安全なバックアップファイルとして保存・共有（Googleドライブ等へ転送）できます。</p></div>
-<div class="step-item"><div class="step-header"><span class="step-badge">STEP 2</span><h3 class="step-title">機種変更時のデータ復元</h3></div><p>新しいスマートフォンに「モノサシ」をインストール後、設定画面で「復元」をタップしてバックアップファイルを選択すれば、以前の判定状況がそのまま復元されます。</p></div>
+    <div class="feature-table-wrap">
+      <table class="feature-table">
+        <thead>
+          <tr>
+            <th>テーマ分類</th>
+            <th>スキン名</th>
+            <th>特徴</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>システム連動</strong></td>
+            <td>デフォルト</td>
+            <td>端末のダーク/ライト設定に自動追従する標準配色</td>
+          </tr>
+          <tr>
+            <td rowspan="4"><strong>ライトモード</strong></td>
+            <td>そよ風</td>
+            <td>爽やかなブルー系の清潔感あるデザイン</td>
+          </tr>
+          <tr>
+            <td>陽だまり</td>
+            <td>あたたかいアンバー・オレンジ系の落ち着いたデザイン</td>
+          </tr>
+          <tr>
+            <td>若葉</td>
+            <td>安らぎのあるフレッシュグリーン系デザイン</td>
+          </tr>
+          <tr>
+            <td>さくら</td>
+            <td>優しいピンク・ローズ系の華やかなデザイン</td>
+          </tr>
+          <tr>
+            <td rowspan="4"><strong>ダークモード</strong></td>
+            <td>夜霧</td>
+            <td>深みのあるブルーグレー系のクールなダークデザイン</td>
+          </tr>
+          <tr>
+            <td>墨</td>
+            <td>黒を基調としたシックでコントラストの高いデザイン</td>
+          </tr>
+          <tr>
+            <td>深緑</td>
+            <td>落ち着きのあるディープフォレストグリーン系デザイン</td>
+          </tr>
+          <tr>
+            <td>小豆</td>
+            <td>上品なバーガンディ・ワインレッド系デザイン</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-</section>
-<section aria-labelledby="settings-faq-heading" class="card-section">
-<h2 id="settings-faq-heading">❓ 設定に関するFAQ</h2>
-<div class="faq-list">
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> 通知が届かない場合はどうすればいいですか？</h3>
-<p class="faq-a">お使いのスマートフォンの「設定」アプリ &gt;「アプリ」&gt;「モノサシ」&gt;「通知」が許可されていることをご確認ください。また、バッテリーセーバー機能などでバックグラウンド動作が制限されていないかもご確認ください。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> アプリの言語を変更できますか？</h3>
-<p class="faq-a">はい、設定画面の「言語」から、日本語を含む12の言語にいつでも自由に切り替えることができます。</p>
-</div>
-</div>
-</section>
-<div class="page-nav"><a class="page-nav-link" href="./results.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 3. 結果・手放した記録</span></a><a class="page-nav-link next" href="../index.html"><span class="page-nav-sub">アプリのご案内</span><span class="page-nav-title">📐 モノサシ アプリ紹介ページ ›</span></a></div></main>
-<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">📐 モノサシ アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
+  <section class="card-section" id="widget-guide" aria-labelledby="widget-heading">
+    <h2 id="widget-heading">📱 Android ホーム画面ウィジェット</h2>
+    <p>スマートフォンのホーム画面に「モノサシ」のウィジェットを配置すると、アプリを開かなくても持ち物の状態が自然と目に入り、日常の中で断捨離への意識を高めることができます。</p>
 
+    <div class="shot-card">
+      <img src="./images/15_widget_home.png" alt="Androidホーム画面ウィジェット" width="542" height="995" loading="lazy">
+      <div class="shot-caption">「不要」写真ウィジェット、未判定件数ウィジェット、処分候補ウィジェットを自由に配置可能</div>
+    </div>
 
+    <div class="step-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">写真ウィジェット（不要・判定中）</div>
+          <div class="step-desc">登録した写真がホーム画面にカードとして表示され、タップするとすぐにアプリで詳細を確認できます。</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">未判定件数ウィジェット</div>
+          <div class="step-desc">まだ判定が終わっていない写真の数を大きな数字で表示。今日の目標達成を促します。</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">処分候補ウィジェット</div>
+          <div class="step-desc">「不要」の判断が下された持ち物が並んで表示され、週末の片付けやゴミ出しのタイミングを見逃しません。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" id="backup-guide" aria-labelledby="backup-heading">
+    <h2 id="backup-heading">💾 バックアップとデータの復元</h2>
+    <p>大切な持ち物の判定データや写真を守るため、アプリ内で完結する<strong>暗号化バックアップ</strong>機能を備えています。</p>
+
+    <div class="step-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">バックアップを作成</div>
+          <div class="step-desc">「バックアップ」ボタンをタップすると、データベースと写真が暗号化された安全なバックアップファイルとして保存・共有（Googleドライブ等へ転送）できます。</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">機種変更時のデータ復元</div>
+          <div class="step-desc">新しいスマートフォンに「モノサシ」をインストール後、設定画面で「復元」をタップしてバックアップファイルを選択すれば、以前の判定状況がそのまま復元されます。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="settings-faq-heading">
+    <h2 id="settings-faq-heading">❓ 設定に関するFAQ</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">通知が届かない場合はどうすればいいですか？</div>
+        <div class="faq-a">お使いのスマートフォンの「設定」アプリ &gt;「アプリ」&gt;「モノサシ」&gt;「通知」が許可されていることをご確認ください。また、バッテリーセーバー機能などでバックグラウンド動作が制限されていないかもご確認ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">アプリの言語を変更できますか？</div>
+        <div class="faq-a">はい、設定画面の「言語」から、日本語を含む12の言語にいつでも自由に切り替えることができます。</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="./results.html">&larr; 3. 結果・手放した記録</a>
+    <a href="./index.html">取扱説明書トップ</a>
+    <a href="../index.html">モノサシ アプリ紹介</a>
+    <a href="../privacy-policy.html">プライバシーポリシー</a>
+  </div>
+  <p>&copy; ちゃ開発組 All Rights Reserved.</p>
+</footer>
+</body>
+</html>

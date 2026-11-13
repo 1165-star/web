@@ -58,105 +58,142 @@
 </head>
 <body>
 <header class="site-header">
-<div class="site-header-inner">
-<a class="brand-link" href="./index.html">📐 モノサシ <span class="brand-pill">取扱説明書</span></a>
-<nav aria-label="取扱説明書メニュー" class="global-nav">
-<a href="./index.html">トップ（目次）</a>
-<a href="./measure.html">1. 撮影・モノサシ判定</a>
-<a href="./photos.html">2. 写真一覧・推移グラフ</a>
-<a aria-current="page" href="./results.html">3. 結果・手放した記録</a>
-<a href="./settings.html">4. 設定・ウィジェット</a>
-</nav>
-</div>
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">📐 モノサシ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./measure.html">1. 撮影・モノサシ判定</a>
+      <a href="./photos.html">2. 写真一覧・推移グラフ</a>
+      <a href="./results.html" aria-current="page">3. 結果・手放した記録</a>
+      <a href="./settings.html">4. 設定・ウィジェット</a>
+    </nav>
+  </div>
 </header>
+
 <div class="hero-banner">
-<span class="pill">機能 03</span>
-<h1>📋 判定結果と手放した記録</h1>
-<p>日々のスワイプから浮かび上がった「必要」「不要」の判定結果と、手放した達成感を味わえる「手放した記録」を解説します。</p>
+  <span class="pill">機能 03</span>
+  <h1>📋 判定結果と手放した記録</h1>
+  <p>日々のスワイプから浮かび上がった「必要」「不要」の判定結果と、手放した達成感を味わえる「手放した記録」を解説します。</p>
 </div>
+
 <main class="container">
-<section aria-labelledby="results-tabs-heading" class="card-section">
-<h2 id="results-tabs-heading">⚖️ 「必要」と「不要」の2大区分</h2>
-<p>下部ナビゲーションの「結果」タブを開くと、上部に<strong>「必要」</strong>と<strong>「不要」</strong>の大きな2つの切り替えボタンがあります。スワイプを重ねて判断の方向性が定まってきた写真が、それぞれのタブに自動で分類されます。</p>
-<div class="callout">
-<strong>⏳ 注: 結果を出すには時間がかかります</strong><br/>
+  <section class="card-section" aria-labelledby="results-tabs-heading">
+    <h2 id="results-tabs-heading">⚖️ 「必要」と「不要」の2大区分</h2>
+    <p>下部ナビゲーションの「結果」タブを開くと、上部に<strong>「必要」</strong>と<strong>「不要」</strong>の大きな2つの切り替えボタンがあります。スワイプを重ねて判断の方向性が定まってきた写真が、それぞれのタブに自動で分類されます。</p>
+
+    <div class="callout">
+      <strong>⏳ 注: 結果を出すには時間がかかります</strong><br>
       数日間かけ、何回もモノサシで測ると、より明確になります。大切なものだからこそ、焦らず時間をかけて決めましょう。
     </div>
-<div class="shot-container shot-container-2col">
-<div class="shot-card">
-<img alt="結果画面（必要タブ）" height="1206" loading="lazy" src="./images/08_results_keep.png" width="542"/>
-<div class="shot-caption">「必要」タブ：残したい物・大切な物が確信度別にグループ分けされます</div>
-</div>
-<div class="shot-card">
-<img alt="結果画面（不要タブ）" height="1206" loading="lazy" src="./images/09_results_dispose.png" width="542"/>
-<div class="shot-caption">「不要」タブ：処分を検討できる物がはっきりとリストアップされます</div>
-</div>
-</div>
-<div class="table-wrap">
-<table class="manual-table">
-<thead>
-<tr>
-<th>タブ</th>
-<th>表示されるグループ見出し</th>
-<th>意味・状態</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="badge-tag keep">必要</span></td>
-<td><strong>とても大切な物です これからもずっと大切にしましょう</strong></td>
-<td>迷いなく「必要」と確信できた持ち物。自信を持って手元に残しましょう。</td>
-</tr>
-<tr>
-<td><span class="badge-tag keep">必要</span></td>
-<td><strong>もうすぐ決まりそう</strong></td>
-<td>「必要」側に大きく傾きつつある持ち物。あと数回測れば確定します。</td>
-</tr>
-<tr>
-<td><span class="badge-tag dispose">不要</span></td>
-<td><strong>もう手放して大丈夫です 処分しましょう</strong></td>
-<td>心がすっかり納得できている状態。ゴミに出す、売る、譲るなど処分へ進めましょう。</td>
-</tr>
-<tr>
-<td><span class="badge-tag dispose">不要</span></td>
-<td><strong>必要ないと判断出来ます 処分を検討しましょう</strong></td>
-<td>「不要」の確信度が高まっている持ち物。そろそろ処分方法を考え始めましょう。</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="shot-card">
-<img alt="結果画面（不要タブ・ライトモード）" height="1206" loading="lazy" src="./images/14_results_dispose_light.png" width="542"/>
-<div class="shot-caption">ライトモードでも柔らかい色合いで判断を後押しします</div>
-</div>
-</section>
-<section aria-labelledby="history-heading" class="card-section" id="disposal-log">
-<h2 id="history-heading">📦 「手放した記録」で達成感を可視化</h2>
-<p>不要タブの右上にある<strong>「手放した記録 &gt;」</strong>リンクをタップすると、これまでに実際に手放した持ち物の集計画面が開きます。</p>
-<div class="shot-card">
-<img alt="手放した記録画面" height="1206" loading="lazy" src="./images/11_disposal_history.png" width="542"/>
-<div class="shot-caption">これまでに手放した総数、手放し方の内訳、月ごとの記録を確認できます</div>
-</div>
 
-<div class="step-item"><div class="step-header"><span class="step-badge">STEP 1</span><h3 class="step-title">これまで手放した数 ＆ 今月の成果</h3></div><p>「1個」「今月: 0個」のように大きな文字で表示され、片付けの努力と成果を実感できます。</p></div>
-<div class="step-item"><div class="step-header"><span class="step-badge">STEP 2</span><h3 class="step-title">手放し方の3分類（捨てた・売った・譲った）</h3></div><p>ただ捨てるだけでなく、「フリマアプリで売った」「友人に譲った」など、エシカルな手放し方も個別に集計されます。</p></div>
-<div class="step-item"><div class="step-header"><span class="step-badge">STEP 3</span><h3 class="step-title">月ごとの記録</h3></div><p>「2026年10月 1個」のように過去の月別実績が並び、継続的な断捨離のモチベーションにつながります。</p></div>
+    <div class="shot-grid">
+      <div class="shot-card">
+        <img src="./images/08_results_keep.png" alt="結果画面（必要タブ）" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">「必要」タブ：残したい物・大切な物が確信度別にグループ分けされます</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/09_results_dispose.png" alt="結果画面（不要タブ）" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">「不要」タブ：処分を検討できる物がはっきりとリストアップされます</div>
+      </div>
+    </div>
 
-</section>
-<section aria-labelledby="results-faq-heading" class="card-section">
-<h2 id="results-faq-heading">❓ 判定結果に関するFAQ</h2>
-<div class="faq-list">
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> 何回測っても「未判定」のまま残っている写真があります。</h3>
-<p class="faq-a">その写真は、あなたの中で「必要」と「不要」の気持ちが激しくせめぎ合っている証拠です。無理にどちらかへ倒そうとせず、そのまま何度もモノサシを繰り返してみてください。ある日ふと直感が定まる瞬間が訪れます。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> 手放した記録に登録すると、写真はどうなりますか？</h3>
-<p class="faq-a">手放した持ち物は一覧からアーカイブされ、スワイプ判定には出題されなくなります。過去の成果として記録にのみ残ります。</p>
-</div>
-</div>
-</section>
-<div class="page-nav"><a class="page-nav-link" href="./photos.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 2. 写真一覧・推移グラフ</span></a><a class="page-nav-link next" href="./settings.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">4. 設定・ウィジェット ›</span></a></div></main>
-<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">📐 モノサシ アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
+    <div class="feature-table-wrap">
+      <table class="feature-table">
+        <thead>
+          <tr>
+            <th>タブ</th>
+            <th>表示されるグループ見出し</th>
+            <th>意味・状態</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge-tag keep">必要</span></td>
+            <td><strong>とても大切な物です これからもずっと大切にしましょう</strong></td>
+            <td>迷いなく「必要」と確信できた持ち物。自信を持って手元に残しましょう。</td>
+          </tr>
+          <tr>
+            <td><span class="badge-tag keep">必要</span></td>
+            <td><strong>もうすぐ決まりそう</strong></td>
+            <td>「必要」側に大きく傾きつつある持ち物。あと数回測れば確定します。</td>
+          </tr>
+          <tr>
+            <td><span class="badge-tag dispose">不要</span></td>
+            <td><strong>もう手放して大丈夫です 処分しましょう</strong></td>
+            <td>心がすっかり納得できている状態。ゴミに出す、売る、譲るなど処分へ進めましょう。</td>
+          </tr>
+          <tr>
+            <td><span class="badge-tag dispose">不要</span></td>
+            <td><strong>必要ないと判断出来ます 処分を検討しましょう</strong></td>
+            <td>「不要」の確信度が高まっている持ち物。そろそろ処分方法を考え始めましょう。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
+    <div class="shot-card">
+      <img src="./images/14_results_dispose_light.png" alt="結果画面（不要タブ・ライトモード）" width="542" height="1206" loading="lazy">
+      <div class="shot-caption">ライトモードでも柔らかい色合いで判断を後押しします</div>
+    </div>
+  </section>
 
+  <section class="card-section" id="disposal-log" aria-labelledby="history-heading">
+    <h2 id="history-heading">📦 「手放した記録」で達成感を可視化</h2>
+    <p>不要タブの右上にある<strong>「手放した記録 >」</strong>リンクをタップすると、これまでに実際に手放した持ち物の集計画面が開きます。</p>
+
+    <div class="shot-card">
+      <img src="./images/11_disposal_history.png" alt="手放した記録画面" width="542" height="1206" loading="lazy">
+      <div class="shot-caption">これまでに手放した総数、手放し方の内訳、月ごとの記録を確認できます</div>
+    </div>
+
+    <div class="step-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">これまで手放した数 ＆ 今月の成果</div>
+          <div class="step-desc">「1個」「今月: 0個」のように大きな文字で表示され、片付けの努力と成果を実感できます。</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">手放し方の3分類（捨てた・売った・譲った）</div>
+          <div class="step-desc">ただ捨てるだけでなく、「フリマアプリで売った」「友人に譲った」など、エシカルな手放し方も個別に集計されます。</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">月ごとの記録</div>
+          <div class="step-desc">「2026年10月 1個」のように過去の月別実績が並び、継続的な断捨離のモチベーションにつながります。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="results-faq-heading">
+    <h2 id="results-faq-heading">❓ 判定結果に関するFAQ</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">何回測っても「未判定」のまま残っている写真があります。</div>
+        <div class="faq-a">その写真は、あなたの中で「必要」と「不要」の気持ちが激しくせめぎ合っている証拠です。無理にどちらかへ倒そうとせず、そのまま何度もモノサシを繰り返してみてください。ある日ふと直感が定まる瞬間が訪れます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">手放した記録に登録すると、写真はどうなりますか？</div>
+        <div class="faq-a">手放した持ち物は一覧からアーカイブされ、スワイプ判定には出題されなくなります。過去の成果として記録にのみ残ります。</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="./photos.html">&larr; 2. 写真一覧・推移グラフ</a>
+    <a href="./index.html">取扱説明書トップ</a>
+    <a href="./settings.html">4. 設定・ウィジェット &rarr;</a>
+    <a href="../index.html">モノサシ アプリ紹介</a>
+  </div>
+  <p>&copy; ちゃ開発組 All Rights Reserved.</p>
+</footer>
+</body>
+</html>

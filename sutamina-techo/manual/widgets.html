@@ -46,116 +46,140 @@
 </head>
 <body>
 <header class="site-header">
-<div class="site-header-inner">
-<a class="brand-link" href="./index.html">🎮 スタミナ手帳 <span class="brand-pill">取扱説明書</span></a>
-<nav aria-label="取扱説明書メニュー" class="global-nav">
-<a href="./index.html">トップ（目次）</a>
-<a href="./timeline.html">1. タイムライン</a>
-<a href="./games.html">2. ゲーム登録・編集</a>
-<a href="./tools.html">3. 常駐便利ツール</a>
-<a href="./notifications.html">4. 通知管理</a>
-<a href="./settings.html">5. 統計・バックアップ</a>
-<a aria-current="page" href="./widgets.html">6. ウィジェット</a>
-</nav>
-</div>
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🎮 スタミナ手帳 <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./timeline.html">1. タイムライン</a>
+      <a href="./games.html">2. ゲーム登録・編集</a>
+      <a href="./tools.html">3. 常駐便利ツール</a>
+      <a href="./notifications.html">4. 通知管理</a>
+      <a href="./settings.html">5. 統計・バックアップ</a>
+      <a href="./widgets.html" aria-current="page">6. ウィジェット</a>
+    </nav>
+  </div>
 </header>
+
 <main class="container">
-<nav aria-label="パンくずリスト" class="breadcrumb">
-<a href="./index.html">取扱説明書トップ</a>
-<span>›</span>
-<span aria-current="page">6. ホーム画面ウィジェット</span>
-</nav>
-<section class="card-section">
-<h1>🧩 6. ホーム画面ウィジェット</h1>
-<p>スタミナ手帳を開かなくても、ホーム画面で次のスタミナ満タン時刻やデイリー・週間リセットの時刻を確認できます。ウィジェットは4種類あり、好きなものを（同じ種類を複数でも）ホーム画面に置けます。</p>
-<p>ウィジェットの色は、アプリの「スキン」設定（ライト/ダークなど）に合わせて変わります。時刻の表記も、アプリの12時間/24時間表記の設定に従います。</p>
-<p><strong>※ ウィジェットはAndroid端末でのみ利用できます。</strong></p>
-<div class="shot-card" style="margin-top: 20px;">
-<img alt="ホーム画面に置いたスタミナ手帳の4種類のウィジェット" height="695" loading="lazy" src="./images/06_widgets_home.png" width="542"/>
-<div class="shot-caption">ホーム画面に置いたウィジェット（左上：小、右上：ゲーム別、左下：1件版、右下：一覧）</div>
-</div>
-</section>
-<section class="card-section" id="widget-types">
-<h2>📋 4種類のウィジェットの違い</h2>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">無料</span>
-<h3 class="step-title">スタミナ手帳（1件版）</h3>
-</div>
-<p>次の予定（デイリー/週間リセット・スタミナ満タン）を1件だけ、ゲームのアイコンとゲーム名・時刻で表示します。スタミナが満タンのときは「満タン」と表示されます。</p>
-</div>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">無料</span>
-<h3 class="step-title">スタミナ手帳（小）</h3>
-</div>
-<p>1×1マスの小さなウィジェットです。次の予定のゲームのアイコンと時刻だけを表示します。ホーム画面を広く使いたいときに向いています。</p>
-</div>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">PREMIUM</span>
-<h3 class="step-title">スタミナ手帳（一覧）</h3>
-</div>
-<p>直近の予定を、タイムラインと同じ並びで一覧表示します。ウィジェットの高さに合わせて表示件数が変わり、縦に広げるほど多く（最大10件）表示されます。スタミナの行には進捗バーも付きます。複数のゲームを同時に遊んでいる方におすすめです。</p>
-</div>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">PREMIUM</span>
-<h3 class="step-title">スタミナ手帳（ゲーム別）</h3>
-</div>
-<p>選んだ1つのゲームだけを表示します。スタミナは進捗バー・現在値/上限・満タンまでの時刻で、デイリー/週間/月間リセットやフリー項目は「種類と時刻」の1行で表示されます。ウィジェットを縦に広げると、表示できる項目が増えます。</p>
-</div>
-<p>PREMIUMのウィジェットを、PREMIUMではない状態で置いた場合は「PREMIUM限定」と表示されます。</p>
-</section>
-<section class="card-section" id="widget-add">
-<h2>➕ ウィジェットをホーム画面に追加する</h2>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">ステップ 1</span>
-<h3 class="step-title">ウィジェットの一覧を開く</h3>
-</div>
-<p>ホーム画面の何も無い場所を長押しし、表示されたメニューから「ウィジェット」を選びます（メニューの名称や操作は端末によって異なります）。</p>
-</div>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">ステップ 2</span>
-<h3 class="step-title">「スタミナ手帳」のウィジェットを置く</h3>
-</div>
-<p>一覧から「スタミナ手帳」を探し、置きたい種類をホーム画面へドラッグします。PREMIUM機能のウィジェットには、説明文の先頭に「【PREMIUM】」と書かれています。</p>
-</div>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">ステップ 3</span>
-<h3 class="step-title">（ゲーム別のみ）表示するゲームを選ぶ</h3>
-</div>
-<p>ゲーム別ウィジェットを置くと「表示するゲーム」の画面が開きます。ウィジェットに表示したいゲームを選んでください。あとからウィジェットを長押しして、表示するゲームを変更することもできます。</p>
-</div>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">ステップ 4</span>
-<h3 class="step-title">大きさを調整する</h3>
-</div>
-<p>置いたウィジェットを長押しすると、縦横に広げたり縮めたりできます。一覧版・ゲーム別は、広げるほど表示できる項目が増えます。</p>
-</div>
-</section>
-<section class="card-section" id="widget-faq">
-<h2>❓ ウィジェットのよくある質問</h2>
-<div class="faq-list">
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> ウィジェットに「ゲームを選んでください」と表示されます。</h3>
-<p class="faq-a">ゲーム別ウィジェットで、選んでいたゲームを削除した場合や、まだゲームを選んでいない場合に表示されます。アプリを開いてゲームを登録したうえで、ウィジェットを長押しして表示するゲームを選び直してください。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> ウィジェットの色を変えられますか？</h3>
-<p class="faq-a">ウィジェットの色は、アプリの「スキン」設定に合わせて変わります。設定画面でスキンを変更してください。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> iPhoneでも使えますか？</h3>
-<p class="faq-a">ウィジェットはAndroid端末専用の機能です。</p>
-</div>
-</div>
-</section>
-<div class="page-nav"><a class="page-nav-link" href="./settings.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 5. 統計・バックアップ</span></a><a class="page-nav-link next" href="../index.html"><span class="page-nav-sub">アプリのご案内</span><span class="page-nav-title">🎮 スタミナ手帳 アプリ紹介ページ ›</span></a></div></main>
-<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">🎮 スタミナ手帳 アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a>
+    <span>›</span>
+    <span aria-current="page">6. ホーム画面ウィジェット</span>
+  </nav>
 
+  <section class="card-section">
+    <h1>🧩 6. ホーム画面ウィジェット</h1>
+    <p>スタミナ手帳を開かなくても、ホーム画面で次のスタミナ満タン時刻やデイリー・週間リセットの時刻を確認できます。ウィジェットは4種類あり、好きなものを（同じ種類を複数でも）ホーム画面に置けます。</p>
+    <p>ウィジェットの色は、アプリの「スキン」設定（ライト/ダークなど）に合わせて変わります。時刻の表記も、アプリの12時間/24時間表記の設定に従います。</p>
+    <p><strong>※ ウィジェットはAndroid端末でのみ利用できます。</strong></p>
 
+    <div class="shot-card" style="margin-top: 20px;">
+      <img src="./images/06_widgets_home.png" alt="ホーム画面に置いたスタミナ手帳の4種類のウィジェット" width="542" height="695" loading="lazy">
+      <div class="shot-caption">ホーム画面に置いたウィジェット（左上：小、右上：ゲーム別、左下：1件版、右下：一覧）</div>
+    </div>
+  </section>
+
+  <section class="card-section" id="widget-types">
+    <h2>📋 4種類のウィジェットの違い</h2>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">無料</span>
+        <h3 class="step-title">スタミナ手帳（1件版）</h3>
+      </div>
+      <p>次の予定（デイリー/週間リセット・スタミナ満タン）を1件だけ、ゲームのアイコンとゲーム名・時刻で表示します。スタミナが満タンのときは「満タン」と表示されます。</p>
+    </div>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">無料</span>
+        <h3 class="step-title">スタミナ手帳（小）</h3>
+      </div>
+      <p>1×1マスの小さなウィジェットです。次の予定のゲームのアイコンと時刻だけを表示します。ホーム画面を広く使いたいときに向いています。</p>
+    </div>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">PREMIUM</span>
+        <h3 class="step-title">スタミナ手帳（一覧）</h3>
+      </div>
+      <p>直近の予定を、タイムラインと同じ並びで一覧表示します。ウィジェットの高さに合わせて表示件数が変わり、縦に広げるほど多く（最大10件）表示されます。スタミナの行には進捗バーも付きます。複数のゲームを同時に遊んでいる方におすすめです。</p>
+    </div>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">PREMIUM</span>
+        <h3 class="step-title">スタミナ手帳（ゲーム別）</h3>
+      </div>
+      <p>選んだ1つのゲームだけを表示します。スタミナは進捗バー・現在値/上限・満タンまでの時刻で、デイリー/週間/月間リセットやフリー項目は「種類と時刻」の1行で表示されます。ウィジェットを縦に広げると、表示できる項目が増えます。</p>
+    </div>
+    <p>PREMIUMのウィジェットを、PREMIUMではない状態で置いた場合は「PREMIUM限定」と表示されます。</p>
+  </section>
+
+  <section class="card-section" id="widget-add">
+    <h2>➕ ウィジェットをホーム画面に追加する</h2>
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">ステップ 1</span>
+        <h3 class="step-title">ウィジェットの一覧を開く</h3>
+      </div>
+      <p>ホーム画面の何も無い場所を長押しし、表示されたメニューから「ウィジェット」を選びます（メニューの名称や操作は端末によって異なります）。</p>
+    </div>
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">ステップ 2</span>
+        <h3 class="step-title">「スタミナ手帳」のウィジェットを置く</h3>
+      </div>
+      <p>一覧から「スタミナ手帳」を探し、置きたい種類をホーム画面へドラッグします。PREMIUM機能のウィジェットには、説明文の先頭に「【PREMIUM】」と書かれています。</p>
+    </div>
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">ステップ 3</span>
+        <h3 class="step-title">（ゲーム別のみ）表示するゲームを選ぶ</h3>
+      </div>
+      <p>ゲーム別ウィジェットを置くと「表示するゲーム」の画面が開きます。ウィジェットに表示したいゲームを選んでください。あとからウィジェットを長押しして、表示するゲームを変更することもできます。</p>
+    </div>
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">ステップ 4</span>
+        <h3 class="step-title">大きさを調整する</h3>
+      </div>
+      <p>置いたウィジェットを長押しすると、縦横に広げたり縮めたりできます。一覧版・ゲーム別は、広げるほど表示できる項目が増えます。</p>
+    </div>
+  </section>
+
+  <section class="card-section" id="widget-faq">
+    <h2>❓ ウィジェットのよくある質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span>ウィジェットに「ゲームを選んでください」と表示されます。</div>
+        <p class="faq-a">ゲーム別ウィジェットで、選んでいたゲームを削除した場合や、まだゲームを選んでいない場合に表示されます。アプリを開いてゲームを登録したうえで、ウィジェットを長押しして表示するゲームを選び直してください。</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span>ウィジェットの色を変えられますか？</div>
+        <p class="faq-a">ウィジェットの色は、アプリの「スキン」設定に合わせて変わります。設定画面でスキンを変更してください。</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-mark">Q.</span>iPhoneでも使えますか？</div>
+        <p class="faq-a">ウィジェットはAndroid端末専用の機能です。</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="page-nav">
+    <a class="page-nav-link" href="./settings.html">
+      <span class="page-nav-sub">← 前の機能</span>
+      <span class="page-nav-title">5. 統計・バックアップ</span>
+    </a>
+    <a class="page-nav-link" href="./index.html" style="text-align: right;">
+      <span class="page-nav-sub">目次へ戻る →</span>
+      <span class="page-nav-title">取扱説明書トップ</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 / <a href="../index.html">スタミナ手帳 公式ページ</a> / <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

@@ -58,118 +58,135 @@
 </head>
 <body>
 <header class="site-header">
-<div class="site-header-inner">
-<a class="brand-link" href="./index.html">🎨 めものわ <span class="brand-pill">取扱説明書</span></a>
-<nav aria-label="取扱説明書メニュー" class="global-nav">
-<a href="./index.html">トップ（目次）</a>
-<a href="./drawing.html">1. お絵かき・基本操作</a>
-<a href="./background.html">2. 背景と画像の配置</a>
-<a href="./collab.html">3. 近くの人と共同編集</a>
-<a aria-current="page" href="./export.html">4. 画像保存・印刷・設定</a>
-</nav>
-</div>
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🎨 めものわ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./drawing.html">1. お絵かき・基本操作</a>
+      <a href="./background.html">2. 背景と画像の配置</a>
+      <a href="./collab.html">3. 近くの人と共同編集</a>
+      <a href="./export.html" aria-current="page">4. 画像保存・印刷・設定</a>
+    </nav>
+  </div>
 </header>
+
 <div class="hero-banner">
-<span class="pill">機能 04</span>
-<h1>💾 画像保存・印刷・設定</h1>
-<p>描いた作品の写真保存、印刷、背景なし透過PNG書き出し、回転調整、およびスキンの変更やバックアップなどの設定機能を解説します。</p>
+  <span class="pill">機能 04</span>
+  <h1>💾 画像保存・印刷・設定</h1>
+  <p>描いた作品の写真保存、印刷、背景なし透過PNG書き出し、回転調整、およびスキンの変更やバックアップなどの設定機能を解説します。</p>
 </div>
+
 <main class="container">
-<nav aria-label="パンくずリスト" class="breadcrumb">
-<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>画像保存・印刷・設定</span>
-</nav>
-<section aria-labelledby="intro-heading" class="card-section" id="export">
-<h2 id="intro-heading">📖 画像の保存と印刷画面</h2>
-<p>ツールバーの下向き矢印アイコン（上から7番目）をタップすると、保存プレビュー画面が開きます。</p>
-<div class="shot-card">
-<img alt="保存する画像の向きとオプション設定モーダル" height="1151" loading="lazy" src="./images/15_export_modal.png" width="542"/>
-<div class="shot-caption">保存範囲・画質・透過・向き（回転）を確認しながらワンタップで保存・印刷</div>
-</div>
-</section>
-<section aria-labelledby="options-heading" class="card-section">
-<h2 id="options-heading">⚙️ 保存オプションの使い分け</h2>
-<p>画面下部のボタンを使って、用途に合わせた最適な形式で書き出すことができます。</p>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">保存範囲</span>
-<h3 class="step-title">「書いた範囲」と「キャンバス全体(A4)」</h3>
-</div>
-<ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-<li><strong>書いた範囲:</strong> 余分な白紙余白を自動でカットし、描かれた絵や文字の範囲だけをぴったり切り出して保存します。SNSへのシェアやアイコン、スタンプ作りに便利です。</li>
-<li><strong>キャンバス全体(A4):</strong> A4用紙の縦横比に合わせてキャンバス全体を保存します。ノートとしてページ全体を残したいときや、印刷時に最適です。</li>
-</ul>
-</div>
-<div class="step-item" id="transparent">
-<div class="step-header">
-<span class="step-badge">画質と形式</span>
-<h3 class="step-title">「高画質」と「背景なし(透過PNG)」</h3>
-</div>
-<ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-<li><strong>高画質:</strong> より高解像度で精細な画像として出力します。大判での印刷や拡大表示におすすめです。</li>
-<li><strong>背景なし(透過PNG):</strong> キャンバスの背景を透過させて、線画や塗りの部分だけを保存します。メッセージアプリのスタンプや、他の画像編集アプリでの素材合成に重宝します。</li>
-</ul>
-</div>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">向きの調整</span>
-<h3 class="step-title">「左に回す」「右に回す」</h3>
-</div>
-<p style="margin: 0;">プレビューを見ながら90度ずつ回転させることができます。横向きで描いた絵を正しい向きに合わせてから写真フォルダに保存できます。</p>
-</div>
-<div class="step-item">
-<div class="step-header">
-<span class="step-badge">出力</span>
-<h3 class="step-title">「保存」と「印刷」</h3>
-</div>
-<ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-<li><strong>保存:</strong> 端末の写真ギャラリー（カメラロール）に画像ファイルとして保存されます。</li>
-<li><strong>印刷:</strong> Android標準の印刷メニューが開き、ネットワーク接続されたプリンターへ直接印刷できます。</li>
-</ul>
-</div>
-</section>
-<section aria-labelledby="settings-heading" class="card-section">
-<h2 id="settings-heading">⚙️ アプリの設定メニュー</h2>
-<p>ツールバーの歯車アイコンをタップすると、アプリの各種設定を行うモーダル画面が開きます。</p>
-<div class="tool-grid">
-<div class="tool-item">
-<div class="tool-icon-box">🎨</div>
-<div class="tool-text-box">
-<h4>スキン（テーマ配色）の変更</h4>
-<p>お好みのカラーテーマにキャンバスやUIの配色を着せ替えられます。</p>
-</div>
-</div>
-<div class="tool-item">
-<div class="tool-icon-box">💾</div>
-<div class="tool-text-box">
-<h4>バックアップとデータの復元</h4>
-<p>大切な絵や設定を暗号化ファイルとして書き出し、機種変更時にも安全に引き継げます。</p>
-</div>
-</div>
-<div class="tool-item">
-<div class="tool-icon-box">🌐</div>
-<div class="tool-text-box">
-<h4>言語設定</h4>
-<p>日本語をはじめ、英語や中国語など多言語での表示にいつでも切り替えられます。</p>
-</div>
-</div>
-<div class="tool-item">
-<div class="tool-icon-box">⭐</div>
-<div class="tool-text-box">
-<h4>PREMIUM（プレミアムプラン）</h4>
-<p>広告非表示、人数無制限の共同編集、高画質・透過PNG書き出しなどを解放できます。</p>
-</div>
-</div>
-</div>
-</section>
-<section class="card-section" aria-labelledby="faq-heading">
-<h2 id="faq-heading">❓ よくある質問</h2>
-<div class="faq-list">
-<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 「書いた範囲」と「キャンバス全体(A4)」はどう使い分けますか？</h3><p class="faq-a">「書いた範囲」は余白を自動でカットして描いた部分だけを保存するので、SNSへのシェアなどに向いています。「キャンバス全体(A4)」はA4の縦横比でページ全体を保存するので、ノートとして残したいときや印刷に向いています。</p></div>
-<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 背景が透明な画像として保存できますか？</h3><p class="faq-a">はい。「背景なし(透過PNG)」を選ぶと、線画や塗りの部分だけを保存できます。なお、高画質・透過PNGの書き出しはプレミアムの機能として案内されています。</p></div>
-<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 保存した画像はどこに入りますか？</h3><p class="faq-a">「保存」を押すと、端末の写真ギャラリー（カメラロール）に画像ファイルとして保存されます。「印刷」ではAndroid標準の印刷メニューが開きます。</p></div>
-</div>
-</section>
-<div class="page-nav"><a class="page-nav-link" href="./collab.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 3. 近くの人と共同編集</span></a><a class="page-nav-link next" href="../index.html"><span class="page-nav-sub">アプリのご案内</span><span class="page-nav-title">🎨 めものわ アプリ紹介ページ ›</span></a></div></main>
-<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">🎨 めものわ アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>画像保存・印刷・設定</span>
+  </nav>
 
+  <section class="card-section" aria-labelledby="intro-heading" id="export">
+    <h2 id="intro-heading">📖 画像の保存と印刷画面</h2>
+    <p>ツールバーの下向き矢印アイコン（上から7番目）をタップすると、保存プレビュー画面が開きます。</p>
 
+    <div class="shot-card">
+      <img src="./images/15_export_modal.png" alt="保存する画像の向きとオプション設定モーダル" width="542" height="1151" loading="lazy">
+      <div class="shot-caption">保存範囲・画質・透過・向き（回転）を確認しながらワンタップで保存・印刷</div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="options-heading">
+    <h2 id="options-heading">⚙️ 保存オプションの使い分け</h2>
+    <p>画面下部のボタンを使って、用途に合わせた最適な形式で書き出すことができます。</p>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">保存範囲</span>
+        <h3 class="step-title">「書いた範囲」と「キャンバス全体(A4)」</h3>
+      </div>
+      <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+        <li><strong>書いた範囲:</strong> 余分な白紙余白を自動でカットし、描かれた絵や文字の範囲だけをぴったり切り出して保存します。SNSへのシェアやアイコン、スタンプ作りに便利です。</li>
+        <li><strong>キャンバス全体(A4):</strong> A4用紙の縦横比に合わせてキャンバス全体を保存します。ノートとしてページ全体を残したいときや、印刷時に最適です。</li>
+      </ul>
+    </div>
+
+    <div class="step-item" id="transparent">
+      <div class="step-header">
+        <span class="step-badge">画質と形式</span>
+        <h3 class="step-title">「高画質」と「背景なし(透過PNG)」</h3>
+      </div>
+      <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+        <li><strong>高画質:</strong> より高解像度で精細な画像として出力します。大判での印刷や拡大表示におすすめです。</li>
+        <li><strong>背景なし(透過PNG):</strong> キャンバスの背景を透過させて、線画や塗りの部分だけを保存します。メッセージアプリのスタンプや、他の画像編集アプリでの素材合成に重宝します。</li>
+      </ul>
+    </div>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">向きの調整</span>
+        <h3 class="step-title">「左に回す」「右に回す」</h3>
+      </div>
+      <p style="margin: 0;">プレビューを見ながら90度ずつ回転させることができます。横向きで描いた絵を正しい向きに合わせてから写真フォルダに保存できます。</p>
+    </div>
+
+    <div class="step-item">
+      <div class="step-header">
+        <span class="step-badge">出力</span>
+        <h3 class="step-title">「保存」と「印刷」</h3>
+      </div>
+      <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+        <li><strong>保存:</strong> 端末の写真ギャラリー（カメラロール）に画像ファイルとして保存されます。</li>
+        <li><strong>印刷:</strong> Android標準の印刷メニューが開き、ネットワーク接続されたプリンターへ直接印刷できます。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="settings-heading">
+    <h2 id="settings-heading">⚙️ アプリの設定メニュー</h2>
+    <p>ツールバーの歯車アイコンをタップすると、アプリの各種設定を行うモーダル画面が開きます。</p>
+
+    <div class="tool-grid">
+      <div class="tool-item">
+        <div class="tool-icon-box">🎨</div>
+        <div class="tool-text-box">
+          <h4>スキン（テーマ配色）の変更</h4>
+          <p>お好みのカラーテーマにキャンバスやUIの配色を着せ替えられます。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">💾</div>
+        <div class="tool-text-box">
+          <h4>バックアップとデータの復元</h4>
+          <p>大切な絵や設定を暗号化ファイルとして書き出し、機種変更時にも安全に引き継げます。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">🌐</div>
+        <div class="tool-text-box">
+          <h4>言語設定</h4>
+          <p>日本語をはじめ、英語や中国語など多言語での表示にいつでも切り替えられます。</p>
+        </div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-icon-box">⭐</div>
+        <div class="tool-text-box">
+          <h4>PREMIUM（プレミアムプラン）</h4>
+          <p>広告非表示、人数無制限の共同編集、高画質・透過PNG書き出しなどを解放できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="page-nav" aria-label="前後ページナビゲーション">
+    <a class="page-nav-link" href="./collab.html">
+      <span class="page-nav-sub">&larr; 前の機能</span>
+      <span class="page-nav-title">3. 近くの人と共同編集</span>
+    </a>
+    <a class="page-nav-link next" href="./index.html">
+      <span class="page-nav-sub">トップへ戻る &rarr;</span>
+      <span class="page-nav-title">取扱説明書トップ（目次）</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; ちゃ開発組 — <a href="../">めものわ 公式紹介ページへ戻る</a></p>
+</footer>
+</body>
+</html>

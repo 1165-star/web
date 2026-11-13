@@ -67,131 +67,157 @@
 </head>
 <body>
 <header class="site-header">
-<div class="site-header-inner">
-<a class="brand-link" href="./index.html">📊 アプリ成績表 <span class="brand-pill">取扱説明書</span></a>
-<nav aria-label="取扱説明書メニュー" class="global-nav">
-<a href="./index.html">トップ（目次）</a>
-<a href="./start.html">1. はじめての準備</a>
-<a aria-current="page" href="./basics.html">2. 画面の見かた・基本操作</a>
-<a href="./revenue.html">3. 収益</a>
-<a href="./installs.html">4. インストール</a>
-<a href="./users.html">5. ユーザー</a>
-<a href="./ratings.html">6. 評価・レビュー</a>
-<a href="./quality.html">7. 品質</a>
-<a href="./settings.html">8. 設定・バックアップ</a>
-<a href="./widgets.html">9. ウィジェット</a>
-</nav>
-</div>
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">📊 アプリ成績表 <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./start.html">1. はじめての準備</a>
+      <a href="./basics.html" aria-current="page">2. 画面の見かた・基本操作</a>
+      <a href="./revenue.html">3. 収益</a>
+      <a href="./installs.html">4. インストール</a>
+      <a href="./users.html">5. ユーザー</a>
+      <a href="./ratings.html">6. 評価・レビュー</a>
+      <a href="./quality.html">7. 品質</a>
+      <a href="./settings.html">8. 設定・バックアップ</a>
+      <a href="./widgets.html">9. ウィジェット</a>
+    </nav>
+  </div>
 </header>
+
 <div class="hero-banner">
-<span class="pill">機能 02</span>
-<h1>🧭 画面の見かた・基本操作</h1>
-<p>6つのタブ、アプリの選択、データの更新、グラフの操作など、全画面に共通する使い方を解説します。</p>
+  <span class="pill">機能 02</span>
+  <h1>🧭 画面の見かた・基本操作</h1>
+  <p>6つのタブ、アプリの選択、データの更新、グラフの操作など、全画面に共通する使い方を解説します。</p>
 </div>
+
 <main class="container">
-<nav aria-label="パンくずリスト" class="breadcrumb">
-<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>🧭 画面の見かた・基本操作</span>
-</nav>
-<section aria-labelledby="intro-heading" class="card-section">
-<h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
-<p>すべてのタブに共通する操作は、このページにまとめています。各タブの内容は、このあとの各ページで解説します。</p>
-<div aria-label="このページの主な目的" class="want-tags">
-<a class="want-tag" href="#basics-screen">・画面の構成・各部の意味を知りたい</a>
-<a class="want-tag" href="#basics-picker">・表示するアプリを絞り込みたい</a>
-<a class="want-tag" href="#basics-refresh">・最新のデータに更新したい</a>
-<a class="want-tag" href="#basics-graph">・グラフを拡大・縮小したり、日ごとの内訳を見たい</a>
-</div>
-</section>
-<section aria-labelledby="steps-heading" class="card-section">
-<h2 id="steps-heading">🛠️ 詳しい使い方</h2>
-<div class="step-item" id="basics-screen">
-<div class="step-header">
-<span class="step-badge">STEP 1</span>
-<h3 class="step-title">画面の構成（下部のタブ・PREMIUM・取得の状態）</h3>
-</div>
-<p>画面の下に、6つのタブが並びます。左から<strong>「収益」「インストール」「ユーザー」「評価」「品質」「設定」</strong>です。</p>
-<ul>
-<li><strong>右上の「PREMIUM」</strong>: PREMIUMの説明・登録の画面を開きます（登録済みのときは、チェックマークが付きます）。</li>
-<li><strong>タイトルの横の取得状態</strong>: 「データ全取得完了」「データ取得一部失敗あり」「データ取得中…」「データ未取得」と、取得した日時が出ます。タップすると、項目ごとの成功・失敗の一覧が開きます。</li>
-<li><strong>各カードの見出しの下の小さな字</strong>: 期間・単位・グラフの読み方と、「◯/◯分まで集計済み」（数字が入っている最後の日）が出ます。</li>
-</ul>
-<div class="shot-card narrow">
-<img alt="収益タブの上部。今日・昨日・直近7日・今月の広告収益のカード" height="383" loading="lazy" src="./images/revenue_cards.webp" width="542"/>
-<div class="shot-caption">見出しの下に、「10/25分まで集計済み」のように最新の日が表示されます</div>
-</div>
-</div>
-<div class="step-item" id="basics-picker">
-<div class="step-header">
-<span class="step-badge">STEP 2</span>
-<h3 class="step-title">表示するアプリを選ぶ（対象アプリ）</h3>
-</div>
-<p>設定タブ以外の画面の右下には、丸いボタンがあります。押すと、<strong>「対象アプリ」</strong>のシートが開き、表示したいアプリを選べます。ボタンの下には、「選択件数/全件数」が出ます。</p>
-<ul>
-<li>アプリ名の左のチェックを付け外しして選びます。「全て選択」「全て選択解除」で、一度に切り替えられます。</li>
-<li><strong>「確定」を押すまで、選択は反映されません。</strong>「キャンセル」・シートの外のタップ・戻る操作では、変更は捨てられます。</li>
-<li>選んだアプリは端末に保存され、収益・インストール・評価・品質のすべてのタブに、同じ選択が使われます（何も選んでいないときは、すべてのアプリが対象です）。</li>
-<li>金額や件数は、選んだアプリの合計になります。グラフは、アプリごとの色の積み上げです。</li>
-<li>新しく追加されたアプリは、自動で対象に入ります。</li>
-</ul>
-<div class="shot-card narrow">
-<img alt="アプリ成績表の対象アプリを選ぶシート。アプリ名のチェックボックスと、全て選択・全て選択解除・確定・キャンセルのボタン" height="550" loading="lazy" src="./images/revenue_picker.webp" width="542"/>
-<div class="shot-caption">対象アプリのシート</div>
-</div>
-</div>
-<div class="step-item" id="basics-refresh">
-<div class="step-header">
-<span class="step-badge">STEP 3</span>
-<h3 class="step-title">データを更新する</h3>
-</div>
-<p>データは、アプリを開いたときに自動で取得されます（設定の「自動取得」がオンのとき）。自分で更新したいときは、<strong>各画面を下に引っ張る（プルダウン）</strong>と、AdMobとPlayの両方のデータを取り直します。</p>
-<ul>
-<li><strong>前回の取得から15分以内</strong>は、手動での更新は受け付けません（何も起きません）。ただし、直前の取得で失敗した項目があるときは、15分以内でも更新できます。</li>
-<li>「保存したデータを消して取り直す」を実行した直後は、時間に関係なく取り直します。</li>
-<li>取得中は、右下の丸いボタンのまわりが回ります。</li>
-</ul>
-</div>
-<div class="step-item" id="basics-graph">
-<div class="step-header">
-<span class="step-badge">STEP 4</span>
-<h3 class="step-title">グラフの見かた・操作</h3>
-</div>
-<p>収益・インストール・ユーザー・評価のグラフは、共通の操作でご利用いただけます。</p>
-<ul>
-<li><strong>タップ</strong>: タップした日が斜線と枠線で強調され、グラフの下の<strong>「選んだ日」</strong>のボックスに、その日の合計とアプリごとの内訳が出ます。内訳が4件を超えるときは、「他◯件を表示」で開閉できます。</li>
-<li><strong>ピンチ（2本指で広げる・つまむ）</strong>: 拡大・縮小します。縮小しすぎると、1週間ごとの合計の棒に切り替わり、タップすると、その週の合計が出ます。</li>
-<li><strong>横にスクロール</strong>: 前後の日付を見られます。最初は、直近30日が画面に入る幅で、いちばん新しい日が右端に来ます。保存している期間は、最大で約2年（730日）です。</li>
-<li><strong>「表示中: 09/26〜10/26(31日間)」</strong>: グラフの上に、いま見えている期間が出ます。</li>
-<li><strong>灰色の「未集計」</strong>: Playのレポートは数日遅れます。この日は、0件ではなく、まだ数字が分からない日です。</li>
-</ul>
-<div class="shot-card narrow">
-<img alt="ユーザーの増減のグラフ。選んだ日のボックスにアプリごとの内訳が出ている" height="752" loading="lazy" src="./images/installs_balance.webp" width="542"/>
-<div class="shot-caption">グラフの下の「選んだ日」ボックスに、アプリごとの内訳が出ます</div>
-</div>
-</div>
-</section>
-<section aria-labelledby="faq-heading" class="card-section">
-<h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
-<div class="faq-list">
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> 右下の丸いボタンが、数字に重なって見えにくいです。</h3>
-<p class="faq-a">このボタンは、対象アプリを選ぶためのものです。画面をスクロールしても、常に右下に表示されます。表示したい内容は、スクロールして位置をずらすと見えます。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> 金額が合計されず、通貨ごとに分かれています。</h3>
-<p class="faq-a">AdMobのアカウントによって、通貨が違うことがあります。違う通貨の金額は、足さずに、通貨ごとに分けて表示します。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> 「◯/◯分まで集計済み」とは、何ですか？</h3>
-<p class="faq-a">そのデータに、数字が入っている最後の日です。この日より後は、0件ではなく、まだ分からない日（未集計）です。AdMobは数時間〜1日、Playのレポートは数日遅れて反映されます。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> 日付や時間は、どの時間帯のものですか？</h3>
-<p class="faq-a">「今日」「昨日」などは、端末のローカルの日付で判定します。AdMobのレポートは、AdMobアカウントのタイムゾーン基準なので、日付の境目に数時間のずれが出ることがあります。</p>
-</div>
-</div>
-</section>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>🧭 画面の見かた・基本操作</span>
+  </nav>
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+      <p>すべてのタブに共通する操作は、このページにまとめています。各タブの内容は、このあとの各ページで解説します。</p>
 
-<div class="page-nav"><a class="page-nav-link" href="./start.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 1. はじめての準備</span></a><a class="page-nav-link next" href="./revenue.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">3. 収益 ›</span></a></div></main>
-<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">📊 アプリ成績表 アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#basics-screen">・画面の構成・各部の意味を知りたい</a>
+      <a class="want-tag" href="#basics-picker">・表示するアプリを絞り込みたい</a>
+      <a class="want-tag" href="#basics-refresh">・最新のデータに更新したい</a>
+      <a class="want-tag" href="#basics-graph">・グラフを拡大・縮小したり、日ごとの内訳を見たい</a>
+    </div>
+  </section>
 
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🛠️ 詳しい使い方</h2>
 
+    <div class="step-item" id="basics-screen">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">画面の構成（下部のタブ・PREMIUM・取得の状態）</h3>
+      </div>
+      <p>画面の下に、6つのタブが並びます。左から<strong>「収益」「インストール」「ユーザー」「評価」「品質」「設定」</strong>です。</p>
+      <ul>
+        <li><strong>右上の「PREMIUM」</strong>: PREMIUMの説明・登録の画面を開きます（登録済みのときは、チェックマークが付きます）。</li>
+        <li><strong>タイトルの横の取得状態</strong>: 「データ全取得完了」「データ取得一部失敗あり」「データ取得中…」「データ未取得」と、取得した日時が出ます。タップすると、項目ごとの成功・失敗の一覧が開きます。</li>
+        <li><strong>各カードの見出しの下の小さな字</strong>: 期間・単位・グラフの読み方と、「◯/◯分まで集計済み」（数字が入っている最後の日）が出ます。</li>
+      </ul>
+
+    <div class="shot-card narrow">
+      <img src="./images/revenue_cards.webp" alt="収益タブの上部。今日・昨日・直近7日・今月の広告収益のカード" width="542" height="383" loading="lazy">
+      <div class="shot-caption">見出しの下に、「10/25分まで集計済み」のように最新の日が表示されます</div>
+    </div>
+    </div>
+
+    <div class="step-item" id="basics-picker">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">表示するアプリを選ぶ（対象アプリ）</h3>
+      </div>
+      <p>設定タブ以外の画面の右下には、丸いボタンがあります。押すと、<strong>「対象アプリ」</strong>のシートが開き、表示したいアプリを選べます。ボタンの下には、「選択件数/全件数」が出ます。</p>
+      <ul>
+        <li>アプリ名の左のチェックを付け外しして選びます。「全て選択」「全て選択解除」で、一度に切り替えられます。</li>
+        <li><strong>「確定」を押すまで、選択は反映されません。</strong>「キャンセル」・シートの外のタップ・戻る操作では、変更は捨てられます。</li>
+        <li>選んだアプリは端末に保存され、収益・インストール・評価・品質のすべてのタブに、同じ選択が使われます（何も選んでいないときは、すべてのアプリが対象です）。</li>
+        <li>金額や件数は、選んだアプリの合計になります。グラフは、アプリごとの色の積み上げです。</li>
+        <li>新しく追加されたアプリは、自動で対象に入ります。</li>
+      </ul>
+
+    <div class="shot-card narrow">
+      <img src="./images/revenue_picker.webp" alt="アプリ成績表の対象アプリを選ぶシート。アプリ名のチェックボックスと、全て選択・全て選択解除・確定・キャンセルのボタン" width="542" height="550" loading="lazy">
+      <div class="shot-caption">対象アプリのシート</div>
+    </div>
+    </div>
+
+    <div class="step-item" id="basics-refresh">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">データを更新する</h3>
+      </div>
+      <p>データは、アプリを開いたときに自動で取得されます（設定の「自動取得」がオンのとき）。自分で更新したいときは、<strong>各画面を下に引っ張る（プルダウン）</strong>と、AdMobとPlayの両方のデータを取り直します。</p>
+      <ul>
+        <li><strong>前回の取得から15分以内</strong>は、手動での更新は受け付けません（何も起きません）。ただし、直前の取得で失敗した項目があるときは、15分以内でも更新できます。</li>
+        <li>「保存したデータを消して取り直す」を実行した直後は、時間に関係なく取り直します。</li>
+        <li>取得中は、右下の丸いボタンのまわりが回ります。</li>
+      </ul>
+
+    </div>
+
+    <div class="step-item" id="basics-graph">
+      <div class="step-header">
+        <span class="step-badge">STEP 4</span>
+        <h3 class="step-title">グラフの見かた・操作</h3>
+      </div>
+      <p>収益・インストール・ユーザー・評価のグラフは、共通の操作でご利用いただけます。</p>
+      <ul>
+        <li><strong>タップ</strong>: タップした日が斜線と枠線で強調され、グラフの下の<strong>「選んだ日」</strong>のボックスに、その日の合計とアプリごとの内訳が出ます。内訳が4件を超えるときは、「他◯件を表示」で開閉できます。</li>
+        <li><strong>ピンチ（2本指で広げる・つまむ）</strong>: 拡大・縮小します。縮小しすぎると、1週間ごとの合計の棒に切り替わり、タップすると、その週の合計が出ます。</li>
+        <li><strong>横にスクロール</strong>: 前後の日付を見られます。最初は、直近30日が画面に入る幅で、いちばん新しい日が右端に来ます。保存している期間は、最大で約2年（730日）です。</li>
+        <li><strong>「表示中: 09/26〜10/26(31日間)」</strong>: グラフの上に、いま見えている期間が出ます。</li>
+        <li><strong>灰色の「未集計」</strong>: Playのレポートは数日遅れます。この日は、0件ではなく、まだ数字が分からない日です。</li>
+      </ul>
+
+    <div class="shot-card narrow">
+      <img src="./images/installs_balance.webp" alt="ユーザーの増減のグラフ。選んだ日のボックスにアプリごとの内訳が出ている" width="542" height="752" loading="lazy">
+      <div class="shot-caption">グラフの下の「選んだ日」ボックスに、アプリごとの内訳が出ます</div>
+    </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 右下の丸いボタンが、数字に重なって見えにくいです。</h3>
+        <p class="faq-a">このボタンは、対象アプリを選ぶためのものです。画面をスクロールしても、常に右下に表示されます。表示したい内容は、スクロールして位置をずらすと見えます。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 金額が合計されず、通貨ごとに分かれています。</h3>
+        <p class="faq-a">AdMobのアカウントによって、通貨が違うことがあります。違う通貨の金額は、足さずに、通貨ごとに分けて表示します。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 「◯/◯分まで集計済み」とは、何ですか？</h3>
+        <p class="faq-a">そのデータに、数字が入っている最後の日です。この日より後は、0件ではなく、まだ分からない日（未集計）です。AdMobは数時間〜1日、Playのレポートは数日遅れて反映されます。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 日付や時間は、どの時間帯のものですか？</h3>
+        <p class="faq-a">「今日」「昨日」などは、端末のローカルの日付で判定します。AdMobのレポートは、AdMobアカウントのタイムゾーン基準なので、日付の境目に数時間のずれが出ることがあります。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./start.html">
+      <span class="page-nav-sub">前の機能へ</span>
+      <span class="page-nav-title">‹ 1. はじめての準備</span>
+    </a>
+    <a class="page-nav-link next" href="./revenue.html">
+      <span class="page-nav-sub">次の機能へ</span>
+      <span class="page-nav-title">3. 収益 ›</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 <a href="../index.html">アプリ成績表 アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

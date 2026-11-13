@@ -51,97 +51,115 @@
 </head>
 <body>
 <header class="site-header">
-<div class="site-header-inner">
-<a class="brand-link" href="./index.html">🎮 スタミナ手帳 <span class="brand-pill">取扱説明書</span></a>
-<nav aria-label="取扱説明書メニュー" class="global-nav">
-<a href="./index.html">トップ（目次）</a>
-<a href="./timeline.html">1. タイムライン</a>
-<a href="./games.html">2. ゲーム登録・編集</a>
-<a href="./tools.html">3. 常駐便利ツール</a>
-<a href="./notifications.html">4. 通知管理</a>
-<a aria-current="page" href="./settings.html">5. 統計・バックアップ</a>
-<a href="./widgets.html">6. ウィジェット</a>
-</nav>
-</div>
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🎮 スタミナ手帳 <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./timeline.html">1. タイムライン</a>
+      <a href="./games.html">2. ゲーム登録・編集</a>
+      <a href="./tools.html">3. 常駐便利ツール</a>
+      <a href="./notifications.html">4. 通知管理</a>
+      <a href="./settings.html" aria-current="page">5. 統計・バックアップ</a>
+      <a href="./widgets.html">6. ウィジェット</a>
+    </nav>
+  </div>
 </header>
+
 <main class="container">
-<nav aria-label="パンくずリスト" class="breadcrumb">
-<a href="./index.html">取扱説明書トップ</a>
-<span>›</span>
-<span aria-current="page">5. 統計・スキン設定・バックアップ</span>
-</nav>
-<section class="card-section" id="stats-view">
-<h1>📈 5. 統計・スキン設定・暗号化バックアップ</h1>
-<p>日々の周回実績を振り返る「統計」機能、好みのデザインに切り替えられる「スキン」設定、そして機種変更や端末の初期化時に安心な「暗号化バックアップ・復元」の使い方を解説します。</p>
-<h2>📊 周回数とスタミナ溢れ量の「統計」画面</h2>
-<p>下部メニューの「統計」タブでは、直近30日間のプレイログを集計して表示します。</p>
-<div class="shot-card" style="margin: 20px 0;">
-<img alt="スタミナ手帳の統計画面" height="1151" loading="lazy" src="./images/05_stats.png" width="542"/>
-<div class="shot-caption">統計画面：直近30日の合計周回数・溢れ量、スタミナ別実績、最後の記録ログ</div>
-</div>
-<ul>
-<li><strong>直近30日のサマリー：</strong>すべてのゲームを通じた「総周回数」と「総溢れ量」を大きく表示。</li>
-<li><strong>スタミナ別実績：</strong>各ゲームのスタミナごとに、何周プレイしたか、何ポイント溢れたかを個別に比較できます。</li>
-<li><strong>最後の記録：</strong>各ゲームを最後に更新・操作した経過時間（例：0日前、5日前など）が表示され、ログイン忘れ防止に役立ちます。</li>
-</ul>
-</section>
-<section class="card-section" id="skin-change">
-<h2>🎨 スキン・テーマカラーの変更</h2>
-<p>「設定」タブの「スキン」から、端末のOS設定に追従する自動切り替えのほか、豊富なライト・ダークテーマを自由に選べます。</p>
-<div class="shot-container-2col">
-<div class="shot-card">
-<img alt="設定画面全体" height="1926" loading="lazy" src="./images/05_settings.png" width="542"/>
-<div class="shot-caption">設定画面：時刻表記、ツール設定、フォント、スキン、バックアップ</div>
-</div>
-<div class="shot-card">
-<img alt="スキン選択モーダル" height="1151" loading="lazy" src="./images/05_skins.png" width="542"/>
-<div class="shot-caption">スキン選択：プレビューを見ながら好みのカラーをワンタップ適用</div>
-</div>
-</div>
-<ul>
-<li><strong>システム連動：</strong>端末のダークモード設定に合わせて自動で切り替えます。</li>
-<li><strong>ライトモードカラー：</strong>ミント、ブルー、パープル、グリーンの4種類。</li>
-<li><strong>ダークモードカラー：</strong>ダークミント、ダークブルー、ダークパープル、ダークグレーの4種類。</li>
-</ul>
-</section>
-<section class="card-section" id="backup">
-<h2>🔐 データの暗号化バックアップと復元（機種変更対応）</h2>
-<p>端末に保存されている全ゲーム・スタミナ・設定データを暗号化してファイルに書き出せます。機種変更やアプリの再インストール時に確実にデータを引き継げます。</p>
-<div class="shot-container-3col">
-<div class="shot-card">
-<img alt="バックアップ作成案内ダイアログ" height="1151" loading="lazy" src="./images/05_backup_dialog.png" width="542"/>
-<div class="shot-caption">1. バックアップ作成ダイアログで「OK」をタップし保存先フォルダを選択</div>
-</div>
-<div class="shot-card">
-<img alt="バックアップパスワード設定モーダル" height="1151" loading="lazy" src="./images/05_backup_password.png" width="542"/>
-<div class="shot-caption">2. 復元時に必要なパスワードを設定して安全に暗号化</div>
-</div>
-<div class="shot-card">
-<img alt="バックアップ作成完了ダイアログ" height="1151" loading="lazy" src="./images/05_backup_done.png" width="542"/>
-<div class="shot-caption">3. バックアップ完了！専用フォルダにファイルが保存されます</div>
-</div>
-</div>
-<div class="callout">
-<div class="callout-title">⚠️ パスワードの管理について</div>
-<p>バックアップファイルは強力な暗号化によって保護されています。復元する際には設定したパスワードが必須となりますので、忘れないよう大切に控えておいてください。</p>
-</div>
-<h3>データの復元手順</h3>
-<ol>
-<li>新しい端末に「スタミナ手帳」をインストールします。</li>
-<li>保存しておいたバックアップファイル（`.backup`）を端末内またはGoogleドライブ経由で新しい端末へ移します。</li>
-<li>設定画面の「バックアップから復元」をタップし、該当ファイルを選択します。</li>
-<li>バックアップ時に決めたパスワードを入力すると、登録したゲームや設定がすべて復元されます。</li>
-</ol>
-</section>
-<section class="card-section" aria-labelledby="faq-heading">
-<h2 id="faq-heading">❓ よくある質問</h2>
-<div class="faq-list">
-<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> バックアップを復元するにはパスワードが必要ですか？</h3><p class="faq-a">はい。バックアップファイルは暗号化されており、復元時にはバックアップ作成時に設定したパスワードが必須です。忘れないよう大切に保管してください。</p></div>
-<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 機種変更でデータを引き継ぐにはどうすればよいですか？</h3><p class="faq-a">旧端末で暗号化バックアップを作成し、ファイルを新しい端末へ移します。新しい端末のアプリで設定画面の「バックアップから復元」をタップし、ファイルを選んでパスワードを入力すると、登録したゲームや設定が復元されます。</p></div>
-<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 統計画面に表示されるのはどの期間ですか？</h3><p class="faq-a">直近30日間のプレイログを集計して表示します。総周回数・総溢れ量のほか、スタミナ別の実績も確認できます。</p></div>
-</div>
-</section>
-<div class="page-nav"><a class="page-nav-link" href="./notifications.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 4. 通知管理</span></a><a class="page-nav-link next" href="./widgets.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">6. ウィジェット ›</span></a></div></main>
-<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">🎮 スタミナ手帳 アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a>
+    <span>›</span>
+    <span aria-current="page">5. 統計・スキン設定・バックアップ</span>
+  </nav>
 
+  <section class="card-section" id="stats-view">
+    <h1>📈 5. 統計・スキン設定・暗号化バックアップ</h1>
+    <p>日々の周回実績を振り返る「統計」機能、好みのデザインに切り替えられる「スキン」設定、そして機種変更や端末の初期化時に安心な「暗号化バックアップ・復元」の使い方を解説します。</p>
 
+    <h2>📊 周回数とスタミナ溢れ量の「統計」画面</h2>
+    <p>下部メニューの「統計」タブでは、直近30日間のプレイログを集計して表示します。</p>
+
+    <div class="shot-card" style="margin: 20px 0;">
+      <img src="./images/05_stats.png" alt="スタミナ手帳の統計画面" width="542" height="1151" loading="lazy">
+      <div class="shot-caption">統計画面：直近30日の合計周回数・溢れ量、スタミナ別実績、最後の記録ログ</div>
+    </div>
+
+    <ul>
+      <li><strong>直近30日のサマリー：</strong>すべてのゲームを通じた「総周回数」と「総溢れ量」を大きく表示。</li>
+      <li><strong>スタミナ別実績：</strong>各ゲームのスタミナごとに、何周プレイしたか、何ポイント溢れたかを個別に比較できます。</li>
+      <li><strong>最後の記録：</strong>各ゲームを最後に更新・操作した経過時間（例：0日前、5日前など）が表示され、ログイン忘れ防止に役立ちます。</li>
+    </ul>
+  </section>
+
+  <section class="card-section" id="skin-change">
+    <h2>🎨 スキン・テーマカラーの変更</h2>
+    <p>「設定」タブの「スキン」から、端末のOS設定に追従する自動切り替えのほか、豊富なライト・ダークテーマを自由に選べます。</p>
+
+    <div class="shot-container-2col">
+      <div class="shot-card">
+        <img src="./images/05_settings.png" alt="設定画面全体" width="542" height="1926" loading="lazy">
+        <div class="shot-caption">設定画面：時刻表記、ツール設定、フォント、スキン、バックアップ</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/05_skins.png" alt="スキン選択モーダル" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">スキン選択：プレビューを見ながら好みのカラーをワンタップ適用</div>
+      </div>
+    </div>
+
+    <ul>
+      <li><strong>システム連動：</strong>端末のダークモード設定に合わせて自動で切り替えます。</li>
+      <li><strong>ライトモードカラー：</strong>ミント、ブルー、パープル、グリーンの4種類。</li>
+      <li><strong>ダークモードカラー：</strong>ダークミント、ダークブルー、ダークパープル、ダークグレーの4種類。</li>
+    </ul>
+  </section>
+
+  <section class="card-section" id="backup">
+    <h2>🔐 データの暗号化バックアップと復元（機種変更対応）</h2>
+    <p>端末に保存されている全ゲーム・スタミナ・設定データを暗号化してファイルに書き出せます。機種変更やアプリの再インストール時に確実にデータを引き継げます。</p>
+
+    <div class="shot-container-3col">
+      <div class="shot-card">
+        <img src="./images/05_backup_dialog.png" alt="バックアップ作成案内ダイアログ" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">1. バックアップ作成ダイアログで「OK」をタップし保存先フォルダを選択</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/05_backup_password.png" alt="バックアップパスワード設定モーダル" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">2. 復元時に必要なパスワードを設定して安全に暗号化</div>
+      </div>
+      <div class="shot-card">
+        <img src="./images/05_backup_done.png" alt="バックアップ作成完了ダイアログ" width="542" height="1151" loading="lazy">
+        <div class="shot-caption">3. バックアップ完了！専用フォルダにファイルが保存されます</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">⚠️ パスワードの管理について</div>
+      <p>バックアップファイルは強力な暗号化によって保護されています。復元する際には設定したパスワードが必須となりますので、忘れないよう大切に控えておいてください。</p>
+    </div>
+
+    <h3>データの復元手順</h3>
+    <ol>
+      <li>新しい端末に「スタミナ手帳」をインストールします。</li>
+      <li>保存しておいたバックアップファイル（`.backup`）を端末内またはGoogleドライブ経由で新しい端末へ移します。</li>
+      <li>設定画面の「バックアップから復元」をタップし、該当ファイルを選択します。</li>
+      <li>バックアップ時に決めたパスワードを入力すると、登録したゲームや設定がすべて復元されます。</li>
+    </ol>
+  </section>
+
+  <nav class="page-nav">
+    <a class="page-nav-link" href="./notifications.html">
+      <span class="page-nav-sub">← 前の機能</span>
+      <span class="page-nav-title">4. 通知管理</span>
+    </a>
+    <a class="page-nav-link" href="./widgets.html" style="text-align: right;">
+      <span class="page-nav-sub">次の機能 →</span>
+      <span class="page-nav-title">6. ホーム画面ウィジェット</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 / <a href="../index.html">スタミナ手帳 公式ページ</a> / <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

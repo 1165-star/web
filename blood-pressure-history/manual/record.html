@@ -67,124 +67,149 @@
 </head>
 <body>
 <header class="site-header">
-<div class="site-header-inner">
-<a class="brand-link" href="./index.html">❤️ 血圧メモ <span class="brand-pill">取扱説明書</span></a>
-<nav aria-label="取扱説明書メニュー" class="global-nav">
-<a href="./index.html">トップ（目次）</a>
-<a aria-current="page" href="./record.html">1. 記録・リマインダー</a>
-<a href="./history.html">2. 記録一覧・編集</a>
-<a href="./graph.html">3. グラフ分析</a>
-<a href="./settings.html">4. 設定・バックアップ</a>
-</nav>
-</div>
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">❤️ 血圧メモ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./record.html" aria-current="page">1. 記録・リマインダー</a>
+      <a href="./history.html">2. 記録一覧・編集</a>
+      <a href="./graph.html">3. グラフ分析</a>
+      <a href="./settings.html">4. 設定・バックアップ</a>
+    </nav>
+  </div>
 </header>
+
 <div class="hero-banner">
-<span class="pill">機能 01</span>
-<h1>➕ 血圧・脈拍の記録と測定リマインダー</h1>
-<p>日々の血圧測定値をスピーディーに入力・保存し、レベル判定やリマインダー通知、Health Connect同期を活用する方法を解説します。</p>
+  <span class="pill">機能 01</span>
+  <h1>➕ 血圧・脈拍の記録と測定リマインダー</h1>
+  <p>日々の血圧測定値をスピーディーに入力・保存し、レベル判定やリマインダー通知、Health Connect同期を活用する方法を解説します。</p>
 </div>
+
 <main class="container">
-<nav aria-label="パンくずリスト" class="breadcrumb">
-<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>血圧・脈拍の記録と測定リマインダー</span>
-</nav>
-<section aria-labelledby="intro-heading" class="card-section">
-<h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
-<p>「記録」タブは、アプリ起動時に最初に表示されるメイン画面です。血圧計で測った数値をダイヤル（ホイール）でスムーズに選び、ワンタップで保存できます。</p>
-<div aria-label="このページの主な目的" class="want-tags">
-<a class="want-tag" href="#record-basic">・血圧と脈拍を入力して保存したい</a>
-<a class="want-tag" href="#record-levels">・血圧レベルの色分けルールを知りたい</a>
-<a class="want-tag" href="#record-reminder">・測定リマインダーを設定したい</a>
-<a class="want-tag" href="#record-sync">・Health Connectの同期履歴を確認したい</a>
-</div>
-</section>
-<section aria-labelledby="steps-heading" class="card-section">
-<h2 id="steps-heading">🛠️ 詳しい操作手順</h2>
-<div class="step-item" id="record-basic">
-<div class="step-header">
-<span class="step-badge">STEP 1</span>
-<h3 class="step-title">最高血圧・最低血圧・脈拍を入力する</h3>
-</div>
-<p>画面中央のドラムロール式ホイール（ダイヤル）を上下にスワイプして数値を合わせます。</p>
-<ul>
-<li><strong>最高血圧（必須）:</strong> 収縮期血圧（上）を入力します。</li>
-<li><strong>最低血圧（必須）:</strong> 拡張期血圧（下）を入力します。</li>
-<li><strong>脈拍（任意）:</strong> 1分間あたりの脈拍数（bpm）を入力します。測定していない場合は「-」のままで構いません。</li>
-<li><strong>メモ（任意）:</strong> 「朝食前」「散歩後」「薬服用後」など、測定時の状況や体調を自由に入力できます。</li>
-</ul>
-<p>入力内容を確認したら、画面中央の<strong>「この記録を保存」</strong>ボタンを押すと、即座にローカルデータベースに記録されます。</p>
-<div class="shot-container shot-container-2col">
-<div class="shot-card">
-<img alt="血圧メモ 記録画面（ダークモード）" height="1206" loading="lazy" src="./images/01_record_main.png" width="542"/>
-<div class="shot-caption">ダークモード表示での入力画面</div>
-</div>
-<div class="shot-card">
-<img alt="血圧メモ 記録画面（ライトモード）" height="1206" loading="lazy" src="./images/14_record_light.png" width="542"/>
-<div class="shot-caption">ライトモード表示での入力画面</div>
-</div>
-</div>
-</div>
-<div class="step-item" id="record-levels">
-<div class="step-header">
-<span class="step-badge">STEP 2</span>
-<h3 class="step-title">血圧レベルの色分け判定</h3>
-</div>
-<p>入力した血圧は、設定画面で指定した「標準線（基準値）」との差によって、4段階に自動で色分け表示されます。</p>
-<ul>
-<li><span class="level-badge safe">問題なし・安心（緑）</span>: 基準値の範囲内に収まっている良好な状態です。</li>
-<li><span class="level-badge caution">注意（黄）</span>: 基準値をやや上回っている状態です。</li>
-<li><span class="level-badge warning">危険度高め（橙）</span>: 基準値より高めの数値が出ている状態です。</li>
-<li><span class="level-badge danger">危険・要対応（赤）</span>: 著しく高い数値が出ている状態です。</li>
-</ul>
-<div class="callout">
-<div class="callout-title">💡 基準値（標準線）の変更</div>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>血圧・脈拍の記録と測定リマインダー</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+    <p>「記録」タブは、アプリ起動時に最初に表示されるメイン画面です。血圧計で測った数値をダイヤル（ホイール）でスムーズに選び、ワンタップで保存できます。</p>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#record-basic">・血圧と脈拍を入力して保存したい</a>
+      <a class="want-tag" href="#record-levels">・血圧レベルの色分けルールを知りたい</a>
+      <a class="want-tag" href="#record-reminder">・測定リマインダーを設定したい</a>
+      <a class="want-tag" href="#record-sync">・Health Connectの同期履歴を確認したい</a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🛠️ 詳しい操作手順</h2>
+
+    <div class="step-item" id="record-basic">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">最高血圧・最低血圧・脈拍を入力する</h3>
+      </div>
+      <p>画面中央のドラムロール式ホイール（ダイヤル）を上下にスワイプして数値を合わせます。</p>
+      <ul>
+        <li><strong>最高血圧（必須）:</strong> 収縮期血圧（上）を入力します。</li>
+        <li><strong>最低血圧（必須）:</strong> 拡張期血圧（下）を入力します。</li>
+        <li><strong>脈拍（任意）:</strong> 1分間あたりの脈拍数（bpm）を入力します。測定していない場合は「-」のままで構いません。</li>
+        <li><strong>メモ（任意）:</strong> 「朝食前」「散歩後」「薬服用後」など、測定時の状況や体調を自由に入力できます。</li>
+      </ul>
+      <p>入力内容を確認したら、画面中央の<strong>「この記録を保存」</strong>ボタンを押すと、即座にローカルデータベースに記録されます。</p>
+
+      <div class="shot-container shot-container-2col">
+        <div class="shot-card">
+          <img src="./images/01_record_main.png" alt="血圧メモ 記録画面（ダークモード）" width="542" height="1206" loading="lazy">
+          <div class="shot-caption">ダークモード表示での入力画面</div>
+        </div>
+        <div class="shot-card">
+          <img src="./images/14_record_light.png" alt="血圧メモ 記録画面（ライトモード）" width="542" height="1206" loading="lazy">
+          <div class="shot-caption">ライトモード表示での入力画面</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-item" id="record-levels">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">血圧レベルの色分け判定</h3>
+      </div>
+      <p>入力した血圧は、設定画面で指定した「標準線（基準値）」との差によって、4段階に自動で色分け表示されます。</p>
+      <ul>
+        <li><span class="level-badge safe">問題なし・安心（緑）</span>: 基準値の範囲内に収まっている良好な状態です。</li>
+        <li><span class="level-badge caution">注意（黄）</span>: 基準値をやや上回っている状態です。</li>
+        <li><span class="level-badge warning">危険度高め（橙）</span>: 基準値より高めの数値が出ている状態です。</li>
+        <li><span class="level-badge danger">危険・要対応（赤）</span>: 著しく高い数値が出ている状態です。</li>
+      </ul>
+      <div class="callout">
+        <div class="callout-title">💡 基準値（標準線）の変更</div>
         標準線は設定画面からいつでも自由に調整できます（デフォルトは最高115 / 最低68mmHg）。医師の指導値や年代別の平均値に合わせることで、自分に最適な基準で判定できます。
       </div>
-</div>
-<div class="step-item" id="record-reminder">
-<div class="step-header">
-<span class="step-badge">STEP 3</span>
-<h3 class="step-title">測定リマインダーで通知をセットする</h3>
-</div>
-<p>日付表示の右側にある<strong>「🔔 リマインダー」</strong>ボタンを押すと、通知設定シートが開きます。</p>
-<ul>
-<li><strong>時刻:</strong> 時・分をホイールで合わせます。</li>
-<li><strong>曜日:</strong> 通知を受け取りたい曜日をタップします。「毎日」を押すと全曜日が一括選択されます。</li>
-<li><strong>通知テキスト:</strong> 「血圧を測りましょう」など、通知に表示したいメッセージを設定できます。</li>
-</ul>
-<p>「保存」を押すと通知スケジュールが端末に登録され、時間になるとリマインダーが届きます。</p>
-<div class="shot-card" style="max-width: 420px; margin: 16px auto;">
-<img alt="測定リマインダーの追加画面" height="1206" loading="lazy" src="./images/03_record_reminder.png" width="542"/>
-<div class="shot-caption">時刻・曜日・メッセージを柔軟に指定できるリマインダー設定</div>
-</div>
-</div>
-<div class="step-item" id="record-sync">
-<div class="step-header">
-<span class="step-badge">STEP 4</span>
-<h3 class="step-title">Health Connect連携と同期履歴の確認</h3>
-</div>
-<p>Android標準の「Health Connect（ヘルスコネクト）」と連携している場合、記録を保存すると自動でHealth Connect側にも血圧データが同期されます。</p>
-<p>画面下部の<strong>「同期履歴（最新5件）」</strong>には、直近の自動同期日時、同期件数、成否ステータスが表示され、正常に連携されているかを一目で確認できます。</p>
-<div class="shot-card" style="max-width: 420px; margin: 16px auto;">
-<img alt="Health Connectの同期履歴画面" height="1206" loading="lazy" src="./images/02_record_sync.png" width="542"/>
-<div class="shot-caption">同期成功日時と件数を一覧できる同期履歴表示</div>
-</div>
-</div>
-</section>
-<section aria-labelledby="faq-heading" class="card-section">
-<h2 id="faq-heading">❓ 記録についてのよくある質問</h2>
-<div class="faq-list">
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> 脈拍を測っていないときはどうすればいいですか？</h3>
-<p class="faq-a">脈拍欄は「-」の未入力のままで保存できます。最高血圧と最低血圧の2箇所のみ入力してください。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> 1日に何回も測って記録できますか？</h3>
-<p class="faq-a">はい、朝・昼・夜など1日に何回でも記録できます。時間帯別のグラフ分析機能でも、朝・昼・夜ごとの血圧を自動で分類して比較できます。</p>
-</div>
-</div>
-</section>
+    </div>
 
-<div class="page-nav"><a class="page-nav-link" href="./index.html"><span class="page-nav-sub">目次へ戻る</span><span class="page-nav-title">‹ 取扱説明書トップ</span></a><a class="page-nav-link next" href="./history.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">2. 記録一覧・編集 ›</span></a></div></main>
-<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">❤️ 血圧メモ アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
+    <div class="step-item" id="record-reminder">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">測定リマインダーで通知をセットする</h3>
+      </div>
+      <p>日付表示の右側にある<strong>「🔔 リマインダー」</strong>ボタンを押すと、通知設定シートが開きます。</p>
+      <ul>
+        <li><strong>時刻:</strong> 時・分をホイールで合わせます。</li>
+        <li><strong>曜日:</strong> 通知を受け取りたい曜日をタップします。「毎日」を押すと全曜日が一括選択されます。</li>
+        <li><strong>通知テキスト:</strong> 「血圧を測りましょう」など、通知に表示したいメッセージを設定できます。</li>
+      </ul>
+      <p>「保存」を押すと通知スケジュールが端末に登録され、時間になるとリマインダーが届きます。</p>
 
+      <div class="shot-card" style="max-width: 420px; margin: 16px auto;">
+        <img src="./images/03_record_reminder.png" alt="測定リマインダーの追加画面" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">時刻・曜日・メッセージを柔軟に指定できるリマインダー設定</div>
+      </div>
+    </div>
 
+    <div class="step-item" id="record-sync">
+      <div class="step-header">
+        <span class="step-badge">STEP 4</span>
+        <h3 class="step-title">Health Connect連携と同期履歴の確認</h3>
+      </div>
+      <p>Android標準の「Health Connect（ヘルスコネクト）」と連携している場合、記録を保存すると自動でHealth Connect側にも血圧データが同期されます。</p>
+      <p>画面下部の<strong>「同期履歴（最新5件）」</strong>には、直近の自動同期日時、同期件数、成否ステータスが表示され、正常に連携されているかを一目で確認できます。</p>
+
+      <div class="shot-card" style="max-width: 420px; margin: 16px auto;">
+        <img src="./images/02_record_sync.png" alt="Health Connectの同期履歴画面" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">同期成功日時と件数を一覧できる同期履歴表示</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ 記録についてのよくある質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 脈拍を測っていないときはどうすればいいですか？</h3>
+        <p class="faq-a">脈拍欄は「-」の未入力のままで保存できます。最高血圧と最低血圧の2箇所のみ入力してください。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 1日に何回も測って記録できますか？</h3>
+        <p class="faq-a">はい、朝・昼・夜など1日に何回でも記録できます。時間帯別のグラフ分析機能でも、朝・昼・夜ごとの血圧を自動で分類して比較できます。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./index.html">
+      <span class="page-nav-sub">目次へ戻る</span>
+      <span class="page-nav-title">取扱説明書トップ</span>
+    </a>
+    <a class="page-nav-link next" href="./history.html">
+      <span class="page-nav-sub">次の機能へ</span>
+      <span class="page-nav-title">機能 02: 記録一覧・編集・削除 ›</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 <a href="../index.html">血圧メモ アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>

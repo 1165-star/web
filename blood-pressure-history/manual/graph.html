@@ -59,142 +59,171 @@
 </head>
 <body>
 <header class="site-header">
-<div class="site-header-inner">
-<a class="brand-link" href="./index.html">❤️ 血圧メモ <span class="brand-pill">取扱説明書</span></a>
-<nav aria-label="取扱説明書メニュー" class="global-nav">
-<a href="./index.html">トップ（目次）</a>
-<a href="./record.html">1. 記録・リマインダー</a>
-<a href="./history.html">2. 記録一覧・編集</a>
-<a aria-current="page" href="./graph.html">3. グラフ分析</a>
-<a href="./settings.html">4. 設定・バックアップ</a>
-</nav>
-</div>
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">❤️ 血圧メモ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./record.html">1. 記録・リマインダー</a>
+      <a href="./history.html">2. 記録一覧・編集</a>
+      <a href="./graph.html" aria-current="page">3. グラフ分析</a>
+      <a href="./settings.html">4. 設定・バックアップ</a>
+    </nav>
+  </div>
 </header>
+
 <div class="hero-banner">
-<span class="pill">機能 03</span>
-<h1>📈 グラフで血圧の傾向を分析</h1>
-<p>折れ線グラフでの推移把握、朝・昼・夜の時間帯別比較、カレンダーヒートマップや散布図など多彩な視点で血圧の健康状態を分析できます。</p>
+  <span class="pill">機能 03</span>
+  <h1>📈 グラフで血圧の傾向を分析</h1>
+  <p>折れ線グラフでの推移把握、朝・昼・夜の時間帯別比較、カレンダーヒートマップや散布図など多彩な視点で血圧の健康状態を分析できます。</p>
 </div>
+
 <main class="container">
-<nav aria-label="パンくずリスト" class="breadcrumb">
-<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>グラフで血圧の傾向を分析</span>
-</nav>
-<section aria-labelledby="intro-heading" class="card-section">
-<h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
-<p>画面下部の<strong>「グラフ」</strong>タブでは、入力した血圧データを様々な角度からグラフィカルに可視化できます。上部のタブで「まとめて」「時間帯別」「総合」を切り替えられます。</p>
-<div aria-label="このページの主な目的" class="want-tags">
-<a class="want-tag" href="#graph-period">・表示期間を切り替えたり前後に移動したい</a>
-<a class="want-tag" href="#graph-summary">・全体の推移（最高・最低血圧）を見たい</a>
-<a class="want-tag" href="#graph-time">・朝・昼・夜ごとの血圧を比較したい</a>
-<a class="want-tag" href="#graph-calendar">・カレンダーヒートマップで月間の状況を俯瞰したい</a>
-<a class="want-tag" href="#graph-scatter">・最高血圧×最低血圧の散布図を見たい</a>
-<a class="want-tag" href="#graph-range">・1日の中での血圧の振れ幅を確認したい</a>
-</div>
-</section>
-<section aria-labelledby="steps-heading" class="card-section">
-<h2 id="steps-heading">🛠️ 詳しい操作手順と画面の見方</h2>
-<div class="step-item" id="graph-period">
-<div class="step-header">
-<span class="step-badge">STEP 1</span>
-<h3 class="step-title">期間の切り替えと前後の移動</h3>
-</div>
-<p>上部のピルボタンで表示期間を選択できます。</p>
-<ul>
-<li><strong>期間切り替え:</strong> 「2週間」「1ヶ月」「3ヶ月」「6ヶ月」から選択します（無料版は2週間まで）。</li>
-<li><strong>前後の移動:</strong> 期間表示の両脇にある「‹」と「›」をタップすると、前の期間や次の期間に移動して過去の推移をさかのぼれます。</li>
-</ul>
-</div>
-<div class="step-item" id="graph-summary">
-<div class="step-header">
-<span class="step-badge">STEP 2</span>
-<h3 class="step-title">「まとめて」タブで推移を見る</h3>
-</div>
-<p>測定した最高血圧・最低血圧の推移が1つのグラフにまとめて描画されます。</p>
-<ul>
-<li><strong>最高血圧（実線）:</strong> 上の折れ線グラフです。</li>
-<li><strong>最低血圧（実線）:</strong> 下の折れ線グラフです。</li>
-<li><strong>標準線（破線）:</strong> 設定した基準値が破線で表示され、基準値を超えているかどうかが視覚的にすぐ分かります。</li>
-</ul>
-<div class="shot-container shot-container-2col">
-<div class="shot-card">
-<img alt="血圧メモ グラフ（まとめて・ダークモード）" height="1206" loading="lazy" src="./images/06_graph_summary.png" width="542"/>
-<div class="shot-caption">「まとめて」タブ（ダークモード）</div>
-</div>
-<div class="shot-card">
-<img alt="血圧メモ グラフ（まとめて・ライトモード）" height="1206" loading="lazy" src="./images/16_graph_light.png" width="542"/>
-<div class="shot-caption">「まとめて」タブ（ライトモード）</div>
-</div>
-</div>
-</div>
-<div class="step-item" id="graph-time">
-<div class="step-header">
-<span class="step-badge">STEP 3</span>
-<h3 class="step-title">「時間帯別」タブで朝・昼・夜を比較する</h3>
-</div>
-<p>測定時刻に応じてデータを3つの時間帯に自動分類し、それぞれの推移を色分けして表示します。</p>
-<ul>
-<li><strong>朝（4時〜10時台）:</strong> 橙色のライン</li>
-<li><strong>昼（11時〜16時台）:</strong> 緑色のライン</li>
-<li><strong>夜（17時〜3時台）:</strong> 青色のライン</li>
-</ul>
-<p>グラフ下部には「朝（4時〜10時台）」などの個別グラフも表示され、時間帯別の平均や傾向をじっくり比較できます。</p>
-<div class="shot-card" style="max-width: 420px; margin: 16px auto;">
-<img alt="時間帯別グラフ画面" height="1206" loading="lazy" src="./images/07_graph_time.png" width="542"/>
-<div class="shot-caption">時間帯ごとのリズムや早朝高血圧の発見に役立つ時間帯別グラフ</div>
-</div>
-</div>
-<div class="step-item" id="graph-calendar">
-<div class="step-header">
-<span class="step-badge">STEP 4</span>
-<h3 class="step-title">「総合」タブ：① カレンダーヒートマップ</h3>
-</div>
-<p>「総合」タブ内のサブタブ<strong>「カレンダー」</strong>を選ぶと、カレンダー形式で日ごとの血圧レベルがヒートマップ表示されます。</p>
-<p>その日に複数の記録がある場合は、最も高い段階の色（緑・黄・橙・赤）が採用されるため、体調の変化が月全体でどうだったかを瞬時に見渡せます。</p>
-<div class="shot-card" style="max-width: 420px; margin: 16px auto;">
-<img alt="カレンダーヒートマップ画面" height="1206" loading="lazy" src="./images/08_graph_calendar.png" width="542"/>
-<div class="shot-caption">日ごとの最高レベルが色でわかるカレンダーヒートマップ</div>
-</div>
-</div>
-<div class="step-item" id="graph-scatter">
-<div class="step-header">
-<span class="step-badge">STEP 5</span>
-<h3 class="step-title">「総合」タブ：② 最高×最低 散布図</h3>
-</div>
-<p>サブタブ<strong>「散布図」</strong>では、横軸に最低血圧、縦軸に最高血圧をとった散布図を表示します。</p>
-<p>中央の点線がそれぞれの基準値を表しており、<strong>左下の領域に点が多く集まるほど両方が正常範囲内に収まっている</strong>ことを示します。血圧バランスの偏りをチェックするのに最適です。</p>
-<div class="shot-card" style="max-width: 420px; margin: 16px auto;">
-<img alt="最高×最低 散布図画面" height="1206" loading="lazy" src="./images/09_graph_scatter.png" width="542"/>
-<div class="shot-caption">基準値との位置関係が直感的にわかる散布図</div>
-</div>
-</div>
-<div class="step-item" id="graph-range">
-<div class="step-header">
-<span class="step-badge">STEP 6</span>
-<h3 class="step-title">「総合」タブ：③ 日次の振れ幅</h3>
-</div>
-<p>サブタブ<strong>「振れ幅」</strong>では、1日の中での「最小値から最大値までの幅」を縦の棒グラフで表します。</p>
-<p>棒が長い日ほど、その日の血圧変動が激しかったことを示します（記録が1回だけの日には短い点のような棒で表示されます）。</p>
-<div class="shot-card" style="max-width: 420px; margin: 16px auto;">
-<img alt="日次の振れ幅グラフ画面" height="1206" loading="lazy" src="./images/10_graph_range.png" width="542"/>
-<div class="shot-caption">1日の血圧の変動幅の大きさがひと目でわかる振れ幅グラフ</div>
-</div>
-</div>
-</section>
-<section aria-labelledby="faq-heading" class="card-section">
-<h2 id="faq-heading">❓ グラフについてのよくある質問</h2>
-<div class="faq-list">
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> グラフに表示される点線は何ですか？</h3>
-<p class="faq-a">設定画面で登録している「標準線（基準値）」です。最高血圧の目標値と最低血圧の目標値がそれぞれ破線で引かれます。</p>
-</div>
-<div class="faq-item">
-<h3 class="faq-q"><span class="faq-q-mark">Q</span> グラフのデータはタップして詳細を見られますか？</h3>
-<p class="faq-a">推移グラフの各プロット点や一覧画面のカードで、測定日時の詳細値を確認できます。</p>
-</div>
-</div>
-</section>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>グラフで血圧の傾向を分析</span>
+  </nav>
 
-<div class="page-nav"><a class="page-nav-link" href="./history.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 2. 記録一覧・編集</span></a><a class="page-nav-link next" href="./settings.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">4. 設定・バックアップ ›</span></a></div></main>
-<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">❤️ 血圧メモ アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+    <p>画面下部の<strong>「グラフ」</strong>タブでは、入力した血圧データを様々な角度からグラフィカルに可視化できます。上部のタブで「まとめて」「時間帯別」「総合」を切り替えられます。</p>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#graph-period">・表示期間を切り替えたり前後に移動したい</a>
+      <a class="want-tag" href="#graph-summary">・全体の推移（最高・最低血圧）を見たい</a>
+      <a class="want-tag" href="#graph-time">・朝・昼・夜ごとの血圧を比較したい</a>
+      <a class="want-tag" href="#graph-calendar">・カレンダーヒートマップで月間の状況を俯瞰したい</a>
+      <a class="want-tag" href="#graph-scatter">・最高血圧×最低血圧の散布図を見たい</a>
+      <a class="want-tag" href="#graph-range">・1日の中での血圧の振れ幅を確認したい</a>
+    </div>
+  </section>
 
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🛠️ 詳しい操作手順と画面の見方</h2>
 
+    <div class="step-item" id="graph-period">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">期間の切り替えと前後の移動</h3>
+      </div>
+      <p>上部のピルボタンで表示期間を選択できます。</p>
+      <ul>
+        <li><strong>期間切り替え:</strong> 「2週間」「1ヶ月」「3ヶ月」「6ヶ月」から選択します（無料版は2週間まで）。</li>
+        <li><strong>前後の移動:</strong> 期間表示の両脇にある「‹」と「›」をタップすると、前の期間や次の期間に移動して過去の推移をさかのぼれます。</li>
+      </ul>
+    </div>
+
+    <div class="step-item" id="graph-summary">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">「まとめて」タブで推移を見る</h3>
+      </div>
+      <p>測定した最高血圧・最低血圧の推移が1つのグラフにまとめて描画されます。</p>
+      <ul>
+        <li><strong>最高血圧（実線）:</strong> 上の折れ線グラフです。</li>
+        <li><strong>最低血圧（実線）:</strong> 下の折れ線グラフです。</li>
+        <li><strong>標準線（破線）:</strong> 設定した基準値が破線で表示され、基準値を超えているかどうかが視覚的にすぐ分かります。</li>
+      </ul>
+
+      <div class="shot-container shot-container-2col">
+        <div class="shot-card">
+          <img src="./images/06_graph_summary.png" alt="血圧メモ グラフ（まとめて・ダークモード）" width="542" height="1206" loading="lazy">
+          <div class="shot-caption">「まとめて」タブ（ダークモード）</div>
+        </div>
+        <div class="shot-card">
+          <img src="./images/16_graph_light.png" alt="血圧メモ グラフ（まとめて・ライトモード）" width="542" height="1206" loading="lazy">
+          <div class="shot-caption">「まとめて」タブ（ライトモード）</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-item" id="graph-time">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">「時間帯別」タブで朝・昼・夜を比較する</h3>
+      </div>
+      <p>測定時刻に応じてデータを3つの時間帯に自動分類し、それぞれの推移を色分けして表示します。</p>
+      <ul>
+        <li><strong>朝（4時〜10時台）:</strong> 橙色のライン</li>
+        <li><strong>昼（11時〜16時台）:</strong> 緑色のライン</li>
+        <li><strong>夜（17時〜3時台）:</strong> 青色のライン</li>
+      </ul>
+      <p>グラフ下部には「朝（4時〜10時台）」などの個別グラフも表示され、時間帯別の平均や傾向をじっくり比較できます。</p>
+
+      <div class="shot-card" style="max-width: 420px; margin: 16px auto;">
+        <img src="./images/07_graph_time.png" alt="時間帯別グラフ画面" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">時間帯ごとのリズムや早朝高血圧の発見に役立つ時間帯別グラフ</div>
+      </div>
+    </div>
+
+    <div class="step-item" id="graph-calendar">
+      <div class="step-header">
+        <span class="step-badge">STEP 4</span>
+        <h3 class="step-title">「総合」タブ：① カレンダーヒートマップ</h3>
+      </div>
+      <p>「総合」タブ内のサブタブ<strong>「カレンダー」</strong>を選ぶと、カレンダー形式で日ごとの血圧レベルがヒートマップ表示されます。</p>
+      <p>その日に複数の記録がある場合は、最も高い段階の色（緑・黄・橙・赤）が採用されるため、体調の変化が月全体でどうだったかを瞬時に見渡せます。</p>
+
+      <div class="shot-card" style="max-width: 420px; margin: 16px auto;">
+        <img src="./images/08_graph_calendar.png" alt="カレンダーヒートマップ画面" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">日ごとの最高レベルが色でわかるカレンダーヒートマップ</div>
+      </div>
+    </div>
+
+    <div class="step-item" id="graph-scatter">
+      <div class="step-header">
+        <span class="step-badge">STEP 5</span>
+        <h3 class="step-title">「総合」タブ：② 最高×最低 散布図</h3>
+      </div>
+      <p>サブタブ<strong>「散布図」</strong>では、横軸に最低血圧、縦軸に最高血圧をとった散布図を表示します。</p>
+      <p>中央の点線がそれぞれの基準値を表しており、<strong>左下の領域に点が多く集まるほど両方が正常範囲内に収まっている</strong>ことを示します。血圧バランスの偏りをチェックするのに最適です。</p>
+
+      <div class="shot-card" style="max-width: 420px; margin: 16px auto;">
+        <img src="./images/09_graph_scatter.png" alt="最高×最低 散布図画面" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">基準値との位置関係が直感的にわかる散布図</div>
+      </div>
+    </div>
+
+    <div class="step-item" id="graph-range">
+      <div class="step-header">
+        <span class="step-badge">STEP 6</span>
+        <h3 class="step-title">「総合」タブ：③ 日次の振れ幅</h3>
+      </div>
+      <p>サブタブ<strong>「振れ幅」</strong>では、1日の中での「最小値から最大値までの幅」を縦の棒グラフで表します。</p>
+      <p>棒が長い日ほど、その日の血圧変動が激しかったことを示します（記録が1回だけの日には短い点のような棒で表示されます）。</p>
+
+      <div class="shot-card" style="max-width: 420px; margin: 16px auto;">
+        <img src="./images/10_graph_range.png" alt="日次の振れ幅グラフ画面" width="542" height="1206" loading="lazy">
+        <div class="shot-caption">1日の血圧の変動幅の大きさがひと目でわかる振れ幅グラフ</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="faq-heading">
+    <h2 id="faq-heading">❓ グラフについてのよくある質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> グラフに表示される点線は何ですか？</h3>
+        <p class="faq-a">設定画面で登録している「標準線（基準値）」です。最高血圧の目標値と最低血圧の目標値がそれぞれ破線で引かれます。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> グラフのデータはタップして詳細を見られますか？</h3>
+        <p class="faq-a">推移グラフの各プロット点や一覧画面のカードで、測定日時の詳細値を確認できます。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./history.html">
+      <span class="page-nav-sub">前の機能へ</span>
+      <span class="page-nav-title">‹ 機能 02: 記録一覧・編集・削除</span>
+    </a>
+    <a class="page-nav-link next" href="./settings.html">
+      <span class="page-nav-sub">次の機能へ</span>
+      <span class="page-nav-title">機能 04: 設定・バックアップ ›</span>
+    </a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© ちゃ開発組 <a href="../index.html">血圧メモ アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
+</footer>
+</body>
+</html>
