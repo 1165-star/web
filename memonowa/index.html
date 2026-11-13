@@ -188,25 +188,43 @@
     }
 
     .title-manual-link {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 5px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      padding: 4px 12px;
-      border-radius: 999px;
-      font-size: 0.82rem;
-      font-weight: 700;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      box-sizing: border-box;
+      background: #f08c00;
+      color: #fff;
+      padding: 12px 20px;
+      margin: 4px 0 10px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 800;
       text-decoration: none;
       transition: all 0.2s ease;
-      box-shadow: var(--shadow-card);
+      box-shadow: 0 4px 12px rgba(240, 140, 0, 0.4);
+    }
+    .title-manual-link svg {
+      width: 1.2em;
+      height: 1.2em;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
     .title-manual-link:hover {
-      background: var(--accent);
-      color: #fff;
+      background: #d97f00;
       transform: translateY(-1px);
-      box-shadow: var(--shadow-hover);
+      box-shadow: 0 6px 16px rgba(240, 140, 0, 0.5);
+    }
+    @media (min-width: 768px) {
+      .title-manual-link {
+        width: auto;
+        display: inline-flex;
+        padding: 10px 24px;
+      }
     }
 
     .badges-row {
@@ -539,8 +557,8 @@
           <div class="app-title-group">
             <div class="title-row">
               <h1>めものわ</h1>
-              <a class="title-manual-link" href="./manual/" target="_blank" rel="noopener noreferrer">取扱説明書 &rarr;</a>
             </div>
+            <a class="title-manual-link" href="./manual/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg>取扱説明書を開く</a>
             <div class="badges-row">
               <span class="store-badge">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
