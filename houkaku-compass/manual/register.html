@@ -59,170 +59,140 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="brand-link" href="./index.html">🧭 ゆびさすコンパス <span class="brand-pill">取扱説明書</span></a>
-    <nav class="global-nav" aria-label="取扱説明書メニュー">
-      <a href="./index.html">トップ（目次）</a>
-      <a href="./compass.html">1. コンパス・針デザイン</a>
-      <a href="./places.html">2. 目的地・通知予約</a>
-      <a href="./register.html" aria-current="page">3. 場所の登録・管理</a>
-      <a href="./settings.html">4. 設定・スキン・バックアップ</a>
-    </nav>
-  </div>
-</header>
-
-<div class="hero-banner">
-  <span class="pill">機能 03</span>
-  <h1>📍 新しい場所の登録と管理</h1>
-  <p>実家や推しの聖地、ライブ会場など、好きな場所を住所や地図から登録し、タグ分類や整理を行う方法を解説します。</p>
+<div class="site-header-inner">
+<a class="brand-link" href="./index.html">🧭 ゆびさすコンパス <span class="brand-pill">取扱説明書</span></a>
+<nav aria-label="取扱説明書メニュー" class="global-nav">
+<a href="./index.html">トップ（目次）</a>
+<a href="./compass.html">1. コンパス・針デザイン</a>
+<a href="./places.html">2. 目的地・通知予約</a>
+<a aria-current="page" href="./register.html">3. 場所の登録・管理</a>
+<a href="./settings.html">4. 設定・スキン・バックアップ</a>
+</nav>
 </div>
-
+</header>
+<div class="hero-banner">
+<span class="pill">機能 03</span>
+<h1>📍 新しい場所の登録と管理</h1>
+<p>実家や推しの聖地、ライブ会場など、好きな場所を住所や地図から登録し、タグ分類や整理を行う方法を解説します。</p>
+</div>
 <main class="container">
-  <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>新しい場所の登録と管理</span>
-  </nav>
-
-  <section class="card-section" aria-labelledby="intro-heading">
-    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
-    <p>メインコンパス画面を下にスクロールすると、「＋ 新しい場所を登録する（住所・地図）」アコーディオンと「登録した場所」一覧が表示されます。</p>
-    <div class="want-tags">
-      <a class="want-tag" href="#reg-basic">・登録の手順とカテゴリータグの選び方を知りたい</a>
-      <a class="want-tag" href="#reg-address">・住所や施設名から検索して登録したい</a>
-      <a class="want-tag" href="#reg-map">・Googleマップのピン指定で登録したい</a>
-      <a class="want-tag" href="#reg-manage">・登録した場所を確認・削除したい</a>
-    </div>
-
-    <div class="shot-card">
-      <img src="./images/02_register_overview.png" alt="場所の登録と登録一覧画面" width="1084" height="2412" loading="lazy">
-      <div class="shot-caption">場所の登録画面：呼び名の入力、タグの複数選択、登録方法の切り替え、登録済み場所の一覧</div>
-    </div>
-  </section>
-
-  <section class="card-section" id="reg-basic" aria-labelledby="basic-heading">
-    <h2 id="basic-heading">🏷️ 1. 呼び名の入力とカテゴリータグの選択</h2>
-    <p>場所を登録する際は、わかりやすい名前とカテゴリータグを設定できます。</p>
-
-    <div class="step-box">
-      <div class="step-header">
-        <span class="step-num">1</span>
-        <h4>呼び名（必須）の入力</h4>
-      </div>
-      <p>「呼び名」欄に、日常で使う名前を入力します（例：「実家」「推しの聖地」「〇〇ドーム」「思い出のカフェ」など）。</p>
-    </div>
-
-    <div class="step-box">
-      <div class="step-header">
-        <span class="step-num">2</span>
-        <h4>種類（タグ）の選択（複数選択可）</h4>
-      </div>
-      <p>
-        以下のタグを自由に組み合わせて選べます：<br>
+<nav aria-label="パンくずリスト" class="breadcrumb">
+<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>新しい場所の登録と管理</span>
+</nav>
+<section aria-labelledby="intro-heading" class="card-section">
+<h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+<p>メインコンパス画面を下にスクロールすると、「＋ 新しい場所を登録する（住所・地図）」アコーディオンと「登録した場所」一覧が表示されます。</p>
+<div class="want-tags">
+<a class="want-tag" href="#reg-basic">・登録の手順とカテゴリータグの選び方を知りたい</a>
+<a class="want-tag" href="#reg-address">・住所や施設名から検索して登録したい</a>
+<a class="want-tag" href="#reg-map">・Googleマップのピン指定で登録したい</a>
+<a class="want-tag" href="#reg-manage">・登録した場所を確認・削除したい</a>
+</div>
+<div class="shot-card">
+<img alt="場所の登録と登録一覧画面" height="2412" loading="lazy" src="./images/02_register_overview.png" width="1084"/>
+<div class="shot-caption">場所の登録画面：呼び名の入力、タグの複数選択、登録方法の切り替え、登録済み場所の一覧</div>
+</div>
+</section>
+<section aria-labelledby="basic-heading" class="card-section" id="reg-basic">
+<h2 id="basic-heading">🏷️ 1. 呼び名の入力とカテゴリータグの選択</h2>
+<p>場所を登録する際は、わかりやすい名前とカテゴリータグを設定できます。</p>
+<div class="step-item">
+<div class="step-header">
+<span class="step-badge">STEP 1</span>
+<h3 class="step-title">呼び名（必須）の入力</h3>
+</div>
+<p>「呼び名」欄に、日常で使う名前を入力します（例：「実家」「推しの聖地」「〇〇ドーム」「思い出のカフェ」など）。</p>
+</div>
+<div class="step-item">
+<div class="step-header">
+<span class="step-badge">STEP 2</span>
+<h3 class="step-title">種類（タグ）の選択（複数選択可）</h3>
+</div>
+<p>
+        以下のタグを自由に組み合わせて選べます：<br/>
         🌟 推し / 🎤 ライブ会場 / ⛩️ 聖地巡礼 / 🏟️ スタジアム・アリーナ / 🏠 実家 / 🏡 友人・知人の家 / 🏫 学校・母校 / 🏢 職場 / ✈️ 旅行の思い出 / ☕ カフェ・レストラン / 📍 その他
       </p>
-    </div>
-  </section>
+</div>
+</section>
+<section aria-labelledby="address-heading" class="card-section" id="reg-address">
+<h2 id="address-heading">🔍 2. 住所・地名から検索して登録</h2>
+<p>住所や駅名、有名な建物名から検索してすばやく位置を決定できます。</p>
+<div class="shot-card">
+<img alt="住所・地名から検索して登録" height="2412" loading="lazy" src="./images/03_register_address.png" width="1084"/>
+<div class="shot-caption">住所・地名から登録：2文字以上入力すると候補住所がリストアップされます</div>
+</div>
+<div class="step-item">
+<div class="step-header">
+<span class="step-badge">STEP 1</span>
+<h3 class="step-title">「住所・地名から登録 ▼」をタップ</h3>
+</div>
+<p>登録パネル内の「住所・地名から登録」ボタンを押して入力欄を開きます。</p>
+</div>
+<div class="step-item">
+<div class="step-header">
+<span class="step-badge">STEP 2</span>
+<h3 class="step-title">2文字以上を入力して候補を選ぶ</h3>
+</div>
+<p>施設名や住所を2文字以上入力すると、下に候補の住所が表示されます。正しい候補をタップすると入力欄に反映されます。</p>
+</div>
+<div class="step-item">
+<div class="step-header">
+<span class="step-badge">STEP 3</span>
+<h3 class="step-title">「検索して登録」をタップ</h3>
+</div>
+<p>「検索して登録」ボタンを押すと、緯度経度が自動計算されて登録完了となります。</p>
+</div>
+</section>
+<section aria-labelledby="map-heading" class="card-section" id="reg-map">
+<h2 id="map-heading">🗺️ 3. 地図（Googleマップ）からピン留めして登録</h2>
+<p>視覚的にGoogleマップを見ながら、目的の位置をピンポイントに指定できます。</p>
+<div class="shot-card">
+<img alt="地図から登録" height="2412" loading="lazy" src="./images/04_register_map.png" width="1084"/>
+<div class="shot-caption">地図から登録：地図上の長押しでピンを立て、住所情報を確認して「ここで登録」</div>
+</div>
+<div class="step-item">
+<div class="step-header">
+<span class="step-badge">STEP 1</span>
+<h3 class="step-title">「地図から登録 ▼」をタップ</h3>
+</div>
+<p>「地図から登録」ボタンを押すと、インタラクティブなGoogleマップが表示されます。</p>
+</div>
+<div class="step-item">
+<div class="step-header">
+<span class="step-badge">STEP 2</span>
+<h3 class="step-title">地図の長押しでピンを立てる</h3>
+</div>
+<p>登録したい場所を地図上で長押し（ロングタップ）すると、そこにピンが立ちます。また、上部の地図内検索バーから検索してピンを置くことも可能です。</p>
+</div>
+<div class="step-item">
+<div class="step-header">
+<span class="step-badge">STEP 3</span>
+<h3 class="step-title">「ここで登録」をタップ</h3>
+</div>
+<p>ピンを立てた場所の住所・地名が下部に表示されます。内容を確認し、「ここで登録」ボタンをタップして完了です。</p>
+</div>
+</section>
+<section aria-labelledby="manage-heading" class="card-section" id="reg-manage">
+<h2 id="manage-heading">🗑️ 4. 登録した場所の管理・削除</h2>
+<p>登録した場所は、登録パネル下の「登録した場所」リストに並びます。</p>
+<p>各場所の右側にある「削除」ボタンをタップすると、確認の上で登録を解除できます。不要になった場所はいつでも整理が可能です。</p>
+</section>
+<section aria-labelledby="faq-heading" class="card-section">
+<h2 id="faq-heading">❓ よくある質問</h2>
+<div class="faq-list">
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 海外の住所や観光地も登録できますか？</h3>
+<p class="faq-a">はい、全世界の住所や地名・ランドマークに対応しています。地図からのピン指定でも世界中どこでも自由に登録できます。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 登録した場所の名前やタグは後から変更できますか？</h3>
+<p class="faq-a">一度削除して新しく登録し直すか、バックアップファイルを活用することで整えることができます。</p>
+</div>
+</div>
+</section>
 
-  <section class="card-section" id="reg-address" aria-labelledby="address-heading">
-    <h2 id="address-heading">🔍 2. 住所・地名から検索して登録</h2>
-    <p>住所や駅名、有名な建物名から検索してすばやく位置を決定できます。</p>
+<div class="page-nav"><a class="page-nav-link" href="./places.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 2. 目的地・通知予約</span></a><a class="page-nav-link next" href="./settings.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">4. 設定・スキン・バックアップ ›</span></a></div></main>
+<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">🧭 ゆびさすコンパス アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
 
-    <div class="shot-card">
-      <img src="./images/03_register_address.png" alt="住所・地名から検索して登録" width="1084" height="2412" loading="lazy">
-      <div class="shot-caption">住所・地名から登録：2文字以上入力すると候補住所がリストアップされます</div>
-    </div>
 
-    <div class="step-box">
-      <div class="step-header">
-        <span class="step-num">1</span>
-        <h4>「住所・地名から登録 ▼」をタップ</h4>
-      </div>
-      <p>登録パネル内の「住所・地名から登録」ボタンを押して入力欄を開きます。</p>
-    </div>
 
-    <div class="step-box">
-      <div class="step-header">
-        <span class="step-num">2</span>
-        <h4>2文字以上を入力して候補を選ぶ</h4>
-      </div>
-      <p>施設名や住所を2文字以上入力すると、下に候補の住所が表示されます。正しい候補をタップすると入力欄に反映されます。</p>
-    </div>
-
-    <div class="step-box">
-      <div class="step-header">
-        <span class="step-num">3</span>
-        <h4>「検索して登録」をタップ</h4>
-      </div>
-      <p>「検索して登録」ボタンを押すと、緯度経度が自動計算されて登録完了となります。</p>
-    </div>
-  </section>
-
-  <section class="card-section" id="reg-map" aria-labelledby="map-heading">
-    <h2 id="map-heading">🗺️ 3. 地図（Googleマップ）からピン留めして登録</h2>
-    <p>視覚的にGoogleマップを見ながら、目的の位置をピンポイントに指定できます。</p>
-
-    <div class="shot-card">
-      <img src="./images/04_register_map.png" alt="地図から登録" width="1084" height="2412" loading="lazy">
-      <div class="shot-caption">地図から登録：地図上の長押しでピンを立て、住所情報を確認して「ここで登録」</div>
-    </div>
-
-    <div class="step-box">
-      <div class="step-header">
-        <span class="step-num">1</span>
-        <h4>「地図から登録 ▼」をタップ</h4>
-      </div>
-      <p>「地図から登録」ボタンを押すと、インタラクティブなGoogleマップが表示されます。</p>
-    </div>
-
-    <div class="step-box">
-      <div class="step-header">
-        <span class="step-num">2</span>
-        <h4>地図の長押しでピンを立てる</h4>
-      </div>
-      <p>登録したい場所を地図上で長押し（ロングタップ）すると、そこにピンが立ちます。また、上部の地図内検索バーから検索してピンを置くことも可能です。</p>
-    </div>
-
-    <div class="step-box">
-      <div class="step-header">
-        <span class="step-num">3</span>
-        <h4>「ここで登録」をタップ</h4>
-      </div>
-      <p>ピンを立てた場所の住所・地名が下部に表示されます。内容を確認し、「ここで登録」ボタンをタップして完了です。</p>
-    </div>
-  </section>
-
-  <section class="card-section" id="reg-manage" aria-labelledby="manage-heading">
-    <h2 id="manage-heading">🗑️ 4. 登録した場所の管理・削除</h2>
-    <p>登録した場所は、登録パネル下の「登録した場所」リストに並びます。</p>
-    <p>各場所の右側にある「削除」ボタンをタップすると、確認の上で登録を解除できます。不要になった場所はいつでも整理が可能です。</p>
-  </section>
-
-  <section class="card-section" aria-labelledby="faq-heading">
-    <h2 id="faq-heading">❓ よくある質問</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q"><span class="faq-q-badge">Q.</span><span>海外の住所や観光地も登録できますか？</span></div>
-        <p class="faq-a">はい、全世界の住所や地名・ランドマークに対応しています。地図からのピン指定でも世界中どこでも自由に登録できます。</p>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q"><span class="faq-q-badge">Q.</span><span>登録した場所の名前やタグは後から変更できますか？</span></div>
-        <p class="faq-a">一度削除して新しく登録し直すか、バックアップファイルを活用することで整えることができます。</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="pager">
-    <a class="pager-prev" href="./places.html">&larr; 2. 目的地・通知予約</a>
-    <a class="pager-next" href="./settings.html">4. 設定・スキン・バックアップ &rarr;</a>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <p>&copy; <span id="year"></span> ちゃ開発組 &mdash; <a href="../">ゆびさすコンパス 紹介ページへ戻る</a></p>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-</body>
-</html>

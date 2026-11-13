@@ -46,86 +46,74 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="brand-link" href="./index.html">🎮 スタミナ手帳 <span class="brand-pill">取扱説明書</span></a>
-    <nav class="global-nav" aria-label="取扱説明書メニュー">
-      <a href="./index.html">トップ（目次）</a>
-      <a href="./timeline.html">1. タイムライン</a>
-      <a href="./games.html">2. ゲーム登録・編集</a>
-      <a href="./tools.html">3. 常駐便利ツール</a>
-      <a href="./notifications.html" aria-current="page">4. 通知管理</a>
-      <a href="./settings.html">5. 統計・バックアップ</a>
-      <a href="./widgets.html">6. ウィジェット</a>
-    </nav>
-  </div>
+<div class="site-header-inner">
+<a class="brand-link" href="./index.html">🎮 スタミナ手帳 <span class="brand-pill">取扱説明書</span></a>
+<nav aria-label="取扱説明書メニュー" class="global-nav">
+<a href="./index.html">トップ（目次）</a>
+<a href="./timeline.html">1. タイムライン</a>
+<a href="./games.html">2. ゲーム登録・編集</a>
+<a href="./tools.html">3. 常駐便利ツール</a>
+<a aria-current="page" href="./notifications.html">4. 通知管理</a>
+<a href="./settings.html">5. 統計・バックアップ</a>
+<a href="./widgets.html">6. ウィジェット</a>
+</nav>
+</div>
 </header>
-
 <main class="container">
-  <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="./index.html">取扱説明書トップ</a>
-    <span>›</span>
-    <span aria-current="page">4. 通知管理</span>
-  </nav>
+<nav aria-label="パンくずリスト" class="breadcrumb">
+<a href="./index.html">取扱説明書トップ</a>
+<span>›</span>
+<span aria-current="page">4. 通知管理</span>
+</nav>
+<section class="card-section">
+<h1>🔔 4. 通知管理</h1>
+<p>下部メニューの「通知管理」タブでは、スタミナが満タンになる直前や、デイリー/週間リセット、イベント終了時刻の前に受け取るプッシュ通知をきめ細かく設定できます。</p>
+<div class="shot-card" style="margin-top: 20px;">
+<img alt="スタミナ手帳の通知管理画面" height="2429" loading="lazy" src="./images/04_notifications.png" width="542"/>
+<div class="shot-caption">通知管理画面：ゲームごとにスタミナ全快や各種リセットの事前通知タイミングを柔軟に設定</div>
+</div>
+</section>
+<section class="card-section" id="notif-setting">
+<h2>⚙️ 通知項目の設定方法</h2>
+<div class="step-item">
+<div class="step-header">
+<span class="step-badge">ステップ 1</span>
+<h3 class="step-title">通知の全体有効化</h3>
+</div>
+<p>画面最上部にある「通知を有効にする」スイッチをオンにします。初めてオンにする際は、Android端末の通知許可ダイアログが表示されますので「許可」を選択してください。</p>
+</div>
+<div class="step-item">
+<div class="step-header">
+<span class="step-badge">ステップ 2</span>
+<h3 class="step-title">項目ごとの通知タイミング選択</h3>
+</div>
+<p>各ゲームカード内に並ぶ項目ごとに、通知タイミング（ドロップダウン）と有効スイッチを設定します。</p>
+<ul>
+<li><strong>スタミナ（AP / エネルギー）：</strong>スタミナが満タンになる「30分前」「10分前」「満タン時」などに通知を設定できます。スタミナが溢れて無駄になる前にゲームを開いて消費できます。</li>
+<li><strong>デイリーリセット：</strong>日付が変わる「10分前」などに通知。デイリーミッションの受け取り忘れを防ぎます。</li>
+<li><strong>週間リセット・月間リセット：</strong>毎週月曜日や月初のリセット前にお知らせ。</li>
+<li><strong>フリー項目（イベント・バナー）：</strong>登録した期間限定ガチャやイベントの終了前に通知します。</li>
+</ul>
+</div>
+</section>
+<section class="card-section">
+<h2>🛠️ 通知が遅れる場合の確認ポイント</h2>
+<p>画面上部の「通知が遅れる場合」リンクから、Androidのバッテリー節電機能による通知遅延の対策を確認できます。</p>
+<ul>
+<li>端末の「設定」›「アプリ」›「スタミナ手帳」›「バッテリー」を開きます。</li>
+<li>バッテリー使用量の管理で「制限なし」または「最適化しない」に設定してください。</li>
+<li>「通知履歴を見る」をタップすると、これまでにアプリから送信された通知の記録をいつでも確認できます。</li>
+</ul>
+</section>
+<section class="card-section" aria-labelledby="faq-heading">
+<h2 id="faq-heading">❓ よくある質問</h2>
+<div class="faq-list">
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 通知がうまく届かない・遅れるときはどうすればよいですか？</h3><p class="faq-a">Android端末の「設定」›「アプリ」›「スタミナ手帳」›「バッテリー」で、バッテリー使用量の管理を「制限なし」または「最適化しない」に設定してください。画面上部の「通知が遅れる場合」リンクからも確認できます。</p></div>
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 通知をオンにするときの許可ダイアログは何ですか？</h3><p class="faq-a">「通知を有効にする」を初めてオンにすると、Android端末の通知許可ダイアログが表示されます。許可すると通知を受け取れます。</p></div>
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> これまでに届いた通知を確認できますか？</h3><p class="faq-a">はい。「通知履歴を見る」をタップすると、アプリから送信された通知の記録を確認できます。</p></div>
+</div>
+</section>
+<div class="page-nav"><a class="page-nav-link" href="./tools.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 3. 常駐便利ツール</span></a><a class="page-nav-link next" href="./settings.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">5. 統計・バックアップ ›</span></a></div></main>
+<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">🎮 スタミナ手帳 アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
 
-  <section class="card-section">
-    <h1>🔔 4. 通知管理</h1>
-    <p>下部メニューの「通知管理」タブでは、スタミナが満タンになる直前や、デイリー/週間リセット、イベント終了時刻の前に受け取るプッシュ通知をきめ細かく設定できます。</p>
 
-    <div class="shot-card" style="margin-top: 20px;">
-      <img src="./images/04_notifications.png" alt="スタミナ手帳の通知管理画面" width="542" height="2429" loading="lazy">
-      <div class="shot-caption">通知管理画面：ゲームごとにスタミナ全快や各種リセットの事前通知タイミングを柔軟に設定</div>
-    </div>
-  </section>
-
-  <section class="card-section" id="notif-setting">
-    <h2>⚙️ 通知項目の設定方法</h2>
-    <div class="step-item">
-      <div class="step-header">
-        <span class="step-badge">ステップ 1</span>
-        <h3 class="step-title">通知の全体有効化</h3>
-      </div>
-      <p>画面最上部にある「通知を有効にする」スイッチをオンにします。初めてオンにする際は、Android端末の通知許可ダイアログが表示されますので「許可」を選択してください。</p>
-    </div>
-
-    <div class="step-item">
-      <div class="step-header">
-        <span class="step-badge">ステップ 2</span>
-        <h3 class="step-title">項目ごとの通知タイミング選択</h3>
-      </div>
-      <p>各ゲームカード内に並ぶ項目ごとに、通知タイミング（ドロップダウン）と有効スイッチを設定します。</p>
-      <ul>
-        <li><strong>スタミナ（AP / エネルギー）：</strong>スタミナが満タンになる「30分前」「10分前」「満タン時」などに通知を設定できます。スタミナが溢れて無駄になる前にゲームを開いて消費できます。</li>
-        <li><strong>デイリーリセット：</strong>日付が変わる「10分前」などに通知。デイリーミッションの受け取り忘れを防ぎます。</li>
-        <li><strong>週間リセット・月間リセット：</strong>毎週月曜日や月初のリセット前にお知らせ。</li>
-        <li><strong>フリー項目（イベント・バナー）：</strong>登録した期間限定ガチャやイベントの終了前に通知します。</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="card-section">
-    <h2>🛠️ 通知が遅れる場合の確認ポイント</h2>
-    <p>画面上部の「通知が遅れる場合」リンクから、Androidのバッテリー節電機能による通知遅延の対策を確認できます。</p>
-    <ul>
-      <li>端末の「設定」›「アプリ」›「スタミナ手帳」›「バッテリー」を開きます。</li>
-      <li>バッテリー使用量の管理で「制限なし」または「最適化しない」に設定してください。</li>
-      <li>「通知履歴を見る」をタップすると、これまでにアプリから送信された通知の記録をいつでも確認できます。</li>
-    </ul>
-  </section>
-
-  <nav class="page-nav">
-    <a class="page-nav-link" href="./tools.html">
-      <span class="page-nav-sub">← 前の機能</span>
-      <span class="page-nav-title">3. ゲーム常駐便利ツール</span>
-    </a>
-    <a class="page-nav-link" href="./settings.html" style="text-align: right;">
-      <span class="page-nav-sub">次の機能 →</span>
-      <span class="page-nav-title">5. 統計・バックアップ</span>
-    </a>
-  </nav>
-</main>
-
-<footer class="site-footer">
-  <p>© ちゃ開発組 / <a href="../index.html">スタミナ手帳 公式ページ</a> / <a href="../privacy-policy.html">プライバシーポリシー</a></p>
-</footer>
-</body>
-</html>

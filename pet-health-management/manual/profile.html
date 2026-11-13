@@ -67,108 +67,77 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="brand-link" href="./index.html">🐾 ぺっときろく <span class="brand-pill">取扱説明書</span></a>
-    <nav class="global-nav" aria-label="取扱説明書メニュー">
-      <a href="./index.html">トップ（目次）</a>
-      <a href="./profile.html" aria-current="page">1. プロフィール登録</a>
-      <a href="./care-settings.html">2. お世話記録設定</a>
-      <a href="./compare.html">3. 記録を見る・比較</a>
-      <a href="./notifications.html">4. 通知まとめ</a>
-    </nav>
-  </div>
+<div class="site-header-inner">
+<a class="brand-link" href="./index.html">🐾 ぺっときろく <span class="brand-pill">取扱説明書</span></a>
+<nav aria-label="取扱説明書メニュー" class="global-nav">
+<a href="./index.html">トップ（目次）</a>
+<a aria-current="page" href="./profile.html">1. プロフィール登録</a>
+<a href="./care-settings.html">2. お世話記録設定</a>
+<a href="./compare.html">3. 記録を見る・比較</a>
+<a href="./notifications.html">4. 通知まとめ</a>
+</nav>
+</div>
 </header>
-
 <div class="hero-banner">
-  <span class="pill">機能 01</span>
-  <h1>🐹 ペットのプロフィール登録・編集</h1>
-  <p>ペットの名前・種類・誕生日・体重の単位（g/kg）や、お世話記録設定への入口を管理する画面です。</p>
+<span class="pill">機能 01</span>
+<h1>🐹 ペットのプロフィール登録・編集</h1>
+<p>ペットの名前・種類・誕生日・体重の単位（g/kg）や、お世話記録設定への入口を管理する画面です。</p>
+</div>
+<main class="container">
+<nav aria-label="パンくずリスト" class="breadcrumb">
+<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>ペットのプロフィール登録・編集</span>
+</nav>
+<section aria-labelledby="intro-heading" class="card-section">
+<h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+<p>新しいペットの登録画面や、「ペット設定」タブから開くプロフィール編集画面では、ペットの写真・基本情報・体重の単位・お世話記録設定をまとめて管理できます。</p>
+<div aria-label="このページの主な目的" class="want-tags">
+<a class="want-tag" href="#step-species">・種類と分類を登録したい</a>
+<a class="want-tag" href="#step-birthday">・誕生日から年齢を自動計算したい</a>
+<a class="want-tag" href="#step-unit">・体重の単位をグラム(g)/キログラム(kg)に変えたい</a>
+<a class="want-tag" href="#step-farewell">・お世話記録設定や旅立った日を設定したい</a>
+</div>
+</section>
+<section aria-labelledby="guide-heading" class="card-section">
+<h2 id="guide-heading">📱 画面の各項目と使い方</h2>
+<div class="shot-card narrow"><img alt="ちゃののプロフィール画面（写真、名前、分類、種類、誕生日、年齢、性別、マイクロチップNo.、単位設定、お世話記録設定、保存するボタン）" loading="lazy" src="./images/04_profile.png"/><div class="shot-caption">ペットのプロフィール編集画面</div></div>
+<figure class="detail-shot">
+
+<figcaption>ペットのプロフィール編集画面</figcaption>
+</figure>
+
+<div class="step-item" id="step-species">
+<div class="step-header"><span class="step-badge">STEP 1</span><h3 class="step-title">写真・名前・分類・種類（必須マーク付き）</h3></div>
+<p>丸いアイコンの下にある「撮影する」「写真を選ぶ」からペットの写真を設定できます。<br/>
+          赤い必須マークが付いた「名前」「分類」「種類」は登録に必須です。「種類」に名前（例：フェレット）を入力して候補から選ぶと、「分類」も<strong>自動(小動物)</strong>のように自動で決まります。候補にない種類の場合は、そのまま自由に入力して「分類」から近いものを選びます。</p>
+</div>
+<div class="step-item" id="step-birthday">
+<div class="step-header"><span class="step-badge">STEP 2</span><h3 class="step-title">誕生日・年齢の自動計算・性別</h3></div>
+<p>「誕生日」を選択すると、その下の「年齢」欄に現在の年齢（例：<strong>3歳5ヶ月</strong>）が自動的に計算されて表示されます。また、毎年の誕生日予定がカレンダーに自動で作成されます。<br/>
+          お迎えしたばかりなどで誕生日がわからない場合は、右側の「不明」にチェックを入れることで空欄のまま登録できます。</p>
+</div>
+<div class="step-item" id="step-unit">
+<div class="step-header"><span class="step-badge">STEP 3</span><h3 class="step-title">マイクロチップNo. と体重の単位設定（グラム / キログラム）</h3></div>
+<p>「マイクロチップNo.」には英数字の識別番号を控えとして残せます（未登録の場合は空欄のままで構いません）。<br/>
+          「単位設定」では、このペットの体重を<strong>グラム(g)</strong>で表示・入力するか、<strong>キログラム(kg)</strong>にするかをペットごとに個別に選べます。</p>
+</div>
+<div class="step-item" id="step-farewell">
+<div class="step-header"><span class="step-badge">STEP 4</span><h3 class="step-title">お世話記録設定への入口・旅立った日の登録</h3></div>
+<p>「お世話記録設定」の行をタップすると、このペットで記録する項目やホームアイコンに表示するバッジ（例：バッジ 4/5）を選べるシートが開きます（詳しくは「<a href="./care-settings.html">お世話記録設定と作成した記録項目</a>」を参照）。<br/>
+          また、画面の一番下には誤操作を防ぐため離した位置に「旅立った日を登録する」ボタンと「このペットのデータを削除する」ボタンを配置しています。</p>
 </div>
 
-<main class="container">
-  <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>ペットのプロフィール登録・編集</span>
-  </nav>
 
-  <section class="card-section" aria-labelledby="intro-heading">
-    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
-    <p>新しいペットの登録画面や、「ペット設定」タブから開くプロフィール編集画面では、ペットの写真・基本情報・体重の単位・お世話記録設定をまとめて管理できます。</p>
-    <div class="want-tags" aria-label="このページの主な目的">
-      <a class="want-tag" href="#step-species">・種類と分類を登録したい</a>
-      <a class="want-tag" href="#step-birthday">・誕生日から年齢を自動計算したい</a>
-      <a class="want-tag" href="#step-unit">・体重の単位をグラム(g)/キログラム(kg)に変えたい</a>
-      <a class="want-tag" href="#step-farewell">・お世話記録設定や旅立った日を設定したい</a>
-    </div>
-  </section>
+</section>
+<section aria-labelledby="faq-heading" class="card-section" id="faq">
+<h2 id="faq-heading">💡 よくある質問（FAQ）</h2>
+<div class="faq-list">
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 候補にない種類のペットも登録できますか？</h3><p class="faq-a">はい。「種類」の欄にそのまま種類名を入力し、左側の「分類」から犬・猫・小動物・鳥・爬虫類・両生類・魚・昆虫・その他のうち近いものを選べば登録できます。</p></div>
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 誕生日がわからない場合はどうすればよいですか？</h3><p class="faq-a">誕生日欄の右にある「不明」にチェックを入れると、空欄のまま登録できます。あとから変更することも可能です。</p></div>
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 小動物だけグラム(g)、犬だけキログラム(kg)にできますか？</h3><p class="faq-a">はい。「単位設定」はペットごとに保存されるため、1匹ずつグラム(g)とキログラム(kg)を使い分けられます（オンス・ポンド・華氏などの国別の単位は「設定」タブの「単位(国)」から変更できます）。</p></div>
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 「旅立った日」を登録するとこれまでの記録はどうなりますか？</h3><p class="faq-a">体重や健康記録などのデータは一切消えません。登録後はプロフィール画面で「ホーム画面に表示する」のオン/オフをいつでも切り替えられます。</p></div>
+</div>
+</section>
 
-  <section class="card-section" aria-labelledby="guide-heading">
-    <h2 id="guide-heading">📱 画面の各項目と使い方</h2>
-    <div class="detail-layout">
-      <figure class="detail-shot">
-        <img src="./images/04_profile.png" alt="ちゃののプロフィール画面（写真、名前、分類、種類、誕生日、年齢、性別、マイクロチップNo.、単位設定、お世話記録設定、保存するボタン）">
-        <figcaption>ペットのプロフィール編集画面</figcaption>
-      </figure>
+<div class="page-nav"><a class="page-nav-link" href="./index.html"><span class="page-nav-sub">目次へ戻る</span><span class="page-nav-title">‹ 取扱説明書トップ</span></a><a class="page-nav-link next" href="./care-settings.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">2. お世話記録設定 ›</span></a></div></main><footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">🐾 ぺっときろく アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
 
-      <div class="flow-steps">
-        <div class="flow-step" id="step-species">
-          <h3>① 写真・名前・分類・種類（必須マーク付き）</h3>
-          <p>丸いアイコンの下にある「撮影する」「写真を選ぶ」からペットの写真を設定できます。<br>
-          赤い必須マークが付いた「名前」「分類」「種類」は登録に必須です。「種類」に名前（例：フェレット）を入力して候補から選ぶと、「分類」も<strong>自動(小動物)</strong>のように自動で決まります。候補にない種類の場合は、そのまま自由に入力して「分類」から近いものを選びます。</p>
-        </div>
 
-        <div class="flow-step" id="step-birthday">
-          <h3>② 誕生日・年齢の自動計算・性別</h3>
-          <p>「誕生日」を選択すると、その下の「年齢」欄に現在の年齢（例：<strong>3歳5ヶ月</strong>）が自動的に計算されて表示されます。また、毎年の誕生日予定がカレンダーに自動で作成されます。<br>
-          お迎えしたばかりなどで誕生日がわからない場合は、右側の「不明」にチェックを入れることで空欄のまま登録できます。</p>
-        </div>
-
-        <div class="flow-step" id="step-unit">
-          <h3>③ マイクロチップNo. と体重の単位設定（グラム / キログラム）</h3>
-          <p>「マイクロチップNo.」には英数字の識別番号を控えとして残せます（未登録の場合は空欄のままで構いません）。<br>
-          「単位設定」では、このペットの体重を<strong>グラム(g)</strong>で表示・入力するか、<strong>キログラム(kg)</strong>にするかをペットごとに個別に選べます。</p>
-        </div>
-
-        <div class="flow-step" id="step-farewell">
-          <h3>④ お世話記録設定への入口・旅立った日の登録</h3>
-          <p>「お世話記録設定」の行をタップすると、このペットで記録する項目やホームアイコンに表示するバッジ（例：バッジ 4/5）を選べるシートが開きます（詳しくは「<a href="./care-settings.html">お世話記録設定と作成した記録項目</a>」を参照）。<br>
-          また、画面の一番下には誤操作を防ぐため離した位置に「旅立った日を登録する」ボタンと「このペットのデータを削除する」ボタンを配置しています。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="card-section" id="faq" aria-labelledby="faq-heading">
-    <h2 id="faq-heading">💡 よくある質問（FAQ）</h2>
-    <div class="faq-grid">
-      <article class="faq-card">
-        <h3>Q. 候補にない種類のペットも登録できますか？</h3>
-        <p>はい。「種類」の欄にそのまま種類名を入力し、左側の「分類」から犬・猫・小動物・鳥・爬虫類・両生類・魚・昆虫・その他のうち近いものを選べば登録できます。</p>
-      </article>
-      <article class="faq-card">
-        <h3>Q. 誕生日がわからない場合はどうすればよいですか？</h3>
-        <p>誕生日欄の右にある「不明」にチェックを入れると、空欄のまま登録できます。あとから変更することも可能です。</p>
-      </article>
-      <article class="faq-card">
-        <h3>Q. 小動物だけグラム(g)、犬だけキログラム(kg)にできますか？</h3>
-        <p>はい。「単位設定」はペットごとに保存されるため、1匹ずつグラム(g)とキログラム(kg)を使い分けられます（オンス・ポンド・華氏などの国別の単位は「設定」タブの「単位(国)」から変更できます）。</p>
-      </article>
-      <article class="faq-card">
-        <h3>Q. 「旅立った日」を登録するとこれまでの記録はどうなりますか？</h3>
-        <p>体重や健康記録などのデータは一切消えません。登録後はプロフィール画面で「ホーム画面に表示する」のオン/オフをいつでも切り替えられます。</p>
-      </article>
-    </div>
-  </section>
-
-  <nav class="pager-nav" aria-label="前後のページへ移動">
-    <a class="pager-link" href="./index.html">
-      <span class="dir">← 取扱説明書トップへ</span>
-      <span class="lbl">目次・やりたいこと一覧に戻る</span>
-    </a>
-    <a class="pager-link" href="./care-settings.html">
-      <span class="dir">次のページ（機能 02）→</span>
-      <span class="lbl">お世話記録設定と「作成した記録項目」</span>
-    </a>
-  </nav>
-</main>
-</body>
-</html>

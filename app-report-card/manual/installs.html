@@ -67,210 +67,178 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="brand-link" href="./index.html">📊 アプリ成績表 <span class="brand-pill">取扱説明書</span></a>
-    <nav class="global-nav" aria-label="取扱説明書メニュー">
-      <a href="./index.html">トップ（目次）</a>
-      <a href="./start.html">1. はじめての準備</a>
-      <a href="./basics.html">2. 画面の見かた・基本操作</a>
-      <a href="./revenue.html">3. 収益</a>
-      <a href="./installs.html" aria-current="page">4. インストール</a>
-      <a href="./users.html">5. ユーザー</a>
-      <a href="./ratings.html">6. 評価・レビュー</a>
-      <a href="./quality.html">7. 品質</a>
-      <a href="./settings.html">8. 設定・バックアップ</a>
-      <a href="./widgets.html">9. ウィジェット</a>
-    </nav>
-  </div>
-</header>
-
-<div class="hero-banner">
-  <span class="pill">機能 04</span>
-  <h1>📥 インストール（Google Playの数字）</h1>
-  <p>インストール・アンインストール・アップデートの数と、ストアの表示、国別の数字の見かたを解説します。</p>
+<div class="site-header-inner">
+<a class="brand-link" href="./index.html">📊 アプリ成績表 <span class="brand-pill">取扱説明書</span></a>
+<nav aria-label="取扱説明書メニュー" class="global-nav">
+<a href="./index.html">トップ（目次）</a>
+<a href="./start.html">1. はじめての準備</a>
+<a href="./basics.html">2. 画面の見かた・基本操作</a>
+<a href="./revenue.html">3. 収益</a>
+<a aria-current="page" href="./installs.html">4. インストール</a>
+<a href="./users.html">5. ユーザー</a>
+<a href="./ratings.html">6. 評価・レビュー</a>
+<a href="./quality.html">7. 品質</a>
+<a href="./settings.html">8. 設定・バックアップ</a>
+<a href="./widgets.html">9. ウィジェット</a>
+</nav>
 </div>
-
+</header>
+<div class="hero-banner">
+<span class="pill">機能 04</span>
+<h1>📥 インストール（Google Playの数字）</h1>
+<p>インストール・アンインストール・アップデートの数と、ストアの表示、国別の数字の見かたを解説します。</p>
+</div>
 <main class="container">
-  <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>📥 インストール（Google Playの数字）</span>
-  </nav>
-  <section class="card-section" aria-labelledby="intro-heading">
-    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
-      <p>「インストール」タブは、Play Consoleのレポートをもとに、インストール・アンインストール・アップデートの数や、ストアページの表示、国別のインストール数を表示する画面です。</p>
-      <p>Play Consoleのアカウントでのログインと、レポートの保存先の登録が必要です（<a href="./start.html#start-play">はじめての準備</a>を参照）。</p>
-
-    <div class="want-tags" aria-label="このページの主な目的">
-      <a class="want-tag" href="#installs-period">・昨日・今月のインストール数を知りたい</a>
-      <a class="want-tag" href="#installs-balance">・ユーザーが増えたか減ったかを見たい</a>
-      <a class="want-tag" href="#installs-churn">・どのくらいユーザーが離れているか知りたい</a>
-      <a class="want-tag" href="#installs-store">・ストアページを見た人と、インストールした人の割合を知りたい</a>
-      <a class="want-tag" href="#installs-country">・国別のインストール数を知りたい</a>
-    </div>
-  </section>
-
-  <section class="card-section" aria-labelledby="steps-heading">
-    <h2 id="steps-heading">🛠️ 詳しい使い方</h2>
-
-    <div class="step-item" id="installs-period">
-      <div class="step-header">
-        <span class="step-badge">STEP 1</span>
-        <h3 class="step-title">昨日・直近7日・今月のインストール数</h3>
-      </div>
-      <p>上部のカードに、期間ごとの<strong>インストール数・アンインストール数・アップデート数</strong>が出ます。</p>
-      <ul>
-        <li>Playのレポートは数日遅れるため、昨日の分がまだ分からないときは、「昨日」のカードが<strong>「未集計」</strong>になります。</li>
-        <li>「直近7日」は、集計済みの最新の日までの7日間で、期間（例: 10/17〜10/23）が添えられます。</li>
-        <li>「今月」は、今月1日から集計済みの最新の日までです。</li>
-      </ul>
-
-    <div class="shot-card narrow">
-      <img src="./images/installs_period.webp" alt="インストールタブの上部。昨日・直近7日・今月のアンインストール数とアップデート数" width="542" height="391" loading="lazy">
-      <div class="shot-caption">期間ごとのアンインストール数・アップデート数</div>
-    </div>
-    </div>
-
-    <div class="step-item" id="installs-balance">
-      <div class="step-header">
-        <span class="step-badge">STEP 2</span>
-        <h3 class="step-title">ユーザーの増減のグラフ</h3>
-      </div>
-      <p><strong>上向きの棒が獲得したユーザー数、下向きの棒が減少したユーザー数</strong>です（真ん中が0）。細い破線は、ストアページの表示数です。</p>
-      <p>選んだ日のボックスには、アプリごとに「+244/940 / −86」のように、<strong>「獲得数/ストアの表示数」</strong>と、その右に<strong>減少数</strong>が出ます。</p>
-
-    <div class="shot-card narrow">
-      <img src="./images/installs_balance.webp" alt="ユーザーの増減のグラフ。上に獲得、下に減少、破線でストアの表示数" width="542" height="752" loading="lazy">
-      <div class="shot-caption">獲得は上、減少は下。破線はストアの表示数</div>
-    </div>
-    </div>
-
-    <div class="step-item" id="installs-total">
-      <div class="step-header">
-        <span class="step-badge">STEP 3</span>
-        <h3 class="step-title">合計インストール数</h3>
-      </div>
-      <p>いま端末にアプリが入っている数の推移を、アプリごとの積み上げで表示します。</p>
-
-    <div class="shot-card narrow">
-      <img src="./images/installs_total.webp" alt="合計インストール数のグラフと、選んだ日のアプリごとの内訳" width="542" height="560" loading="lazy">
-      <div class="shot-caption">アプリごとの積み上げと、選んだ日の内訳</div>
-    </div>
-    </div>
-
-    <div class="step-item" id="installs-churn">
-      <div class="step-header">
-        <span class="step-badge">STEP 4</span>
-        <h3 class="step-title">離脱率の推移</h3>
-      </div>
-      <p><strong>1週間（その日までの7日間）のアンインストール数 ÷ アクティブなデバイス数の平均</strong>を、折れ線グラフで表示します。</p>
-
-      <div class="callout">
-        <div class="callout-title">💡 読み方の注意</div>
+<nav aria-label="パンくずリスト" class="breadcrumb">
+<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>📥 インストール（Google Playの数字）</span>
+</nav>
+<section aria-labelledby="intro-heading" class="card-section">
+<h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+<p>「インストール」タブは、Play Consoleのレポートをもとに、インストール・アンインストール・アップデートの数や、ストアページの表示、国別のインストール数を表示する画面です。</p>
+<p>Play Consoleのアカウントでのログインと、レポートの保存先の登録が必要です（<a href="./start.html#start-play">はじめての準備</a>を参照）。</p>
+<div aria-label="このページの主な目的" class="want-tags">
+<a class="want-tag" href="#installs-period">・昨日・今月のインストール数を知りたい</a>
+<a class="want-tag" href="#installs-balance">・ユーザーが増えたか減ったかを見たい</a>
+<a class="want-tag" href="#installs-churn">・どのくらいユーザーが離れているか知りたい</a>
+<a class="want-tag" href="#installs-store">・ストアページを見た人と、インストールした人の割合を知りたい</a>
+<a class="want-tag" href="#installs-country">・国別のインストール数を知りたい</a>
+</div>
+</section>
+<section aria-labelledby="steps-heading" class="card-section">
+<h2 id="steps-heading">🛠️ 詳しい使い方</h2>
+<div class="step-item" id="installs-period">
+<div class="step-header">
+<span class="step-badge">STEP 1</span>
+<h3 class="step-title">昨日・直近7日・今月のインストール数</h3>
+</div>
+<p>上部のカードに、期間ごとの<strong>インストール数・アンインストール数・アップデート数</strong>が出ます。</p>
+<ul>
+<li>Playのレポートは数日遅れるため、昨日の分がまだ分からないときは、「昨日」のカードが<strong>「未集計」</strong>になります。</li>
+<li>「直近7日」は、集計済みの最新の日までの7日間で、期間（例: 10/17〜10/23）が添えられます。</li>
+<li>「今月」は、今月1日から集計済みの最新の日までです。</li>
+</ul>
+<div class="shot-card narrow">
+<img alt="インストールタブの上部。昨日・直近7日・今月のアンインストール数とアップデート数" height="391" loading="lazy" src="./images/installs_period.webp" width="542"/>
+<div class="shot-caption">期間ごとのアンインストール数・アップデート数</div>
+</div>
+</div>
+<div class="step-item" id="installs-balance">
+<div class="step-header">
+<span class="step-badge">STEP 2</span>
+<h3 class="step-title">ユーザーの増減のグラフ</h3>
+</div>
+<p><strong>上向きの棒が獲得したユーザー数、下向きの棒が減少したユーザー数</strong>です（真ん中が0）。細い破線は、ストアページの表示数です。</p>
+<p>選んだ日のボックスには、アプリごとに「+244/940 / −86」のように、<strong>「獲得数/ストアの表示数」</strong>と、その右に<strong>減少数</strong>が出ます。</p>
+<div class="shot-card narrow">
+<img alt="ユーザーの増減のグラフ。上に獲得、下に減少、破線でストアの表示数" height="752" loading="lazy" src="./images/installs_balance.webp" width="542"/>
+<div class="shot-caption">獲得は上、減少は下。破線はストアの表示数</div>
+</div>
+</div>
+<div class="step-item" id="installs-total">
+<div class="step-header">
+<span class="step-badge">STEP 3</span>
+<h3 class="step-title">合計インストール数</h3>
+</div>
+<p>いま端末にアプリが入っている数の推移を、アプリごとの積み上げで表示します。</p>
+<div class="shot-card narrow">
+<img alt="合計インストール数のグラフと、選んだ日のアプリごとの内訳" height="560" loading="lazy" src="./images/installs_total.webp" width="542"/>
+<div class="shot-caption">アプリごとの積み上げと、選んだ日の内訳</div>
+</div>
+</div>
+<div class="step-item" id="installs-churn">
+<div class="step-header">
+<span class="step-badge">STEP 4</span>
+<h3 class="step-title">離脱率の推移</h3>
+</div>
+<p><strong>1週間（その日までの7日間）のアンインストール数 ÷ アクティブなデバイス数の平均</strong>を、折れ線グラフで表示します。</p>
+<div class="callout">
+<div class="callout-title">💡 読み方の注意</div>
         「インストールしてから何日で離脱したか」ではなく、アプリを持っている端末が1週間でどれだけ減ったかの、おおまかな目安です。7日分のデータがそろわない日は、点が打たれません。
       </div>
-    <div class="shot-card narrow">
-      <img src="./images/installs_churn.webp" alt="離脱率の推移の折れ線グラフ" width="542" height="632" loading="lazy">
-      <div class="shot-caption">アプリごとの離脱率の推移</div>
-    </div>
-    </div>
+<div class="shot-card narrow">
+<img alt="離脱率の推移の折れ線グラフ" height="632" loading="lazy" src="./images/installs_churn.webp" width="542"/>
+<div class="shot-caption">アプリごとの離脱率の推移</div>
+</div>
+</div>
+<div class="step-item" id="installs-update">
+<div class="step-header">
+<span class="step-badge">STEP 5</span>
+<h3 class="step-title">アップデートの推移</h3>
+</div>
+<p>アップデートされたデバイスの数を、日ごとに表示します。新しいバージョンがどれくらい広がったかの目安になります。</p>
+<div class="shot-card narrow">
+<img alt="アップデートされたデバイス数の積み上げ棒グラフ" height="584" loading="lazy" src="./images/installs_update.webp" width="542"/>
+<div class="shot-caption">日ごとのアップデート数</div>
+</div>
+</div>
+<div class="step-item" id="installs-store">
+<div class="step-header">
+<span class="step-badge">STEP 6</span>
+<h3 class="step-title">ストアの表示（訪問者・獲得・転換率）と流入元</h3>
+</div>
+<p>Google Playのストアページが見られた回数と、そこからインストールされた数を表示します。</p>
+<ul>
+<li><strong>ストアページの訪問者</strong>と、<strong>獲得（インストール）</strong>、その割合の<strong>転換率</strong>を、「直近7日」と「今月」で表示します。</li>
+<li><strong>流入元</strong>では、直近30日の訪問者が、どこから来たか（Google Play 検索・Google Play のおすすめなど）を、「獲得 → 訪問者」の形で並べます。</li>
+<li>ストアの表示は、インストール数より、さらに遅れて出ます。</li>
+</ul>
+<div class="shot-card narrow">
+<img alt="ストアの表示。直近7日と今月の訪問者・獲得・転換率" height="338" loading="lazy" src="./images/installs_store.webp" width="542"/>
+<div class="shot-caption">直近7日と今月のストアの数字</div>
+</div>
+<div class="shot-card narrow">
+<img alt="流入元の一覧。検索やおすすめなどからの獲得と訪問者" height="295" loading="lazy" src="./images/installs_source.webp" width="542"/>
+<div class="shot-caption">流入元（直近30日）</div>
+</div>
+</div>
+<div class="step-item" id="installs-country">
+<div class="step-header">
+<span class="step-badge">STEP 7</span>
+<h3 class="step-title">国別のインストール</h3>
+</div>
+<p>国ごとのインストール数を、3つの形で見られます。</p>
+<ul>
+<li><strong>国別インストール</strong>: 今月の上位10か国をランキングで表示します。「他◯件を表示」で、残りも開けます。</li>
+<li><strong>国別のインストール数</strong>: 日別の積み上げグラフで、国ごとに色分けします。</li>
+<li><strong>国を選んで見るインストール数</strong>: 上のチップ（JP・US・KR…）で国を選ぶと、その国の日別のインストール数を、アプリ別の積み上げで表示します。</li>
+</ul>
+<div class="shot-card narrow">
+<img alt="国別インストールのランキング。今月の上位の国" height="304" loading="lazy" src="./images/installs_country_rank.webp" width="542"/>
+<div class="shot-caption">今月の上位の国</div>
+</div>
+<div class="shot-card narrow">
+<img alt="国別のインストール数。日別の積み上げグラフ" height="597" loading="lazy" src="./images/installs_country_daily.webp" width="542"/>
+<div class="shot-caption">日別・国で色分け</div>
+</div>
+<div class="shot-card narrow">
+<img alt="国を選んで見るインストール数。上部の国のチップで切り替える" height="611" loading="lazy" src="./images/installs_country_one.webp" width="542"/>
+<div class="shot-caption">国のチップで切り替え</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="card-section">
+<h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
+<div class="faq-list">
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 「未集計」とは何ですか？</h3>
+<p class="faq-a">Playのレポートは、集計に数日かかります。灰色の「未集計」の日は、0件ではなく、まだ数字が分からない日です。数日たつと、数字が入ります。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> インストール数が表示されません。</h3>
+<p class="faq-a">Play Consoleのアカウントでのログインと、「レポートの保存先」の登録が必要です。<a href="./start.html#start-bucket">はじめての準備</a>をご確認ください。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 離脱率が表示されない日があります。</h3>
+<p class="faq-a">離脱率は、その日までの7日分のデータがそろっているときだけ表示します。7日分に満たない日は、点が打たれません。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 国別の数字が、合計と合いません。</h3>
+<p class="faq-a">国別の一覧は、今月分の上位10か国です。「他◯件を表示」で残りの国も確認できます。</p>
+</div>
+</div>
+</section>
 
-    <div class="step-item" id="installs-update">
-      <div class="step-header">
-        <span class="step-badge">STEP 5</span>
-        <h3 class="step-title">アップデートの推移</h3>
-      </div>
-      <p>アップデートされたデバイスの数を、日ごとに表示します。新しいバージョンがどれくらい広がったかの目安になります。</p>
+<div class="page-nav"><a class="page-nav-link" href="./revenue.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 3. 収益</span></a><a class="page-nav-link next" href="./users.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">5. ユーザー ›</span></a></div></main>
+<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">📊 アプリ成績表 アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
 
-    <div class="shot-card narrow">
-      <img src="./images/installs_update.webp" alt="アップデートされたデバイス数の積み上げ棒グラフ" width="542" height="584" loading="lazy">
-      <div class="shot-caption">日ごとのアップデート数</div>
-    </div>
-    </div>
 
-    <div class="step-item" id="installs-store">
-      <div class="step-header">
-        <span class="step-badge">STEP 6</span>
-        <h3 class="step-title">ストアの表示（訪問者・獲得・転換率）と流入元</h3>
-      </div>
-      <p>Google Playのストアページが見られた回数と、そこからインストールされた数を表示します。</p>
-      <ul>
-        <li><strong>ストアページの訪問者</strong>と、<strong>獲得（インストール）</strong>、その割合の<strong>転換率</strong>を、「直近7日」と「今月」で表示します。</li>
-        <li><strong>流入元</strong>では、直近30日の訪問者が、どこから来たか（Google Play 検索・Google Play のおすすめなど）を、「獲得 → 訪問者」の形で並べます。</li>
-        <li>ストアの表示は、インストール数より、さらに遅れて出ます。</li>
-      </ul>
-
-    <div class="shot-card narrow">
-      <img src="./images/installs_store.webp" alt="ストアの表示。直近7日と今月の訪問者・獲得・転換率" width="542" height="338" loading="lazy">
-      <div class="shot-caption">直近7日と今月のストアの数字</div>
-    </div>
-    <div class="shot-card narrow">
-      <img src="./images/installs_source.webp" alt="流入元の一覧。検索やおすすめなどからの獲得と訪問者" width="542" height="295" loading="lazy">
-      <div class="shot-caption">流入元（直近30日）</div>
-    </div>
-    </div>
-
-    <div class="step-item" id="installs-country">
-      <div class="step-header">
-        <span class="step-badge">STEP 7</span>
-        <h3 class="step-title">国別のインストール</h3>
-      </div>
-      <p>国ごとのインストール数を、3つの形で見られます。</p>
-      <ul>
-        <li><strong>国別インストール</strong>: 今月の上位10か国をランキングで表示します。「他◯件を表示」で、残りも開けます。</li>
-        <li><strong>国別のインストール数</strong>: 日別の積み上げグラフで、国ごとに色分けします。</li>
-        <li><strong>国を選んで見るインストール数</strong>: 上のチップ（JP・US・KR…）で国を選ぶと、その国の日別のインストール数を、アプリ別の積み上げで表示します。</li>
-      </ul>
-
-    <div class="shot-card narrow">
-      <img src="./images/installs_country_rank.webp" alt="国別インストールのランキング。今月の上位の国" width="542" height="304" loading="lazy">
-      <div class="shot-caption">今月の上位の国</div>
-    </div>
-    <div class="shot-card narrow">
-      <img src="./images/installs_country_daily.webp" alt="国別のインストール数。日別の積み上げグラフ" width="542" height="597" loading="lazy">
-      <div class="shot-caption">日別・国で色分け</div>
-    </div>
-    <div class="shot-card narrow">
-      <img src="./images/installs_country_one.webp" alt="国を選んで見るインストール数。上部の国のチップで切り替える" width="542" height="611" loading="lazy">
-      <div class="shot-caption">国のチップで切り替え</div>
-    </div>
-    </div>
-  </section>
-
-  <section class="card-section" aria-labelledby="faq-heading">
-    <h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 「未集計」とは何ですか？</h3>
-        <p class="faq-a">Playのレポートは、集計に数日かかります。灰色の「未集計」の日は、0件ではなく、まだ数字が分からない日です。数日たつと、数字が入ります。</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> インストール数が表示されません。</h3>
-        <p class="faq-a">Play Consoleのアカウントでのログインと、「レポートの保存先」の登録が必要です。<a href="./start.html#start-bucket">はじめての準備</a>をご確認ください。</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 離脱率が表示されない日があります。</h3>
-        <p class="faq-a">離脱率は、その日までの7日分のデータがそろっているときだけ表示します。7日分に満たない日は、点が打たれません。</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 国別の数字が、合計と合いません。</h3>
-        <p class="faq-a">国別の一覧は、今月分の上位10か国です。「他◯件を表示」で残りの国も確認できます。</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="page-nav">
-    <a class="page-nav-link" href="./revenue.html">
-      <span class="page-nav-sub">前の機能へ</span>
-      <span class="page-nav-title">‹ 3. 収益</span>
-    </a>
-    <a class="page-nav-link next" href="./users.html">
-      <span class="page-nav-sub">次の機能へ</span>
-      <span class="page-nav-title">5. ユーザー ›</span>
-    </a>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <p>© ちゃ開発組 <a href="../index.html">アプリ成績表 アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
-</footer>
-</body>
-</html>

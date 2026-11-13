@@ -67,163 +67,135 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="brand-link" href="./index.html">📊 アプリ成績表 <span class="brand-pill">取扱説明書</span></a>
-    <nav class="global-nav" aria-label="取扱説明書メニュー">
-      <a href="./index.html">トップ（目次）</a>
-      <a href="./start.html" aria-current="page">1. はじめての準備</a>
-      <a href="./basics.html">2. 画面の見かた・基本操作</a>
-      <a href="./revenue.html">3. 収益</a>
-      <a href="./installs.html">4. インストール</a>
-      <a href="./users.html">5. ユーザー</a>
-      <a href="./ratings.html">6. 評価・レビュー</a>
-      <a href="./quality.html">7. 品質</a>
-      <a href="./settings.html">8. 設定・バックアップ</a>
-      <a href="./widgets.html">9. ウィジェット</a>
-    </nav>
-  </div>
-</header>
-
-<div class="hero-banner">
-  <span class="pill">機能 01</span>
-  <h1>🚀 はじめての準備（ログインと保存先の登録）</h1>
-  <p>AdMobとPlay Consoleのアカウントを登録し、数字が表示されるまでの手順を解説します。</p>
+<div class="site-header-inner">
+<a class="brand-link" href="./index.html">📊 アプリ成績表 <span class="brand-pill">取扱説明書</span></a>
+<nav aria-label="取扱説明書メニュー" class="global-nav">
+<a href="./index.html">トップ（目次）</a>
+<a aria-current="page" href="./start.html">1. はじめての準備</a>
+<a href="./basics.html">2. 画面の見かた・基本操作</a>
+<a href="./revenue.html">3. 収益</a>
+<a href="./installs.html">4. インストール</a>
+<a href="./users.html">5. ユーザー</a>
+<a href="./ratings.html">6. 評価・レビュー</a>
+<a href="./quality.html">7. 品質</a>
+<a href="./settings.html">8. 設定・バックアップ</a>
+<a href="./widgets.html">9. ウィジェット</a>
+</nav>
 </div>
-
+</header>
+<div class="hero-banner">
+<span class="pill">機能 01</span>
+<h1>🚀 はじめての準備（ログインと保存先の登録）</h1>
+<p>AdMobとPlay Consoleのアカウントを登録し、数字が表示されるまでの手順を解説します。</p>
+</div>
 <main class="container">
-  <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>🚀 はじめての準備（ログインと保存先の登録）</span>
-  </nav>
-  <section class="card-section" aria-labelledby="intro-heading">
-    <h2 id="intro-heading">📖 はじめに（この準備でできること）</h2>
-      <p>アプリ成績表は、AdMobの広告収益と、Google Playのインストール数・評価・レビュー・品質を、1つのアプリでまとめて確認できるダッシュボードです。使いはじめる前に、データを読み込むための準備が必要です。</p>
-      <p>準備は、「アカウントのログイン」と「Playのレポートの保存先の登録」の2つです。</p>
-
-    <div class="want-tags" aria-label="このページの主な目的">
-      <a class="want-tag" href="#start-demo">・ログインせずに、まず画面を試したい</a>
-      <a class="want-tag" href="#start-admob">・AdMobの収益を表示したい</a>
-      <a class="want-tag" href="#start-play">・Playのインストール数・評価・レビューを表示したい</a>
-      <a class="want-tag" href="#start-bucket">・レポートの保存先（Cloud Storage URI）を登録したい</a>
-      <a class="want-tag" href="#start-sync">・データの取得のしかたを知りたい</a>
-    </div>
-  </section>
-
-  <section class="card-section" aria-labelledby="steps-heading">
-    <h2 id="steps-heading">🛠️ 詳しい使い方</h2>
-
-    <div class="step-item" id="start-demo">
-      <div class="step-header">
-        <span class="step-badge">STEP 1</span>
-        <h3 class="step-title">まずは試してみる（デモモード）</h3>
-      </div>
-      <p>アカウントの登録がまだのときは、各タブに「まだデータがありません」という案内が出ます。この案内の下にある<strong>「デモモードで利用する」</strong>を押すと、サンプルのデータで、アプリの画面をひととおり確認できます（ログインは要りません。Androidのみ）。</p>
-      <p>読み込みが終わると、アプリの再起動をうながすダイアログが出ます。再起動すると、サンプルのデータが入った状態で使えます。</p>
-      <p>デモモードの間は、データの取得は行われません。設定画面の一番上に出る<strong>「初期化」</strong>を押すと、サンプルのデータを消して、アプリを入れた直後の状態に戻せます。</p>
-
-      <div class="callout">
-        <div class="callout-title">💡 本物のデータを見るときは</div>
+<nav aria-label="パンくずリスト" class="breadcrumb">
+<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>🚀 はじめての準備（ログインと保存先の登録）</span>
+</nav>
+<section aria-labelledby="intro-heading" class="card-section">
+<h2 id="intro-heading">📖 はじめに（この準備でできること）</h2>
+<p>アプリ成績表は、AdMobの広告収益と、Google Playのインストール数・評価・レビュー・品質を、1つのアプリでまとめて確認できるダッシュボードです。使いはじめる前に、データを読み込むための準備が必要です。</p>
+<p>準備は、「アカウントのログイン」と「Playのレポートの保存先の登録」の2つです。</p>
+<div aria-label="このページの主な目的" class="want-tags">
+<a class="want-tag" href="#start-demo">・ログインせずに、まず画面を試したい</a>
+<a class="want-tag" href="#start-admob">・AdMobの収益を表示したい</a>
+<a class="want-tag" href="#start-play">・Playのインストール数・評価・レビューを表示したい</a>
+<a class="want-tag" href="#start-bucket">・レポートの保存先（Cloud Storage URI）を登録したい</a>
+<a class="want-tag" href="#start-sync">・データの取得のしかたを知りたい</a>
+</div>
+</section>
+<section aria-labelledby="steps-heading" class="card-section">
+<h2 id="steps-heading">🛠️ 詳しい使い方</h2>
+<div class="step-item" id="start-demo">
+<div class="step-header">
+<span class="step-badge">STEP 1</span>
+<h3 class="step-title">まずは試してみる（デモモード）</h3>
+</div>
+<p>アカウントの登録がまだのときは、各タブに「まだデータがありません」という案内が出ます。この案内の下にある<strong>「デモモードで利用する」</strong>を押すと、サンプルのデータで、アプリの画面をひととおり確認できます（ログインは要りません。Androidのみ）。</p>
+<p>読み込みが終わると、アプリの再起動をうながすダイアログが出ます。再起動すると、サンプルのデータが入った状態で使えます。</p>
+<p>デモモードの間は、データの取得は行われません。設定画面の一番上に出る<strong>「初期化」</strong>を押すと、サンプルのデータを消して、アプリを入れた直後の状態に戻せます。</p>
+<div class="callout">
+<div class="callout-title">💡 本物のデータを見るときは</div>
         デモモードを使ったあと、自分のアカウントのデータを見たいときは、設定の「初期化」で最初の状態に戻してから、下の手順でログインしてください。
       </div>
-    </div>
-
-    <div class="step-item" id="start-admob">
-      <div class="step-header">
-        <span class="step-badge">STEP 2</span>
-        <h3 class="step-title">AdMobのアカウントでログインする</h3>
-      </div>
-      <p>「設定」タブの<strong>「AdMobのアカウント」</strong>の横にある<strong>「追加」</strong>を押し、AdMobの収益を見たいGoogleアカウントでログインします。ログインすると、そのアカウントのアプリがすべて一覧に加わり、「収益」タブに広告収益が表示されます。</p>
-      <ul>
-        <li>アカウントは、複数追加できます。登録したアカウントは、1行に「メールアドレス・ログイン中・ログアウト」の形で並びます。</li>
-        <li>同じ種類に、同じアカウントでログインし直したときは、前のものが置き換わります。</li>
-        <li>ログインが切れたアカウントには、「ログインし直す」の案内が出ます。押して、もう一度ログインしてください。</li>
-        <li>AdMobのアプリ一覧は、アカウントごとに読み込み、全部を1つの一覧にまとめます。</li>
-      </ul>
-
-    <div class="shot-card narrow">
-      <img src="./images/settings_accounts.webp" alt="アプリ成績表の設定画面。AdMobとPlay Consoleのアカウントを追加する欄" width="542" height="419" loading="lazy">
-      <div class="shot-caption">AdMob・Play Consoleそれぞれに「追加」ボタンがある、設定のアカウント欄</div>
-    </div>
-    </div>
-
-    <div class="step-item" id="start-play">
-      <div class="step-header">
-        <span class="step-badge">STEP 3</span>
-        <h3 class="step-title">Play Consoleのアカウントでログインする</h3>
-      </div>
-      <p>「設定」タブの<strong>「Play Consoleのアカウント」</strong>の横の<strong>「追加」</strong>から、Playのインストール数・評価・レビュー・品質を見たいGoogleアカウントでログインします。AdMobと同じアカウントでも、別のアカウントでも構いません。</p>
-      <ul>
-        <li>このアカウントには、Play Consoleの「レポートのダウンロード」権限が必要です。権限が足りないと、「Playのデータを読む権限がありません」と案内が出ます。その場合は、権限のあるアカウントでログインし直してください。</li>
-        <li>レビューへの返信には、そのアプリへ返信する権限のあるアカウントが必要です。</li>
-      </ul>
-
-    </div>
-
-    <div class="step-item" id="start-bucket">
-      <div class="step-header">
-        <span class="step-badge">STEP 4</span>
-        <h3 class="step-title">Playの「レポートの保存先」を登録する</h3>
-      </div>
-      <p>インストール数・評価・国別のインストール数は、Play Consoleが出力するレポートから読み込みます。その<strong>保存先の名前</strong>を、Playのアカウントごとに登録します（登録するまで、「インストール」「評価」「品質」のタブには、未登録である旨が表示されます）。</p>
-      <ol>
-        <li>Play Consoleを開き、左メニューの<strong>「アカウントの管理」→「レポート」→「統計情報」</strong>を開きます。</li>
-        <li>画面右の<strong>「Cloud Storage URI をコピー」</strong>を押します。</li>
-        <li>コピーした文字列（<code>gs://pubsite_prod_…</code>の形）を、アプリの設定にある、Playのアカウントの<strong>「追加」</strong>のポップアップに貼り付けて追加します。</li>
-      </ol>
-      <p>開発者アカウントが複数あるときは、開発者アカウントごとに、同じ手順で追加します。探し方に迷ったときは、設定の「レポートの保存先」の横の「?」から、同じ説明をもう一度読めます。</p>
-
-      <div class="callout">
-        <div class="callout-title">⏱ 反映までの時間</div>
+</div>
+<div class="step-item" id="start-admob">
+<div class="step-header">
+<span class="step-badge">STEP 2</span>
+<h3 class="step-title">AdMobのアカウントでログインする</h3>
+</div>
+<p>「設定」タブの<strong>「AdMobのアカウント」</strong>の横にある<strong>「追加」</strong>を押し、AdMobの収益を見たいGoogleアカウントでログインします。ログインすると、そのアカウントのアプリがすべて一覧に加わり、「収益」タブに広告収益が表示されます。</p>
+<ul>
+<li>アカウントは、複数追加できます。登録したアカウントは、1行に「メールアドレス・ログイン中・ログアウト」の形で並びます。</li>
+<li>同じ種類に、同じアカウントでログインし直したときは、前のものが置き換わります。</li>
+<li>ログインが切れたアカウントには、「ログインし直す」の案内が出ます。押して、もう一度ログインしてください。</li>
+<li>AdMobのアプリ一覧は、アカウントごとに読み込み、全部を1つの一覧にまとめます。</li>
+</ul>
+<div class="shot-card narrow">
+<img alt="アプリ成績表の設定画面。AdMobとPlay Consoleのアカウントを追加する欄" height="419" loading="lazy" src="./images/settings_accounts.webp" width="542"/>
+<div class="shot-caption">AdMob・Play Consoleそれぞれに「追加」ボタンがある、設定のアカウント欄</div>
+</div>
+</div>
+<div class="step-item" id="start-play">
+<div class="step-header">
+<span class="step-badge">STEP 3</span>
+<h3 class="step-title">Play Consoleのアカウントでログインする</h3>
+</div>
+<p>「設定」タブの<strong>「Play Consoleのアカウント」</strong>の横の<strong>「追加」</strong>から、Playのインストール数・評価・レビュー・品質を見たいGoogleアカウントでログインします。AdMobと同じアカウントでも、別のアカウントでも構いません。</p>
+<ul>
+<li>このアカウントには、Play Consoleの「レポートのダウンロード」権限が必要です。権限が足りないと、「Playのデータを読む権限がありません」と案内が出ます。その場合は、権限のあるアカウントでログインし直してください。</li>
+<li>レビューへの返信には、そのアプリへ返信する権限のあるアカウントが必要です。</li>
+</ul>
+</div>
+<div class="step-item" id="start-bucket">
+<div class="step-header">
+<span class="step-badge">STEP 4</span>
+<h3 class="step-title">Playの「レポートの保存先」を登録する</h3>
+</div>
+<p>インストール数・評価・国別のインストール数は、Play Consoleが出力するレポートから読み込みます。その<strong>保存先の名前</strong>を、Playのアカウントごとに登録します（登録するまで、「インストール」「評価」「品質」のタブには、未登録である旨が表示されます）。</p>
+<ol>
+<li>Play Consoleを開き、左メニューの<strong>「アカウントの管理」→「レポート」→「統計情報」</strong>を開きます。</li>
+<li>画面右の<strong>「Cloud Storage URI をコピー」</strong>を押します。</li>
+<li>コピーした文字列（<code>gs://pubsite_prod_…</code>の形）を、アプリの設定にある、Playのアカウントの<strong>「追加」</strong>のポップアップに貼り付けて追加します。</li>
+</ol>
+<p>開発者アカウントが複数あるときは、開発者アカウントごとに、同じ手順で追加します。探し方に迷ったときは、設定の「レポートの保存先」の横の「?」から、同じ説明をもう一度読めます。</p>
+<div class="callout">
+<div class="callout-title">⏱ 反映までの時間</div>
         Playのレポートは、集計に数日かかります。登録してすぐは、最新の数日分が「未集計」になることがあります。
       </div>
-    </div>
+</div>
+<div class="step-item" id="start-sync">
+<div class="step-header">
+<span class="step-badge">STEP 5</span>
+<h3 class="step-title">データを取得する</h3>
+</div>
+<p>アプリを開くと、データを自動で取得します（設定の「自動取得」がオンのとき）。取得中は、画面を覆わず、右下の丸いボタンのまわりが回ります。取得中も、ほかの操作を続けられます。</p>
+<p>各タブのタイトルの横には、取得の状態（「データ全取得完了」「データ取得一部失敗あり」「データ取得中…」「データ未取得」と、その日時）が表示されます。タップすると、項目ごとの成功・失敗の一覧が開きます。</p>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="card-section">
+<h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
+<div class="faq-list">
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> ログインしても、収益やインストール数が出ません。</h3>
+<p class="faq-a">AdMobの収益は、AdMobのアカウントでのログインが必要です。インストール数・評価・品質は、Play Consoleのアカウントでのログインと、「レポートの保存先」の登録が必要です。どちらかが足りないと、そのタブには登録をうながす案内が出ます。設定で、アカウントと保存先を確認してください。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 「レポートの保存先」は、どこで調べればよいですか？</h3>
+<p class="faq-a">Play Consoleの「アカウントの管理」→「レポート」→「統計情報」を開き、「Cloud Storage URI をコピー」を押すと、<code>gs://pubsite_prod_…</code>で始まる文字列がコピーできます。これをアプリの追加画面に貼り付けます。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> AdMobとPlay Consoleで、Googleアカウントが別々です。</h3>
+<p class="faq-a">AdMob用・Play Console用に、別々のアカウントでログインできます。それぞれ複数追加でき、同じアプリが複数のアカウントから見えるときは、パッケージ名で1つにまとめられます。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> iPhoneでも使えますか？</h3>
+<p class="faq-a">いいえ。このアプリはAndroid用です。</p>
+</div>
+</div>
+</section>
 
-    <div class="step-item" id="start-sync">
-      <div class="step-header">
-        <span class="step-badge">STEP 5</span>
-        <h3 class="step-title">データを取得する</h3>
-      </div>
-      <p>アプリを開くと、データを自動で取得します（設定の「自動取得」がオンのとき）。取得中は、画面を覆わず、右下の丸いボタンのまわりが回ります。取得中も、ほかの操作を続けられます。</p>
-      <p>各タブのタイトルの横には、取得の状態（「データ全取得完了」「データ取得一部失敗あり」「データ取得中…」「データ未取得」と、その日時）が表示されます。タップすると、項目ごとの成功・失敗の一覧が開きます。</p>
+<div class="page-nav"><a class="page-nav-link" href="./index.html"><span class="page-nav-sub">目次へ戻る</span><span class="page-nav-title">‹ 取扱説明書トップ</span></a><a class="page-nav-link next" href="./basics.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">2. 画面の見かた・基本操作 ›</span></a></div></main>
+<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">📊 アプリ成績表 アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
 
-    </div>
-  </section>
 
-  <section class="card-section" aria-labelledby="faq-heading">
-    <h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> ログインしても、収益やインストール数が出ません。</h3>
-        <p class="faq-a">AdMobの収益は、AdMobのアカウントでのログインが必要です。インストール数・評価・品質は、Play Consoleのアカウントでのログインと、「レポートの保存先」の登録が必要です。どちらかが足りないと、そのタブには登録をうながす案内が出ます。設定で、アカウントと保存先を確認してください。</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 「レポートの保存先」は、どこで調べればよいですか？</h3>
-        <p class="faq-a">Play Consoleの「アカウントの管理」→「レポート」→「統計情報」を開き、「Cloud Storage URI をコピー」を押すと、<code>gs://pubsite_prod_…</code>で始まる文字列がコピーできます。これをアプリの追加画面に貼り付けます。</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> AdMobとPlay Consoleで、Googleアカウントが別々です。</h3>
-        <p class="faq-a">AdMob用・Play Console用に、別々のアカウントでログインできます。それぞれ複数追加でき、同じアプリが複数のアカウントから見えるときは、パッケージ名で1つにまとめられます。</p>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> iPhoneでも使えますか？</h3>
-        <p class="faq-a">いいえ。このアプリはAndroid用です。</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="page-nav">
-    <a class="page-nav-link" href="./index.html">
-      <span class="page-nav-sub">目次へ戻る</span>
-      <span class="page-nav-title">‹ トップ（目次）</span>
-    </a>
-    <a class="page-nav-link next" href="./basics.html">
-      <span class="page-nav-sub">次の機能へ</span>
-      <span class="page-nav-title">2. 画面の見かた・基本操作 ›</span>
-    </a>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <p>© ちゃ開発組 <a href="../index.html">アプリ成績表 アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
-</footer>
-</body>
-</html>

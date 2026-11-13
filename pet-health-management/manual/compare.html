@@ -67,101 +67,71 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="brand-link" href="./index.html">🐾 ぺっときろく <span class="brand-pill">取扱説明書</span></a>
-    <nav class="global-nav" aria-label="取扱説明書メニュー">
-      <a href="./index.html">トップ（目次）</a>
-      <a href="./profile.html">1. プロフィール登録</a>
-      <a href="./care-settings.html">2. お世話記録設定</a>
-      <a href="./compare.html" aria-current="page">3. 記録を見る・比較</a>
-      <a href="./notifications.html">4. 通知まとめ</a>
-    </nav>
-  </div>
+<div class="site-header-inner">
+<a class="brand-link" href="./index.html">🐾 ぺっときろく <span class="brand-pill">取扱説明書</span></a>
+<nav aria-label="取扱説明書メニュー" class="global-nav">
+<a href="./index.html">トップ（目次）</a>
+<a href="./profile.html">1. プロフィール登録</a>
+<a href="./care-settings.html">2. お世話記録設定</a>
+<a aria-current="page" href="./compare.html">3. 記録を見る・比較</a>
+<a href="./notifications.html">4. 通知まとめ</a>
+</nav>
+</div>
 </header>
-
 <div class="hero-banner">
-  <span class="pill">機能 03</span>
-  <h1>📊 記録を見る（複数ペット比較・カレンダー・統計）</h1>
-  <p>複数のペットを並べて、予定カレンダーや体重・体調・独自項目の推移を振り返る画面です。</p>
+<span class="pill">機能 03</span>
+<h1>📊 記録を見る（複数ペット比較・カレンダー・統計）</h1>
+<p>複数のペットを並べて、予定カレンダーや体重・体調・独自項目の推移を振り返る画面です。</p>
+</div>
+<main class="container">
+<nav aria-label="パンくずリスト" class="breadcrumb">
+<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>記録を見る（比較・カレンダー・統計）</span>
+</nav>
+<section aria-labelledby="intro-heading" class="card-section">
+<h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+<p>下部タブの「記録を見る」では、ペットを1匹または複数選んで、今後の予定（カレンダー）や日々のお世話記録（グラフ・色分けカレンダー・一覧）を確認できます。</p>
+<div aria-label="このページの主な目的" class="want-tags">
+<a class="want-tag" href="#step-pets">・複数ペットを同時に選んで比較したい</a>
+<a class="want-tag" href="#step-chips">・体重やごはん、独自項目の記録を見たい</a>
+<a class="want-tag" href="#step-calendar">・スケジュール／週間／月間で予定を確認したい</a>
+</div>
+</section>
+<section aria-labelledby="guide-heading" class="card-section">
+<h2 id="guide-heading">📱 画面の各項目と使い方</h2>
+<div class="shot-card narrow"><img alt="記録を見るタブの画面（ちゃこ・ちゃのを選択中、カレンダー・体重・ごはん等の項目チップ、スケジュール・週間・月間タブ、誕生日予定の一覧）" loading="lazy" src="./images/03_compare.png"/><div class="shot-caption">「記録を見る」タブ</div></div>
+<figure class="detail-shot">
+
+<figcaption>「記録を見る」タブ</figcaption>
+</figure>
+
+<div class="step-item" id="step-pets">
+<div class="step-header"><span class="step-badge">STEP 1</span><h3 class="step-title">ペットを選ぶ（複数選択に対応）</h3></div>
+<p>画面上部に登録済みのペットが並びます。アイコンをタップすると選択状態（右上に緑の✓マークと枠線）になり、<strong>複数のペット（例：ちゃこ、ちゃの）を同時に選ぶ</strong>ことができます。<br/>
+          複数選択すると、下の予定一覧やグラフでペットごとに色分け（青い丸・オレンジの丸など）して並べて比較できます。</p>
+</div>
+<div class="step-item" id="step-chips">
+<div class="step-header"><span class="step-badge">STEP 2</span><h3 class="step-title">項目チップを選ぶ（カレンダー・標準項目・作成した項目）</h3></div>
+<p>2段目のボックスには、「カレンダー」に加えて、<a href="./care-settings.html">お世話記録設定</a>で「記録」をオンにした項目（体重・ごはん・おやつ・水・うんち・おしっこ・掃除・換毛・環境記録・写真/動画・元気度などの作成した項目）が並びます。<br/>
+          見たいチップをタップすると、下の表示がその項目の内容に切り替わります。</p>
+</div>
+<div class="step-item" id="step-calendar">
+<div class="step-header"><span class="step-badge">STEP 3</span><h3 class="step-title">スケジュール / 週間 / 月間 と グラフ / カレンダー / 一覧</h3></div>
+<p>・<strong>「カレンダー」チップ選択時</strong>：「スケジュール」「週間」「月間」の3つのボタンで予定の見方を切り替えられます。スケジュールでは日付ごとに予定と対象ペットが一覧表示されます。<br/>
+          ・<strong>体重や体調などの項目チップ選択時</strong>：「グラフ（1日ごとの推移）」「カレンダー（状態ごとの色分け）」「一覧（記録の編集・削除）」に切り替えて詳しく振り返れます。</p>
 </div>
 
-<main class="container">
-  <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>記録を見る（比較・カレンダー・統計）</span>
-  </nav>
 
-  <section class="card-section" aria-labelledby="intro-heading">
-    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
-    <p>下部タブの「記録を見る」では、ペットを1匹または複数選んで、今後の予定（カレンダー）や日々のお世話記録（グラフ・色分けカレンダー・一覧）を確認できます。</p>
-    <div class="want-tags" aria-label="このページの主な目的">
-      <a class="want-tag" href="#step-pets">・複数ペットを同時に選んで比較したい</a>
-      <a class="want-tag" href="#step-chips">・体重やごはん、独自項目の記録を見たい</a>
-      <a class="want-tag" href="#step-calendar">・スケジュール／週間／月間で予定を確認したい</a>
-    </div>
-  </section>
+</section>
+<section aria-labelledby="faq-heading" class="card-section" id="faq">
+<h2 id="faq-heading">💡 よくある質問（FAQ）</h2>
+<div class="faq-list">
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 複数のペットの予定や体重を同時に見比べるにはどうすればよいですか？</h3><p class="faq-a">画面一番上のペット一覧で、見比べたいペットを複数タップして✓を付けるだけで、下の表示が複数ペットの比較表示に切り替わります。</p></div>
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 見たい項目がチップ一覧に出てこないのはなぜですか？</h3><p class="faq-a">選択中のペットで「記録」がオンになっている項目だけが表示されます。「<a href="./care-settings.html">お世話記録設定</a>」でその項目の「記録」にチェックを入れてください。</p></div>
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> グラフの表示期間はどこまで選べますか？</h3><p class="faq-a">無料プランでは直近5日間のグラフ・カレンダーを表示でき、PREMIUMにアップグレードすると2週間・1ヶ月・3ヶ月・6ヶ月の長期推移も確認できます。</p></div>
+<div class="faq-item"><h3 class="faq-q"><span class="faq-q-mark">Q</span> 記録した内容を後から修正・削除したいときは？</h3><p class="faq-a">修正したい項目のチップをタップし、「一覧」タブを開くと、各記録の編集・削除が行えます。</p></div>
+</div>
+</section>
 
-  <section class="card-section" aria-labelledby="guide-heading">
-    <h2 id="guide-heading">📱 画面の各項目と使い方</h2>
-    <div class="detail-layout">
-      <figure class="detail-shot">
-        <img src="./images/03_compare.png" alt="記録を見るタブの画面（ちゃこ・ちゃのを選択中、カレンダー・体重・ごはん等の項目チップ、スケジュール・週間・月間タブ、誕生日予定の一覧）">
-        <figcaption>「記録を見る」タブ</figcaption>
-      </figure>
+<div class="page-nav"><a class="page-nav-link" href="./care-settings.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 2. お世話記録設定</span></a><a class="page-nav-link next" href="./notifications.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">4. 通知まとめ ›</span></a></div></main><footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">🐾 ぺっときろく アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
 
-      <div class="flow-steps">
-        <div class="flow-step" id="step-pets">
-          <h3>① ペットを選ぶ（複数選択に対応）</h3>
-          <p>画面上部に登録済みのペットが並びます。アイコンをタップすると選択状態（右上に緑の✓マークと枠線）になり、<strong>複数のペット（例：ちゃこ、ちゃの）を同時に選ぶ</strong>ことができます。<br>
-          複数選択すると、下の予定一覧やグラフでペットごとに色分け（青い丸・オレンジの丸など）して並べて比較できます。</p>
-        </div>
 
-        <div class="flow-step" id="step-chips">
-          <h3>② 項目チップを選ぶ（カレンダー・標準項目・作成した項目）</h3>
-          <p>2段目のボックスには、「カレンダー」に加えて、<a href="./care-settings.html">お世話記録設定</a>で「記録」をオンにした項目（体重・ごはん・おやつ・水・うんち・おしっこ・掃除・換毛・環境記録・写真/動画・元気度などの作成した項目）が並びます。<br>
-          見たいチップをタップすると、下の表示がその項目の内容に切り替わります。</p>
-        </div>
-
-        <div class="flow-step" id="step-calendar">
-          <h3>③ スケジュール / 週間 / 月間 と グラフ / カレンダー / 一覧</h3>
-          <p>・<strong>「カレンダー」チップ選択時</strong>：「スケジュール」「週間」「月間」の3つのボタンで予定の見方を切り替えられます。スケジュールでは日付ごとに予定と対象ペットが一覧表示されます。<br>
-          ・<strong>体重や体調などの項目チップ選択時</strong>：「グラフ（1日ごとの推移）」「カレンダー（状態ごとの色分け）」「一覧（記録の編集・削除）」に切り替えて詳しく振り返れます。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="card-section" id="faq" aria-labelledby="faq-heading">
-    <h2 id="faq-heading">💡 よくある質問（FAQ）</h2>
-    <div class="faq-grid">
-      <article class="faq-card">
-        <h3>Q. 複数のペットの予定や体重を同時に見比べるにはどうすればよいですか？</h3>
-        <p>画面一番上のペット一覧で、見比べたいペットを複数タップして✓を付けるだけで、下の表示が複数ペットの比較表示に切り替わります。</p>
-      </article>
-      <article class="faq-card">
-        <h3>Q. 見たい項目がチップ一覧に出てこないのはなぜですか？</h3>
-        <p>選択中のペットで「記録」がオンになっている項目だけが表示されます。「<a href="./care-settings.html">お世話記録設定</a>」でその項目の「記録」にチェックを入れてください。</p>
-      </article>
-      <article class="faq-card">
-        <h3>Q. グラフの表示期間はどこまで選べますか？</h3>
-        <p>無料プランでは直近5日間のグラフ・カレンダーを表示でき、PREMIUMにアップグレードすると2週間・1ヶ月・3ヶ月・6ヶ月の長期推移も確認できます。</p>
-      </article>
-      <article class="faq-card">
-        <h3>Q. 記録した内容を後から修正・削除したいときは？</h3>
-        <p>修正したい項目のチップをタップし、「一覧」タブを開くと、各記録の編集・削除が行えます。</p>
-      </article>
-    </div>
-  </section>
-
-  <nav class="pager-nav" aria-label="前後のページへ移動">
-    <a class="pager-link" href="./care-settings.html">
-      <span class="dir">← 前のページ（機能 02）</span>
-      <span class="lbl">お世話記録設定と「作成した記録項目」</span>
-    </a>
-    <a class="pager-link" href="./notifications.html">
-      <span class="dir">次のページ（機能 04）→</span>
-      <span class="lbl">通知まとめ（お知らせ通知・お世話の通知）</span>
-    </a>
-  </nav>
-</main>
-</body>
-</html>

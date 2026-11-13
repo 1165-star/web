@@ -58,150 +58,118 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="brand-link" href="./index.html">📐 モノサシ <span class="brand-pill">取扱説明書</span></a>
-    <nav class="global-nav" aria-label="取扱説明書メニュー">
-      <a href="./index.html">トップ（目次）</a>
-      <a href="./measure.html" aria-current="page">1. 撮影・モノサシ判定</a>
-      <a href="./photos.html">2. 写真一覧・推移グラフ</a>
-      <a href="./results.html">3. 結果・手放した記録</a>
-      <a href="./settings.html">4. 設定・ウィジェット</a>
-    </nav>
-  </div>
-</header>
-
-<div class="hero-banner">
-  <span class="pill">機能 01</span>
-  <h1>📸 写真撮影とモノサシ判定（スワイプ）</h1>
-  <p>迷う持ち物をカメラで撮って、1分間の直感スワイプ！ゲーム感覚で心の中の「必要」「不要」を浮き彫りにする基本操作を解説します。</p>
+<div class="site-header-inner">
+<a class="brand-link" href="./index.html">📐 モノサシ <span class="brand-pill">取扱説明書</span></a>
+<nav aria-label="取扱説明書メニュー" class="global-nav">
+<a href="./index.html">トップ（目次）</a>
+<a aria-current="page" href="./measure.html">1. 撮影・モノサシ判定</a>
+<a href="./photos.html">2. 写真一覧・推移グラフ</a>
+<a href="./results.html">3. 結果・手放した記録</a>
+<a href="./settings.html">4. 設定・ウィジェット</a>
+</nav>
 </div>
-
+</header>
+<div class="hero-banner">
+<span class="pill">機能 01</span>
+<h1>📸 写真撮影とモノサシ判定（スワイプ）</h1>
+<p>迷う持ち物をカメラで撮って、1分間の直感スワイプ！ゲーム感覚で心の中の「必要」「不要」を浮き彫りにする基本操作を解説します。</p>
+</div>
 <main class="container">
-  <section class="card-section" id="how-to-start" aria-labelledby="start-heading">
-    <h2 id="start-heading">📷 持ち物を撮影して登録する</h2>
-    <p>クローゼット、机の引き出し、本棚などで「捨てるか残すか迷っているもの」を見つけたら、まずはスマートフォンのカメラで撮影してアプリに登録します。</p>
+<section aria-labelledby="start-heading" class="card-section" id="how-to-start">
+<h2 id="start-heading">📷 持ち物を撮影して登録する</h2>
+<p>クローゼット、机の引き出し、本棚などで「捨てるか残すか迷っているもの」を見つけたら、まずはスマートフォンのカメラで撮影してアプリに登録します。</p>
 
-    <div class="step-list">
-      <div class="step-item">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <div class="step-title">トップ画面で「写真を撮る」をタップ</div>
-          <div class="step-desc">カメラが起動します。持ち物がはっきりと写るようにピントを合わせてシャッターを押します。</div>
-        </div>
-      </div>
-      <div class="step-item">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <div class="step-title">何枚でもどんどん撮りためる</div>
-          <div class="step-desc">たくさん撮りためておくほど、モノサシ判定の精度がぐんぐん上がります。トップ画面には「〇個を記録中」と表示されます。</div>
-        </div>
-      </div>
-    </div>
+<div class="step-item"><div class="step-header"><span class="step-badge">STEP 1</span><h3 class="step-title">トップ画面で「写真を撮る」をタップ</h3></div><p>カメラが起動します。持ち物がはっきりと写るようにピントを合わせてシャッターを押します。</p></div>
+<div class="step-item"><div class="step-header"><span class="step-badge">STEP 2</span><h3 class="step-title">何枚でもどんどん撮りためる</h3></div><p>たくさん撮りためておくほど、モノサシ判定の精度がぐんぐん上がります。トップ画面には「〇個を記録中」と表示されます。</p></div>
 
-    <div class="shot-grid">
-      <div class="shot-card">
-        <img src="./images/04_top_ready.png" alt="モノサシ トップ画面（ダークモード）" width="542" height="1206" loading="lazy">
-        <div class="shot-caption">写真が登録されると「モノサシ開始 (1分間)」ボタンがアクティブに（ダークモード）</div>
-      </div>
-      <div class="shot-card">
-        <img src="./images/12_top_light.png" alt="モノサシ トップ画面（ライトモード）" width="542" height="1206" loading="lazy">
-        <div class="shot-caption">端末の設定に連動して爽やかなライトモードにも自動で切り替わります</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="card-section" id="swipe-rules" aria-labelledby="swipe-heading">
-    <h2 id="swipe-heading">👆 1分間のモノサシ判定（スワイプ）</h2>
-    <p>トップ画面の<strong>「モノサシ開始 (1分間)」</strong>ボタンを押すと、登録した持ち物の写真が次々と中央に表示されます。1回のセッションはちょうど<strong>1分間</strong>。制限時間内に、直感のまま上下左右にスワイプしていきましょう。</p>
-
-    <div class="feature-table-wrap">
-      <table class="feature-table">
-        <thead>
-          <tr>
-            <th>スワイプ方向</th>
-            <th>表示される気持ち</th>
-            <th>意味・おすすめの判断</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>⬆️ 上方向</strong></td>
-            <td><span class="badge-tag keep">まだ使うと思う / 便利なんだよね</span></td>
-            <td>普段よく使っている、生活に役立っている、残したい</td>
-          </tr>
-          <tr>
-            <td><strong>⬇️ 下方向</strong></td>
-            <td><span class="badge-tag dispose">サヨナラでいいかも / 役目は終えたかも</span></td>
-            <td>もう十分使い切った、なくても困らない、手放す候補</td>
-          </tr>
-          <tr>
-            <td><strong>➡️ 右方向</strong></td>
-            <td><span class="badge-tag accent">今はまだ捨てられない / まだ残した方がいいかも</span></td>
-            <td>思い出がある、今は手放せないけれど少し引っかかる</td>
-          </tr>
-          <tr>
-            <td><strong>⬅️ 左方向</strong></td>
-            <td><span class="badge-tag accent">うーん、なんとも / 判断保留</span></td>
-            <td>今は決められない、判断がつかない、後でまた考えたい</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="shot-card">
-      <img src="./images/05_swipe_active.png" alt="モノサシ スワイプ判定画面" width="542" height="1206" loading="lazy">
-      <div class="shot-caption">中央の写真と周囲の選択肢。「残り00:58」タイマーを見ながらテンポよくスワイプ</div>
-    </div>
-
-    <div class="callout">
-      <strong>💡 直感でスワイプするのが最大のコツ！</strong><br>
+<div class="shot-container shot-container-2col">
+<div class="shot-card">
+<img alt="モノサシ トップ画面（ダークモード）" height="1206" loading="lazy" src="./images/04_top_ready.png" width="542"/>
+<div class="shot-caption">写真が登録されると「モノサシ開始 (1分間)」ボタンがアクティブに（ダークモード）</div>
+</div>
+<div class="shot-card">
+<img alt="モノサシ トップ画面（ライトモード）" height="1206" loading="lazy" src="./images/12_top_light.png" width="542"/>
+<div class="shot-caption">端末の設定に連動して爽やかなライトモードにも自動で切り替わります</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="swipe-heading" class="card-section" id="swipe-rules">
+<h2 id="swipe-heading">👆 1分間のモノサシ判定（スワイプ）</h2>
+<p>トップ画面の<strong>「モノサシ開始 (1分間)」</strong>ボタンを押すと、登録した持ち物の写真が次々と中央に表示されます。1回のセッションはちょうど<strong>1分間</strong>。制限時間内に、直感のまま上下左右にスワイプしていきましょう。</p>
+<div class="table-wrap">
+<table class="manual-table">
+<thead>
+<tr>
+<th>スワイプ方向</th>
+<th>表示される気持ち</th>
+<th>意味・おすすめの判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>⬆️ 上方向</strong></td>
+<td><span class="badge-tag keep">まだ使うと思う / 便利なんだよね</span></td>
+<td>普段よく使っている、生活に役立っている、残したい</td>
+</tr>
+<tr>
+<td><strong>⬇️ 下方向</strong></td>
+<td><span class="badge-tag dispose">サヨナラでいいかも / 役目は終えたかも</span></td>
+<td>もう十分使い切った、なくても困らない、手放す候補</td>
+</tr>
+<tr>
+<td><strong>➡️ 右方向</strong></td>
+<td><span class="badge-tag accent">今はまだ捨てられない / まだ残した方がいいかも</span></td>
+<td>思い出がある、今は手放せないけれど少し引っかかる</td>
+</tr>
+<tr>
+<td><strong>⬅️ 左方向</strong></td>
+<td><span class="badge-tag accent">うーん、なんとも / 判断保留</span></td>
+<td>今は決められない、判断がつかない、後でまた考えたい</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="shot-card">
+<img alt="モノサシ スワイプ判定画面" height="1206" loading="lazy" src="./images/05_swipe_active.png" width="542"/>
+<div class="shot-caption">中央の写真と周囲の選択肢。「残り00:58」タイマーを見ながらテンポよくスワイプ</div>
+</div>
+<div class="callout">
+<strong>💡 直感でスワイプするのが最大のコツ！</strong><br/>
       じっくり考え込んでしまうと、頭で「いつか使うかも…」と理由を探してしまいがちです。モノサシは1回のミスを恐れる必要がありません。その瞬間に感じたまま、テンポよくスワイプしましょう。
     </div>
-  </section>
+</section>
+<section aria-labelledby="sample-heading" class="card-section" id="sample-test">
+<h2 id="sample-heading">🧪 まずはサンプルで試してみる</h2>
+<p>まだ自分の持ち物の写真を撮っていない方や、どんなアプリか試してみたい方向けに、<strong>「サンプルで試してみる」</strong>機能を用意しています。</p>
+<div class="shot-container shot-container-3col">
+<div class="shot-card">
+<img alt="初期状態のトップ画面" height="1206" loading="lazy" src="./images/01_top_initial.png" width="542"/>
+<div class="shot-caption">写真が0個のときは「サンプルで試してみる」ボタンが表示されます</div>
+</div>
+<div class="shot-card">
+<img alt="サンプルスワイプ画面" height="1206" loading="lazy" src="./images/02_sample_swipe.png" width="542"/>
+<div class="shot-caption">お試し写真を使ってスワイプの操作感を気軽に体験</div>
+</div>
+<div class="shot-card">
+<img alt="サンプル終了画面" height="1206" loading="lazy" src="./images/03_sample_complete.png" width="542"/>
+<div class="shot-caption">「試し終わりました」画面からトップへ戻り、自分の持ち物を撮影しましょう</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="measure-faq-heading" class="card-section">
+<h2 id="measure-faq-heading">❓ スワイプ判定に関するFAQ</h2>
+<div class="faq-list">
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 1分経つ前に途中でやめることはできますか？</h3>
+<p class="faq-a">はい、画面下部の「終了する」ボタンをタップすれば、いつでもその場でセッションを終了できます。それまでにスワイプした結果はすべて自動で記録されています。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 同じ写真が何回も出てくるのはなぜですか？</h3>
+<p class="faq-a">人間の気持ちは日や気分によって揺れ動くものです。「モノサシ」は日を置いて複数回スワイプしてもらうことで、その写真に対する安定した本音（確信度）を判定しています。</p>
+</div>
+</div>
+</section>
+<div class="page-nav"><a class="page-nav-link" href="./index.html"><span class="page-nav-sub">目次へ戻る</span><span class="page-nav-title">‹ 取扱説明書トップ</span></a><a class="page-nav-link next" href="./photos.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">2. 写真一覧・推移グラフ ›</span></a></div></main>
+<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">📐 モノサシ アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
 
-  <section class="card-section" id="sample-test" aria-labelledby="sample-heading">
-    <h2 id="sample-heading">🧪 まずはサンプルで試してみる</h2>
-    <p>まだ自分の持ち物の写真を撮っていない方や、どんなアプリか試してみたい方向けに、<strong>「サンプルで試してみる」</strong>機能を用意しています。</p>
 
-    <div class="shot-grid three-col">
-      <div class="shot-card">
-        <img src="./images/01_top_initial.png" alt="初期状態のトップ画面" width="542" height="1206" loading="lazy">
-        <div class="shot-caption">写真が0個のときは「サンプルで試してみる」ボタンが表示されます</div>
-      </div>
-      <div class="shot-card">
-        <img src="./images/02_sample_swipe.png" alt="サンプルスワイプ画面" width="542" height="1206" loading="lazy">
-        <div class="shot-caption">お試し写真を使ってスワイプの操作感を気軽に体験</div>
-      </div>
-      <div class="shot-card">
-        <img src="./images/03_sample_complete.png" alt="サンプル終了画面" width="542" height="1206" loading="lazy">
-        <div class="shot-caption">「試し終わりました」画面からトップへ戻り、自分の持ち物を撮影しましょう</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="card-section" aria-labelledby="measure-faq-heading">
-    <h2 id="measure-faq-heading">❓ スワイプ判定に関するFAQ</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q">1分経つ前に途中でやめることはできますか？</div>
-        <div class="faq-a">はい、画面下部の「終了する」ボタンをタップすれば、いつでもその場でセッションを終了できます。それまでにスワイプした結果はすべて自動で記録されています。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">同じ写真が何回も出てくるのはなぜですか？</div>
-        <div class="faq-a">人間の気持ちは日や気分によって揺れ動くものです。「モノサシ」は日を置いて複数回スワイプしてもらうことで、その写真に対する安定した本音（確信度）を判定しています。</div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="./index.html">取扱説明書トップ</a>
-    <a href="./photos.html">2. 写真一覧・推移グラフ &rarr;</a>
-    <a href="../index.html">モノサシ アプリ紹介</a>
-    <a href="../privacy-policy.html">プライバシーポリシー</a>
-  </div>
-  <p>&copy; ちゃ開発組 All Rights Reserved.</p>
-</footer>
-</body>
-</html>

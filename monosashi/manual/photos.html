@@ -58,132 +58,77 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="brand-link" href="./index.html">📐 モノサシ <span class="brand-pill">取扱説明書</span></a>
-    <nav class="global-nav" aria-label="取扱説明書メニュー">
-      <a href="./index.html">トップ（目次）</a>
-      <a href="./measure.html">1. 撮影・モノサシ判定</a>
-      <a href="./photos.html" aria-current="page">2. 写真一覧・推移グラフ</a>
-      <a href="./results.html">3. 結果・手放した記録</a>
-      <a href="./settings.html">4. 設定・ウィジェット</a>
-    </nav>
-  </div>
+<div class="site-header-inner">
+<a class="brand-link" href="./index.html">📐 モノサシ <span class="brand-pill">取扱説明書</span></a>
+<nav aria-label="取扱説明書メニュー" class="global-nav">
+<a href="./index.html">トップ（目次）</a>
+<a href="./measure.html">1. 撮影・モノサシ判定</a>
+<a aria-current="page" href="./photos.html">2. 写真一覧・推移グラフ</a>
+<a href="./results.html">3. 結果・手放した記録</a>
+<a href="./settings.html">4. 設定・ウィジェット</a>
+</nav>
+</div>
 </header>
-
 <div class="hero-banner">
-  <span class="pill">機能 02</span>
-  <h1>🖼️ 写真一覧と判定の推移グラフ</h1>
-  <p>撮りためた持ち物写真の管理と、タップで確認できる「推移グラフ」。スワイプを重ねるごとの気持ちの変化を可視化します。</p>
+<span class="pill">機能 02</span>
+<h1>🖼️ 写真一覧と判定の推移グラフ</h1>
+<p>撮りためた持ち物写真の管理と、タップで確認できる「推移グラフ」。スワイプを重ねるごとの気持ちの変化を可視化します。</p>
+</div>
+<main class="container">
+<section aria-labelledby="list-heading" class="card-section">
+<h2 id="list-heading">🗂️ 登録した写真の確認</h2>
+<p>下部ナビゲーションの「写真一覧」タブをタップすると、これまでに撮影した持ち物の写真が新しい順にグリッド表示されます。写真の右下には撮影日時が表示されており、いつ登録したかがすぐにわかります。</p>
+<div class="shot-container shot-container-2col">
+<div class="shot-card">
+<img alt="写真一覧画面（ダークモード）" height="1206" loading="lazy" src="./images/06_photo_list.png" width="542"/>
+<div class="shot-caption">登録された写真がタイル状に並ぶ写真一覧画面（ダークモード）</div>
+</div>
+<div class="shot-card">
+<img alt="写真一覧画面（ライトモード）" height="1206" loading="lazy" src="./images/13_photo_list_light.png" width="542"/>
+<div class="shot-caption">清潔感のあるライトモードでも見やすく表示されます</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="trend-heading" class="card-section" id="trend-graph">
+<h2 id="trend-heading">📈 タップして開く「判定の推移グラフ」</h2>
+<p>写真一覧（または結果画面）で写真をタップすると、詳細ダイアログが開き、<strong>「判定の推移」折れ線グラフ</strong>が表示されます。</p>
+<div class="shot-card">
+<img alt="判定の推移ダイアログ" height="1206" loading="lazy" src="./images/10_item_trend_dialog.png" width="542"/>
+<div class="shot-caption">モノサシをするたびに、写真の判定がどう動いたかを折れ線グラフで確認できます</div>
 </div>
 
-<main class="container">
-  <section class="card-section" aria-labelledby="list-heading">
-    <h2 id="list-heading">🗂️ 登録した写真の確認</h2>
-    <p>下部ナビゲーションの「写真一覧」タブをタップすると、これまでに撮影した持ち物の写真が新しい順にグリッド表示されます。写真の右下には撮影日時が表示されており、いつ登録したかがすぐにわかります。</p>
+<div class="step-item"><div class="step-header"><span class="step-badge">STEP 1</span><h3 class="step-title">横軸：出題された日付・セッション</h3></div><p>モノサシ1回（スワイプセッション）ごとにポイントがプロットされ、日を追ってどう判断したかの歩みがわかります。</p></div>
+<div class="step-item"><div class="step-header"><span class="step-badge">STEP 2</span><h3 class="step-title">縦軸：必要 ／ なし（未確定） ／ 不要</h3></div><p>グラフの上へ向かうほど「必要」、下へ向かうほど「不要」へと近づきます。迷っていたものが徐々に確信に変わっていくプロセスが一目瞭然です。</p></div>
+<div class="step-item"><div class="step-header"><span class="step-badge">STEP 3</span><h3 class="step-title">写真ごとの状態メッセージ</h3></div><p>ダイアログ上部には「とても大切な物です これからもずっと大切にしましょう」など、現在の確定状況に応じた温かいメッセージが表示されます。</p></div>
 
-    <div class="shot-grid">
-      <div class="shot-card">
-        <img src="./images/06_photo_list.png" alt="写真一覧画面（ダークモード）" width="542" height="1206" loading="lazy">
-        <div class="shot-caption">登録された写真がタイル状に並ぶ写真一覧画面（ダークモード）</div>
-      </div>
-      <div class="shot-card">
-        <img src="./images/13_photo_list_light.png" alt="写真一覧画面（ライトモード）" width="542" height="1206" loading="lazy">
-        <div class="shot-caption">清潔感のあるライトモードでも見やすく表示されます</div>
-      </div>
-    </div>
-  </section>
+</section>
+<section aria-labelledby="delete-heading" class="card-section" id="photo-delete">
+<h2 id="delete-heading">🗑️ 写真の複数選択と削除</h2>
+<p>ブレてしまった写真や、誤って撮影した写真、もう管理する必要がなくなった写真は、複数選択してまとめて削除できます。</p>
 
-  <section class="card-section" id="trend-graph" aria-labelledby="trend-heading">
-    <h2 id="trend-heading">📈 タップして開く「判定の推移グラフ」</h2>
-    <p>写真一覧（または結果画面）で写真をタップすると、詳細ダイアログが開き、<strong>「判定の推移」折れ線グラフ</strong>が表示されます。</p>
+<div class="step-item"><div class="step-header"><span class="step-badge">STEP 1</span><h3 class="step-title">写真を長押し、または「選択して削除」をタップ</h3></div><p>画面上部が「〇件選択中」「キャンセル」「削除」の選択モードに切り替わります。</p></div>
+<div class="step-item"><div class="step-header"><span class="step-badge">STEP 2</span><h3 class="step-title">削除したい写真をタップ</h3></div><p>選んだ写真の左上にオレンジ色のチェックマークが付き、枠線がハイライトされます。何枚でも同時に選択可能です。</p></div>
+<div class="step-item"><div class="step-header"><span class="step-badge">STEP 3</span><h3 class="step-title">右上の「削除」をタップ</h3></div><p>確認のアラートが表示されます。「削除」を押すと、端末内から写真データが安全に削除されます。</p></div>
 
-    <div class="shot-card">
-      <img src="./images/10_item_trend_dialog.png" alt="判定の推移ダイアログ" width="542" height="1206" loading="lazy">
-      <div class="shot-caption">モノサシをするたびに、写真の判定がどう動いたかを折れ線グラフで確認できます</div>
-    </div>
+<div class="shot-card">
+<img alt="写真一覧の選択・削除画面" height="1206" loading="lazy" src="./images/07_photo_select.png" width="542"/>
+<div class="shot-caption">チェックマークを付けて「2件選択中」。右上の「削除」で一括削除できます</div>
+</div>
+</section>
+<section aria-labelledby="photos-faq-heading" class="card-section">
+<h2 id="photos-faq-heading">❓ 写真一覧に関するFAQ</h2>
+<div class="faq-list">
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 写真は何枚まで登録できますか？</h3>
+<p class="faq-a">登録枚数に制限はありません。端末のストレージ空き容量がある限り、何十枚でも何百枚でも登録して断捨離の判断を進めることができます。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 削除した写真を元に戻すことはできますか？</h3>
+<p class="faq-a">端末内から完全に削除されるため、元に戻すことはできません。もし残しておきたい可能性がある場合は、削除せずそのままにしておくか、バックアップファイルを作成しておくことをおすすめします。</p>
+</div>
+</div>
+</section>
+<div class="page-nav"><a class="page-nav-link" href="./measure.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 1. 撮影・モノサシ判定</span></a><a class="page-nav-link next" href="./results.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">3. 結果・手放した記録 ›</span></a></div></main>
+<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">📐 モノサシ アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
 
-    <div class="step-list">
-      <div class="step-item">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <div class="step-title">横軸：出題された日付・セッション</div>
-          <div class="step-desc">モノサシ1回（スワイプセッション）ごとにポイントがプロットされ、日を追ってどう判断したかの歩みがわかります。</div>
-        </div>
-      </div>
-      <div class="step-item">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <div class="step-title">縦軸：必要 ／ なし（未確定） ／ 不要</div>
-          <div class="step-desc">グラフの上へ向かうほど「必要」、下へ向かうほど「不要」へと近づきます。迷っていたものが徐々に確信に変わっていくプロセスが一目瞭然です。</div>
-        </div>
-      </div>
-      <div class="step-item">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <div class="step-title">写真ごとの状態メッセージ</div>
-          <div class="step-desc">ダイアログ上部には「とても大切な物です これからもずっと大切にしましょう」など、現在の確定状況に応じた温かいメッセージが表示されます。</div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="card-section" id="photo-delete" aria-labelledby="delete-heading">
-    <h2 id="delete-heading">🗑️ 写真の複数選択と削除</h2>
-    <p>ブレてしまった写真や、誤って撮影した写真、もう管理する必要がなくなった写真は、複数選択してまとめて削除できます。</p>
-
-    <div class="step-list">
-      <div class="step-item">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <div class="step-title">写真を長押し、または「選択して削除」をタップ</div>
-          <div class="step-desc">画面上部が「〇件選択中」「キャンセル」「削除」の選択モードに切り替わります。</div>
-        </div>
-      </div>
-      <div class="step-item">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <div class="step-title">削除したい写真をタップ</div>
-          <div class="step-desc">選んだ写真の左上にオレンジ色のチェックマークが付き、枠線がハイライトされます。何枚でも同時に選択可能です。</div>
-        </div>
-      </div>
-      <div class="step-item">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <div class="step-title">右上の「削除」をタップ</div>
-          <div class="step-desc">確認のアラートが表示されます。「削除」を押すと、端末内から写真データが安全に削除されます。</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="shot-card">
-      <img src="./images/07_photo_select.png" alt="写真一覧の選択・削除画面" width="542" height="1206" loading="lazy">
-      <div class="shot-caption">チェックマークを付けて「2件選択中」。右上の「削除」で一括削除できます</div>
-    </div>
-  </section>
-
-  <section class="card-section" aria-labelledby="photos-faq-heading">
-    <h2 id="photos-faq-heading">❓ 写真一覧に関するFAQ</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q">写真は何枚まで登録できますか？</div>
-        <div class="faq-a">登録枚数に制限はありません。端末のストレージ空き容量がある限り、何十枚でも何百枚でも登録して断捨離の判断を進めることができます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">削除した写真を元に戻すことはできますか？</div>
-        <div class="faq-a">端末内から完全に削除されるため、元に戻すことはできません。もし残しておきたい可能性がある場合は、削除せずそのままにしておくか、バックアップファイルを作成しておくことをおすすめします。</div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="./measure.html">&larr; 1. 撮影・モノサシ判定</a>
-    <a href="./index.html">取扱説明書トップ</a>
-    <a href="./results.html">3. 結果・手放した記録 &rarr;</a>
-    <a href="../index.html">モノサシ アプリ紹介</a>
-  </div>
-  <p>&copy; ちゃ開発組 All Rights Reserved.</p>
-</footer>
-</body>
-</html>

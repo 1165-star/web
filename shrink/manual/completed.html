@@ -67,146 +67,117 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="site-header-inner">
-    <a class="brand-link" href="./index.html">🎬 Shrink <span class="brand-pill">取扱説明書</span></a>
-    <nav class="global-nav" aria-label="取扱説明書メニュー">
-      <a href="./index.html">トップ（目次）</a>
-      <a href="./compress.html">1. 動画の圧縮</a>
-      <a href="./merge.html">2. 動画の結合</a>
-      <a href="./completed.html" aria-current="page">3. 保存と再圧縮</a>
-      <a href="./settings.html">4. 設定・PREMIUM</a>
-    </nav>
-  </div>
-</header>
-
-<div class="hero-banner">
-  <span class="pill">機能 03</span>
-  <h1>💾 保存・プレビュー・再圧縮</h1>
-  <p>圧縮や結合の仕上がり確認、フルスクリーンプレビュー、アルバムへの書き出し、そして目標サイズ超過時のスマートなワンタップ再圧縮機能について解説します。</p>
+<div class="site-header-inner">
+<a class="brand-link" href="./index.html">🎬 Shrink <span class="brand-pill">取扱説明書</span></a>
+<nav aria-label="取扱説明書メニュー" class="global-nav">
+<a href="./index.html">トップ（目次）</a>
+<a href="./compress.html">1. 動画の圧縮</a>
+<a href="./merge.html">2. 動画の結合</a>
+<a aria-current="page" href="./completed.html">3. 保存と再圧縮</a>
+<a href="./settings.html">4. 設定・PREMIUM</a>
+</nav>
 </div>
-
+</header>
+<div class="hero-banner">
+<span class="pill">機能 03</span>
+<h1>💾 保存・プレビュー・再圧縮</h1>
+<p>圧縮や結合の仕上がり確認、フルスクリーンプレビュー、アルバムへの書き出し、そして目標サイズ超過時のスマートなワンタップ再圧縮機能について解説します。</p>
+</div>
 <main class="container">
-  <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="./index.html">取扱説明書トップ</a> <span>&rsaquo;</span> <span>保存・プレビュー・再圧縮</span>
-  </nav>
+<nav aria-label="パンくずリスト" class="breadcrumb">
+<a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>保存・プレビュー・再圧縮</span>
+</nav>
+<section aria-labelledby="intro-heading" class="card-section">
+<h2 id="intro-heading">📖 この画面でできること</h2>
+<p>動画の圧縮または結合が完了すると「完了画面」が表示されます。削減された容量や仕上がり画質を確認し、端末への保存や他アプリへの共有をスムーズに行うことができます。</p>
+<div aria-label="このページの主な目的" class="want-tags">
+<a class="want-tag" href="#completed-result">・どれくらい容量が軽くなったか（削減率）を確認したい</a>
+<a class="want-tag" href="#completed-preview">・圧縮後の画質や音声を全画面で確認したい</a>
+<a class="want-tag" href="#save-album">・完成した動画を写真アルバム（ギャラリー）に保存したい</a>
+<a class="want-tag" href="#save-share">・LINEやメールなどの他アプリへ直接送信・共有したい</a>
+<a class="want-tag" href="#recompress">・目標サイズを超えてしまった場合にワンタップで再圧縮したい</a>
+</div>
+<div class="shot-container-2col" style="margin-top: 24px;">
+<div class="shot-card">
+<img alt="圧縮結果画面（目標達成）" height="1151" loading="lazy" src="./images/04_compress_result.png" width="542"/>
+<div class="shot-caption">目標サイズ内に収まり削減率が表示された結果画面</div>
+</div>
+<div class="shot-card">
+<img alt="圧縮結果画面（目標超過・再圧縮）" height="1151" loading="lazy" src="./images/05_compress_recompress.png" width="542"/>
+<div class="shot-caption">目標を超えた際に「再圧縮する」ボタンが出現した画面</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="result-heading" class="card-section">
+<h2 id="result-heading">📊 結果の確認と各種操作</h2>
+<div class="step-item" id="completed-result">
+<div class="step-header">
+<span class="step-badge">ポイント 1</span>
+<h3 class="step-title">容量比較（Before / After）と削減率</h3>
+</div>
+<p>結果画面の中央には、元のファイルサイズと圧縮後のファイルサイズが大きく表示されます（例: <code>54.3 MB → 24.8 MB</code>）。</p>
+<p>目標値に対してどれだけスリム化できたかを示す削減率バッジ（例: <code>-54%</code>）も緑色で表示され、一目で効果を確認できます。</p>
+</div>
+<div class="step-item" id="completed-preview">
+<div class="step-header">
+<span class="step-badge">ポイント 2</span>
+<h3 class="step-title">フルスクリーンでのプレビュー再生</h3>
+</div>
+<p>画面上部の動画サムネイルをタップすると、全画面プレビューモーダルが開きます。</p>
+<p>シークバーでの早送り・巻き戻しや一時停止を行いながら、文字の可読性や映像のブロックノイズ、音声のクリアさなどを、保存前にその場ですぐにチェックできます。</p>
+<div class="shot-card" style="margin: 20px auto; max-width: 520px;">
+<img alt="プレビュー全画面モーダル" height="1151" loading="lazy" src="./images/13_preview.png" width="542"/>
+<div class="shot-caption">コントローラー付きで仕上がりをチェックできるプレビュー画面</div>
+</div>
+</div>
+<div class="step-item" id="save-album">
+<div class="step-header">
+<span class="step-badge">ポイント 3</span>
+<h3 class="step-title">アルバムへの保存と共有</h3>
+</div>
+<p>画面下部の緑色ボタン「💾 アルバムに保存」をタップすると、端末の標準写真・動画ギャラリーへ動画ファイルがエクスポートされます。</p>
+<p>保存が完了すると「アルバムに保存しました」という案内ダイアログが表示されます。また、隣の「共有」ボタンをタップすれば、アルバムを経由せずに直接LINEやSlack、メール添付へ動画を渡すことも可能です。</p>
+<div class="shot-card" style="margin: 20px auto; max-width: 520px;">
+<img alt="保存完了ダイアログ" height="1151" loading="lazy" src="./images/06_saved_dialog.png" width="542"/>
+<div class="shot-caption">保存成功時に表示されるダイアログ</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="recompress-heading" class="card-section">
+<h2 id="recompress-heading">⚡ 目標超過時の「ワンタップ再圧縮」</h2>
+<p>動画圧縮において最も困るトラブルは、「25MB制限のメールに送りたいのに、わずか <code>25.04 MB</code> になってしまい送信エラーになる」という現象です。</p>
+<div class="callout callout-amber">
+<div class="callout-title">⚠️ なぜわずかに目標を超えることがあるのか？</div>
+<p>Shrinkでは待ち時間を極力減らすため、高速エンコードモードを採用しています。動画内の動きが激しいシーン（花火、水しぶき、スポーツなど）が多い場合、ビットレートの揺らぎによって仕上がりサイズが目標をほんの数KB〜数百KB超えてしまうことがあります。</p>
+</div>
+<div class="step-item" id="recompress">
+<div class="step-header">
+<span class="step-badge">解決策</span>
+<h3 class="step-title">オレンジ色の「再圧縮する」ボタンを1タップ</h3>
+</div>
+<p>Shrinkは仕上がりサイズを厳密にチェックしています。目標値を1バイトでも上回った場合、自動的に警告メッセージと<strong>オレンジ色の「再圧縮する」ボタン</strong>が表示されます。</p>
+<p>ユーザーが手動で目標数値を引き下げて計算し直す必要はありません。「再圧縮する」ボタンを押すだけで、初回のエンコード実績をもとに安全マージンを自動計算し、確実に目標サイズ以下に収まるよう自動チューニングして再圧縮を完了させます。</p>
+</div>
+</section>
+<section aria-labelledby="faq-heading" class="card-section">
+<h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
+<div class="faq-list">
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 再圧縮を行うと画質は大幅に落ちますか？</h3>
+<p class="faq-a">いいえ。再圧縮は「目標値をわずかにオーバーした余剰分」だけをピンポイントで微調整するため、目に見える画質の劣化はほとんど生じません。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 保存した動画にアプリの透かし（ウォーターマーク）は入りますか？</h3>
+<p class="faq-a">いいえ、無料版・有料版を問わず、生成される動画にロゴや透かし（ウォーターマーク）は一切挿入されません。ビジネスや公式SNSへの投稿にも安心してそのままご利用いただけます。</p>
+</div>
+<div class="faq-item">
+<h3 class="faq-q"><span class="faq-q-mark">Q</span> 保存した動画のファイル名はどのようになりますか？</h3>
+<p class="faq-a"><code>shrink_20261112_1509.mp4</code> のように、アプリ名と処理日時が付与されたわかりやすいファイル名で保存されます。</p>
+</div>
+</div>
+</section>
 
-  <section class="card-section" aria-labelledby="intro-heading">
-    <h2 id="intro-heading">📖 この画面でできること</h2>
-    <p>動画の圧縮または結合が完了すると「完了画面」が表示されます。削減された容量や仕上がり画質を確認し、端末への保存や他アプリへの共有をスムーズに行うことができます。</p>
-    <div class="want-tags" aria-label="このページの主な目的">
-      <a class="want-tag" href="#completed-result">・どれくらい容量が軽くなったか（削減率）を確認したい</a>
-      <a class="want-tag" href="#completed-preview">・圧縮後の画質や音声を全画面で確認したい</a>
-      <a class="want-tag" href="#save-album">・完成した動画を写真アルバム（ギャラリー）に保存したい</a>
-      <a class="want-tag" href="#save-share">・LINEやメールなどの他アプリへ直接送信・共有したい</a>
-      <a class="want-tag" href="#recompress">・目標サイズを超えてしまった場合にワンタップで再圧縮したい</a>
-    </div>
+<div class="page-nav"><a class="page-nav-link" href="./merge.html"><span class="page-nav-sub">前の機能へ</span><span class="page-nav-title">‹ 2. 動画の結合</span></a><a class="page-nav-link next" href="./settings.html"><span class="page-nav-sub">次の機能へ</span><span class="page-nav-title">4. 設定・PREMIUM ›</span></a></div></main>
+<footer class="site-footer"><div class="footer-links"><a href="./index.html">取扱説明書トップ</a><a href="../index.html">🎬 Shrink アプリ紹介</a><a href="../privacy-policy.html">プライバシーポリシー</a></div><p>© ちゃ開発組 All Rights Reserved.</p></footer>
 
-    <div class="shot-container-2col" style="margin-top: 24px;">
-      <div class="shot-card">
-        <img src="./images/04_compress_result.png" alt="圧縮結果画面（目標達成）" width="542" height="1151" loading="lazy">
-        <div class="shot-caption">目標サイズ内に収まり削減率が表示された結果画面</div>
-      </div>
-      <div class="shot-card">
-        <img src="./images/05_compress_recompress.png" alt="圧縮結果画面（目標超過・再圧縮）" width="542" height="1151" loading="lazy">
-        <div class="shot-caption">目標を超えた際に「再圧縮する」ボタンが出現した画面</div>
-      </div>
-    </div>
-  </section>
 
-  <section class="card-section" aria-labelledby="result-heading">
-    <h2 id="result-heading">📊 結果の確認と各種操作</h2>
-
-    <div class="step-item" id="completed-result">
-      <div class="step-header">
-        <span class="step-badge">ポイント 1</span>
-        <h3 class="step-title">容量比較（Before / After）と削減率</h3>
-      </div>
-      <p>結果画面の中央には、元のファイルサイズと圧縮後のファイルサイズが大きく表示されます（例: <code>54.3 MB &rarr; 24.8 MB</code>）。</p>
-      <p>目標値に対してどれだけスリム化できたかを示す削減率バッジ（例: <code>-54%</code>）も緑色で表示され、一目で効果を確認できます。</p>
-    </div>
-
-    <div class="step-item" id="completed-preview">
-      <div class="step-header">
-        <span class="step-badge">ポイント 2</span>
-        <h3 class="step-title">フルスクリーンでのプレビュー再生</h3>
-      </div>
-      <p>画面上部の動画サムネイルをタップすると、全画面プレビューモーダルが開きます。</p>
-      <p>シークバーでの早送り・巻き戻しや一時停止を行いながら、文字の可読性や映像のブロックノイズ、音声のクリアさなどを、保存前にその場ですぐにチェックできます。</p>
-
-      <div class="shot-card" style="margin: 20px auto; max-width: 520px;">
-        <img src="./images/13_preview.png" alt="プレビュー全画面モーダル" width="542" height="1151" loading="lazy">
-        <div class="shot-caption">コントローラー付きで仕上がりをチェックできるプレビュー画面</div>
-      </div>
-    </div>
-
-    <div class="step-item" id="save-album">
-      <div class="step-header">
-        <span class="step-badge">ポイント 3</span>
-        <h3 class="step-title">アルバムへの保存と共有</h3>
-      </div>
-      <p>画面下部の緑色ボタン「💾 アルバムに保存」をタップすると、端末の標準写真・動画ギャラリーへ動画ファイルがエクスポートされます。</p>
-      <p>保存が完了すると「アルバムに保存しました」という案内ダイアログが表示されます。また、隣の「共有」ボタンをタップすれば、アルバムを経由せずに直接LINEやSlack、メール添付へ動画を渡すことも可能です。</p>
-
-      <div class="shot-card" style="margin: 20px auto; max-width: 520px;">
-        <img src="./images/06_saved_dialog.png" alt="保存完了ダイアログ" width="542" height="1151" loading="lazy">
-        <div class="shot-caption">保存成功時に表示されるダイアログ</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="card-section" aria-labelledby="recompress-heading">
-    <h2 id="recompress-heading">⚡ 目標超過時の「ワンタップ再圧縮」</h2>
-    <p>動画圧縮において最も困るトラブルは、「25MB制限のメールに送りたいのに、わずか <code>25.04 MB</code> になってしまい送信エラーになる」という現象です。</p>
-
-    <div class="callout callout-amber">
-      <div class="callout-title">⚠️ なぜわずかに目標を超えることがあるのか？</div>
-      <p>Shrinkでは待ち時間を極力減らすため、高速エンコードモードを採用しています。動画内の動きが激しいシーン（花火、水しぶき、スポーツなど）が多い場合、ビットレートの揺らぎによって仕上がりサイズが目標をほんの数KB〜数百KB超えてしまうことがあります。</p>
-    </div>
-
-    <div class="step-item" id="recompress">
-      <div class="step-header">
-        <span class="step-badge">解決策</span>
-        <h3 class="step-title">オレンジ色の「再圧縮する」ボタンを1タップ</h3>
-      </div>
-      <p>Shrinkは仕上がりサイズを厳密にチェックしています。目標値を1バイトでも上回った場合、自動的に警告メッセージと<strong>オレンジ色の「再圧縮する」ボタン</strong>が表示されます。</p>
-      <p>ユーザーが手動で目標数値を引き下げて計算し直す必要はありません。「再圧縮する」ボタンを押すだけで、初回のエンコード実績をもとに安全マージンを自動計算し、確実に目標サイズ以下に収まるよう自動チューニングして再圧縮を完了させます。</p>
-    </div>
-  </section>
-
-  <section class="card-section" aria-labelledby="faq-heading">
-    <h2 id="faq-heading">❓ よくある質問（FAQ）</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 再圧縮を行うと画質は大幅に落ちますか？</h3>
-        <p class="faq-a">いいえ。再圧縮は「目標値をわずかにオーバーした余剰分」だけをピンポイントで微調整するため、目に見える画質の劣化はほとんど生じません。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 保存した動画にアプリの透かし（ウォーターマーク）は入りますか？</h3>
-        <p class="faq-a">いいえ、無料版・有料版を問わず、生成される動画にロゴや透かし（ウォーターマーク）は一切挿入されません。ビジネスや公式SNSへの投稿にも安心してそのままご利用いただけます。</p>
-      </div>
-
-      <div class="faq-item">
-        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 保存した動画のファイル名はどのようになりますか？</h3>
-        <p class="faq-a"><code>shrink_20261112_1509.mp4</code> のように、アプリ名と処理日時が付与されたわかりやすいファイル名で保存されます。</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="page-nav">
-    <a class="page-nav-link" href="./merge.html">
-      <span class="page-nav-sub">&larr; 前の機能</span>
-      <span class="page-nav-title">機能 02: 動画の結合</span>
-    </a>
-    <a class="page-nav-link next" href="./settings.html">
-      <span class="page-nav-sub">次の機能 &rarr;</span>
-      <span class="page-nav-title">機能 04: 設定・PREMIUM</span>
-    </a>
-  </div>
-</main>
-
-<footer class="site-footer">
-  <p>&copy; ちゃ開発組 | <a href="../index.html">Shrink アプリ紹介へ</a> | <a href="../privacy-policy.html">プライバシーポリシー</a></p>
-</footer>
-</body>
-</html>
