@@ -173,25 +173,43 @@
     }
 
     .title-manual-link {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      gap: 5px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      border: 1px solid var(--accent);
-      padding: 4px 12px;
-      border-radius: 999px;
-      font-size: 0.82rem;
-      font-weight: 700;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      box-sizing: border-box;
+      background: #f08c00;
+      color: #fff;
+      padding: 12px 20px;
+      margin: 4px 0 10px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 800;
       text-decoration: none;
       transition: all 0.2s ease;
-      box-shadow: var(--shadow-card);
+      box-shadow: 0 4px 12px rgba(240, 140, 0, 0.4);
+    }
+    .title-manual-link svg {
+      width: 1.2em;
+      height: 1.2em;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
     .title-manual-link:hover {
-      background: var(--accent);
-      color: #fff;
+      background: #d97f00;
       transform: translateY(-1px);
-      box-shadow: var(--shadow-hover);
+      box-shadow: 0 6px 16px rgba(240, 140, 0, 0.5);
+    }
+    @media (min-width: 768px) {
+      .title-manual-link {
+        width: auto;
+        display: inline-flex;
+        padding: 10px 24px;
+      }
     }
 
     .app-title-group h1 {
@@ -529,6 +547,7 @@
       box-shadow: var(--shadow-hover);
     }
   </style>
+<link rel="stylesheet" href="../assets/footer.css">
 </head>
 <body>
   <main>
@@ -544,15 +563,14 @@
           <div class="app-title-group">
             <div class="title-row">
               <h1>ゆびさすコンパス</h1>
-              <a class="title-manual-link" href="./manual/" target="_blank" rel="noopener noreferrer">取扱説明書 &rarr;</a>
             </div>
+            <a class="title-manual-link" href="./manual/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg>取扱説明書を開く</a>
             <div class="badges-row">
-              <span class="store-badge">
+              <span class="store-badge" style="visibility:hidden" aria-hidden="true">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
                 Google Play 公開中
               </span>
               <span class="tag-badge">方角・ナビ / ユーティリティ</span>
-              <span class="tag-badge">Android対応</span>
             </div>
           </div>
         </div>
@@ -630,10 +648,20 @@
       <a class="app-link-card" href="./release-notes.html">リリースノート &rarr;</a>
     </div>
 
-    <footer>
-      &copy; <span id="year"></span> ちゃ開発組
-    </footer>
   </main>
+<!-- tya-footer:start -->
+<footer class="tya-footer">
+<div class="tf-inner">
+<div class="tf-brand"><img src="../assets/profile.jpg" alt="" width="44" height="44"><div><a class="tf-brand-name" href="../">ちゃ開発組</a><span class="tf-brand-sub">スマホアプリ開発</span></div></div>
+<nav class="tf-cols" aria-label="アプリ一覧">
+<div class="tf-col"><h2>ゆびさすコンパス</h2><ul><li><a href="../houkaku-compass/" aria-current="page">アプリ紹介</a></li><li><a href="../houkaku-compass/manual/">取扱説明書</a></li><li><a href="../houkaku-compass/release-notes.html">リリースノート</a></li><li><a href="../houkaku-compass/privacy-policy.html">プライバシーポリシー</a></li></ul></div>
+<div class="tf-col tf-col-apps"><h2>アプリ一覧</h2><ul><li><a href="../app-report-card/">アプリ成績表</a></li><li><a href="../blood-pressure-history/">血圧メモ</a></li><li><a href="../houkaku-compass/" aria-current="page">ゆびさすコンパス</a></li><li><a href="../memonowa/">めものわ</a></li><li><a href="../monosashi/">モノサシ</a></li><li><a href="../pet-health-management/">ぺっときろく</a></li><li><a href="../scroll-capture/">縦長スクショ</a></li><li><a href="../shrink/">Shrink</a></li><li><a href="../sutamina-techo/">スタミナ手帳</a></li></ul></div>
+<div class="tf-col"><h2>サイト</h2><ul><li><a href="../">ちゃ開発組トップ</a></li><li><a href="../privacy-policy.html">サイトのプライバシーポリシー</a></li></ul></div>
+</nav>
+<p class="tf-copy">&copy; <span id="year">2026</span> ちゃ開発組</p>
+</div>
+</footer>
+<!-- tya-footer:end -->
 
   <script src="../assets/gallery.js" defer></script>
   <script>

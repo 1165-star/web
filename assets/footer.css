@@ -1,0 +1,37 @@
+/* 全ページ共通フッター(scripts/generate_footer.py が HTML を生成する)。
+   色は各ページの変数(--border / --text-sub / --muted / --accent など)に追従し、ライト/ダークに自動対応する。 */
+.tya-footer {
+  --tf-bg: var(--surface-sub, var(--card-bg, #f7f7f8));
+  --tf-border: var(--border, #e2e2e2);
+  --tf-text: var(--text, var(--fg, #1a1a1a));
+  --tf-muted: var(--text-sub, var(--muted, #5a5a5a));
+  --tf-accent: var(--accent, #2b6cb0);
+  margin: 64px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--tf-border);
+  background: var(--tf-bg);
+  color: var(--tf-muted);
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: left;
+}
+.tya-footer .tf-inner a { color: var(--tf-muted); text-decoration: none; font-weight: 400; }
+.tya-footer .tf-inner a:hover, .tya-footer .tf-inner a:focus-visible { color: var(--tf-accent); text-decoration: underline; }
+.tf-inner { max-width: 1040px; margin: 0 auto; padding: 36px 20px 28px; display: grid; gap: 28px; }
+.tf-brand { display: flex; align-items: center; gap: 14px; }
+.tf-brand img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 1px solid var(--tf-border); flex-shrink: 0; }
+.tya-footer .tf-inner a.tf-brand-name { display: block; font-size: 16px; font-weight: 800; color: var(--tf-text); }
+.tya-footer .tf-inner a.tf-brand-name:hover { color: var(--tf-accent); text-decoration: none; }
+.tf-brand-sub { display: block; font-size: 12.5px; }
+.tf-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 26px 32px; }
+.tya-footer .tf-col h2 { font-size: 12px; font-weight: 800; letter-spacing: .04em; color: var(--tf-text); margin: 0 0 10px; padding: 0; border: 0; background: none; line-height: 1.5; }
+.tya-footer .tf-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.tya-footer .tf-col li { margin: 0; padding: 0; }
+.tya-footer .tf-col-apps ul { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); column-gap: 20px; }
+.tf-col-apps { grid-column: span 2; }
+.tya-footer .tf-col a[aria-current="page"] { color: var(--tf-accent); font-weight: 700; }
+.tya-footer .tf-copy { margin: 0; padding-top: 18px; border-top: 1px solid var(--tf-border); font-size: 12px; }
+@media (max-width: 640px) {
+  .tf-inner { padding: 28px 16px 24px; }
+  .tf-col-apps { grid-column: auto; }
+}
