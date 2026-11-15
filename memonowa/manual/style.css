@@ -397,6 +397,11 @@ body {
   font-size: 18px;
   flex-shrink: 0;
 }
+.tool-icon-box .tool-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
 .tool-text-box h4 {
   margin: 0 0 4px;
   font-size: 14px;
