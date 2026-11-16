@@ -432,6 +432,7 @@
       }
     }
   </style>
+<link rel="stylesheet" href="./assets/footer.css">
 </head>
 <body>
   <main>
@@ -454,7 +455,7 @@
             日々の記録や習慣化をサポートするアプリを中心に、フェレットたちと丁寧に開発しています。
           </p>
           <div class="stats-row">
-            <span class="stat-chip">📱 公開中アプリ 7本</span>
+            <span class="stat-chip">📱 公開中アプリ 8本</span>
             <span class="stat-chip">🛠️ 開発中 1本</span>
             <span class="stat-chip">🤖 Google Play 公開</span>
             <span class="stat-chip">🐾 フェレット開発チーム</span>
@@ -473,7 +474,7 @@
     <section id="apps">
       <div class="section-title-wrap">
         <h2>開発中・公開中のアプリ</h2>
-        <span class="section-count">全8作品</span>
+        <span class="section-count">全9作品</span>
       </div>
 
       <div class="apps">
@@ -580,14 +581,35 @@
             <span class="card-arrow-pc">詳細を見る &rarr;</span>
           </div>
         </a>
+
+        <a class="app-card" href="./shrink/">
+          <img class="icon" src="./assets/icons/shrink.png" alt="Shrinkのアイコン">
+          <div class="body">
+            <div class="name-line">
+              <span class="app-name-text">Shrink</span>
+              <span class="store-badge"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>公開中</span>
+            </div>
+            <span class="category-pill">動画ユーティリティ / ツール</span>
+            <p class="desc">目標サイズを決めるだけ。動画を軽くして、複数の動画の結合も。メールやSNSで送れるサイズに。</p>
+            <span class="card-arrow-pc">詳細を見る &rarr;</span>
+          </div>
+        </a>
       </div>
     </section>
 
-    <footer>
-      &copy; <span id="year"></span> ちゃ開発組
-      <br><a href="./privacy-policy.html">サイトのプライバシーポリシー</a>
-    </footer>
   </main>
+<!-- tya-footer:start -->
+<footer class="tya-footer">
+<div class="tf-inner">
+<div class="tf-brand"><img src="./assets/profile.jpg" alt="" width="44" height="44"><div><a class="tf-brand-name" href="./">ちゃ開発組</a><span class="tf-brand-sub">スマホアプリ開発</span></div></div>
+<nav class="tf-cols" aria-label="アプリ一覧">
+<div class="tf-col tf-col-apps"><h2>アプリ一覧</h2><ul><li><a href="./app-report-card/">アプリ成績表</a></li><li><a href="./blood-pressure-history/">血圧メモ</a></li><li><a href="./houkaku-compass/">ゆびさすコンパス</a></li><li><a href="./memonowa/">めものわ</a></li><li><a href="./monosashi/">モノサシ</a></li><li><a href="./pet-health-management/">ぺっときろく</a></li><li><a href="./scroll-capture/">縦長スクショ</a></li><li><a href="./shrink/">Shrink</a></li><li><a href="./sutamina-techo/">スタミナ手帳</a></li></ul></div>
+<div class="tf-col"><h2>サイト</h2><ul><li><a href="./" aria-current="page">ちゃ開発組トップ</a></li><li><a href="./privacy-policy.html">サイトのプライバシーポリシー</a></li></ul></div>
+</nav>
+<p class="tf-copy">&copy; <span id="year">2026</span> ちゃ開発組</p>
+</div>
+</footer>
+<!-- tya-footer:end -->
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

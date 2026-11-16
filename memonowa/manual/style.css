@@ -397,6 +397,22 @@ body {
   font-size: 18px;
   flex-shrink: 0;
 }
+.tool-icon-box .tool-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.h-icon {
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: -0.2em;
+  margin-right: 0.15em;
+}
+.feature-card-icon .feature-icon {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
 .tool-text-box h4 {
   margin: 0 0 4px;
   font-size: 14px;
