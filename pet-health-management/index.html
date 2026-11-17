@@ -4,15 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ぺっときろく - ちゃ開発組</title>
-  <meta name="description" content="体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。">
+  <meta name="description" content="体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。主な機能: 体重・排泄・ごはんを詳細記録、カレンダー＆通院予定リマインダー、グラフ表示で推移を一目確認。Android対応。">
   <link rel="canonical" href="https://tya-kaihatsu.com/pet-health-management/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ぺっときろく - ちゃ開発組">
-  <meta property="og:description" content="体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。">
+  <meta property="og:description" content="体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。主な機能: 体重・排泄・ごはんを詳細記録、カレンダー＆通院予定リマインダー、グラフ表示で推移を一目確認。Android対応。">
   <meta property="og:url" content="https://tya-kaihatsu.com/pet-health-management/">
   <meta property="og:site_name" content="ちゃ開発組">
   <meta property="og:image" content="https://tya-kaihatsu.com/assets/icons/pet-health-management.png">
   <meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="ちゃ開発組">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image:alt" content="ぺっときろくのアイコン">
+<meta name="twitter:title" content="ぺっときろく - ちゃ開発組">
+<meta name="twitter:description" content="体重・うんち・ごはん・写真などの記録とグラフ表示、リマインダー通知で複数のペットの健康をまとめて管理できます。主な機能: 体重・排泄・ごはんを詳細記録、カレンダー＆通院予定リマインダー、グラフ表示で推移を一目確認。Android対応。">
+<meta name="twitter:image" content="https://tya-kaihatsu.com/assets/icons/pet-health-management.png">
 
   <script type="application/ld+json">
 {
@@ -26,8 +33,48 @@
     "@type": "Organization",
     "name": "ちゃ開発組",
     "url": "https://tya-kaihatsu.com/"
-  }
+  },
+  "@id": "https://tya-kaihatsu.com/pet-health-management/#app",
+  "applicationCategory": "LifestyleApplication",
+  "applicationSubCategory": "ペット / 健康管理・記録",
+  "image": [
+    "https://tya-kaihatsu.com/assets/icons/pet-health-management.png"
+  ],
+  "featureList": [
+    "体重・排泄・ごはんを詳細記録",
+    "カレンダー＆通院予定リマインダー",
+    "グラフ表示で推移を一目確認",
+    "犬・猫・小動物・爬虫類まで対応",
+    "ホーム画面ウィジェット対応",
+    "端末同士の安全な直接データ同期"
+  ],
+  "softwareHelp": {
+    "@type": "CreativeWork",
+    "name": "ぺっときろく 取扱説明書",
+    "url": "https://tya-kaihatsu.com/pet-health-management/manual/"
+  },
+  "releaseNotes": "https://tya-kaihatsu.com/pet-health-management/release-notes.html"
 }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ちゃ開発組",
+        "item": "https://tya-kaihatsu.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "ぺっときろく",
+        "item": "https://tya-kaihatsu.com/pet-health-management/"
+      }
+    ]
+  }
   </script>
 
   <link rel="icon" href="../favicon.png" type="image/png">
@@ -359,6 +406,26 @@
       transform: translateY(-2px);
       box-shadow: var(--shadow-hover);
     }
+
+    /* アプリ情報・よくある質問(SEO強化) */
+    .app-facts, .app-faq { max-width: 100%; margin: 0 0 36px; text-align: left; }
+    .app-facts-heading-wrap, .app-faq-heading-wrap { border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 16px; }
+    .app-facts-heading-wrap h2, .app-faq-heading-wrap h2 { margin: 0; padding: 0; border-bottom: none; font-size: 1.15rem; font-weight: 800; text-align: left; }
+    .facts-list { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 0; }
+    @media (min-width: 768px) { .facts-list { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
+    .facts-list > div { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; font-size: 0.86rem; line-height: 1.55; }
+    .facts-list dt { margin: 0 0 2px; color: var(--muted); font-size: 0.74rem; font-weight: 700; }
+    .facts-list dd { margin: 0; font-weight: 600; }
+    .facts-list a { color: var(--accent); text-decoration: none; }
+    .facts-list a:hover { text-decoration: underline; }
+    .faq-list { display: grid; gap: 10px; }
+    .faq-list details { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 0 14px; font-size: 0.88rem; line-height: 1.65; }
+    .faq-list summary { cursor: pointer; padding: 12px 0; font-weight: 700; list-style-position: inside; }
+    .faq-list details[open] summary { color: var(--accent); }
+    .faq-list details p { margin: 0 0 14px; color: var(--fg); }
+    .faq-more { margin: 12px 0 0; font-size: 0.86rem; }
+    .faq-more a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .faq-more a:hover { text-decoration: underline; }
   </style>
 <link rel="stylesheet" href="../assets/footer.css">
 </head>
@@ -420,6 +487,30 @@
         <li><span class="mark">✓</span><span>PREMIUMなら、インターネットを使わず端末どうしだけで、家族の端末と記録を完全に同期 (通信は端末同士で直接行い、当方のサーバーは経由しません)</span></li>
         <li><span class="mark">✓</span><span>日本語を含む12言語に対応、端末の言語設定に自動で合わせて表示</span></li>
       </ul>
+    </section>
+
+    <!-- アプリ情報 -->
+    <section class="app-facts" aria-labelledby="facts-heading">
+      <div class="app-facts-heading-wrap"><h2 id="facts-heading">アプリ情報</h2></div>
+      <dl class="facts-list">
+        <div><dt>提供元</dt><dd><a href="../">ちゃ開発組</a></dd></div>
+        <div><dt>対応OS</dt><dd>Android</dd></div>
+        <div><dt>ジャンル</dt><dd>ペット / 健康管理・記録</dd></div>
+        <div><dt>配布</dt><dd>開発中(Google Playでの公開前)</dd></div>
+        <div><dt>関連ページ</dt><dd><a href="./manual/">取扱説明書</a> / <a href="./release-notes.html">リリースノート</a> / <a href="./privacy-policy.html">プライバシーポリシー</a></dd></div>
+      </dl>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="app-faq" aria-labelledby="faq-heading">
+      <div class="app-faq-heading-wrap"><h2 id="faq-heading">よくある質問</h2></div>
+      <div class="faq-list">
+        <details><summary>複数のペットを登録して切り替えることはできますか？</summary><p>はい。犬・猫・小動物・鳥・爬虫類など複数のペットを登録でき、ホーム画面での切り替えや「記録を見る」タブでの同時比較に対応しています。</p></details>
+        <details><summary>画面にある小さな「?」マークは何ですか？</summary><p>各画面の部品の使い方を図解付きで表示するヘルプボタンです。まだ見ていない箇所は色付きで強調され、一度確認した後もいつでも押し直して見返せます。</p></details>
+        <details><summary>「記録」をオフにすると過去のデータは消えますか？</summary><p>消えません。ホーム画面の記録ボタンや「記録を見る」タブの項目から一時的に隠れるだけで、再度オンにすればいつでも元の記録を見返せます。</p></details>
+        <details><summary>すでにお世話を記録した日にも通知は届きますか？</summary><p>お世話の通知は、設定した通知時刻の2時間前までにその項目の記録が済んでいれば、その回の通知は自動でスキップされ届きません。</p></details>
+      </div>
+      <p class="faq-more"><a href="./manual/" target="_blank" rel="noopener noreferrer">取扱説明書で詳しく見る &rarr;</a></p>
     </section>
 
     <div class="app-links-wrap">
