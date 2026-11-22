@@ -48,7 +48,7 @@
       "name": "バックアップファイルには写真も含まれますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "はい、撮影した写真データおよびこれまでのスワイプ判定データがまとめて安全に暗号化されてバックアップファイルに出力されます。"
+        "text": "はい、撮影した写真データおよびこれまでのスワイプ判定データが、1つのバックアップファイルにまとめて出力されます。判定データ(データベース)は暗号化されます(写真は暗号化されません)。"
       }
     }
   ]
@@ -253,21 +253,21 @@
 
   <section class="card-section" id="backup-guide" aria-labelledby="backup-heading">
     <h2 id="backup-heading">💾 バックアップとデータの復元</h2>
-    <p>大切な持ち物の判定データや写真を守るため、アプリ内で完結する<strong>暗号化バックアップ</strong>機能を備えています。</p>
+    <p>大切な持ち物の判定データや写真を守るため、アプリ内で完結する<strong>バックアップ</strong>機能を備えています。判定データ(データベース)は暗号化され、パスワードを設定して保護できます。写真は暗号化されません。</p>
 
     <div class="step-list">
       <div class="step-item">
         <div class="step-num">1</div>
         <div class="step-body">
           <div class="step-title">バックアップを作成</div>
-          <div class="step-desc">「バックアップ」ボタンをタップすると、データベースと写真が暗号化された安全なバックアップファイルとして保存・共有（Googleドライブ等へ転送）できます。</div>
+          <div class="step-desc">「バックアップ」ボタンをタップして保存先のフォルダを選ぶと、選んだフォルダに <code>backup_monosashi_日時.tar</code> という1つのファイルが作られます。このファイルをGoogleドライブ等に保管しておけます。</div>
         </div>
       </div>
       <div class="step-item">
         <div class="step-num">2</div>
         <div class="step-body">
           <div class="step-title">機種変更時のデータ復元</div>
-          <div class="step-desc">新しいスマートフォンに「モノサシ」をインストール後、設定画面で「復元」をタップしてバックアップファイルを選択すれば、以前の判定状況がそのまま復元されます。</div>
+          <div class="step-desc">新しいスマートフォンに「モノサシ」をインストール後、設定画面で「復元」をタップしてバックアップのファイル(tar)を選択すれば、以前の判定状況がそのまま復元されます。以前のバックアップ(フォルダ)のときは、フォルダの中のファイルを選び、次の画面でフォルダを選びます。</div>
         </div>
       </div>
     </div>
