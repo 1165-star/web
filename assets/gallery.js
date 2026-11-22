@@ -1,7 +1,38 @@
-/* ストア画像ギャラリー: サムネイルをクリックで拡大表示(左右キー・スワイプ・Escに対応) */
+/* ストア画像ギャラリー: サムネイルをクリックで拡大表示(左右キー・スワイプ・Escに対応)。
+   data-video を持つサムネイルは、拡大ではなく、YouTubeの動画をポップアップで再生する */
 (function () {
-  var links = Array.prototype.slice.call(document.querySelectorAll('.store-gallery a.gallery-thumb'));
-  if (!links.length || typeof HTMLDialogElement === 'undefined') return;
+  if (typeof HTMLDialogElement === 'undefined') return;
+  var videoLinks = Array.prototype.slice.call(document.querySelectorAll('.store-gallery a.gallery-thumb[data-video]'));
+  if (videoLinks.length) {
+    var vdlg = document.createElement('dialog');
+    vdlg.className = 'gallery-dialog video-dialog';
+    vdlg.setAttribute('aria-label', '動画の再生');
+    vdlg.innerHTML =
+      '<div class="gallery-stage"><div class="video-frame"></div>' +
+      '<button type="button" class="gallery-btn gallery-close" aria-label="閉じる">&times;</button></div>';
+    document.body.appendChild(vdlg);
+    var frame = vdlg.querySelector('.video-frame'), vclose = vdlg.querySelector('.gallery-close');
+    videoLinks.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var id = a.getAttribute('data-video');
+        if (!/^[A-Za-z0-9_-]{11}$/.test(id)) return;
+        e.preventDefault();
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&playsinline=1';
+        f.title = a.getAttribute('aria-label') || '動画';
+        f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+        f.allowFullscreen = true;
+        f.addEventListener('load', function () { vclose.focus(); });
+        frame.appendChild(f);
+        vdlg.showModal();
+      });
+    });
+    vclose.addEventListener('click', function () { vdlg.close(); });
+    vdlg.addEventListener('click', function (e) { if (e.target === vdlg || e.target.classList.contains('gallery-stage')) vdlg.close(); });
+    vdlg.addEventListener('close', function () { frame.innerHTML = ''; });
+  }
+  var links = Array.prototype.slice.call(document.querySelectorAll('.store-gallery a.gallery-thumb:not([data-video])'));
+  if (!links.length) return;
   var dlg = document.createElement('dialog');
   dlg.className = 'gallery-dialog';
   dlg.setAttribute('aria-label', '画像の拡大表示');
