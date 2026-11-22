@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>設定・リマインド・ウィジェットの使い方 — モノサシ 取扱説明書</title>
-<meta name="description" content="放置を防ぐ「手放しリマインド通知」、8種類のテーマスキン、フォント変更、データの暗号化バックアップ・復元、Androidホーム画面ウィジェットの設定方法を詳しく解説。">
+<meta name="description" content="放置を防ぐ「手放しリマインド通知」、8種類のテーマスキン、フォント変更、データのバックアップ・復元、Androidホーム画面ウィジェットの設定方法を詳しく解説。">
 <link rel="canonical" href="https://tya-kaihatsu.com/monosashi/manual/settings.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="設定・リマインド・ウィジェットの使い方 — モノサシ 取扱説明書">
-<meta property="og:description" content="放置を防ぐ「手放しリマインド通知」、8種類のテーマスキン、フォント変更、データの暗号化バックアップ・復元、Androidホーム画面ウィジェットの設定方法を詳しく解説。">
+<meta property="og:description" content="放置を防ぐ「手放しリマインド通知」、8種類のテーマスキン、フォント変更、データのバックアップ・復元、Androidホーム画面ウィジェットの設定方法を詳しく解説。">
 <meta property="og:url" content="https://tya-kaihatsu.com/monosashi/manual/settings.html">
 <meta property="og:image" content="https://tya-kaihatsu.com/monosashi/manual/images/15_widget_home.png">
 <meta property="og:site_name" content="ちゃ開発組">
@@ -17,7 +17,7 @@
 <meta name="author" content="ちゃ開発組">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:title" content="設定・リマインド・ウィジェットの使い方 — モノサシ 取扱説明書">
-<meta name="twitter:description" content="放置を防ぐ「手放しリマインド通知」、8種類のテーマスキン、フォント変更、データの暗号化バックアップ・復元、Androidホーム画面ウィジェットの設定方法を詳しく解説。">
+<meta name="twitter:description" content="放置を防ぐ「手放しリマインド通知」、8種類のテーマスキン、フォント変更、データのバックアップ・復元、Androidホーム画面ウィジェットの設定方法を詳しく解説。">
 <meta name="twitter:image" content="https://tya-kaihatsu.com/monosashi/manual/images/15_widget_home.png">
 <link rel="icon" href="../../favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
@@ -48,7 +48,7 @@
       "name": "バックアップファイルには写真も含まれますか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "はい、撮影した写真データおよびこれまでのスワイプ判定データがまとめて安全に暗号化されてバックアップファイルに出力されます。"
+        "text": "はい、撮影した写真データおよびこれまでのスワイプ判定データが、1つのバックアップファイルにまとめて出力されます。"
       }
     }
   ]
@@ -113,7 +113,7 @@
 <div class="hero-banner">
   <span class="pill">機能 04</span>
   <h1>⚙️ 設定・リマインド・ウィジェット</h1>
-  <p>忘れがちな断捨離を支えるリマインド通知、お好みの配色に染めるスキン機能、暗号化バックアップ、ホーム画面ウィジェットを解説します。</p>
+  <p>忘れがちな断捨離を支えるリマインド通知、お好みの配色に染めるスキン機能、バックアップ、ホーム画面ウィジェットを解説します。</p>
 </div>
 
 <main class="container">
@@ -253,21 +253,21 @@
 
   <section class="card-section" id="backup-guide" aria-labelledby="backup-heading">
     <h2 id="backup-heading">💾 バックアップとデータの復元</h2>
-    <p>大切な持ち物の判定データや写真を守るため、アプリ内で完結する<strong>暗号化バックアップ</strong>機能を備えています。</p>
+    <p>大切な持ち物の判定データや写真を守るため、アプリ内で完結する<strong>バックアップ</strong>機能を備えています。</p>
 
     <div class="step-list">
       <div class="step-item">
         <div class="step-num">1</div>
         <div class="step-body">
           <div class="step-title">バックアップを作成</div>
-          <div class="step-desc">「バックアップ」ボタンをタップすると、データベースと写真が暗号化された安全なバックアップファイルとして保存・共有（Googleドライブ等へ転送）できます。</div>
+          <div class="step-desc">「バックアップ」ボタンをタップして保存先のフォルダを選ぶと、選んだフォルダに <code>backup_monosashi_日時.tar</code> という1つのファイルが作られます。このファイルをGoogleドライブ等に保管しておけます。</div>
         </div>
       </div>
       <div class="step-item">
         <div class="step-num">2</div>
         <div class="step-body">
           <div class="step-title">機種変更時のデータ復元</div>
-          <div class="step-desc">新しいスマートフォンに「モノサシ」をインストール後、設定画面で「復元」をタップしてバックアップファイルを選択すれば、以前の判定状況がそのまま復元されます。</div>
+          <div class="step-desc">新しいスマートフォンに「モノサシ」をインストール後、設定画面で「復元」をタップしてバックアップのファイル(tar)を選択すれば、以前の判定状況がそのまま復元されます。以前のバックアップ(フォルダ)のときは、フォルダの中のファイルを選び、次の画面でフォルダを選びます。</div>
         </div>
       </div>
     </div>
