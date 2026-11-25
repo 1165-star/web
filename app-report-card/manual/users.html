@@ -50,6 +50,22 @@
         "@type": "Answer",
         "text": "いいえ。人ではなく、デバイスの数です。1人が複数の端末で使っていれば、複数に数えられます。"
       }
+    },
+    {
+      "@type": "Question",
+      "name": "継続率や、「リアルタイムを見る」ボタンが出ません。",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "「設定」で、Googleアナリティクスのアカウントでログインし、見るプロパティを選んでください。そのアカウントに、プロパティの閲覧権限が必要です。選んだプロパティに、アプリのAndroidのデータストリームが無いときも、表示されません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "継続率の数字が、Playの数字と違うのはなぜですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "数え方が違うためです。継続率は、Googleアナリティクスが数えた数字で、アプリを更新した人も「新しい利用者」に数えられます。Playの数字とは、混ぜずに別々に見てください。"
+      }
     }
   ]
 }
@@ -129,11 +145,14 @@
     <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
       <p>「ユーザー」タブは、アプリを使っているデバイスの数と、その内訳を確認する画面です。</p>
       <p>アクティブなデバイスはPlayのレポートから、広告の表示回数とクリック数はAdMobから取得します。</p>
+      <p>「設定」でGoogleアナリティクス（GA4）にログインし、プロパティを選ぶと、アプリを使った人が、また使ってくれているかを示す「継続率」と、いま使っている人の「リアルタイム」も見られます。</p>
 
     <div class="want-tags" aria-label="このページの主な目的">
       <a class="want-tag" href="#users-active">・アプリが入っているデバイスの数を知りたい</a>
       <a class="want-tag" href="#users-ads">・広告の表示回数とクリック数を日別に見たい</a>
       <a class="want-tag" href="#users-dims">・どの端末・バージョン・国のユーザーが多いか知りたい</a>
+      <a class="want-tag" href="#users-retention">・初めて使った人が、また使ってくれているか知りたい</a>
+      <a class="want-tag" href="#users-realtime">・いま何人が、どの画面を使っているか知りたい</a>
     </div>
   </section>
 
@@ -191,6 +210,35 @@
       <div class="shot-caption">言語・通信事業者・国別</div>
     </div>
     </div>
+
+    <div class="step-item" id="users-retention">
+      <div class="step-header">
+        <span class="step-badge">STEP 4</span>
+        <h3 class="step-title">継続率（Googleアナリティクス）</h3>
+      </div>
+      <p>アプリを初めて使った日から、<strong>1日後〜7日後に、また使った人の割合</strong>を、日ごとに棒で表示します。初めて使った日が8〜19日前の人が対象で、右下のボタンで選んでいるアプリの合計です。</p>
+      <ul>
+        <li>「対象の新規ユーザー」で、数字のもとになっている人数が分かります。人数が30人より少ないときは、割合は目安です。</li>
+        <li>この画面は、「設定」でGoogleアナリティクスにログインし、プロパティを選んだときだけ表示されます。</li>
+      </ul>
+      <p>Playの数字とは、数え方が違います。アプリを更新した人も「新しい利用者」に数えられるため、更新を重ねている間は、数字が安定しないことがあります。</p>
+    </div>
+
+    <div class="step-item" id="users-realtime">
+      <div class="step-header">
+        <span class="step-badge">STEP 5</span>
+        <h3 class="step-title">リアルタイム（Googleアナリティクス）</h3>
+      </div>
+      <p>画面上の「<strong>リアルタイムを見る</strong>」ボタンを押すと、いまの利用状況の画面が開きます。次の内容を確認できます。</p>
+      <ul>
+        <li>直近30分・直近5分のアクティブユーザー</li>
+        <li>画面の表示・初回起動・アプリの削除の件数（直近30分）</li>
+        <li>1分ごとのアクティブユーザー（アプリごとの積み上げ）</li>
+        <li>アプリ別・国別・画面別・イベント別・アプリのバージョン別の内訳</li>
+      </ul>
+      <p>この画面は、自動では更新されません。開いたときに1回読み込み、そのあとは、画面上部に固定された「<strong>今すぐ更新</strong>」ボタンで更新します。更新は<strong>1分に1回まで</strong>で、続けて押したときは、「あと約◯秒で更新できます」と知らせます。最後に更新した時刻も表示されます。</p>
+      <p>「リアルタイムを見る」ボタンは、「設定」でGoogleアナリティクスにログインしてプロパティを選び、選んでいるアプリのデータが、そのプロパティにあるときだけ表示されます。</p>
+    </div>
   </section>
 
   <section class="card-section" aria-labelledby="faq-heading">
@@ -207,6 +255,14 @@
       <div class="faq-item">
         <h3 class="faq-q"><span class="faq-q-mark">Q</span> ユーザー数は、実際の人数ですか？</h3>
         <p class="faq-a">いいえ。人ではなく、デバイスの数です。1人が複数の端末で使っていれば、複数に数えられます。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 継続率や、「リアルタイムを見る」ボタンが出ません。</h3>
+        <p class="faq-a">「設定」で、Googleアナリティクスのアカウントでログインし、見るプロパティを選んでください。そのアカウントに、プロパティの閲覧権限が必要です。選んだプロパティに、アプリのAndroidのデータストリームが無いときも、表示されません。</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-q"><span class="faq-q-mark">Q</span> 継続率の数字が、Playの数字と違うのはなぜですか？</h3>
+        <p class="faq-a">数え方が違うためです。継続率は、Googleアナリティクスが数えた数字で、アプリを更新した人も「新しい利用者」に数えられます。Playの数字とは、混ぜずに別々に見てください。</p>
       </div>
     </div>
   </section>
