@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>設定・スキン・バックアップ（設定タブ）| ちょこハピ 取扱説明書</title>
+<meta name="description" content="ちょこハピ「設定」タブの使い方です。1日の始まりの時刻、通知、スキン（テーマ）の変更、言語、PREMIUMの違い、ホーム画面ウィジェット、バックアップと復元の方法を解説します。">
+<link rel="canonical" href="https://tya-kaihatsu.com/chocohapi/manual/settings.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="設定・スキン・バックアップ（設定タブ）| ちょこハピ 取扱説明書">
+<meta property="og:description" content="ちょこハピ「設定」タブの使い方です。1日の始まりの時刻、通知、スキン（テーマ）の変更、言語、PREMIUMの違い、ホーム画面ウィジェット、バックアップと復元の方法を解説します。">
+<meta property="og:url" content="https://tya-kaihatsu.com/chocohapi/manual/settings.html">
+<meta property="og:image" content="https://tya-kaihatsu.com/chocohapi/manual/images/13_skin.png">
+<meta property="og:site_name" content="ちゃ開発組">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="ちゃ開発組">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:title" content="設定・スキン・バックアップ（設定タブ）| ちょこハピ 取扱説明書">
+<meta name="twitter:description" content="ちょこハピ「設定」タブの使い方です。1日の始まりの時刻、通知、スキン（テーマ）の変更、言語、PREMIUMの違い、ホーム画面ウィジェット、バックアップと復元の方法を解説します。">
+<meta name="twitter:image" content="https://tya-kaihatsu.com/chocohapi/manual/images/13_skin.png">
+<link rel="icon" href="../../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="./style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ちゃ開発組",
+      "item": "https://tya-kaihatsu.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "設定・スキン・バックアップ（設定タブ） | ちょこハピ 取扱説明書",
+      "item": "https://tya-kaihatsu.com/chocohapi/manual/settings.html"
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BM5E3HSSHS');
+</script>
+<link rel="stylesheet" href="../../assets/footer.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand-link" href="./index.html">🍀 ちょこハピ <span class="brand-pill">取扱説明書</span></a>
+    <nav class="global-nav" aria-label="取扱説明書メニュー">
+      <a href="./index.html">トップ（目次）</a>
+      <a href="./today.html">1. ハッピーを探す</a>
+      <a href="./garden.html">2. 庭を育てる</a>
+      <a href="./records.html">3. 記録をふりかえる</a>
+      <a href="./settings.html" aria-current="page">4. 設定・スキン・バックアップ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero-banner">
+  <span class="pill">機能 04</span>
+  <h1>⚙️ 設定・スキン・バックアップ（設定タブ）</h1>
+  <p>1日の始まりの時刻や通知、見た目（スキン）の変更から、PREMIUMの違い、ウィジェット、機種変更に備えるバックアップまでを解説します。</p>
+</div>
+
+<main class="container">
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <a href="./index.html">取扱説明書トップ</a> <span>›</span> <span>設定・スキン・バックアップ</span>
+  </nav>
+
+  <section class="card-section" aria-labelledby="intro-heading">
+    <h2 id="intro-heading">📖 はじめに（この画面でできること）</h2>
+    <p>「設定」タブでは、アプリの動きや見た目を自分好みに変えられます。バックアップ・復元もここから行います（Androidのみ）。</p>
+    <div class="want-tags" aria-label="このページの主な目的">
+      <a class="want-tag" href="#settings-daystart">・1日の始まりの時刻を変えたい</a>
+      <a class="want-tag" href="#settings-notify">・通知のオン・オフを変えたい</a>
+      <a class="want-tag" href="#settings-skin">・アプリの見た目（スキン）を変えたい</a>
+      <a class="want-tag" href="#settings-premium">・PREMIUMとの違いを知りたい</a>
+      <a class="want-tag" href="#settings-widget">・ホーム画面にウィジェットを置きたい</a>
+      <a class="want-tag" href="#settings-backup">・機種変更用にデータをバックアップ・復元したい</a>
+    </div>
+  </section>
+
+  <section class="card-section" aria-labelledby="steps-heading">
+    <h2 id="steps-heading">🛠️ 詳しい操作手順</h2>
+
+    <div class="step-item" id="settings-daystart">
+      <div class="step-header">
+        <span class="step-badge">STEP 1</span>
+        <h3 class="step-title">1日の始まりの時刻</h3>
+      </div>
+      <p>「今日」が切り替わる時刻を、0時〜11時から選べます（初期値は0時）。「今日」タブの「1日の始まり ◯時」ボタンからも変更できます。</p>
+      <ul>
+        <li>この時刻より前の記録は、前の日として数えられます（例: 朝5時に設定すると、午前3時の記録は前日分になります）。</li>
+        <li>変更すると、既存の記録の日付も新しい区切りで数え直されます。</li>
+        <li>この時刻になると、今日の予定と条件が選び直しになります。</li>
+      </ul>
+    </div>
+
+    <div class="step-item" id="settings-notify">
+      <div class="step-header">
+        <span class="step-badge">STEP 2</span>
+        <h3 class="step-title">通知の設定</h3>
+      </div>
+      <ul>
+        <li><strong>更新時間に通知する:</strong> 「1日の始まり」の時刻に、毎日1回「新しい1日のはじまり」とお知らせします。最初はオンです（初めての「見つけた！」のときに通知の許可を求めます）。</li>
+        <li><strong>花が咲いたら通知する:</strong> 植えた花が咲く日の朝9時に「花が咲きました」とお知らせします。初めて種を植えたときに自動でオンになります。オンにするには通知の許可が必要です。</li>
+      </ul>
+    </div>
+
+    <div class="step-item" id="settings-skin">
+      <div class="step-header">
+        <span class="step-badge">STEP 3</span>
+        <h3 class="step-title">スキン（テーマ）の変更</h3>
+      </div>
+      <p>設定タブの「スキン」から、アプリ全体の色合い・書体・飾りが変わるテーマを選べます。プレビューを見ながら選んで「決定」で適用します。全19種と、「おまかせ（端末に合わせる）」があります。</p>
+      <ul>
+        <li><strong>ライト系:</strong> ぷりぷりピーチ／チョコベリー／カスタードプリン／わたあめソーダ／ダークチェリー／ビターチョコ／ミッドナイト魔法／抹茶トリュフ</li>
+        <li><strong>テーマ系（ライト／ダークの対）:</strong> いちごミルク／ゆめかわパステル／くすみ喫茶レトロ／ボタニカル森ガール／シール帳ポップ</li>
+        <li><strong>おまかせ:</strong> 端末のライト／ダーク設定に合わせて自動で切り替わります。</li>
+      </ul>
+      <div class="shot-container shot-container-2col">
+        <div class="shot-card">
+          <img src="./images/13_skin.png" alt="スキン選択の画面（ライトモードとダークモードのテーマ一覧）" width="540" height="1129" loading="lazy">
+          <div class="shot-caption">スキン選択。プレビューを見ながら選べます</div>
+        </div>
+        <div class="shot-card">
+          <img src="./images/14_dark.png" alt="ダーク系スキンを適用した今日タブ" width="540" height="1129" loading="lazy">
+          <div class="shot-caption">ダーク系スキン（ミッドナイト魔法）を適用した画面</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-item" id="settings-language">
+      <div class="step-header">
+        <span class="step-badge">STEP 4</span>
+        <h3 class="step-title">言語の変更</h3>
+      </div>
+      <p>設定タブの「言語」から、表示言語を12言語から選べます（日本語／English／简体中文／繁體中文／한국어／Español／Português／Français／Deutsch／Русский／Bahasa Indonesia／Italiano）。初期値は端末の言語です（対応していない言語の場合は英語になります）。</p>
+    </div>
+
+    <div class="step-item" id="settings-premium">
+      <div class="step-header">
+        <span class="step-badge">STEP 5</span>
+        <h3 class="step-title">PREMIUMについて</h3>
+      </div>
+      <p>画面右上の「PREMIUM」ボタンから、案内と登録ができます。無料版との違いは次の2点だけです。それ以外の機能（記録・庭・着せ替え・スキン・バックアップなど）は、無料版でもすべて使えます。</p>
+      <ul>
+        <li><strong>広告:</strong> 無料版では各画面の下部にバナー広告が表示されます。PREMIUMでは表示されません。</li>
+        <li><strong>ウィジェット:</strong> 無料版は「ちょこハピ」ウィジェットのみ。PREMIUMでは「庭」「週間」ウィジェットも使えます。</li>
+      </ul>
+      <p>月額／年額プラン（年額には「お得」バッジ）から選べます。無料お試しがある場合は、購入ボタンの前に日数・終了日・お試し後の自動請求と解約方法が表示されます。機種変更時などは「購入を復元」で購入状態を戻せます。</p>
+    </div>
+
+    <div class="step-item" id="settings-widget">
+      <div class="step-header">
+        <span class="step-badge">STEP 6</span>
+        <h3 class="step-title">ホーム画面ウィジェット（Androidのみ）</h3>
+      </div>
+      <p>ホーム画面のウィジェット一覧から追加できます。</p>
+      <ul>
+        <li><strong>ちょこハピ（無料）:</strong> 今日の予定とハッピー条件、今日の個数が表示されます。「見つけた！」ボタンを押すとアプリが開いてそのまま1件記録できます。「予定を選ぶ」ボタンで「今日」タブへ移動します。</li>
+        <li><strong>ちょこハピ 庭（PREMIUM限定）:</strong> 庭に植えた花の様子と「庭 Lv.◯」「咲いた花 ◯ / 植えた花 ◯」が表示されます。</li>
+        <li><strong>ちょこハピ 週間（PREMIUM限定）:</strong> 直近7日間に見つけた回数が日ごとに表示されます。</li>
+      </ul>
+    </div>
+
+    <div class="step-item" id="settings-backup">
+      <div class="step-header">
+        <span class="step-badge">STEP 7</span>
+        <h3 class="step-title">バックアップと復元（Androidのみ）</h3>
+      </div>
+      <p><strong>バックアップ:</strong> 設定タブの「バックアップ・復元」→「バックアップ」を選び、保存先のフォルダを指定すると、バックアップファイル（.tar）が1つ作られます。作成時にパスワードを決めます（確認入力つき）。記録・庭・設定などのデータがまるごと入ります。</p>
+      <p><strong>復元:</strong> 「復元」からバックアップファイル（.tar）を選び、作成時のパスワードを入力します。現在のデータはすべて置き換えられます（実行前に確認が出ます）。完了後はアプリの再起動が必要です。</p>
+      <ul>
+        <li><strong>パスワードを忘れると復元できません。</strong> 分かる場所に控えておいてください。</li>
+        <li>パスワードが違う・ファイルが壊れている等の場合は、理由が表示されて復元できません。</li>
+        <li>購入状態（PREMIUM）はバックアップに含まれません。復元先の端末の購入状態が使われます。</li>
+      </ul>
+      <div class="shot-container">
+        <div class="shot-card">
+          <img src="./images/15_settings.png" alt="設定タブ（スキン・言語・バックアップ・復元の項目）" width="540" height="1129" loading="lazy">
+          <div class="shot-caption">設定タブ。「バックアップ・復元」もここから</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-title">💡 このアプリについて</div>
+      設定タブの「このアプリについて」から、バージョンの確認、更新履歴（公式サイトのリリースノート）、プライバシーポリシー、「アプリを評価する」（Google Playのアプリページ）が開けます。
+    </div>
+  </section>
+
+  <div class="page-nav">
+    <a class="page-nav-link" href="./records.html">
+      <span class="page-nav-sub">‹ 前の機能</span>
+      <span class="page-nav-title">3. 記録をふりかえる</span>
+    </a>
+    <a class="page-nav-link next" href="./index.html">
+      <span class="page-nav-sub">目次へ戻る ›</span>
+      <span class="page-nav-title">取扱説明書トップ</span>
+    </a>
+  </div>
+</main>
+<!-- tya-footer:start -->
+<footer class="tya-footer">
+<div class="tf-inner">
+<div class="tf-brand"><img src="../../assets/profile.jpg" alt="" width="44" height="44"><div><a class="tf-brand-name" href="../../">ちゃ開発組</a><span class="tf-brand-sub">スマホアプリ開発</span></div></div>
+<nav class="tf-cols" aria-label="アプリ一覧">
+<div class="tf-col tf-col-apps"><h2>アプリ一覧</h2><ul><li><a href="../../app-report-card/">アプリ成績表</a></li><li><a href="../../blood-pressure-history/">血圧メモ</a></li><li><a href="../../houkaku-compass/">ゆびさすコンパス</a></li><li><a href="../../memonowa/">めものわ</a></li><li><a href="../../monosashi/">モノサシ</a></li><li><a href="../../pet-health-management/">ぺっときろく</a></li><li><a href="../../scroll-capture/">縦長スクショ</a></li><li><a href="../../shrink/">Shrink</a></li><li><a href="../../sutamina-techo/">スタミナ手帳</a></li></ul></div>
+<div class="tf-col"><h2>サイト</h2><ul><li><a href="../../">ちゃ開発組トップ</a></li><li><a href="../../privacy-policy.html">サイトのプライバシーポリシー</a></li></ul></div>
+</nav>
+<p class="tf-copy">&copy; <span id="year">2026</span> ちゃ開発組</p>
+</div>
+</footer>
+<!-- tya-footer:end -->
+
+</body>
+</html>
