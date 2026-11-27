@@ -320,6 +320,12 @@ body {
   margin: 0;
   color: var(--text);
 }
+.step-item h4 {
+  font-size: 15px;
+  font-weight: 800;
+  margin: 18px 0 6px;
+  color: var(--accent);
+}
 
 /* 画像ギャラリー・スクリーンショット */
 .shot-container {
