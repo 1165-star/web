@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ちょこハピ - ちょっとしたハッピーを見つけて庭を育てる、やさしいぷちゲーム | ちゃ開発組</title>
+  <meta name="description" content="今日のハッピーを見つける、小さな宝探し。クローバーを集めて、自分だけの庭を育てよう。主な機能: 今日の予定に合わせたハッピーの条件、クローバーを集めて庭づくり、見つけた日を記録。Android対応。">
+  <link rel="canonical" href="https://tya-kaihatsu.com/chocohapi/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ちょこハピ - ちょっとしたハッピーを見つけて庭を育てる、やさしいぷちゲーム | ちゃ開発組">
+  <meta property="og:description" content="今日のハッピーを見つける、小さな宝探し。クローバーを集めて、自分だけの庭を育てよう。主な機能: 今日の予定に合わせたハッピーの条件、クローバーを集めて庭づくり、見つけた日を記録。Android対応。">
+  <meta property="og:url" content="https://tya-kaihatsu.com/chocohapi/">
+  <meta property="og:site_name" content="ちゃ開発組">
+  <meta property="og:image" content="https://tya-kaihatsu.com/assets/icons/chocohapi.png">
+  <meta name="twitter:card" content="summary">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="ちゃ開発組">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image:alt" content="ちょこハピのアイコン">
+<meta name="twitter:title" content="ちょこハピ - ちょっとしたハッピーを見つけて庭を育てる、やさしいぷちゲーム | ちゃ開発組">
+<meta name="twitter:description" content="今日のハッピーを見つける、小さな宝探し。クローバーを集めて、自分だけの庭を育てよう。主な機能: 今日の予定に合わせたハッピーの条件、クローバーを集めて庭づくり、見つけた日を記録。Android対応。">
+<meta name="twitter:image" content="https://tya-kaihatsu.com/assets/icons/chocohapi.png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "ちょこハピ",
+  "description": "今日のハッピーを見つける、小さな宝探し。クローバーを集めて庭を育てよう",
+  "url": "https://tya-kaihatsu.com/chocohapi/",
+  "inLanguage": "ja",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ちゃ開発組",
+    "url": "https://tya-kaihatsu.com/"
+  },
+  "operatingSystem": "Android",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.tyakaihatsu.chocohapi",
+  "@id": "https://tya-kaihatsu.com/chocohapi/#app",
+  "applicationCategory": "LifestyleApplication",
+  "applicationSubCategory": "ライフスタイル / ハッピー探し",
+  "image": [
+    "https://tya-kaihatsu.com/chocohapi/images/store/feature.webp",
+    "https://tya-kaihatsu.com/assets/icons/chocohapi.png"
+  ],
+  "featureList": [
+    "今日の予定に合わせたハッピーの条件",
+    "クローバーを集めて庭づくり",
+    "見つけた日を記録",
+    "見つけた場所を地図に",
+    "ホーム画面ウィジェット",
+    "9種類のスキン"
+  ],
+  "releaseNotes": "https://tya-kaihatsu.com/chocohapi/release-notes.html",
+  "screenshot": [
+    "https://tya-kaihatsu.com/chocohapi/images/store/01.webp",
+    "https://tya-kaihatsu.com/chocohapi/images/store/02.webp",
+    "https://tya-kaihatsu.com/chocohapi/images/store/03.webp",
+    "https://tya-kaihatsu.com/chocohapi/images/store/04.webp",
+    "https://tya-kaihatsu.com/chocohapi/images/store/05.webp",
+    "https://tya-kaihatsu.com/chocohapi/images/store/06.webp",
+    "https://tya-kaihatsu.com/chocohapi/images/store/07.webp"
+  ],
+  "softwareHelp": {
+    "@type": "CreativeWork",
+    "name": "ちょこハピ 取扱説明書",
+    "url": "https://tya-kaihatsu.com/chocohapi/manual/"
+  },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.tyakaihatsu.chocohapi"
+}
+</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ちゃ開発組",
+        "item": "https://tya-kaihatsu.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "ちょこハピ",
+        "item": "https://tya-kaihatsu.com/chocohapi/"
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="../assets/gallery.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM5E3HSSHS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BM5E3HSSHS');
+  </script>
+
+  <style>
+    :root {
+      --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.03);
+      --shadow-hover: 0 14px 28px -6px rgba(43, 108, 176, 0.12), 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+      --tag-bg: rgba(0, 0, 0, 0.04);
+      --tag-fg: var(--muted);
+      --accent-soft: rgba(43, 108, 176, 0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.25);
+        --shadow-hover: 0 14px 28px -6px rgba(111, 168, 220, 0.18), 0 4px 10px rgba(0, 0, 0, 0.3);
+        --tag-bg: rgba(255, 255, 255, 0.06);
+        --tag-fg: var(--muted);
+        --accent-soft: rgba(111, 168, 220, 0.12);
+      }
+    }
+
+    body {
+      background-image: radial-gradient(circle at 50% -120px, var(--accent-soft) 0%, transparent 65%);
+      background-repeat: no-repeat;
+    }
+
+    main {
+      max-width: 1040px;
+      padding: 24px 16px 60px;
+    }
+    @media (min-width: 768px) {
+      main {
+        padding: 36px 24px 80px;
+      }
+    }
+
+    /* ナビゲーション戻るボタン */
+    .back-nav {
+      margin-bottom: 20px;
+    }
+    .back-nav .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+      margin-bottom: 0;
+    }
+    .back-nav .back-link:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      transform: translateX(-3px);
+    }
+
+    /* ヒーロー紹介：スマホでは中央揃え・自然な縦並び、PCでは2カラムのリッチカード */
+    .app-showcase-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px 18px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-card);
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .app-showcase-card {
+        padding: 36px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        display: grid !important;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 36px;
+        align-items: center;
+        text-align: left;
+      }
+    }
+
+    .app-meta-head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    @media (min-width: 768px) {
+      .app-meta-head {
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .app-icon-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      flex-shrink: 0;
+    }
+    @media (min-width: 768px) {
+      .app-icon-img {
+        width: 88px;
+        height: 88px;
+        border-radius: 20px;
+      }
+    }
+
+    .title-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+    @media (min-width: 768px) {
+      .title-row {
+        justify-content: flex-start;
+      }
+    }
+
+    .app-title-group h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--fg);
+      letter-spacing: -0.01em;
+    }
+    @media (min-width: 768px) {
+      .app-title-group h1 {
+        font-size: 1.75rem;
+      }
+    }
+
+    .title-manual-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      box-sizing: border-box;
+      background: #f08c00;
+      color: #fff;
+      padding: 12px 20px;
+      margin: 4px 0 10px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 800;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(240, 140, 0, 0.4);
+    }
+    .title-manual-link svg {
+      width: 1.2em;
+      height: 1.2em;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .title-manual-link:hover {
+      background: #d97f00;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(240, 140, 0, 0.5);
+    }
+    @media (min-width: 768px) {
+      .title-manual-link {
+        width: auto;
+        display: inline-flex;
+        padding: 10px 24px;
+      }
+    }
+
+    .badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .badges-row {
+        justify-content: flex-start;
+      }
+    }
+
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 700;
+      background: var(--accent-soft);
+    }
+    .store-badge svg { width: 12px; height: 12px; }
+
+    .tag-badge {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .tag-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-size: 0.72rem;
+        font-weight: 500;
+        background: var(--tag-bg);
+        color: var(--tag-fg);
+        border: 1px solid var(--border);
+      }
+    }
+
+    .app-lead-desc {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin: 12px 0 16px;
+    }
+    @media (min-width: 768px) {
+      .app-lead-desc {
+        font-size: 0.95rem;
+        margin: 14px 0 20px;
+      }
+    }
+
+    /* アプリの特長ハイライトチップ：スマホでは非表示、PCでのみ表示 */
+    .specs-grid {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .specs-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 24px;
+        justify-content: flex-start;
+      }
+    }
+    .spec-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.78rem;
+      color: var(--fg);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 3px 9px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    /* Google Play ダウンロードボタン */
+    .store-cta-wrap {
+      display: flex;
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .store-cta-wrap {
+        justify-content: flex-start;
+      }
+    }
+    .store-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 24px;
+      border-radius: 14px;
+      background: var(--fg);
+      color: var(--bg);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+    .store-cta-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+    }
+    .store-cta-btn svg {
+      width: 26px;
+      height: 26px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+    .store-cta-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+      text-align: left;
+    }
+    .store-cta-small {
+      font-size: 0.68rem;
+      opacity: 0.8;
+      font-weight: 400;
+    }
+
+    /* ヒーロー右側：PCでのみフィーチャーグラフィックを表示 */
+    .hero-right {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .hero-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-banner-preview {
+        width: 100%;
+        max-width: 440px;
+        height: auto;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-card);
+        display: block;
+        transition: transform 0.3s ease;
+      }
+      .hero-banner-side:hover .hero-banner-preview {
+        transform: scale(1.02);
+      }
+    }
+
+    /* スクリーンショットギャラリー */
+    .store-gallery {
+      max-width: 100%;
+      margin: 0 0 36px;
+      text-align: left;
+    }
+    @media (min-width: 768px) {
+      .store-gallery {
+        margin: 0 0 44px;
+      }
+    }
+    .gallery-heading-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+    }
+    .gallery-heading-wrap h2 {
+      margin: 0;
+      padding: 0;
+      border-bottom: none;
+      font-size: 1.15rem;
+      font-weight: 800;
+    }
+    .gallery-hint {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .gallery-list {
+      padding: 4px 2px 14px;
+      gap: 10px;
+    }
+    @media (min-width: 768px) {
+      .gallery-list {
+        padding: 4px 4px 16px;
+        gap: 14px;
+      }
+    }
+    .gallery-thumb {
+      border-radius: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .gallery-thumb:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    .gallery-thumb img {
+      height: 140px;
+    }
+    @media (min-width: 768px) {
+      .gallery-thumb {
+        border-radius: 12px;
+      }
+      .gallery-thumb img {
+        height: 200px;
+      }
+    }
+
+    /* 「できること」セクション：スマホでは1カラム、PCでは2カラム */
+    .features {
+      max-width: 100%;
+      margin: 0 0 36px;
+      text-align: left;
+    }
+    @media (min-width: 768px) {
+      .features {
+        margin: 0 0 44px;
+      }
+    }
+    .features-heading-wrap {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    .features-heading-wrap h2 {
+      margin: 0;
+      padding: 0;
+      border-bottom: none;
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 768px) {
+      .feature-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+    }
+
+    .feature-list li {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    @media (min-width: 768px) {
+      .feature-list li {
+        padding: 14px 16px;
+        border-radius: 12px;
+        font-size: 0.9rem;
+      }
+    }
+    .feature-list li:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .feature-list .mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* アプリ内リンク (プライバシーポリシー・リリースノート) */
+    .app-links-wrap {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+    .app-link-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 10px 16px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-card);
+      transition: all 0.2s ease;
+    }
+    .app-link-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    /* アプリ情報・よくある質問(generate_seo.py が差し込む) */
+    .app-facts, .app-faq { max-width: 100%; margin: 0 0 36px; text-align: left; }
+    .app-facts-heading-wrap, .app-faq-heading-wrap { border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 16px; }
+    .app-facts-heading-wrap h2, .app-faq-heading-wrap h2 { margin: 0; padding: 0; border-bottom: none; font-size: 1.15rem; font-weight: 800; text-align: left; }
+    .facts-list { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 0; }
+    @media (min-width: 768px) { .facts-list { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
+    .facts-list > div { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; font-size: 0.86rem; line-height: 1.55; }
+    .facts-list dt { margin: 0 0 2px; color: var(--muted); font-size: 0.74rem; font-weight: 700; }
+    .facts-list dd { margin: 0; font-weight: 600; }
+    .facts-list a { color: var(--accent); text-decoration: none; }
+    .facts-list a:hover { text-decoration: underline; }
+    .faq-list { display: grid; gap: 10px; }
+    .faq-list details { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 0 14px; font-size: 0.88rem; line-height: 1.65; }
+    .faq-list summary { cursor: pointer; padding: 12px 0; font-weight: 700; list-style-position: inside; }
+    .faq-list details[open] summary { color: var(--accent); }
+    .faq-list details p { margin: 0 0 14px; color: var(--fg); }
+    .faq-more { margin: 12px 0 0; font-size: 0.86rem; }
+    .faq-more a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .faq-more a:hover { text-decoration: underline; }
+  </style>
+<link rel="stylesheet" href="../assets/footer.css">
+</head>
+<body>
+  <main>
+    <nav class="back-nav">
+      <a class="back-link" href="../">&larr; ちゃ開発組トップ</a>
+    </nav>
+
+    <!-- アプリ紹介ヒーロー -->
+    <div class="app-showcase-card">
+      <div class="hero-left">
+        <div class="app-meta-head">
+          <img class="app-icon-img" src="../assets/icons/chocohapi.png" alt="ちょこハピのアイコン">
+          <div class="app-title-group">
+            <div class="title-row">
+              <h1>ちょこハピ</h1>
+            </div>
+            <a class="title-manual-link" href="./manual/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg>取扱説明書を開く</a>
+            <div class="badges-row">
+              <span class="store-badge" style="visibility:hidden" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+                Google Play 公開中
+              </span>
+              <span class="tag-badge">ライフスタイル / ハッピー探し</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="app-lead-desc">
+          今日のハッピーを見つける、小さな宝探し。<br>
+          クローバーを集めて、自分だけの庭を育てよう。
+        </p>
+
+        <div class="specs-grid">
+          <span class="spec-item">🍀 今日の予定に合わせたハッピーの条件</span>
+          <span class="spec-item">🌸 クローバーを集めて庭づくり</span>
+          <span class="spec-item">📖 見つけた日を記録</span>
+          <span class="spec-item">📍 見つけた場所を地図に</span>
+          <span class="spec-item">📱 ホーム画面ウィジェット</span>
+          <span class="spec-item">🎨 9種類のスキン</span>
+        </div>
+
+        <div class="store-cta-wrap">
+          <a class="store-cta-btn" href="https://play.google.com/store/apps/details?id=com.tyakaihatsu.chocohapi" target="_blank" rel="noopener noreferrer" aria-label="Google Playで入手(Android)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85a.637.637 0 0 0-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.643.643 0 0 0-.87-.2c-.28.18-.37.54-.22.83L6.4 9.48A10.78 10.78 0 0 0 1 18h22a10.78 10.78 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+            <span class="store-cta-text">
+              <span class="store-cta-small">GET IT ON</span>
+              <span>Google Play で手に入れる</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <a class="hero-banner-side gallery-thumb" href="./images/store/feature.webp" title="フィーチャーグラフィックを拡大">
+          <img class="hero-banner-preview" src="./images/store/feature-thumb.webp" alt="ちょこハピ ストア画像(フィーチャーグラフィック)" loading="lazy">
+        </a>
+      </div>
+    </div>
+
+    <!-- スクリーンショットギャラリー -->
+    <section class="store-gallery" aria-labelledby="gallery-heading">
+      <div class="gallery-heading-wrap">
+        <h2 id="gallery-heading">スクリーンショット</h2>
+        <span class="gallery-hint">クリックして拡大</span>
+      </div>
+      <ul class="gallery-list">
+        <li><a class="gallery-thumb" href="https://www.youtube.com/watch?v=_VQ_H0R5fd0" target="_blank" rel="noopener" data-video="_VQ_H0R5fd0" aria-label="動画を再生"><img src="./images/store/feature-thumb.webp" width="737" height="360" alt="ちょこハピ ストア画像(フィーチャーグラフィック)" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/01.webp"><img src="./images/store/01-thumb.webp" width="202" height="360" alt="ちょこハピ スクリーンショット 1" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/02.webp"><img src="./images/store/02-thumb.webp" width="202" height="360" alt="ちょこハピ スクリーンショット 2" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/03.webp"><img src="./images/store/03-thumb.webp" width="202" height="360" alt="ちょこハピ スクリーンショット 3" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/04.webp"><img src="./images/store/04-thumb.webp" width="202" height="360" alt="ちょこハピ スクリーンショット 4" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/05.webp"><img src="./images/store/05-thumb.webp" width="202" height="360" alt="ちょこハピ スクリーンショット 5" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/06.webp"><img src="./images/store/06-thumb.webp" width="202" height="360" alt="ちょこハピ スクリーンショット 6" loading="lazy" decoding="async"></a></li>
+        <li><a class="gallery-thumb" href="./images/store/07.webp"><img src="./images/store/07-thumb.webp" width="202" height="360" alt="ちょこハピ スクリーンショット 7" loading="lazy" decoding="async"></a></li>
+      </ul>
+    </section>
+
+    <!-- できること一覧 -->
+    <section class="features">
+      <div class="features-heading-wrap">
+        <h2>できること</h2>
+      </div>
+      <ul class="feature-list">
+        <li><span class="mark">✓</span>今日の予定(家にいる・外に出る・人と会う・人にあまり会わない)に合わせて、ハッピーを見つける条件が届く</li>
+        <li><span class="mark">✓</span>見つけたら「見つけた！」を押すだけ。やらなければならないことは何もなし</li>
+        <li><span class="mark">✓</span>見つけるたびにクローバーがたまり、庭に花を植えて育てられる</li>
+        <li><span class="mark">✓</span>見つけた日を記録として振り返れる</li>
+        <li><span class="mark">✓</span>見つけた場所を地図に残せる(設定でオンにしたときだけ)</li>
+        <li><span class="mark">✓</span>ホーム画面ウィジェットで、条件の確認と「見つけた」の報告ができる(Android)</li>
+        <li><span class="mark">✓</span>9種類のスキンで、好きな見た目に着せ替え</li>
+        <li><span class="mark">✓</span>競争も運試しもない、自分のペースで楽しめる。記録・設定はすべて端末の中に保存</li>
+      </ul>
+    </section>
+
+    <!-- アプリ情報 -->
+    <section class="app-facts" aria-labelledby="facts-heading">
+      <div class="app-facts-heading-wrap"><h2 id="facts-heading">アプリ情報</h2></div>
+      <dl class="facts-list">
+        <div><dt>提供元</dt><dd><a href="../">ちゃ開発組</a></dd></div>
+        <div><dt>対応OS</dt><dd>Android</dd></div>
+        <div><dt>ジャンル</dt><dd>ライフスタイル / ハッピー探し</dd></div>
+        <div><dt>配布</dt><dd><a href="https://play.google.com/store/apps/details?id=com.tyakaihatsu.chocohapi">Google Play</a>(公開中)</dd></div>
+        <div><dt>関連ページ</dt><dd><a href="./manual/">取扱説明書</a> / <a href="./release-notes.html">リリースノート</a> / <a href="./privacy-policy.html">プライバシーポリシー</a></dd></div>
+      </dl>
+    </section>
+
+    <!-- よくある質問 -->
+    <section class="app-faq" aria-labelledby="faq-heading">
+      <div class="app-faq-heading-wrap"><h2 id="faq-heading">よくある質問</h2></div>
+      <div class="faq-list">
+        <details><summary>ちょこハピは無料で利用できますか？</summary><p>はい、ハッピー探しの記録、庭づくり、アバターの着せ替え、スキンの変更、バックアップ・復元など、基本機能をすべて無料でご利用いただけます。PREMIUMプランとの違いは「広告が表示されないこと」と「追加のウィジェット2種が使えること」の2点だけです。</p></details>
+        <details><summary>クローバーはどうやって集めるのですか？</summary><p>「今日」タブで今日の予定を選ぶと、その日の「ハッピー条件」が1つ届きます。条件のハッピーを見つけたら「見つけた！」ボタンを押すと、クローバーが1つ増えます。集めたクローバーは「庭」タブで花を植えるのに使えます。</p></details>
+        <details><summary>植えた花をやっぱり片付けたいときはどうすればいいですか？</summary><p>植えた花をタップして「クローバーに戻す」を選ぶと、花が片付いて空きマスになり、植えるのに使ったクローバーが同数そのまま戻ります。場所を変えたいだけなら「場所を移動」で植え替えることもできます。</p></details>
+        <details><summary>機種変更時にデータを引き継ぐことはできますか？</summary><p>はい（Androidのみ）。設定タブの「バックアップ・復元」からバックアップファイル（.tar）を作成し、新しい端末で「復元」すれば、記録・庭・設定をまるごと引き継げます。復元にはバックアップ作成時に決めたパスワードが必要です。パスワードを忘れると復元できないのでご注意ください。</p></details>
+      </div>
+      <p class="faq-more"><a href="./manual/" target="_blank" rel="noopener noreferrer">取扱説明書で詳しく見る &rarr;</a></p>
+    </section>
+
+    <div class="app-links-wrap">
+      <a class="app-link-card" href="./manual/" target="_blank" rel="noopener noreferrer">取扱説明書 &rarr;</a>
+      <a class="app-link-card" href="./privacy-policy.html">プライバシーポリシー &rarr;</a>
+      <a class="app-link-card" href="./release-notes.html">リリースノート &rarr;</a>
+    </div>
+
+  </main>
+<!-- tya-footer:start -->
+<footer class="tya-footer">
+<div class="tf-inner">
+<div class="tf-brand"><img src="../assets/profile.jpg" alt="" width="44" height="44"><div><a class="tf-brand-name" href="../">ちゃ開発組</a><span class="tf-brand-sub">スマホアプリ開発</span></div></div>
+<nav class="tf-cols" aria-label="アプリ一覧">
+<div class="tf-col"><h2>ちょこハピ</h2><ul><li><a href="../chocohapi/" aria-current="page">アプリ紹介</a></li><li><a href="../chocohapi/manual/">取扱説明書</a></li><li><a href="../chocohapi/release-notes.html">リリースノート</a></li><li><a href="../chocohapi/privacy-policy.html">プライバシーポリシー</a></li></ul></div>
+<div class="tf-col tf-col-apps"><h2>アプリ一覧</h2><ul><li><a href="../app-report-card/">アプリ成績表</a></li><li><a href="../blood-pressure-history/">血圧メモ</a></li><li><a href="../houkaku-compass/">ゆびさすコンパス</a></li><li><a href="../memonowa/">めものわ</a></li><li><a href="../monosashi/">モノサシ</a></li><li><a href="../pet-health-management/">ぺっときろく</a></li><li><a href="../scroll-capture/">縦長スクショ</a></li><li><a href="../shrink/">Shrink</a></li><li><a href="../sutamina-techo/">スタミナ手帳</a></li><li><a href="../chocohapi/" aria-current="page">ちょこハピ</a></li></ul></div>
+<div class="tf-col"><h2>サイト</h2><ul><li><a href="../">ちゃ開発組トップ</a></li><li><a href="../privacy-policy.html">サイトのプライバシーポリシー</a></li></ul></div>
+</nav>
+<p class="tf-copy">&copy; <span id="year">2026</span> ちゃ開発組</p>
+</div>
+</footer>
+<!-- tya-footer:end -->
+
+  <script src="../assets/gallery.js" defer></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

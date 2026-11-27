@@ -26,6 +26,7 @@ APPS = [
     ("scroll-capture", "縦長スクショ"),
     ("shrink", "Shrink"),
     ("sutamina-techo", "スタミナ手帳"),
+    ("chocohapi", "ちょこハピ"),
 ]
 APP_NAME = dict(APPS)
 L = {

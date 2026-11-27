@@ -24,7 +24,7 @@ CAT = {'app-report-card': 'DeveloperApplication', 'blood-pressure-history': 'Hea
        'houkaku-compass': 'UtilitiesApplication', 'memonowa': 'DesignApplication',
        'monosashi': 'LifestyleApplication', 'pet-health-management': 'LifestyleApplication',
        'scroll-capture': 'UtilitiesApplication', 'shrink': 'MultimediaApplication',
-       'sutamina-techo': 'UtilitiesApplication'}
+       'sutamina-techo': 'UtilitiesApplication', 'chocohapi': 'LifestyleApplication'}
 CSS = """
     /* アプリ情報・よくある質問(generate_seo.py が差し込む) */
     .app-facts, .app-faq { max-width: 100%; margin: 0 0 36px; text-align: left; }
