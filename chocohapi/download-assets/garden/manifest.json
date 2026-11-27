@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-27T04:33:20.595Z",
+  "entries": [
+    {
+      "id": "nemophila",
+      "fileName": "nemophila.enc",
+      "updatedAt": "2026-11-27T04:33:20.595Z",
+      "size": 5996,
+      "sha256": "f117e4fa69f8435f5164c5696d848002e5c4772a415bc74cd90cd2ebc6897022",
+      "meta": {
+        "unlockDays": 10,
+        "rarity": 1,
+        "cost": 5,
+        "baseDays": 4,
+        "names": {
+          "ja": "ネモフィラ",
+          "en": "Nemophila",
+          "zh-Hans": "喜林草",
+          "zh-Hant": "粉蝶花",
+          "ko": "네모필라",
+          "es": "Nemophila",
+          "pt": "Nemófila",
+          "fr": "Némophile",
+          "de": "Hainblume",
+          "ru": "Немофила",
+          "id": "Nemophila",
+          "it": "Nemophila"
+        }
+      }
+    },
+    {
+      "id": "suzuran",
+      "fileName": "suzuran.enc",
+      "updatedAt": "2026-11-27T04:33:20.595Z",
+      "size": 3736,
+      "sha256": "fce4e65bbf27e9df5fd13e062b5bf7902f366f0795414f262eac852dca64a729",
+      "meta": {
+        "unlockDays": 20,
+        "rarity": 2,
+        "cost": 8,
+        "baseDays": 6,
+        "names": {
+          "ja": "スズラン",
+          "en": "Lily of the Valley",
+          "zh-Hans": "铃兰",
+          "zh-Hant": "鈴蘭",
+          "ko": "은방울꽃",
+          "es": "Lirio de los valles",
+          "pt": "Lírio-do-vale",
+          "fr": "Muguet",
+          "de": "Maiglöckchen",
+          "ru": "Ландыш",
+          "id": "Bakung lembah",
+          "it": "Mughetto"
+        }
+      }
+    },
+    {
+      "id": "wisteria",
+      "fileName": "wisteria.enc",
+      "updatedAt": "2026-11-27T04:33:20.595Z",
+      "size": 3480,
+      "sha256": "25d9e86dc976b78acec670f7ed4539274798a47555da7b4b51dbce32f8323efd",
+      "meta": {
+        "unlockDays": 30,
+        "rarity": 3,
+        "cost": 12,
+        "baseDays": 8,
+        "names": {
+          "ja": "藤",
+          "en": "Wisteria",
+          "zh-Hans": "紫藤",
+          "zh-Hant": "紫藤",
+          "ko": "등나무",
+          "es": "Glicinia",
+          "pt": "Glicínia",
+          "fr": "Glycine",
+          "de": "Blauregen",
+          "ru": "Глициния",
+          "id": "Wisteria",
+          "it": "Glicine"
+        }
+      }
+    },
+    {
+      "id": "bluepoppy",
+      "fileName": "bluepoppy.enc",
+      "updatedAt": "2026-11-27T04:33:20.595Z",
+      "size": 7576,
+      "sha256": "9607bf79ce523c3eea5026e6de215a75ad62f175d3c555c57f30ab7c6e7b4f83",
+      "meta": {
+        "unlockDays": 40,
+        "rarity": 4,
+        "cost": 18,
+        "baseDays": 10,
+        "names": {
+          "ja": "ヒマラヤの青いケシ",
+          "en": "Himalayan Blue Poppy",
+          "zh-Hans": "绿绒蒿",
+          "zh-Hant": "藍罌粟",
+          "ko": "히말라야 푸른 양귀비",
+          "es": "Amapola azul del Himalaya",
+          "pt": "Papoula-azul",
+          "fr": "Pavot bleu",
+          "de": "Blauer Scheinmohn",
+          "ru": "Голубой мак",
+          "id": "Popi biru Himalaya",
+          "it": "Papavero blu"
+        }
+      }
+    },
+    {
+      "id": "bluerose",
+      "fileName": "bluerose.enc",
+      "updatedAt": "2026-11-27T04:33:20.595Z",
+      "size": 7256,
+      "sha256": "4743778e4554cb76568dab01bdd25644be269b4f3878f5e72bdc4b77d6acc0a4",
+      "meta": {
+        "unlockDays": 50,
+        "rarity": 5,
+        "cost": 25,
+        "baseDays": 12,
+        "names": {
+          "ja": "ブルーローズ",
+          "en": "Blue Rose",
+          "zh-Hans": "蓝玫瑰",
+          "zh-Hant": "藍玫瑰",
+          "ko": "파란 장미",
+          "es": "Rosa azul",
+          "pt": "Rosa azul",
+          "fr": "Rose bleue",
+          "de": "Blaue Rose",
+          "ru": "Синяя роза",
+          "id": "Mawar biru",
+          "it": "Rosa blu"
+        }
+      }
+    }
+  ]
+}
