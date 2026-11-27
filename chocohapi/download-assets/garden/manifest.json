@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-27T04:33:20.595Z",
+  "updatedAt": "2026-11-27T09:02:38.597Z",
   "entries": [
     {
       "id": "nemophila",
       "fileName": "nemophila.enc",
-      "updatedAt": "2026-11-27T04:33:20.595Z",
-      "size": 5996,
-      "sha256": "f117e4fa69f8435f5164c5696d848002e5c4772a415bc74cd90cd2ebc6897022",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 164224,
+      "sha256": "85751e0dafbd6f4d43e2843f5ad925d996468654a8295e0238163735fc0a8842",
       "meta": {
-        "unlockDays": 10,
+        "unlockDays": 1,
         "rarity": 1,
         "cost": 5,
         "baseDays": 4,
@@ -30,16 +30,70 @@
       }
     },
     {
+      "id": "snowdrop",
+      "fileName": "snowdrop.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 111808,
+      "sha256": "86f9bc521e9c289972243669ce5d4774d18a6dca1fd5d15f42d3fa577b121c6c",
+      "meta": {
+        "unlockDays": 11,
+        "rarity": 1,
+        "cost": 5,
+        "baseDays": 3,
+        "names": {
+          "ja": "スノードロップ",
+          "en": "Snowdrop",
+          "zh-Hans": "雪滴花",
+          "zh-Hant": "雪滴花",
+          "ko": "스노드롭",
+          "es": "Campanilla de invierno",
+          "pt": "Fura-neve",
+          "fr": "Perce-neige",
+          "de": "Schneeglöckchen",
+          "ru": "Подснежник",
+          "id": "Bunga tetes salju",
+          "it": "Bucaneve"
+        }
+      }
+    },
+    {
+      "id": "crocus",
+      "fileName": "crocus.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 165696,
+      "sha256": "3fbb9373aeb3abc8436330a3fd1048022b7283946784b808ae481a0f47cbe289",
+      "meta": {
+        "unlockDays": 21,
+        "rarity": 1,
+        "cost": 6,
+        "baseDays": 3,
+        "names": {
+          "ja": "クロッカス",
+          "en": "Crocus",
+          "zh-Hans": "番红花",
+          "zh-Hant": "番紅花",
+          "ko": "크로커스",
+          "es": "Azafrán silvestre",
+          "pt": "Açafrão-da-primavera",
+          "fr": "Crocus",
+          "de": "Krokus",
+          "ru": "Крокус",
+          "id": "Krokus",
+          "it": "Croco"
+        }
+      }
+    },
+    {
       "id": "suzuran",
       "fileName": "suzuran.enc",
-      "updatedAt": "2026-11-27T04:33:20.595Z",
-      "size": 3736,
-      "sha256": "fce4e65bbf27e9df5fd13e062b5bf7902f366f0795414f262eac852dca64a729",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 149676,
+      "sha256": "ddaa0e57b39691e5a27b7f963b4706b8462bf49c6017277a0b9beb234239dd44",
       "meta": {
-        "unlockDays": 20,
-        "rarity": 2,
-        "cost": 8,
-        "baseDays": 6,
+        "unlockDays": 31,
+        "rarity": 1,
+        "cost": 6,
+        "baseDays": 4,
         "names": {
           "ja": "スズラン",
           "en": "Lily of the Valley",
@@ -57,15 +111,393 @@
       }
     },
     {
+      "id": "forgetmenot",
+      "fileName": "forgetmenot.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 185176,
+      "sha256": "5452df6e4d4687524f151dca2abd9e9eee00254dcdecb1092a706610372d9933",
+      "meta": {
+        "unlockDays": 41,
+        "rarity": 1,
+        "cost": 6,
+        "baseDays": 4,
+        "names": {
+          "ja": "ワスレナグサ",
+          "en": "Forget-me-not",
+          "zh-Hans": "勿忘草",
+          "zh-Hant": "勿忘草",
+          "ko": "물망초",
+          "es": "Nomeolvides",
+          "pt": "Não-me-esqueças",
+          "fr": "Myosotis",
+          "de": "Vergissmeinnicht",
+          "ru": "Незабудка",
+          "id": "Bunga forget-me-not",
+          "it": "Non ti scordar di me"
+        }
+      }
+    },
+    {
+      "id": "lavender",
+      "fileName": "lavender.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 167640,
+      "sha256": "6f073adc278fd2d120a51dadc46a42092a9d6e176825c0f6f591cc49c67f241c",
+      "meta": {
+        "unlockDays": 51,
+        "rarity": 1,
+        "cost": 7,
+        "baseDays": 5,
+        "names": {
+          "ja": "ラベンダー",
+          "en": "Lavender",
+          "zh-Hans": "薰衣草",
+          "zh-Hant": "薰衣草",
+          "ko": "라벤더",
+          "es": "Lavanda",
+          "pt": "Lavanda",
+          "fr": "Lavande",
+          "de": "Lavendel",
+          "ru": "Лаванда",
+          "id": "Lavender",
+          "it": "Lavanda"
+        }
+      }
+    },
+    {
+      "id": "anemone",
+      "fileName": "anemone.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 198080,
+      "sha256": "38190de837835488012b235d37da174b82e232bf85235c9dd690f9247946d22f",
+      "meta": {
+        "unlockDays": 61,
+        "rarity": 1,
+        "cost": 7,
+        "baseDays": 5,
+        "names": {
+          "ja": "アネモネ",
+          "en": "Anemone",
+          "zh-Hans": "银莲花",
+          "zh-Hant": "銀蓮花",
+          "ko": "아네모네",
+          "es": "Anémona",
+          "pt": "Anêmona",
+          "fr": "Anémone",
+          "de": "Anemone",
+          "ru": "Анемона",
+          "id": "Anemon",
+          "it": "Anemone"
+        }
+      }
+    },
+    {
+      "id": "hydrangea",
+      "fileName": "hydrangea.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 253272,
+      "sha256": "1841edd0df699af1b0618dd1237111872223f68c34515fd63ca5806560f6b64f",
+      "meta": {
+        "unlockDays": 71,
+        "rarity": 1,
+        "cost": 8,
+        "baseDays": 5,
+        "names": {
+          "ja": "アジサイ",
+          "en": "Hydrangea",
+          "zh-Hans": "绣球花",
+          "zh-Hant": "繡球花",
+          "ko": "수국",
+          "es": "Hortensia",
+          "pt": "Hortênsia",
+          "fr": "Hortensia",
+          "de": "Hortensie",
+          "ru": "Гортензия",
+          "id": "Hortensia",
+          "it": "Ortensia"
+        }
+      }
+    },
+    {
+      "id": "gerbera",
+      "fileName": "gerbera.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 189568,
+      "sha256": "74b808bd13c2d2c16a8254eb52de0a0ff5a80429a2b358f4c9b332610594d1c3",
+      "meta": {
+        "unlockDays": 81,
+        "rarity": 2,
+        "cost": 9,
+        "baseDays": 5,
+        "names": {
+          "ja": "ガーベラ",
+          "en": "Gerbera",
+          "zh-Hans": "非洲菊",
+          "zh-Hant": "非洲菊",
+          "ko": "거베라",
+          "es": "Gerbera",
+          "pt": "Gérbera",
+          "fr": "Gerbera",
+          "de": "Gerbera",
+          "ru": "Гербера",
+          "id": "Gerbera",
+          "it": "Gerbera"
+        }
+      }
+    },
+    {
+      "id": "bellflower",
+      "fileName": "bellflower.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 146604,
+      "sha256": "db0bf68dffb1a59bb587e8a599fb6ac926422e7069d608c7e14085788689b23e",
+      "meta": {
+        "unlockDays": 91,
+        "rarity": 2,
+        "cost": 9,
+        "baseDays": 6,
+        "names": {
+          "ja": "キキョウ",
+          "en": "Balloon Flower",
+          "zh-Hans": "桔梗",
+          "zh-Hant": "桔梗",
+          "ko": "도라지꽃",
+          "es": "Flor globo",
+          "pt": "Flor-balão",
+          "fr": "Platycodon",
+          "de": "Ballonblume",
+          "ru": "Платикодон",
+          "id": "Bunga balon",
+          "it": "Platycodon"
+        }
+      }
+    },
+    {
+      "id": "morningglory",
+      "fileName": "morningglory.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 173848,
+      "sha256": "b7fc9066769ab07b549996d806c98cc7fd1923b8b59a7c5c48f06cd1496e6668",
+      "meta": {
+        "unlockDays": 101,
+        "rarity": 2,
+        "cost": 10,
+        "baseDays": 6,
+        "names": {
+          "ja": "アサガオ",
+          "en": "Morning Glory",
+          "zh-Hans": "牵牛花",
+          "zh-Hant": "牽牛花",
+          "ko": "나팔꽃",
+          "es": "Gloria de la mañana",
+          "pt": "Glória-da-manhã",
+          "fr": "Ipomée",
+          "de": "Prunkwinde",
+          "ru": "Ипомея",
+          "id": "Bunga pagi",
+          "it": "Ipomea"
+        }
+      }
+    },
+    {
+      "id": "gentian",
+      "fileName": "gentian.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 164716,
+      "sha256": "07443434f539e06e367cfa2a8eb2f06bf6e9b707904789c4edb3b7478cf9aba6",
+      "meta": {
+        "unlockDays": 111,
+        "rarity": 2,
+        "cost": 10,
+        "baseDays": 6,
+        "names": {
+          "ja": "リンドウ",
+          "en": "Gentian",
+          "zh-Hans": "龙胆花",
+          "zh-Hant": "龍膽花",
+          "ko": "용담",
+          "es": "Genciana",
+          "pt": "Genciana",
+          "fr": "Gentiane",
+          "de": "Enzian",
+          "ru": "Горечавка",
+          "id": "Gentian",
+          "it": "Genziana"
+        }
+      }
+    },
+    {
+      "id": "camellia",
+      "fileName": "camellia.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 212972,
+      "sha256": "7d5a9a2cd61f104d060a58fc0a83298584175e4b75b6d818ad7303de68850f81",
+      "meta": {
+        "unlockDays": 121,
+        "rarity": 2,
+        "cost": 11,
+        "baseDays": 7,
+        "names": {
+          "ja": "ツバキ",
+          "en": "Camellia",
+          "zh-Hans": "山茶花",
+          "zh-Hant": "山茶花",
+          "ko": "동백꽃",
+          "es": "Camelia",
+          "pt": "Camélia",
+          "fr": "Camélia",
+          "de": "Kamelie",
+          "ru": "Камелия",
+          "id": "Kamelia",
+          "it": "Camelia"
+        }
+      }
+    },
+    {
+      "id": "plumeria",
+      "fileName": "plumeria.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 235416,
+      "sha256": "4bebb7ec1b75fed33dd3ec101b6428b52a85a013c6d8e4f9553f2ed40e50cb54",
+      "meta": {
+        "unlockDays": 131,
+        "rarity": 2,
+        "cost": 11,
+        "baseDays": 7,
+        "names": {
+          "ja": "プルメリア",
+          "en": "Plumeria",
+          "zh-Hans": "鸡蛋花",
+          "zh-Hant": "雞蛋花",
+          "ko": "플루메리아",
+          "es": "Plumeria",
+          "pt": "Jasmim-manga",
+          "fr": "Frangipanier",
+          "de": "Frangipani",
+          "ru": "Плюмерия",
+          "id": "Kamboja",
+          "it": "Plumeria"
+        }
+      }
+    },
+    {
+      "id": "hibiscus_blue",
+      "fileName": "hibiscus_blue.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 153260,
+      "sha256": "c6cc97afe45883dbe16da5ed4a1f0e7218318481843e8bbc2f34475bbe00c2d7",
+      "meta": {
+        "unlockDays": 141,
+        "rarity": 2,
+        "cost": 12,
+        "baseDays": 7,
+        "names": {
+          "ja": "ブルーハイビスカス",
+          "en": "Blue Hibiscus",
+          "zh-Hans": "蓝木槿",
+          "zh-Hant": "藍木槿",
+          "ko": "블루 히비스커스",
+          "es": "Hibisco azul",
+          "pt": "Hibisco azul",
+          "fr": "Hibiscus bleu",
+          "de": "Blauer Hibiskus",
+          "ru": "Синий гибискус",
+          "id": "Kembang sepatu biru",
+          "it": "Ibisco blu"
+        }
+      }
+    },
+    {
+      "id": "iris",
+      "fileName": "iris.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 173184,
+      "sha256": "7e25ce31f724905974b6b066c2f0aa08e88cb9d8dbae1799f5a2a5abe35b283e",
+      "meta": {
+        "unlockDays": 151,
+        "rarity": 2,
+        "cost": 12,
+        "baseDays": 7,
+        "names": {
+          "ja": "ハナショウブ",
+          "en": "Japanese Iris",
+          "zh-Hans": "花菖蒲",
+          "zh-Hant": "花菖蒲",
+          "ko": "꽃창포",
+          "es": "Lirio japonés",
+          "pt": "Íris japonês",
+          "fr": "Iris du Japon",
+          "de": "Japanische Schwertlilie",
+          "ru": "Японский ирис",
+          "id": "Iris Jepang",
+          "it": "Iris giapponese"
+        }
+      }
+    },
+    {
+      "id": "sakura",
+      "fileName": "sakura.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 176960,
+      "sha256": "eae8565a0b20c02d4a0d3817f314c4d66405cc6e8b8ead9975e9179edcd82574",
+      "meta": {
+        "unlockDays": 161,
+        "rarity": 3,
+        "cost": 14,
+        "baseDays": 8,
+        "names": {
+          "ja": "ソメイヨシノ",
+          "en": "Cherry Blossom",
+          "zh-Hans": "染井吉野樱",
+          "zh-Hant": "染井吉野櫻",
+          "ko": "왕벚꽃",
+          "es": "Flor de cerezo",
+          "pt": "Cerejeira-do-japão",
+          "fr": "Fleur de cerisier",
+          "de": "Kirschblüte",
+          "ru": "Сакура",
+          "id": "Bunga sakura",
+          "it": "Fiore di ciliegio"
+        }
+      }
+    },
+    {
+      "id": "lotus",
+      "fileName": "lotus.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 235544,
+      "sha256": "9e2c958c8a9e5aa5eb9dbdc2ee57e88714c973886c4b635d57afc9fb4a5a8e83",
+      "meta": {
+        "unlockDays": 171,
+        "rarity": 3,
+        "cost": 14,
+        "baseDays": 8,
+        "names": {
+          "ja": "ハス（蓮）",
+          "en": "Sacred Lotus",
+          "zh-Hans": "荷花",
+          "zh-Hant": "蓮花",
+          "ko": "연꽃",
+          "es": "Loto sagrado",
+          "pt": "Flor de lótus",
+          "fr": "Lotus sacré",
+          "de": "Indische Lotosblume",
+          "ru": "Лотос",
+          "id": "Teratai suci",
+          "it": "Loto sacro"
+        }
+      }
+    },
+    {
       "id": "wisteria",
       "fileName": "wisteria.enc",
-      "updatedAt": "2026-11-27T04:33:20.595Z",
-      "size": 3480,
-      "sha256": "25d9e86dc976b78acec670f7ed4539274798a47555da7b4b51dbce32f8323efd",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 209004,
+      "sha256": "a638ad97bdba0b0e7a5818321571278d734ee9b288ff2b6aaff30714593157ce",
       "meta": {
-        "unlockDays": 30,
+        "unlockDays": 181,
         "rarity": 3,
-        "cost": 12,
+        "cost": 15,
         "baseDays": 8,
         "names": {
           "ja": "藤",
@@ -84,16 +516,421 @@
       }
     },
     {
-      "id": "bluepoppy",
-      "fileName": "bluepoppy.enc",
-      "updatedAt": "2026-11-27T04:33:20.595Z",
-      "size": 7576,
-      "sha256": "9607bf79ce523c3eea5026e6de215a75ad62f175d3c555c57f30ab7c6e7b4f83",
+      "id": "spiderlily",
+      "fileName": "spiderlily.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 155308,
+      "sha256": "1cfb73668cd07c6a50e8362622c21fcf5cb136febacc3410bf6ae088a61a7438",
       "meta": {
-        "unlockDays": 40,
+        "unlockDays": 191,
+        "rarity": 3,
+        "cost": 15,
+        "baseDays": 8,
+        "names": {
+          "ja": "ヒガンバナ",
+          "en": "Red Spider Lily",
+          "zh-Hans": "彼岸花",
+          "zh-Hant": "彼岸花",
+          "ko": "꽃무릇",
+          "es": "Lirio araña rojo",
+          "pt": "Lírio-aranha-vermelho",
+          "fr": "Lycoris rouge",
+          "de": "Rote Spinnenlilie",
+          "ru": "Ликорис лучистый",
+          "id": "Bunga lili laba-laba",
+          "it": "Giglio ragno rosso"
+        }
+      }
+    },
+    {
+      "id": "strelitzia",
+      "fileName": "strelitzia.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 111064,
+      "sha256": "e06619ed53453e1cf980cdd1263785f234cfeffead347a719a320929c03b9267",
+      "meta": {
+        "unlockDays": 201,
+        "rarity": 3,
+        "cost": 16,
+        "baseDays": 9,
+        "names": {
+          "ja": "極楽鳥花",
+          "en": "Bird of Paradise",
+          "zh-Hans": "天堂鸟",
+          "zh-Hant": "天堂鳥",
+          "ko": "극락조화",
+          "es": "Ave del paraíso",
+          "pt": "Ave-do-paraíso",
+          "fr": "Oiseau de paradis",
+          "de": "Paradiesvogelblume",
+          "ru": "Стрелиция",
+          "id": "Bunga cenderawasih",
+          "it": "Uccello del paradiso"
+        }
+      }
+    },
+    {
+      "id": "casablanca",
+      "fileName": "casablanca.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 187800,
+      "sha256": "222eb45977a8b59e996ef83c0bd734deb98cf308b5da88effe50936c04b38dfb",
+      "meta": {
+        "unlockDays": 211,
+        "rarity": 3,
+        "cost": 16,
+        "baseDays": 9,
+        "names": {
+          "ja": "カサブランカ",
+          "en": "Casablanca Lily",
+          "zh-Hans": "卡萨布兰卡百合",
+          "zh-Hant": "卡薩布蘭卡百合",
+          "ko": "카사블랑카 백합",
+          "es": "Lirio Casablanca",
+          "pt": "Lírio Casablanca",
+          "fr": "Lys Casablanca",
+          "de": "Casablanca-Lilie",
+          "ru": "Лилия Касабланка",
+          "id": "Lili Casablanca",
+          "it": "Giglio Casablanca"
+        }
+      }
+    },
+    {
+      "id": "jacaranda",
+      "fileName": "jacaranda.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 243500,
+      "sha256": "25152a93095e013b62a7f645d58e77738a54b2ebcac43f07494796a738b8d48e",
+      "meta": {
+        "unlockDays": 221,
+        "rarity": 3,
+        "cost": 17,
+        "baseDays": 9,
+        "names": {
+          "ja": "ジャカランダ",
+          "en": "Jacaranda",
+          "zh-Hans": "蓝花楹",
+          "zh-Hant": "藍花楹",
+          "ko": "자카란다",
+          "es": "Jacarandá",
+          "pt": "Jacarandá",
+          "fr": "Jacaranda",
+          "de": "Jacaranda",
+          "ru": "Жакаранда",
+          "id": "Jakaranda",
+          "it": "Jacaranda"
+        }
+      }
+    },
+    {
+      "id": "protea",
+      "fileName": "protea.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 226968,
+      "sha256": "a0a0bd0cd63d640e6465b27126942ac7a866a74979a21514e2353d7a0310bf3d",
+      "meta": {
+        "unlockDays": 231,
+        "rarity": 3,
+        "cost": 17,
+        "baseDays": 9,
+        "names": {
+          "ja": "キングプロテア",
+          "en": "King Protea",
+          "zh-Hans": "帝王花",
+          "zh-Hant": "帝王花",
+          "ko": "킹 프로테아",
+          "es": "Protea rey",
+          "pt": "Prótia-rei",
+          "fr": "Protée royal",
+          "de": "Königsprotea",
+          "ru": "Протея королевская",
+          "id": "Protea raja",
+          "it": "Protea reale"
+        }
+      }
+    },
+    {
+      "id": "edelweiss",
+      "fileName": "edelweiss.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 174144,
+      "sha256": "0d42596a573667c355e2022704c36b72cae33ecc1e22d2ee1e161192ad1b1275",
+      "meta": {
+        "unlockDays": 241,
         "rarity": 4,
         "cost": 18,
         "baseDays": 10,
+        "names": {
+          "ja": "エーデルワイス",
+          "en": "Edelweiss",
+          "zh-Hans": "雪绒花",
+          "zh-Hant": "雪絨花",
+          "ko": "에델바이스",
+          "es": "Edelweiss",
+          "pt": "Edelvais",
+          "fr": "Edelweiss",
+          "de": "Edelweiß",
+          "ru": "Эдельвейс",
+          "id": "Edelweis",
+          "it": "Stella alpina"
+        }
+      }
+    },
+    {
+      "id": "sagiso",
+      "fileName": "sagiso.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 181632,
+      "sha256": "8494dcde0d2cd0aa9a1e4bd55bfa76305c5635a03849c5e3a810fe8d6a653408",
+      "meta": {
+        "unlockDays": 251,
+        "rarity": 4,
+        "cost": 19,
+        "baseDays": 10,
+        "names": {
+          "ja": "サギソウ",
+          "en": "Egret Orchid",
+          "zh-Hans": "鹭草",
+          "zh-Hant": "鷺草",
+          "ko": "해오라비난초",
+          "es": "Orquídea garza",
+          "pt": "Orquídea-garça",
+          "fr": "Orchidée aigrette",
+          "de": "Reiherblume",
+          "ru": "Поводник лучистый",
+          "id": "Anggrek kuntul",
+          "it": "Orchidea airone"
+        }
+      }
+    },
+    {
+      "id": "blackbat",
+      "fileName": "blackbat.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 176364,
+      "sha256": "6d58baac5e5b838ec488cf3238576d61b8a45c182336f62165025540e9bb6747",
+      "meta": {
+        "unlockDays": 261,
+        "rarity": 4,
+        "cost": 20,
+        "baseDays": 10,
+        "names": {
+          "ja": "ブラックキャット",
+          "en": "Black Bat Flower",
+          "zh-Hans": "老虎须",
+          "zh-Hant": "老虎鬚",
+          "ko": "블랙 배트 플라워",
+          "es": "Flor murciélago negra",
+          "pt": "Flor-morcego",
+          "fr": "Fleur chauve-souris",
+          "de": "Fledermausblume",
+          "ru": "Такка Шантрье",
+          "id": "Bunga kelelawar hitam",
+          "it": "Fiore pipistrello"
+        }
+      }
+    },
+    {
+      "id": "gekkabijin",
+      "fileName": "gekkabijin.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 191192,
+      "sha256": "3a3f88e1466aec414e5d4b9404ac42d9b5a1e32d206957bf31b723c927575423",
+      "meta": {
+        "unlockDays": 271,
+        "rarity": 4,
+        "cost": 21,
+        "baseDays": 10,
+        "names": {
+          "ja": "月下美人",
+          "en": "Queen of the Night",
+          "zh-Hans": "昙花",
+          "zh-Hant": "曇花",
+          "ko": "월하미인",
+          "es": "Reina de la noche",
+          "pt": "Dama-da-noite",
+          "fr": "Reine de la nuit",
+          "de": "Königin der Nacht",
+          "ru": "Царица ночи",
+          "id": "Wijayakusuma",
+          "it": "Regina della notte"
+        }
+      }
+    },
+    {
+      "id": "cattleya",
+      "fileName": "cattleya.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 200024,
+      "sha256": "0dbd9178c0acb9d549ca3f2edfaebe53dde1aa872381e18eb71cf7970346d36a",
+      "meta": {
+        "unlockDays": 281,
+        "rarity": 4,
+        "cost": 21,
+        "baseDays": 11,
+        "names": {
+          "ja": "カトレア",
+          "en": "Cattleya Orchid",
+          "zh-Hans": "卡特兰",
+          "zh-Hant": "嘉德麗雅蘭",
+          "ko": "카틀레야",
+          "es": "Catleya",
+          "pt": "Catleia",
+          "fr": "Cattleya",
+          "de": "Cattleya",
+          "ru": "Каттлея",
+          "id": "Anggrek Cattleya",
+          "it": "Cattleya"
+        }
+      }
+    },
+    {
+      "id": "jadevine",
+      "fileName": "jadevine.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 171116,
+      "sha256": "281bd13177764c7311d05348bd85bc401d2e9ca229b05646aec19eef8a0c2a67",
+      "meta": {
+        "unlockDays": 291,
+        "rarity": 4,
+        "cost": 22,
+        "baseDays": 11,
+        "names": {
+          "ja": "ヒスイカズラ",
+          "en": "Jade Vine",
+          "zh-Hans": "翡翠葛",
+          "zh-Hant": "翡翠葛",
+          "ko": "비취덩굴",
+          "es": "Parra de jade",
+          "pt": "Trepadeira-jade",
+          "fr": "Liane de jade",
+          "de": "Jadewein",
+          "ru": "Стронгилодон крупнокистевой",
+          "id": "Anggur giok",
+          "it": "Vite di giada"
+        }
+      }
+    },
+    {
+      "id": "ghostorchid",
+      "fileName": "ghostorchid.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 138944,
+      "sha256": "02890ab07c37af08a05458e5d13c03e9bf200efbd6f41bf739e46e74b749164d",
+      "meta": {
+        "unlockDays": 301,
+        "rarity": 4,
+        "cost": 23,
+        "baseDays": 11,
+        "names": {
+          "ja": "ゴーストオーキッド",
+          "en": "Ghost Orchid",
+          "zh-Hans": "幽灵兰",
+          "zh-Hant": "幽靈蘭",
+          "ko": "고스트 오키드",
+          "es": "Orquídea fantasma",
+          "pt": "Orquídea-fantasma",
+          "fr": "Orchidée fantôme",
+          "de": "Geisterorchidee",
+          "ru": "Орхидея-призрак",
+          "id": "Anggrek hantu",
+          "it": "Orchidea fantasma"
+        }
+      }
+    },
+    {
+      "id": "goldencamellia",
+      "fileName": "goldencamellia.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 188160,
+      "sha256": "82954574f12d78540cc7750188dd7f0bc3d92d6a77d558db7c6eca8b67efc2b5",
+      "meta": {
+        "unlockDays": 311,
+        "rarity": 5,
+        "cost": 24,
+        "baseDays": 12,
+        "names": {
+          "ja": "キンカチャ（金花茶）",
+          "en": "Golden Camellia",
+          "zh-Hans": "金花茶",
+          "zh-Hant": "金花茶",
+          "ko": "금화차",
+          "es": "Camelia dorada",
+          "pt": "Camélia dourada",
+          "fr": "Camélia doré",
+          "de": "Goldkamelie",
+          "ru": "Золотая камелия",
+          "id": "Kamelia emas",
+          "it": "Camelia dorata"
+        }
+      }
+    },
+    {
+      "id": "kadupul",
+      "fileName": "kadupul.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 189912,
+      "sha256": "50808f0cb067bb1be69b0da8fb92de6834877e5283647879dfb417d9fa42c999",
+      "meta": {
+        "unlockDays": 321,
+        "rarity": 5,
+        "cost": 25,
+        "baseDays": 12,
+        "names": {
+          "ja": "カドゥプル",
+          "en": "Kadupul Flower",
+          "zh-Hans": "卡杜普尔花",
+          "zh-Hant": "卡杜普爾花",
+          "ko": "카두풀",
+          "es": "Flor Kadupul",
+          "pt": "Flor Kadupul",
+          "fr": "Fleur de Kadupul",
+          "de": "Kadupul-Blume",
+          "ru": "Цветок Кадупул",
+          "id": "Bunga Kadupul",
+          "it": "Fiore di Kadupul"
+        }
+      }
+    },
+    {
+      "id": "middlemist",
+      "fileName": "middlemist.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 188928,
+      "sha256": "84a66dc9c9a1f50879977a773d84a43196e97980f621c1609ed843015f808a72",
+      "meta": {
+        "unlockDays": 331,
+        "rarity": 5,
+        "cost": 26,
+        "baseDays": 12,
+        "names": {
+          "ja": "ミドルミスト・レッド",
+          "en": "Middlemist Red",
+          "zh-Hans": "米德尔米斯特红山茶",
+          "zh-Hant": "米德爾米斯特紅山茶",
+          "ko": "미들미스트 레드",
+          "es": "Middlemist roja",
+          "pt": "Middlemist vermelha",
+          "fr": "Middlemist rouge",
+          "de": "Middlemist Red",
+          "ru": "Миддлемист красный",
+          "id": "Middlemist Merah",
+          "it": "Middlemist Red"
+        }
+      }
+    },
+    {
+      "id": "bluepoppy",
+      "fileName": "bluepoppy.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 129324,
+      "sha256": "9a27d7503f0c278be15f9ea260d6a5d8bc56069990f97c0be1c339399212c450",
+      "meta": {
+        "unlockDays": 341,
+        "rarity": 5,
+        "cost": 27,
+        "baseDays": 13,
         "names": {
           "ja": "ヒマラヤの青いケシ",
           "en": "Himalayan Blue Poppy",
@@ -111,16 +948,43 @@
       }
     },
     {
+      "id": "baobab",
+      "fileName": "baobab.enc",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 221356,
+      "sha256": "5e0377ffce4ba39c589e4f7bbd644c919bc8a1110bb4019b099b2400875d4997",
+      "meta": {
+        "unlockDays": 351,
+        "rarity": 5,
+        "cost": 28,
+        "baseDays": 13,
+        "names": {
+          "ja": "バオバブの花",
+          "en": "Baobab Blossom",
+          "zh-Hans": "猴面包树花",
+          "zh-Hant": "猴麵包樹花",
+          "ko": "바오밥 꽃",
+          "es": "Flor de baobab",
+          "pt": "Flor de baobá",
+          "fr": "Fleur de baobab",
+          "de": "Baobab-Blüte",
+          "ru": "Цветок баобаба",
+          "id": "Bunga baobab",
+          "it": "Fiore di baobab"
+        }
+      }
+    },
+    {
       "id": "bluerose",
       "fileName": "bluerose.enc",
-      "updatedAt": "2026-11-27T04:33:20.595Z",
-      "size": 7256,
-      "sha256": "4743778e4554cb76568dab01bdd25644be269b4f3878f5e72bdc4b77d6acc0a4",
+      "updatedAt": "2026-11-27T09:02:38.597Z",
+      "size": 154008,
+      "sha256": "b11e37604537d8d532fa041d7db38698b69230cb1ca310ff6f214984a7148790",
       "meta": {
-        "unlockDays": 50,
+        "unlockDays": 361,
         "rarity": 5,
-        "cost": 25,
-        "baseDays": 12,
+        "cost": 30,
+        "baseDays": 14,
         "names": {
           "ja": "ブルーローズ",
           "en": "Blue Rose",

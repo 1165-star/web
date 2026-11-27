@@ -63,6 +63,20 @@ body {
 }
 
 /* ヘッダーナビゲーション */
+:root {
+  /* 固定ヘッダーの下にアンカー(#...)の見出しが隠れないように、ジャンプ先の上に余白をとる。ヘッダーは幅が狭いほど折り返して高くなる */
+  scroll-padding-top: 232px;
+}
+@media (min-width: 400px) {
+  :root { scroll-padding-top: 192px; }
+}
+@media (min-width: 600px) {
+  :root { scroll-padding-top: 152px; }
+}
+@media (min-width: 1000px) {
+  :root { scroll-padding-top: 112px; }
+}
+
 .site-header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
@@ -319,6 +333,12 @@ body {
   font-weight: 800;
   margin: 0;
   color: var(--text);
+}
+.step-item h4 {
+  font-size: 15px;
+  font-weight: 800;
+  margin: 18px 0 6px;
+  color: var(--accent);
 }
 
 /* 画像ギャラリー・スクリーンショット */
